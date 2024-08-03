@@ -1,0 +1,21 @@
+{
+  "displayName": "Daemon",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_screamer",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_screamer_Daemon",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shpe_screamer_bite"
+      }
+    }
+  ],
+  "wings": []
+}

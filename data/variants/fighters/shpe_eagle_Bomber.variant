@@ -1,0 +1,22 @@
+{
+  "displayName": "Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_eagle",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_eagle_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shpe_sonic_charge",
+        "WS0002": "shpe_shuriken_cannon"
+      }
+    }
+  ],
+  "wings": []
+}

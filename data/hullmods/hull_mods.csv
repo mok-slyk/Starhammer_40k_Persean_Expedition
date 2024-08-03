@@ -1,0 +1,190 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+#Built-ins:,,,,,,,,,,,,,,,,,,,
+#Dual Broadside Integration,shpe_dualbroadside,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.DualBroadsideIntegration,Mirrors the ship's starboard armaments to port at no additional OP cost. Note that this is not accounted for in the flux stats displayed in the refit screen.,,,graphics/hullmods/shpe_dual_broadside_integration.png
+Integrated Broadside Batteries,shpe_broadside_batteries,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.IntegratedBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
+Macrobatteries: Stygies Shells,shpe_stygies_shell,,,Imperial,,,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.StygiesShell,"Changes the ship's built-in macrocannon batteries to fire heavy adamantine-reinforced stygies shells.
+
+Increases shell damage and weight but decreases shell speed and adds inaccuracy.
+",,,graphics/hullmods/shpe_stygies_shell.png
+Macrobatteries: Hecutor Shells,shpe_hecutor_shell,,,Imperial,,,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.HecutorShell,"Changes the ship's built-in macrocannon batteries to fire Hecutor-Pattern plasma rounds.
+
+Switches the damage type to energy and increases shell speed.
+",,,graphics/hullmods/shpe_hecutor_shell.png
+Macrobatteries: Pyros Shells,shpe_pyros_shell,,,Imperial,,,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.PyrosShell,"Changes the ship's built-in macrocannon batteries to fire melta-charged Pyros shells.
+
+Changes the damage type to High Explosive.
+",,,graphics/hullmods/shpe_pyros_shell.png
+Macrobatteries: Disruptor Shells,shpe_disruptor_shell,,,Imperial,,,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.DisruptorShell,"Changes the ship's built-in macrocannon batteries to fire disruptor shells.
+
+Reduces base damage but adds EMP damage.
+
+",,,graphics/hullmods/shpe_disruptor_shell.png
+Macrobatteries: Staravar Laser Battery,shpe_staravar_shell,,,Archaeotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.StaravarShell,"Turns the ship's built-in macrocannons into batteries of powerful lasers dealing high Energy damage.
+",,,graphics/hullmods/shpe_staravar_shell.png
+Macrobatteries: Shard Cannons,shpe_shard_shell,,,Ancient Xenotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.ShardShell,"Turns the ship's built-in macrocannon batteries into xenotech shardcannons that create almost no flux.
+",,,graphics/hullmods/shpe_shard_shell.png
+Reactive Hull,shpe_reactive_hull,,,Necron,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReactiveHull,The ship slowly repairs lost hull.,,,graphics/hullmods/shpe_reactive_hull.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Novacannon,shpe_novacannon,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Novacannon,"This ship has a built-in imperial novacannon under its prow, a devastating artillery cannon, firing explosive shells at relativistic speeds.
+
+By default the novacannon is of the comparatively ubiquitous Mars-pattern, dealing high Kinetic damage, but the ship can also be equipped with other types of novacannons.",,,graphics/hullmods/shpe_novacannon.png
+Novacannon: Ryza Shells,shpe_ryza_cannon,,,Imperial,,,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.RyzaCannon,Changes the ship's built-in novacannon to fire Ryza-Pattern Plasma shells that explode in an even larger radius than other types of novacannon rounds and deal high Energy damage.,,,graphics/hullmods/shpe_ryza_cannon.png
+Novacannon: Jovian Shells,shpe_jovian_cannon,,,Archaeotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.JovianCannon,"Changes the ship's built-in novacannon to fire Jovian-Pattern Vortex shells that are capable of ripping apart the very weave of reality, dealing massive damage to a single target.",,,graphics/hullmods/shpe_jovian_cannon.png
+Novacannon: Lathe Shells,shpe_lathe_cannon,,,Imperial,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.LatheCannon,"Changes the ship's built-in novacannon to fire Lathe-Pattern Gravitic shells, that deal high Energy damage and pull ships in a large area towards the point of impact.",,,graphics/hullmods/shpe_lathe_cannon.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Variable Torpedo Tubes,shpe_variable_torpedo_tubes,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.VariableTorpedoTubes,"This ship has built-in heavy torpedo tubes.
+
+By default they fire plasma torpedos, dealing heavy energy damage.
+
+With access to the right technology however, they can be armed with other types of torpedos.",,,graphics/hullmods/shpe_torpedo_tubes.png
+Torpedos: Melta Warheads,shpe_melta_warheads,,,Imperial,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.MeltaWarheads,"Changes the ship's built-in torpedo tubes to fire melta torpedos.
+
+Switches damage type to High Explosive.
+
+Note that these stat changes are not shown in the refit screen!",,,graphics/hullmods/shpe_melta_torpedos.png
+Torpedos: Vortex Warheads,shpe_vortex_warheads,,,Archaeotech,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.VortexWarheads,"Changes the ship's built-in torpedo tubes to fire vortex torpedos.
+
+They deal devastating Energy damage but have very limited ammo capacity.
+
+Note that these stat changes are not shown in the refit screen!",,,graphics/hullmods/shpe_vortex_torpedos.png
+Torpedos: Barrage Warheads,shpe_barrage_warheads,,,Imperial,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.BarrageWarheads,"Changes the ship's built-in torpedo tubes to fire barrage torpedos.
+
+They split into many submunitions, each dealing moderate Energy damage.
+
+Note that these stat changes are not shown in the refit screen!",,,graphics/hullmods/shpe_barrage_torpedos.png
+Torpedos: Seeking Warheads,shpe_seeking_warheads,,,Imperial,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SeekingWarheads,"Changes the ship's built-in torpedo tubes to fire seeking torpedos.
+
+They seek their target but deal reduced damage.
+
+Note that these stat changes are not shown in the refit screen!",,,graphics/hullmods/shpe_seeking_torpedos.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Armored Prow,shpe_armored_prow,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ArmoredProw,The ship's prow is heavily armored and has its own pool of health separate from the main hull.,,,graphics/hullmods/shpe_armored_prow.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Spore Clouds,shpe_spore_clouds,,,Tyranid,,,,,,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Drake Wings,shpe_drake_wings,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.DrakeWings,Drake Wing animation.,,,graphics/hullmods/shpe_spore_cloud.png
+Flame Aura,shpe_flame_aura,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.FlameAura,Flame Aura for Daemon Engines,,,graphics/hullmods/shpe_spore_cloud.png
+Prismatic Aura,shpe_prismatic_aura,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.PrismaticAura,Prismatic Aura for Screamers,,,graphics/hullmods/shpe_spore_cloud.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Hellforged,shpe_hellforged,,,Chaos,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Hellforged,"This ship was constructed or extensively modified by servants of chaos.
+
+Chaos Marks applied to this ship are 50 percent more effective.",,,graphics/hullmods/shpe_hellforged.png
+,,,,,,,,,,,,,,,,,,,
+Mark of Tzeentch,shpe_tzeentch_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.TzeentchMark,The ship is marked by the lord of change.,,,graphics/hullmods/shpe_tzeentch_mark.png
+Warp Beasts,shpe_warp_beasts,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.WarpBeasts,The ship is surrounded by horrors of the warp that occasionally fire bursts of flame at neargy enemies.,,,graphics/hullmods/shpe_warp_beasts.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+#Heavy Ballistics Integration,hbi,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.HeavyBallisticsIntegration,Reduces the ordnance point cost of large ballistic weapons by %s.,Reduces ordnance point cost of large ballistic weapons.,,graphics/hullmods/ballistics_integration.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

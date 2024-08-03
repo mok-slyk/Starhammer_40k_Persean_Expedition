@@ -1,0 +1,59 @@
+{
+  "beamEffect": "mok_slyk.shpe.scripts.ParticleWhipOnFireEffect",
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fireSoundOne": "heavy_blaster_fire",
+  "fringeColor": [
+    100,
+    255,
+    95,
+    255
+  ],
+  "glowColor": [
+    120,
+    255,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointOffsets": [
+    2,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointUnderSprite": "graphics/weapons/shpe_particle_whip_under.png",
+  "hitGlowRadius": 0,
+  "id": "shpe_particle_whip",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "MEDIUM",
+  "specClass": "beam",
+  "textureScrollSpeed": 128,
+  "textureType": WEAVE,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretUnderSprite": "graphics/weapons/shpe_particle_whip_under.png",
+  "type": "ENERGY",
+  "width": 48
+}

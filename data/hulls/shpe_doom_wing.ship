@@ -1,0 +1,98 @@
+{
+  "bounds": [
+    -12.5,
+    -10,
+    9,
+    -10,
+    9,
+    10,
+    -12.5,
+    10
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "shpe_flame_aura"
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_flame_cannon"
+  },
+  "builtInWings": [],
+  "center": [
+    14,
+    18
+  ],
+  "collisionRadius": 24,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -13,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -13,
+        0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 24,
+      "location": [
+        -11,
+        4.5
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 24,
+      "location": [
+        -11,
+        -4.5
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    }
+  ],
+  "height": 36,
+  "hullId": "shpe_doom_wing",
+  "hullName": "Doom Wing",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 30,
+  "spriteName": "graphics/ships/shpe_doom_wing.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        16.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 28
+}

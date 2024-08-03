@@ -1,0 +1,22 @@
+{
+	"id":"shpe_lightning_arc",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_base.png",
+	"turretGlowSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_glow.png",
+	"hardpointSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_glow.png",
+	"turretUnderSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_under.png",
+	"hardpointUnderSprite":"graphics/weapons/shpe_lightning_arc_hardpoint_under.png",
+	"glowColor":[100,220,100,255],
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[8, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"shpe_lightning_arc_shot",  # projectile that will be fired
+	"fireSoundTwo":"disintegrator_fire",
+}

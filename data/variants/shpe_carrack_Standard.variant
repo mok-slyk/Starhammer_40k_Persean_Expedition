@@ -1,0 +1,41 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "shpe_carrack",
+    "hullMods": [
+        "efficiency_overhaul",
+        "shpe_disruptor_shell",
+        "solar_shielding",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_carrack_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB5": "shpe_disruptor_reference",
+                "BIB4": "shpe_disruptor_reference",
+                "BIB3": "shpe_disruptor_reference",
+                "BIB2": "shpe_disruptor_reference",
+                "BIB1": "shpe_disruptor_reference",
+                "BIB0": "shpe_disruptor_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hydra",
+                "WS0003": "shpe_hydra",
+                "WS0002": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

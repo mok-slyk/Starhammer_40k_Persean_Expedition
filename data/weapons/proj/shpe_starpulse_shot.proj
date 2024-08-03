@@ -1,0 +1,20 @@
+{
+	"id":"shpe_starpulse_shot",
+	"onFireEffect":"mok_slyk.shpe.scripts.StarPulseOnFireEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FF",	
+	#"spawnType":"BALLISTIC_AS_BEAM",
+	#"collisionClass":"RAY",
+	#"collisionClassByFighter":"RAY_FIGHTER",
+	"length":400.0,
+	"width":15,
+	"fadeTime":3,
+	"fringeColor":[255,200,220,0], #rgba
+	"coreColor":[225,200,255,0],
+	"hitGlowRadius":800,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",	
+}

@@ -1,0 +1,28 @@
+{
+	"id":"shpe_hecutor_reference",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/weapons/shpe_empty_weapon.png",
+	"turretGunSprite":"graphics/weapons/shpe_marsvi_builtin_recoil.png",
+	"hardpointSprite":"graphics/weapons/shpe_marsvi_builtin_base.png",
+	"hardpointGunSprite":"graphics/weapons/shpe_marsvi_builtin_recoil.png",	
+	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":25.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":19.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.4,
+					   "particleCount":12,
+					  "particleColor":[100,130,255,255]},
+	"projectileSpecId":"shpe_hecutor_shot",  # projectile that will be fired
+	"fireSoundTwo":"hellbore_fire",	
+}

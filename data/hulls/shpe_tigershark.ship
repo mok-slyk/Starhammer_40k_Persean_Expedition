@@ -1,0 +1,123 @@
+{
+  "bounds": [
+    -9,
+    28.5,
+    17.5,
+    -0,
+    -9,
+    -28.5,
+    -16.5,
+    -0
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_flakk",
+    "WS0002": "shpe_light_ion",
+    "WS0003": "shpe_light_ion"
+  },
+  "builtInWings": [],
+  "center": [
+    29,
+    18.5
+  ],
+  "collisionRadius": 50,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 22,
+      "location": [
+        -16,
+        6.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 22,
+      "location": [
+        -16,
+        -6.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 5,
+      "length": 14.5,
+      "location": [
+        -14,
+        15.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 5,
+      "length": 14.5,
+      "location": [
+        -14,
+        -15.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 5
+    }
+  ],
+  "height": 37,
+  "hullId": "shpe_tigershark",
+  "hullName": "Tiger Shark",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 42,
+  "spriteName": "graphics/ships/shpe_tigershark.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0002",
+      "locations": [
+        15.5,
+        4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 15,
+      "id": "WS0003",
+      "locations": [
+        15.5,
+        -4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 60,
+      "id": "WS0001",
+      "locations": [
+        -3.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 58
+}

@@ -1,0 +1,60 @@
+{
+  "bounds": [
+    -1.5,
+    3,
+    3,
+    -0,
+    -1.5,
+    -3
+  ],
+  "builtInWeapons": {
+    "WS0003": "shpe_pulse_carbine",
+    "WS0004": "shpe_pulse_carbine"
+  },
+  "builtInWings": [],
+  "center": [
+    4,
+    5
+  ],
+  "collisionRadius": 10,
+  "engineSlots": [],
+  "height": 10,
+  "hullId": "shpe_gun_drone",
+  "hullName": "Gun Drone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 7.5,
+  "spriteName": "graphics/ships/shpe_gun_drone.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -0,
+      "arc": 15,
+      "id": "WS0003",
+      "locations": [
+        4,
+        2
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0004",
+      "locations": [
+        4,
+        -2
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 8
+}

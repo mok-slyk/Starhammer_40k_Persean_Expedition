@@ -1,0 +1,61 @@
+{
+  "id": "shpe_starbreaker_lance",
+  "specClass": "projectile",
+  "projectileSpecId": "shpe_starbreaker_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/shpe_starbreaker_lance_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/shpe_starbreaker_lance_turret_glow.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    190,
+    120,
+    180
+  ],
+  "turretOffsets": [
+    19,
+    5,
+    19,
+    0,
+    19,
+    -5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    22,
+    5,
+    22,
+    0,
+    22,
+    -5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "spread": 10,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "particleDuration": 0.6,
+    "particleCount": 25,
+    "particleColor": [
+      255,
+      220,
+      120,
+      40
+    ]
+  },
+  "fireSoundTwo": "heavy_blaster_fire"
+}

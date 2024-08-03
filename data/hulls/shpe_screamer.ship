@@ -1,0 +1,51 @@
+{
+  "bounds": [
+    -1.5,
+    6,
+    14,
+    -0,
+    -1.5,
+    -6
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "shpe_prismatic_aura"
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_screamer_bite"
+  },
+  "builtInWings": [],
+  "center": [
+    8,
+    17
+  ],
+  "collisionRadius": 20,
+  "engineSlots": [],
+  "height": 34,
+  "hullId": "shpe_screamer",
+  "hullName": "Screamer",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 25,
+  "spriteName": "graphics/ships/shpe_screamer.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 20,
+      "id": "WS0001",
+      "locations": [
+        12,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 16
+}

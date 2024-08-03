@@ -1,0 +1,20 @@
+{
+	"id":"shpe_lockon",
+	"type":"STAT_MOD",
+	#"aiType":"HIGH_ENERGY_FOCUS",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"mok_slyk.shpe.scripts.shipsystems.LockOn",
+	
+	"weaponGlowColor":[255,255,50,100],
+	"weaponTypes":[ENERGY],
+	
+	
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	# Stian deactivated these two because of audio playback timing issues. See fortressshield.system for more.
+	# Re-enable for testing.
+	
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"system_high_energy_focus_loop",	
+}

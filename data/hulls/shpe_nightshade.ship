@@ -1,0 +1,100 @@
+{
+  "bounds": [
+    -16.5,
+    -20,
+    2.5,
+    -5.5,
+    20.5,
+    -2,
+    20.5,
+    2,
+    2.5,
+    5.5,
+    -16.5,
+    20
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "center": [
+    25,
+    24
+  ],
+  "collisionRadius": 55,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 49,
+      "location": [
+        -20,
+        6.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 49,
+      "location": [
+        -20,
+        -6.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 7
+    }
+  ],
+  "height": 48,
+  "hullId": "shpe_nightshade",
+  "hullName": "Nightshade",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 46,
+  "spriteName": "graphics/ships/shpe_nightshade.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0002",
+      "locations": [
+        -0.5,
+        10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 15,
+      "id": "WS0003",
+      "locations": [
+        -0.5,
+        -10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0001",
+      "locations": [
+        19.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 50
+}

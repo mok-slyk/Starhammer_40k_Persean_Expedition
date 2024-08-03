@@ -1,0 +1,19 @@
+{
+  "animationType": "NONE",
+  "barrelMode": "ALTERNATING",
+  "everyFrameEffect": "mok_slyk.shpe.scripts.DrakeWingEffect",
+  "frameRate": 3,
+  "hardpointAngleOffsets": [],
+  "hardpointOffsets": [],
+  "hardpointSprite": "graphics/ships/shpe_heldrake00.png",
+  "id": "shpe_heldrake_deco",
+  "numFrames": 2,
+  "projectileSpecId": "shpe_bolter_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [],
+  "turretOffsets": [],
+  "turretSprite": "graphics/ships/shpe_heldrake00.png",
+  "type": "DECORATIVE"
+}

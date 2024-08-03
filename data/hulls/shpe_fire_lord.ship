@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    -12.5,
+    26.5,
+    -1,
+    26.5,
+    26,
+    -0,
+    -1,
+    -26.5,
+    -12.5,
+    -26.5
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux",
+	"shpe_flame_aura"
+  ],
+  "center": [
+    28,
+    29
+  ],
+  "collisionRadius": 40,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -15,
+        10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -15,
+        -10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 58,
+  "hullId": "shpe_fire_lord",
+  "hullName": "Fire Lord",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 54,
+  "spriteName": "graphics/ships/shpe_fire_lord.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        17.5,
+        10
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        17.5,
+        -10
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        9,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 270,
+      "id": "WS0004",
+      "locations": [
+        -5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 56
+}

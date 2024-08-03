@@ -1,0 +1,22 @@
+{
+  "displayName": "Gun Drone",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_gun_drone",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_drone_Gun",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "shpe_pulse_carbine",
+        "WS0004": "shpe_pulse_carbine"
+      }
+    }
+  ],
+  "wings": []
+}

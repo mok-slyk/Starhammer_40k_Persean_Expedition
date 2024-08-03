@@ -1,0 +1,49 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "devastator_fire",
+  "frameRate": 20,
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    21.5,
+    3.5,
+    21.5,
+    -3.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_vulcan_bolter_hardpoint_base00.png",
+  "id": "shpe_vulcan",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "particleColor": [
+      255,
+      220,
+      165,
+      200
+    ],
+    "particleCount": 9,
+    "particleDuration": 0.18,
+    "particleSizeMin": 6,
+    "particleSizeRange": 10,
+    "spread": 6
+  },
+  "numFrames": 2,
+  "projectileSpecId": "shpe_bolter_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    19,
+    3.5,
+    19,
+    -3.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_vulcan_bolter_turret_base00.png",
+  "type": "BALLISTIC"
+}

@@ -1,0 +1,44 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_railgun_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    24,
+    -2,
+    24,
+    2
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_railgun_hardpoint_base.png",
+  "renderHints":[RENDER_BARREL_BELOW],
+  "id": "shpe_railgun",
+  "muzzleFlashSpec":{"length":75.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":3.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[100,160,255,255]},	
+  "projectileSpecId": "shpe_rail_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  #"textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/shpe_railgun_turret_recoil.png",
+  "turretOffsets": [
+    22,
+    -2,
+    22,
+    2
+  ],
+  "turretSprite": "graphics/weapons/shpe_railgun_turret_base.png",
+  "type": "BALLISTIC",
+  "fireSoundTwo":"hypervel_driver_fire",	
+  "visualRecoil": 3.0
+}

@@ -1,0 +1,18 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
+Inertialess Drive,shpe_inertialess,,,,,,,,,,1,2,2,6,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png
+Holofield,shpe_holofield,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,FALSE,,,,TRUE,,TRUE,,graphics/icons/hullsys/phase_cloak.png
+Lock On,shpe_lockon,,,,,,,,,,1,4,1,6,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png
+Inertialess Drive,shpe_travel_inertialess,1,,,,,,,,,2,,2,0,TRUE,,,,TRUE,TRUE,TRUE,TRUE,TRUE,,,,graphics/icons/hullsys/burn_drive.png
+All Ahead Full,shpe_allaheadfull,1,,,,,,,,,2,5,1,10,TRUE,,,,,TRUE,TRUE,TRUE,TRUE,,,,graphics/icons/hullsys/burn_drive.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gun Drones,shpe_gun_drone,,,,,,,,12,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_borer.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mindshock Pod,shpe_mindshock,1,,,,,0.2,,,,0.5,4,0.5,6,,,,,,,,,,,,,graphics/icons/hullsys/emp_emitter.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Phase Cloak,phasecloak,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,,graphics/icons/hullsys/phase_cloak.png
+#Plasma Jets,plasmajets,,,,,,,,,,1,3,2,5,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png

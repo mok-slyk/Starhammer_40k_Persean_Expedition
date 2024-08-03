@@ -1,0 +1,41 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "chaingun_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "id": "shpe_pulse_carbine",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "particleColor": [
+      120,
+      200,
+      255,
+      200
+    ],
+    "particleCount": 7,
+    "particleDuration": 0.1,
+    "particleSizeMin": 3,
+    "particleSizeRange": 8,
+    "spread": 4
+  },
+  "projectileSpecId": "shpe_burst_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "BALLISTIC"
+}

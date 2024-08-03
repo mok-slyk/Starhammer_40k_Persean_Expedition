@@ -1,0 +1,36 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "shpe_cobra",
+    "hullMods": [
+        "missleracks",
+        "shpe_melta_warheads",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_cobra_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_marsvi",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT3": "shpe_meltatorp_reference",
+                "BIT2": "shpe_meltatorp_reference",
+                "BIT1": "shpe_meltatorp_reference",
+                "BIT0": "shpe_meltatorp_reference",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

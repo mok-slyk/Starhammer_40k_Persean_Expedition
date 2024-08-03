@@ -1,0 +1,50 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "disintegrator_fire",
+  "glowColor": [
+    225,
+    255,
+    120,
+    180
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_fusion_beamer_hardpoint_glow.png",
+  "hardpointOffsets": [
+    18,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_fusion_beamer_hardpoint_base.png",
+  "id": "shpe_fusion_beamer",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      155,
+      255,
+      100,
+      180
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 13,
+    "spread": 20
+  },
+  "projectileSpecId": "shpe_fusion_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_fusion_beamer_turret_glow.png",
+  "turretOffsets": [
+    14,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_fusion_beamer_turret_base.png",
+  "mountTypeOverride":"HYBRID",
+  "type": "ENERGY"
+}

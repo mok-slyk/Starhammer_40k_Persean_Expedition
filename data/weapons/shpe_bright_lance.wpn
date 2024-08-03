@@ -1,0 +1,51 @@
+{
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    255,
+    180,
+    180
+  ],
+  "glowColor": [
+    255,
+    255,
+    180,
+    160
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_bright_lance_hardpoint_glow.png",
+  "hardpointOffsets": [
+    18,
+    -0.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_bright_lance_hardpoint_base.png",
+  "hitGlowRadius": 15,
+  "id": "shpe_bright_lance",
+  "pixelsPerTexel": 1,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": MEDIUM,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_bright_lance_turret_glow.png",
+  "turretOffsets": [
+    15.5,
+    -0.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_bright_lance_turret_base.png",
+  "type": "ENERGY",
+  "fireSoundOne":"minipulser_fire",
+  "width": 5
+}

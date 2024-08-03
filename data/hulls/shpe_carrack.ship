@@ -1,0 +1,187 @@
+{
+  "bounds": [
+    -126,
+    6,
+    -118.5,
+    23,
+    -89,
+    24.5,
+    -77.5,
+    30,
+    -46,
+    30.5,
+    -41.5,
+    22.5,
+    11.5,
+    21.5,
+    14,
+    19,
+    65.5,
+    19,
+    67.5,
+    21.5,
+    91.5,
+    20.5,
+    113,
+    13,
+    125,
+    -0,
+    113,
+    -13,
+    91.5,
+    -20.5,
+    67.5,
+    -21.5,
+    65.5,
+    -19,
+    14,
+    -19,
+    11.5,
+    -21.5,
+    -41.5,
+    -22.5,
+    -46,
+    -30.5,
+    -77.5,
+    -30,
+    -89,
+    -24.5,
+    -118.5,
+    -23,
+    -126,
+    -6
+  ],
+  "builtInMods": [
+    "shpe_broadside_batteries"
+  ],
+  "builtInWings": [],
+  "center": [
+    33,
+    127
+  ],
+  "collisionRadius": 180,
+  "engineSlots": [],
+  "height": 254,
+  "hullId": "shpe_carrack",
+  "hullName": "Carrack",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 164,
+  "spriteName": "graphics/ships/shpe_carrack.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        81,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        -11,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        -94,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB2",
+      "locations": [
+        41,
+        17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB3",
+      "locations": [
+        41,
+        -17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB4",
+      "locations": [
+        24,
+        17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB5",
+      "locations": [
+        24,
+        -17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB0",
+      "locations": [
+        58,
+        17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB1",
+      "locations": [
+        58,
+        -17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 66
+}

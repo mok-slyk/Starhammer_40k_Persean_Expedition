@@ -1,0 +1,96 @@
+{
+  "bounds": [
+    -27.5,
+    5,
+    -19.5,
+    5,
+    -8,
+    20.5,
+    -7,
+    9,
+    8,
+    9,
+    28.5,
+    -0,
+    8,
+    -9,
+    -7,
+    -9,
+    -8,
+    -20.5,
+    -19.5,
+    -5,
+    -27.5,
+    -5
+  ],
+  "builtInWings": [],
+  "center": [
+    22,
+    29.5
+  ],
+  "collisionRadius": 40,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 21,
+      "length": 64,
+      "location": [
+        -29.5,
+        -0
+      ],
+      "style": "MIDLINE",
+      "width": 21
+    }
+  ],
+  "height": 60,
+  "hullId": "shpe_starhawk_mech",
+  "hullName": "Starhawk (M)",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0.5,
+    0
+  ],
+  "shieldRadius": 0,
+  "spriteName": "graphics/ships/shpe_starhawk_mech.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        21,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 303,
+      "id": "WS0002",
+      "locations": [
+        4,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 53,
+      "id": "WS0003",
+      "locations": [
+        -11.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 44
+}

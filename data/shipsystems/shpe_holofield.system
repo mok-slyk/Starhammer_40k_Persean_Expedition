@@ -1,0 +1,20 @@
+{
+	"id":"shpe_holofield",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"mok_slyk.shpe.scripts.shipsystems.HolofieldAi",
+	"statsScript":"mok_slyk.shpe.scripts.shipsystems.HolofieldStats",
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.25,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_damper",
+	"loopSound":"system_damper_loop",
+	"deactivateSound":"system_damper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}

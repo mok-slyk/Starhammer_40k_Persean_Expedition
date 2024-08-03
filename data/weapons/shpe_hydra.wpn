@@ -1,0 +1,45 @@
+{
+  "animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.15,
+					   "particleCount":7,
+					   "particleColor":[255,240,165,200]},
+  "barrelMode": "LINKED",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_flakturret_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    14,
+    5.5,
+    14,
+    -5.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_flakturret_hardpoint_base.png",
+  "id": "shpe_hydra",
+  "interruptibleBurst": true,
+  "projectileSpecId": "shpe_hydra_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/shpe_flakturret_turret_recoil.png",
+  "turretOffsets": [
+    13.5,
+    5.5,
+    13.5,
+    -5.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_flakturret_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 2,
+  "fireSoundTwo":"light_machinegun_fire",
+  "renderHints":[RENDER_BARREL_BELOW]
+}

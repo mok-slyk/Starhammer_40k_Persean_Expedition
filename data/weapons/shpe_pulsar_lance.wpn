@@ -1,0 +1,55 @@
+{
+  "beamFireOnlyOnFullCharge": true,
+  "beamEffect":"mok_slyk.shpe.scripts.PulsarLanceOnFireEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    240,
+    255,
+    240,
+    230
+  ],
+  "fringeColor": [
+    155,
+    255,
+    120,
+    180
+  ],
+  "glowColor": [
+    155,
+    255,
+    130,
+    180
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_pulsar_lance_hardpoint_glow.png",
+  "hardpointOffsets": [
+    49,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_pulsar_lance_hardpoint_base.png",
+  "hitGlowRadius": 70,
+  "id": "shpe_pulsar_lance",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": [
+      "graphics/fx/shpe_star_beam_fringe.png",
+      "graphics/fx/shpe_star_beam_core.png"
+    ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_pulsar_lance_turret_glow.png",
+  "turretOffsets": [
+    39,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_pulsar_lance_turret_base.png",
+  "type": "ENERGY",
+  "fireSoundOne": "kinetic_blaster_fire",
+  "width": 10
+}

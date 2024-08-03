@@ -1,0 +1,22 @@
+{
+  "displayName": "Wraithfighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_hemlock",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_hemlock_Wraithfighter",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "riftlance",
+        "WS0003": "riftlance"
+      }
+    }
+  ],
+  "wings": []
+}

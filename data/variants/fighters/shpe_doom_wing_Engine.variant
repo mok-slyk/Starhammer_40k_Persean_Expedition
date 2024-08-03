@@ -1,0 +1,21 @@
+{
+  "displayName": "Daemon Engine",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_doom_wing",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_doom_wing_Engine",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shpe_flame_cannon"
+      }
+    }
+  ],
+  "wings": []
+}

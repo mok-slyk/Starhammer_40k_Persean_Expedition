@@ -1,0 +1,109 @@
+{
+  "bounds": [
+    -5,
+    17,
+    1,
+    5,
+    7.5,
+    5,
+    8,
+    11,
+    11.5,
+    12,
+    18.5,
+    -0,
+    11.5,
+    -12,
+    8,
+    -11,
+    7.5,
+    -5,
+    1,
+    -5,
+    -5,
+    -17,
+    -19,
+    -0
+  ],
+  "builtInWings": [],
+  "center": [
+    18,
+    20
+  ],
+  "collisionRadius": 35.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -20,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -20,
+        0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 40,
+  "hullId": "shpe_fury",
+  "hullName": "Fury",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 29,
+  "spriteName": "graphics/ships/shpe_fury.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 118,
+      "id": "WS0001",
+      "locations": [
+        -5.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 32,
+      "id": "WS0002",
+      "locations": [
+        -1,
+        14
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 32,
+      "id": "WS0003",
+      "locations": [
+        -1,
+        -14
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 36
+}

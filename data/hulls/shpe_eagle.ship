@@ -1,0 +1,91 @@
+{
+  "bounds": [
+    17,
+    3,
+    -1,
+    7.5,
+    9.5,
+    17.5,
+    -4,
+    20.5,
+    -24,
+    -0,
+    -4,
+    -20.5,
+    9.5,
+    -17.5,
+    -1,
+    -7.5,
+    17,
+    -3
+  ],
+  "builtInWings": [],
+  "center": [
+    22,
+    25
+  ],
+  "collisionRadius": 34,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 20.5,
+      "location": [
+        -17.5,
+        4.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 20.5,
+      "location": [
+        -17.5,
+        -4.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    }
+  ],
+  "height": 50,
+  "hullId": "shpe_eagle",
+  "hullName": "Eagle",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 30,
+  "spriteName": "graphics/ships/shpe_eagle.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        3.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        15,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 44
+}

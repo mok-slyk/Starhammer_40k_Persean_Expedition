@@ -1,0 +1,65 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "shpe_gothic",
+    "hullMods": [
+        "shpe_barrage_warheads",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_gothic_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_titanforge_lance",
+                "WS0011": "shpe_titanforge_lance",
+                "WS0010": "shpe_titanforge_lance",
+                "WS0009": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_barragetorp_reference",
+                "BIT4": "shpe_barragetorp_reference",
+                "BIT3": "shpe_barragetorp_reference",
+                "BIT2": "shpe_barragetorp_reference",
+                "BIT1": "shpe_barragetorp_reference",
+                "BIT0": "shpe_barragetorp_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "shpe_starbreaker_lance",
+                "WS0013": "shpe_starbreaker_lance",
+                "WS0016": "shpe_starbreaker_lance",
+                "WS0015": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+                "WS0003": "shpe_lascannon",
+                "WS0002": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+                "WS0005": "shpe_lascannon",
+                "WS0004": "shpe_lascannon",
+                "WS0007": "shpe_lascannon",
+                "WS0006": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

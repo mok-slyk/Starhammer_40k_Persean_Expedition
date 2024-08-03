@@ -1,0 +1,20 @@
+{
+	"id":"shpe_baleflamer_shot",
+	"specClass":"projectile",
+	"onHitEffect":"mok_slyk.shpe.scripts.FlamerEffect",
+	
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":40.0,
+	"width":30.0,
+	"hitGlowRadius":0,
+	"fadeTime":0.25,
+	"fringeColor":[255,140,80,60],
+	"coreColor":[255,190,100,60],
+	#"coreColor":[255,255,230,50],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+	
+}

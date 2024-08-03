@@ -1,0 +1,28 @@
+{
+  "animationType": "NONE",
+  "everyFrameEffect":"mok_slyk.shpe.scripts.SonicChargeOnFireEffect",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "id": "shpe_sonic_charge",
+  "projectileSpecId": "shpe_sonic_charge_proj",
+  "requiresFullCharge": false,
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
+}

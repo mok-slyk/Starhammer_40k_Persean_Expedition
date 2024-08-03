@@ -1,0 +1,84 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 14,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "shpe_mars",
+    "hullMods": [
+        "advancedoptics",
+        "defensive_targeting_array",
+        "expanded_deck_crew",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_mars_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIN0": "shpe_marsnova",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB7": "shpe_marsvi_builtin",
+                "BIB6": "shpe_marsvi_builtin",
+                "BIB5": "shpe_marsvi_builtin",
+                "BIB4": "shpe_marsvi_builtin",
+                "BIB3": "shpe_marsvi_builtin",
+                "BIB2": "shpe_marsvi_builtin",
+                "BIB1": "shpe_marsvi_builtin",
+                "BIB0": "shpe_marsvi_builtin",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "shpe_lascannon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+                "WS0003": "shpe_lascannon",
+                "WS0007": "shpe_lascannon",
+                "WS0005": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_fury_Interceptor_wing",
+        "shpe_fury_Interceptor_wing",
+    ],
+    "modules": [],
+}

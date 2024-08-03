@@ -1,0 +1,379 @@
+{
+  "bounds": [
+    -146,
+    2.5,
+    -157,
+    5.5,
+    -157,
+    13.5,
+    -144,
+    15,
+    -142.5,
+    19,
+    -83.5,
+    19,
+    -65,
+    17,
+    -65.5,
+    28,
+    -83,
+    30.5,
+    -83.5,
+    35,
+    -10.5,
+    35,
+    -10.5,
+    29.5,
+    -30,
+    27.5,
+    -30.5,
+    16.5,
+    -16,
+    16.5,
+    -9.5,
+    23.5,
+    57,
+    22.5,
+    70,
+    18.5,
+    109.5,
+    18,
+    157.5,
+    -0,
+    109.5,
+    -18,
+    70,
+    -18.5,
+    57,
+    -22.5,
+    -9.5,
+    -23.5,
+    -16,
+    -16.5,
+    -30.5,
+    -16.5,
+    -30,
+    -27.5,
+    -10.5,
+    -29.5,
+    -10.5,
+    -35,
+    -83.5,
+    -35,
+    -83,
+    -30.5,
+    -65.5,
+    -28,
+    -65,
+    -17,
+    -83.5,
+    -19,
+    -142.5,
+    -19,
+    -144,
+    -15,
+    -157,
+    -13.5,
+    -157,
+    -5.5,
+    -146,
+    -2.5
+  ],
+  "builtInMods": [
+    "shpe_broadside_batteries",
+    "shpe_variable_torpedo_tubes"
+  ],
+  "builtInWeapons": {
+    "WS0007": "shpe_marsvi_builtin",
+    "WS0008": "shpe_marsvi_builtin",
+    "WS0009": "shpe_marsvi_builtin",
+    "WS0010": "shpe_marsvi_builtin",
+    "WS0011": "shpe_marsvi_builtin",
+    "WS0012": "shpe_marsvi_builtin",
+    "WS0013": "shpe_marsvi_builtin",
+    "WS0014": "shpe_marsvi_builtin",
+    "WS0015": "shpe_torptube",
+    "WS0016": "shpe_torptube"
+  },
+  "builtInWings": [],
+  "center": [
+    36,
+    158.5
+  ],
+  "collisionRadius": 221,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 44.5,
+      "location": [
+        -157.5,
+        9
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 44.5,
+      "location": [
+        -157.5,
+        -9
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -145,
+        11
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -145,
+        -11
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -146.5,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -146.5,
+        0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 317,
+  "hullId": "shpe_endeavour",
+  "hullName": "Endeavour",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 201,
+  "spriteName": "graphics/ships/shpe_endeavour.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        111.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        51.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        9.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0004",
+      "locations": [
+        -93.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 98,
+      "arc": 212,
+      "id": "WS0005",
+      "locations": [
+        -116.5,
+        14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -98,
+      "arc": 212,
+      "id": "WS0006",
+      "locations": [
+        -116.5,
+        -14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "WS0007",
+      "locations": [
+        -0.5,
+        23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "WS0008",
+      "locations": [
+        -0.5,
+        -23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "WS0009",
+      "locations": [
+        15.5,
+        23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "WS0010",
+      "locations": [
+        15.5,
+        -23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "WS0011",
+      "locations": [
+        31.5,
+        23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "WS0012",
+      "locations": [
+        31.5,
+        -23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "WS0013",
+      "locations": [
+        47.5,
+        23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "WS0014",
+      "locations": [
+        47.5,
+        -23
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 7,
+      "id": "WS0015",
+      "locations": [
+        124.5,
+        -8
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 7,
+      "id": "WS0016",
+      "locations": [
+        124.5,
+        8
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 72
+}

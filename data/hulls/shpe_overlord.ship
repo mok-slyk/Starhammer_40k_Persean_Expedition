@@ -1,0 +1,528 @@
+{
+  "bounds": [
+    -202.5,
+    30,
+    -145.5,
+    32.5,
+    -137.5,
+    48,
+    -117,
+    47.5,
+    -102,
+    77.5,
+    -69,
+    74.5,
+    -70.5,
+    62,
+    -28,
+    53,
+    -71,
+    49,
+    -71,
+    35.5,
+    -42.5,
+    35.5,
+    -24.5,
+    25.5,
+    52.5,
+    27,
+    120.5,
+    27.5,
+    123.5,
+    30.5,
+    159,
+    25,
+    183.5,
+    4.5,
+    224.5,
+    -0,
+    183.5,
+    -4.5,
+    159,
+    -25,
+    123.5,
+    -30.5,
+    120.5,
+    -27.5,
+    52.5,
+    -27,
+    -24.5,
+    -25.5,
+    -42.5,
+    -35.5,
+    -71,
+    -35.5,
+    -71,
+    -49,
+    -28,
+    -53,
+    -70.5,
+    -62,
+    -69,
+    -74.5,
+    -102,
+    -77.5,
+    -117,
+    -47.5,
+    -137.5,
+    -48,
+    -145.5,
+    -32.5,
+    -202.5,
+    -30
+  ],
+  "builtInMods": [
+    "shpe_broadside_batteries",
+    "shpe_variable_torpedo_tubes"
+  ],
+  "builtInWings": [],
+  "center": [
+    80,
+    204
+  ],
+  "collisionRadius": 303,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 85.5,
+      "location": [
+        -203.5,
+        -0.5
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 85.5,
+      "location": [
+        -204,
+        19
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": -180,
+      "contrailSize": 23,
+      "length": 85.5,
+      "location": [
+        -204,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 85.5,
+      "location": [
+        -198,
+        8.5
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": -180,
+      "contrailSize": 23,
+      "length": 85.5,
+      "location": [
+        -198,
+        -8.5
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    }
+  ],
+  "height": 440,
+  "hullId": "shpe_overlord",
+  "hullName": "Overlord",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 266.5,
+  "spriteName": "graphics/ships/shpe_overlord.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        134,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        -98,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -65,
+        30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [
+        -65,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 270,
+      "id": "WS0006",
+      "locations": [
+        -102,
+        52
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 270,
+      "id": "WS0007",
+      "locations": [
+        -102,
+        -52
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 270,
+      "id": "WS0008",
+      "locations": [
+        -139,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB0",
+      "locations": [
+        112,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB1",
+      "locations": [
+        112,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB2",
+      "locations": [
+        95,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB3",
+      "locations": [
+        95,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB4",
+      "locations": [
+        78,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB5",
+      "locations": [
+        78,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB6",
+      "locations": [
+        61,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB7",
+      "locations": [
+        61,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB8",
+      "locations": [
+        40,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB9",
+      "locations": [
+        40,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB10",
+      "locations": [
+        23.5,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB11",
+      "locations": [
+        23.5,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB12",
+      "locations": [
+        6,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB13",
+      "locations": [
+        6,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 30,
+      "id": "BIB14",
+      "locations": [
+        -11,
+        27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 30,
+      "id": "BIB15",
+      "locations": [
+        -11,
+        -27.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        -23,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0009",
+      "locations": [
+        31,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT4",
+      "locations": [
+        153.5,
+        -18.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT4",
+      "locations": [
+        153.5,
+        18.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT1",
+      "locations": [
+        158.5,
+        -18.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT0",
+      "locations": [
+        158.5,
+        18.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT3",
+      "locations": [
+        155,
+        -21.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT2",
+      "locations": [
+        155,
+        21.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 160
+}

@@ -1,0 +1,34 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "shpe_sword",
+    "hullMods": [
+        "auxiliarythrusters",
+        "extendedshieldemitter",
+        "fluxdistributor",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_sword_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "shpe_marsvi",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

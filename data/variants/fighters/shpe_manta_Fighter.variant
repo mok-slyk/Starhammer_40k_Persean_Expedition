@@ -1,0 +1,53 @@
+{
+  "displayName": "Missile Destroyer",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_manta",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_manta_Fighter",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shpe_flakk"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "shpe_light_burst",
+        "WS0003": "shpe_light_burst",
+        "WS0004": "shpe_light_burst",
+        "WS0005": "shpe_light_burst",
+        "WS0012": "shpe_light_burst",
+        "WS0013": "shpe_light_burst",
+        "WS0014": "shpe_light_burst",
+        "WS0015": "shpe_light_burst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "shpe_light_ion",
+        "WS0007": "shpe_light_ion",
+        "WS0008": "shpe_light_ion",
+        "WS0009": "shpe_light_ion"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "shpe_railgun",
+        "WS0011": "shpe_railgun"
+      }
+    }
+  ],
+  "wings": []
+}

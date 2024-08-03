@@ -1,0 +1,59 @@
+{
+  "beamEffect": "mok_slyk.shpe.scripts.CyclicIonOnFireEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    120
+  ],
+  "fireSoundTwo": "phase_beam_loop",
+  "fringeColor": [
+    50,
+    60,
+    155,
+    255
+  ],
+  "glowColor": [
+    110,
+    150,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hitGlowRadius": 5,
+  "id": "shpe_light_ion",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 512,
+  "textureType": [
+    "graphics/fx/shpe_cyclic_beam_fringe.png",
+    "graphics/fx/shpe_cyclic_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY",
+  "width": 10
+}

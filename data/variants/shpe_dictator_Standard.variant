@@ -1,0 +1,69 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 27,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "shpe_dictator",
+    "hullMods": [
+        "pointdefenseai",
+        "shpe_seeking_warheads",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_dictator_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_marsvi",
+                "WS0007": "shpe_marsvi",
+                "WS0006": "shpe_marsvi",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_seekingtorp_reference",
+                "BIT4": "shpe_seekingtorp_reference",
+                "BIT3": "shpe_seekingtorp_reference",
+                "BIT2": "shpe_seekingtorp_reference",
+                "BIT1": "shpe_seekingtorp_reference",
+                "BIT0": "shpe_seekingtorp_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB7": "shpe_marsvi_builtin",
+                "BIB6": "shpe_marsvi_builtin",
+                "BIB5": "shpe_marsvi_builtin",
+                "BIB4": "shpe_marsvi_builtin",
+                "BIB3": "shpe_marsvi_builtin",
+                "BIB2": "shpe_marsvi_builtin",
+                "BIB1": "shpe_marsvi_builtin",
+                "BIB0": "shpe_marsvi_builtin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hydra",
+                "WS0002": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_fury_Interceptor_wing",
+        "shpe_fury_Interceptor_wing",
+    ],
+    "modules": [],
+}

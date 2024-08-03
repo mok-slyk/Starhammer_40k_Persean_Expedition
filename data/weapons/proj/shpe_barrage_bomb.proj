@@ -1,0 +1,23 @@
+{
+	"id":"shpe_barrage_bomb",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"size":[8,8],	
+	"center":[4,4],
+	"collisionRadius":16,
+	"collisionClass":"PROJECTILE_FIGHTER",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"explosionColor":[255,195,0,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":225, # purely visual
+	"glowColor":[255,200,160,90],
+	"glowRadius":25,
+	"length":50.0,
+	"width":3.5,
+	"hitGlowRadius":95,
+	"fadeTime":0.2,
+	"fringeColor":[220,165,120,125],
+	"coreColor":[255,225,150,255],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/mortar_round.png",
+}

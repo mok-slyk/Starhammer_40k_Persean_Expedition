@@ -1,0 +1,53 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "hellbore_fire",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_d_cannon_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointOffsets": [
+    24.5,
+    -0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_d_cannon_hardpoint_base.png",
+  "id": "shpe_d_cannon",
+  "muzzleFlashSpec": {
+    "length": 65,
+    "particleColor": [
+      250,
+      200,
+      255,
+      245
+    ],
+    "particleCount": 90,
+    "particleDuration": 0.75,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "spread": 15
+  },
+  "projectileSpecId": "shpe_d_cannon_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_d_cannon_turret_glow.png",
+  "turretGunSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretOffsets": [
+    20,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_d_cannon_turret_base.png",
+  "mountTypeOverride":"HYBRID",
+  "type": "ENERGY"
+}

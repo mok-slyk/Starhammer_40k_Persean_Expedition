@@ -1,0 +1,41 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "needler_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    19,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_shuriken_cannon_hardpoint_base.png",
+  "id": "shpe_shuriken_cannon",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "particleColor": [
+      255,
+      255,
+      255,
+      30
+    ],
+    "particleCount": 4,
+    "particleDuration": 0.2,
+    "particleSizeMin": 6,
+    "particleSizeRange": 8,
+    "spread": 5
+  },
+  "projectileSpecId": "shpe_shuriken_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    17,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_shuriken_cannon_turret_base.png",
+  "type": "BALLISTIC"
+}

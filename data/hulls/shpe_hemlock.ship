@@ -1,0 +1,94 @@
+{
+  "bounds": [
+    -19.5,
+    12,
+    -10,
+    24,
+    4,
+    4,
+    10.5,
+    6.5,
+    24,
+    -0,
+    10.5,
+    -6.5,
+    4,
+    -4,
+    -10,
+    -24,
+    -19.5,
+    -12
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "center": [
+    27,
+    26
+  ],
+  "collisionRadius": 46.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 37.5,
+      "location": [
+        -19,
+        7.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 37.5,
+      "location": [
+        -19,
+        -7.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    }
+  ],
+  "height": 52,
+  "hullId": "shpe_hemlock",
+  "hullName": "Hemlock",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 40.5,
+  "spriteName": "graphics/ships/shpe_hemlock.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0002",
+      "locations": [
+        3.5,
+        11.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 15,
+      "id": "WS0003",
+      "locations": [
+        3.5,
+        -11.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 54
+}

@@ -1,0 +1,89 @@
+{
+  "bounds": [
+    -11.5,
+    -6,
+    7.5,
+    -15.5,
+    7.5,
+    15.5,
+    -11.5,
+    6
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+	"shpe_flame_aura"
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_baleflamer",
+    "WS0002": "shpe_heldrake_deco"
+  },
+  "builtInWings": [],
+  "center": [
+    29,
+    23
+  ],
+  "collisionRadius": 38.5,
+  "engineSlots": [
+    {
+      "angle": 155,
+      "contrailSize": 4,
+      "length": 14.5,
+      "location": [
+        -11,
+        3
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    },
+    {
+      "angle": -155,
+      "contrailSize": 4,
+      "length": 14.5,
+      "location": [
+        -11,
+        -3
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    }
+  ],
+  "height": 46,
+  "hullId": "shpe_heldrake",
+  "hullName": "Heldrake",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 48,
+  "spriteName": "graphics/ships/shpe_heldrake_body.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 46,
+      "id": "WS0001",
+      "locations": [
+        3,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 46,
+      "id": "WS0002",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 58
+}

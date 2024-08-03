@@ -1,0 +1,61 @@
+{
+  "id": "shpe_titanforge_lance",
+  "projectileSpecId": "shpe_titanforge_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "turretSprite": "graphics/weapons/shpe_titanforge_lance_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_titanforge_lance_turret_under.png",
+  "hardpointGlowSprite": "graphics/weapons/shpe_titanforge_lance_hardpoint_glow.png",
+  "hardpointSprite": "graphics/weapons/shpe_titanforge_lance_hardpoint_base.png",
+  "turretGlowSprite": "graphics/weapons/shpe_titanforge_lance_turret_glow.png",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    28,
+    3.5,
+    28,
+    -3.5
+  ],
+  "turretOffsets": [
+    22.5,
+    3.5,
+    22.5,
+    -3.5
+  ],
+  "fireSoundTwo": "heavy_blaster_fire",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  #"animationType": "GLOW_AND_FLASH",
+  "animationType": "GLOW",
+  "barrelMode": "LINKED",
+  "glowColor": [
+     255,
+     220,
+     120,
+     180
+  ],
+  #"muzzleFlashSpec": {
+  #  "length": 50,
+  #  "particleColor": [
+  #    255,
+  #    220,
+  #    120,
+  #    140
+  #  ],
+  #  "particleCount": 25,
+  #  "particleDuration": 0.4,
+  #  "particleSizeMin": 15,
+  #  "particleSizeRange": 10,
+  #  "spread": 8
+  #},
+}

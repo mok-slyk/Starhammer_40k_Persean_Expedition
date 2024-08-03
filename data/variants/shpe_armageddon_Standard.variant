@@ -1,0 +1,83 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 19,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "shpe_armageddon",
+    "hullMods": [
+        "high_scatter_amp",
+        "shpe_stygies_shell",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_armageddon_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "shpe_titanforge_lance",
+                "WS0013": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_plasmatorp_reference",
+                "BIT4": "shpe_plasmatorp_reference",
+                "BIT3": "shpe_plasmatorp_reference",
+                "BIT2": "shpe_plasmatorp_reference",
+                "BIT1": "shpe_plasmatorp_reference",
+                "BIT0": "shpe_plasmatorp_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_starbreaker_lance",
+                "WS0011": "shpe_starbreaker_lance",
+                "WS0010": "shpe_starbreaker_lance",
+                "WS0009": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB6": "shpe_stygies_reference",
+                "BIB4": "shpe_stygies_reference",
+                "BIB2": "shpe_stygies_reference",
+                "BIB0": "shpe_stygies_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB1": "shpe_stygies_reference",
+                "BIB3": "shpe_stygies_reference",
+                "BIB5": "shpe_stygies_reference",
+                "BIB7": "shpe_stygies_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hydra",
+                "WS0003": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0006": "shpe_hydra",
+                "WS0007": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

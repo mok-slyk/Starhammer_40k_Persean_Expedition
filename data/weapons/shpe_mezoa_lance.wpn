@@ -1,0 +1,61 @@
+{
+  "id": "shpe_mezoa_lance",
+  "specClass": "projectile",
+  "projectileSpecId": "shpe_mezoa_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/shpe_titanforge_lance_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/shpe_titanforge_lance_turret_glow.png",
+  "turretUnderSprite": "graphics/weapons/shpe_titanforge_lance_turret_under.png",
+  "hardpointSprite": "graphics/weapons/shpe_titanforge_lance_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/shpe_titanforge_lance_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    160,
+    120,
+    180
+  ],
+  "turretOffsets": [
+    22,
+    0,
+    19.5,
+    3.5,
+    19.5,
+    -3.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    25,
+    3.5,
+    25,
+    -3.5,
+    27.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "spread": 10,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "particleDuration": 0.6,
+    "particleCount": 15,
+    "particleColor": [
+      255,
+      220,
+      120,
+      180
+    ]
+  },
+  "fireSoundTwo": "heavy_blaster_fire"
+}

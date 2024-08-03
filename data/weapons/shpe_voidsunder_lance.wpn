@@ -1,0 +1,57 @@
+{
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fireSoundOne": "heavy_blaster_fire",
+  "fringeColor": [
+    230,
+    155,
+    0,
+    255
+  ],
+  "glowColor": [
+    255,
+    120,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointOffsets": [
+    4,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hitGlowRadius": 0,
+  "id": "shpe_voidsunder_lance",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "MEDIUM",
+  "specClass": "beam",
+  "textureScrollSpeed": 128,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretOffsets": [
+    8,
+    -0.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY",
+  "width": 32
+}

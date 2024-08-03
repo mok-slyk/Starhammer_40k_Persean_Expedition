@@ -1,0 +1,308 @@
+{
+  "bounds": [
+    -30.5,
+    12.5,
+    -34,
+    13,
+    -25.5,
+    29,
+    -30,
+    44.5,
+    -15,
+    44,
+    18,
+    9.5,
+    23.5,
+    13,
+    25.5,
+    6.5,
+    30.5,
+    11,
+    34,
+    0,
+    34,
+    -0,
+    30.5,
+    -11,
+    25.5,
+    -6.5,
+    23.5,
+    -13,
+    18,
+    -9.5,
+    -15,
+    -44,
+    -30,
+    -44.5,
+    -25.5,
+    -29,
+    -34,
+    -13,
+    -30.5,
+    -12.5
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_flakk",
+    "WS0002": "shpe_light_burst",
+    "WS0003": "shpe_light_burst",
+    "WS0004": "shpe_light_burst",
+    "WS0005": "shpe_light_burst",
+    "WS0006": "shpe_light_ion",
+    "WS0007": "shpe_light_ion",
+    "WS0008": "shpe_light_ion",
+    "WS0009": "shpe_light_ion",
+    "WS0010": "shpe_railgun",
+    "WS0011": "shpe_railgun",
+    "WS0012": "shpe_light_burst",
+    "WS0013": "shpe_light_burst",
+    "WS0014": "shpe_light_burst",
+    "WS0015": "shpe_light_burst"
+  },
+  "builtInWings": [],
+  "center": [
+    46,
+    35
+  ],
+  "collisionRadius": 92.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -33.5,
+        17
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -33.5,
+        -17
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -30,
+        23.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -30,
+        -23.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    }
+  ],
+  "height": 70,
+  "hullId": "shpe_manta",
+  "hullName": "Manta",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 77,
+  "spriteName": "graphics/ships/shpe_manta.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        30,
+        10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        30,
+        -10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        23,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [
+        23,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 139,
+      "id": "WS0001",
+      "locations": [
+        4,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0006",
+      "locations": [
+        14,
+        -17
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0007",
+      "locations": [
+        14,
+        17
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0008",
+      "locations": [
+        12,
+        -20
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0009",
+      "locations": [
+        12,
+        20
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0010",
+      "locations": [
+        10,
+        -23
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0011",
+      "locations": [
+        10,
+        23
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0012",
+      "locations": [
+        -4.5,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0013",
+      "locations": [
+        -4.5,
+        30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -140.5,
+      "arc": 180,
+      "id": "WS0014",
+      "locations": [
+        -23.5,
+        -33.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 140.5,
+      "arc": 180,
+      "id": "WS0015",
+      "locations": [
+        -23.5,
+        33.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 92
+}

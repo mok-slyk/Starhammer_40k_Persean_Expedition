@@ -1,0 +1,60 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 14,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "shpe_endeavour",
+    "hullMods": [
+        "escort_package",
+        "shpe_melta_warheads",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_endeavour_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_titanforge_lance",
+                "WS0002": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0016": "shpe_torptube",
+                "WS0015": "shpe_torptube",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_marsvi_builtin",
+                "WS0011": "shpe_marsvi_builtin",
+                "WS0014": "shpe_marsvi_builtin",
+                "WS0013": "shpe_marsvi_builtin",
+                "WS0010": "shpe_marsvi_builtin",
+                "WS0009": "shpe_marsvi_builtin",
+                "WS0008": "shpe_marsvi_builtin",
+                "WS0007": "shpe_marsvi_builtin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+                "WS0006": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

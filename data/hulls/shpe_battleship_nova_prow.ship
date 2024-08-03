@@ -1,0 +1,56 @@
+{
+  "bounds": [
+    -38.5,
+    27.5,
+    -68,
+    35.5,
+    -68,
+    40.5,
+    -5.5,
+    37,
+    28.5,
+    23,
+    48.5,
+    6,
+    54.5,
+    -0,
+    48.5,
+    -6,
+    28.5,
+    -23,
+    -5.5,
+    -37,
+    -68,
+    -40.5,
+    -68,
+    -35.5,
+    -38.5,
+    -27.5,
+    -17.5,
+    -0
+  ],
+  "builtInMods": [
+    "always_detaches"
+  ],
+  "builtInWings": [],
+  "center": [
+    42,
+    69.5
+  ],
+  "collisionRadius": 103,
+  "engineSlots": [],
+  "height": 160,
+  "hullId": "shpe_battleship_nova_prow",
+  "hullName": "Prow",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 87.5,
+  "spriteName": "graphics/ships/shpe_battleship_nova_prow.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 84
+}

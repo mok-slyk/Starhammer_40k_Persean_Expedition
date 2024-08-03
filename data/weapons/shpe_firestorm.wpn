@@ -1,0 +1,69 @@
+{
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "convergeOnPoint": true,
+  "coreColor": [
+    255,
+    255,
+    255,
+    100
+  ],
+  "fireSoundOne": "guardian_pd_fire",
+  "fringeColor": [
+    155,
+    155,
+    50,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_firestorm_hardpoint_glow.png",
+  "hardpointOffsets": [
+    18,
+    2,
+    20,
+    -1,
+    18,
+    -4
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_firestorm_hardpoint_base.png",
+  "hitGlowRadius": 0,
+  "id": "shpe_firestorm",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 292,
+  "barrelMode":"ALTERNATING",
+  "textureType": SMOOTH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_firestorm_turret_glow.png",
+  "turretOffsets": [
+    14,
+    2,
+    16,
+    -1,
+    14,
+    -4
+  ],
+  "turretSprite": "graphics/weapons/shpe_firestorm_turret_base.png",
+  "type": "ENERGY",
+  "width": 6
+}

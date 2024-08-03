@@ -1,0 +1,17 @@
+{
+	"id":"shpe_screamer_bite",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/weapons/shpe_empty_weapon.png",
+	"hardpointSprite":"graphics/weapons/shpe_empty_weapon.png",
+	"turretOffsets":[5, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[5, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"NONE",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"projectileSpecId":"shpe_screamer_shot",  # projectile that will be fired
+	"fireSoundTwo":"vulcan_cannon_fire",	
+}

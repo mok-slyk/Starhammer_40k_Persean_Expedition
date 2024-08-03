@@ -1,0 +1,50 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "shpe_endurance",
+    "hullMods": [
+        "advancedoptics",
+        "escort_package",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_endurance_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "shpe_starbreaker_lance",
+                "WS0009": "shpe_starbreaker_lance",
+                "WS0008": "shpe_starbreaker_lance",
+                "WS0007": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "shpe_torptube",
+                "WS0011": "shpe_torptube",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+                "WS0003": "shpe_lascannon",
+                "WS0002": "shpe_lascannon",
+                "WS0005": "shpe_lascannon",
+                "WS0004": "shpe_lascannon",
+                "WS0006": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

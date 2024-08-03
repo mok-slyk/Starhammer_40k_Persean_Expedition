@@ -1,0 +1,37 @@
+{
+  "animationType": "GLOW",
+  "autocharge": false,
+  "barrelMode": "ALTERNATING",
+  "everyFrameEffect": "mok_slyk.shpe.scripts.FlamerEffect",
+  "glowColor": [
+    255,
+    225,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointOffsets": [
+    18.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_baleflamer_hardpoint_base.png",
+  "id": "shpe_flame_cannon",
+  "projectileSpecId": "shpe_flame_cannon_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "interruptibleBurst":true,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretOffsets": [
+    17,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_baleflamer_turret_base.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,35 @@
+{
+  "displayName": "Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_starhawk",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_starhawk_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shpe_krak"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "shpe_lascannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "bomb"
+      }
+    }
+  ],
+  "wings": []
+}

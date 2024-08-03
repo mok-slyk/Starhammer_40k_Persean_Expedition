@@ -1,0 +1,18 @@
+id,trigger,conditions,script,text,options,notes
+#Chaos Cummon,,,,,,
+shpe_csStartHasCrew,shpeChaosSummon,,,"""You prepare to make a blood sacrifice to call upon the powers of the warp""","shpe_cs_confirmSacrifice:""Make the sacrifice (Costs 100 Crew)""",
+shpe_csStartNoCrew,shpeChaosSummon,,,,,
+shpe_csConfirmSacrifice,DialogOptionSelected,$option == shpe_cs_confirmSacrifice,,"""The cries of the dying are drowned out by the screaming of unseen warp entities whirling about your ship.
+
+Make your demand.""",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

@@ -1,0 +1,16 @@
+{
+  "displayName": "Base",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "shpe_apocalypse",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_apocalypse_Hull",
+  "weaponGroups": [],
+  "modules": [
+		{"PROW": "shpe_battleship_nova_prow_Variant"}
+	],
+  "wings": []
+}

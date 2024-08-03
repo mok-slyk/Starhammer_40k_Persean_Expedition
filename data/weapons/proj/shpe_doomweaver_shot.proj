@@ -1,0 +1,18 @@
+{
+	"id":"shpe_doomweaver_shot",
+	"onFireEffect":"mok_slyk.shpe.scripts.DoomweaverEffect",
+	"everyFrameEffect":"mok_slyk.shpe.scripts.DoomweaverEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":540.0,
+	"hitGlowRadius":5,
+	"width":1.5,
+	"fadeTime":2,
+	"fringeColor":[240,220,220,200],
+	"coreColor":[245,245,245,80],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shpe_filament.png"
+}
