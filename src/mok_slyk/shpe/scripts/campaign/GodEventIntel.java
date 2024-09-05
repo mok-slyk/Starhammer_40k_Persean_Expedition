@@ -88,7 +88,7 @@ public class GodEventIntel extends BaseEventIntel {
                 if (esd.id == Stage.MARK) title = "Mark of Khorne"; //hullmod: reduced range, increased damage
                 if (esd.id == Stage.DEVOTION) title = "Devotion to Khorne"; //skill: piloted ship: damage dealt increases damage for this combat to a maximum of +100%
                 if (esd.id == Stage.GIFT_1) title = "Furious Vengeance"; //buff to mark: effect doubled when below 60% hull
-                if (esd.id == Stage.GIFT_2) title = "World Eaters Arsenal"; //ursus claw and butcher cannon
+                if (esd.id == Stage.GIFT_2) title = "World Eaters Arsenal"; //ursus claw and butcher cannon + gorestorm/daemongore/ichor cannon
                 if (esd.id == Stage.GIFT_3) title = "Demonships of Khorne";
                 if (esd.id == Stage.GIFT_4) title = "Exalted Champion of Khorne"; //player skill: piloted ship (and all ships with reckless officer at 50%):
                 break;
@@ -104,17 +104,17 @@ public class GodEventIntel extends BaseEventIntel {
                 if (esd.id == Stage.MARK) title = "Mark of Nurgle"; //hullmod: reduced speed, hull/armor buff, resistance to malfunctions
                 if (esd.id == Stage.DEVOTION) title = "Devotion to Nurgle: "; //skill: regen more hull the lower you get
                 if (esd.id == Stage.GIFT_1) title = "Miasma"; //hullmod: lessens detection range, -5% damage taken
-                if (esd.id == Stage.GIFT_2) title = "Diseased Weaponry"; //plague bombardment surface abillity + hives of nurgle macrobattery hullmod
+                if (esd.id == Stage.GIFT_2) title = "Diseased Weaponry"; //plague bombardment surface ability + hives of nurgle macrobattery hullmod + blighted mawcannon
                 if (esd.id == Stage.GIFT_3) title = "Demonships of Nurgle";
                 if (esd.id == Stage.GIFT_4) title = "Ark of Pestilence"; //hullmod: ship infects close enemies and damages them
                 break;
             case ChaosGodsEventIntel.SLAANESH_I:
                 if (esd.id == Stage.MARK) title = "Mark of Slaanesh"; //hullmod: reduced hull, increased movement speed and fire rate
-                if (esd.id == Stage.DEVOTION) title = "Devotion to Slaanesh"; //skill: all ships:
-                if (esd.id == Stage.GIFT_1) title = "Siren's Summon"; //hullmod: slows close enemies
-                if (esd.id == Stage.GIFT_2) title = "Excessive Warfare"; //bloodlust surface abillity + harvester cannon
+                if (esd.id == Stage.DEVOTION) title = "Devotion to Slaanesh"; //skill: all ships: +5% speed, +fire rate?
+                if (esd.id == Stage.GIFT_1) title = "Siren's Summon"; //hullmod: debuffs close enemies: -speed -accuracy?
+                if (esd.id == Stage.GIFT_2) title = "Excessive Warfare"; //bloodlust surface ability + harvester cannon + tormentor cannon?
                 if (esd.id == Stage.GIFT_3) title = "Demonships of Slaanesh";
-                if (esd.id == Stage.GIFT_4) title = "Veil of Lust"; //hullmod: debuffs ships for a while after you come close to them: -accuray, -damage
+                if (esd.id == Stage.GIFT_4) title = "Exalted Champion of Slaanesh"; //skill: buffs you if you are close to enemies and allies if they are close to you: +speed, +maneuverability, + flux dissipation
                 break;
         }
         final String finalTitle = title;
@@ -213,8 +213,8 @@ public class GodEventIntel extends BaseEventIntel {
                             , "Mark of Slaanesh");
                 }
                 if (stageID == Stage.DEVOTION) {
-                    info.addPara("To earn further favor with Slaanesh you need to fully devote yourself to him. "
-                                    + "Take on his mark to gain the %s skill."
+                    info.addPara("To earn further favor with Slaanesh you need to fully devote yourself to her. "
+                                    + "Take on her mark to gain the %s skill."
                             , opad
                             , h
                             , "Chosen of Slaanesh");

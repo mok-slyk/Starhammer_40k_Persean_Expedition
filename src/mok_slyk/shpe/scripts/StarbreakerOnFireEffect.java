@@ -7,6 +7,8 @@ import com.fs.starfarer.api.combat.OnFireEffectPlugin;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import mok_slyk.shpe.scripts.utils.LanceBeam;
+import org.dark.shaders.light.LightShader;
+import org.dark.shaders.light.StandardLight;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
@@ -47,7 +49,11 @@ public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
                 0.9f,
                 new Color(255, 83, 83)
         );
-
+        //Muzzle Flash Glow:
+        StandardLight flash = new StandardLight(projectile.getSpawnLocation(), (Vector2f) weapon.getShip().getVelocity().scale(0.8f), new Vector2f(), null, 0.3f, 50);
+        flash.setColor(new Color(255, 230, 99));
+        flash.fadeOut(1);
+        LightShader.addLight(flash);
 
          //*/
 

@@ -7,6 +7,8 @@ import com.fs.starfarer.api.combat.OnFireEffectPlugin;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import mok_slyk.shpe.scripts.utils.LanceBeam;
+import org.dark.shaders.light.LightShader;
+import org.dark.shaders.light.StandardLight;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicFakeBeam;
@@ -49,7 +51,11 @@ public class LanceBeamOnFireEffect implements OnFireEffectPlugin {
                 0.9f,
                 new Color(255, 190, 190)
         );
-
+        //Muzzle Flash Glow:
+        StandardLight flash = new StandardLight(projectile.getSpawnLocation(), (Vector2f) weapon.getShip().getVelocity().scale(0.8f), new Vector2f(), null, 0.4f, 50);
+        flash.setColor(new Color(251, 255, 219));
+        flash.fadeOut(1);
+        LightShader.addLight(flash);
 
          //*/
 

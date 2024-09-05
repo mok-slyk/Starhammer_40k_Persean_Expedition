@@ -411,7 +411,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
         return false;
     }
 
-    //RunCode mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.get().addGodProgress(3,20);
+    //RunCode mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.get().addGodProgress(0,20);
     public void addGodProgress(int godID, int prog) {
         gods[godID].setProgress(gods[godID].getProgress()+prog);
     }

@@ -2,6 +2,11 @@ package mok_slyk.shpe.scripts.utils;
 
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
+import org.dark.shaders.light.LightData;
+import org.dark.shaders.light.LightEntry;
+import org.dark.shaders.light.LightShader;
+import org.dark.shaders.light.StandardLight;
+import org.dark.shaders.util.ShaderLib;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
@@ -56,10 +61,15 @@ public class LanceBeam {
             beamEnd = MathUtils.getPoint(start, blendIn + blendOut + 2, angle);
         }
 
+        //Beam Light
+        StandardLight light = new StandardLight(start, beamEnd, drift, drift, null, 0.5f, 30);
+        light.setColor(fringeColorFade);
+        light.fadeOut(fringeFull+fringeFade);
+        LightShader.addLight(light);
+
         //Beam fringe:
 
         // 0.---1===2--.3
-
         drawLanceTrail(
                 engine,
                 start,
