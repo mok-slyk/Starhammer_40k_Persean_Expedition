@@ -42,7 +42,7 @@
     0
   ],
   "barrelMode": "LINKED",
-  "animationType": "GLOW_AND_FLASH",
+  "animationType": "MUZZLE_FLASH",
   "muzzleFlashSpec": {
     "length": 80,
     "spread": 10,

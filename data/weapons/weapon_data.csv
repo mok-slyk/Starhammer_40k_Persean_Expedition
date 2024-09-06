@@ -57,11 +57,13 @@ Pulsar Lance,shpe_pulsar_lance,5,,2000,900,3000,,,0,40,28,5,0.5,5,ENERGY,,300,0.
 Starcannon,shpe_starcannon,4,0,2000,800,,400,,10,15,15,,,,ENERGY,90,,0,3,5,0.3,0,5,1,10,,900,,,5,,,,,,Eldar,,General,,,,,,,,,,0.75
 Firestorm Scatter Laser,shpe_firestorm,3,,2000,800,90,,,0,100,5,,,,ENERGY,,30,0,0.15,0.1,0,,,,,3600,,,,,,,PD,"pd7, beam5",,Eldar,,Point Defense,,,,,,,,,,19.5
 Disruption Cannon,shpe_d_cannon,6,0,2000,900,,400,,10,15,15,,,,HIGH_EXPLOSIVE,120,,0,3,1,,0,15,3,10,,700,,,5,,,,,,Eldar,,Anti Armor,,,,,,,,,,0.75
-Fusion Beamer,shpe_fusion_beamer,4,0,2000,600,,50,,10,15,7,,,,HIGH_EXPLOSIVE,15,,0,10,6,0.03,0,2,3,10,,500,,,5,,,,,,Eldar,,Anti Armor,,,,,,,,,,0.75
+Fusion Beamer,shpe_fusion_beamer,4,0,2000,600,,50,,10,15,7,,,,HIGH_EXPLOSIVE,15,,0,10,6,0.01,0,2,3,10,,500,,,5,,,,,,Eldar,,Anti Armor,,,,,,,,,,0.75
 Sonic Charge,shpe_sonic_charge,2,,200,400,,1200,,50,15,4,5,,,ENERGY,0,,0,1,1,,0,0,0,0,,120,600,4,150,,,"STRIKE, BOMB","he0, no_sell, no_drop, no_drop_salvage",,Eldar,,Strike,,,,,,,,,TRUE,3.5
 Shuriken Cannon,shpe_shuriken_cannon,3,0.3,800,700,,150,,1,20,8,,,,FRAGMENTATION,30,,0,2.5,12,0.05,0,10,0.66,5,,1200,,,10,,,,"pd7, SR",,,,Point Defense,,,,,,,,,,3.65
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Standard Chaos Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Butcher Cannon,shpe_butcher_cannon,1,,300,600,,50,,3,20,5,,,,KINETIC,40,,0,0.6,2,0.1,0,20,3,9,,800,,,20,,,,kinetic7,,,,Anti Shield,,,,,,,,,,2.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Special Chaos Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

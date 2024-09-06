@@ -1,0 +1,54 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "light_dual_autocannon_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    21.5,
+    -2,
+    21.5,
+    2
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_butcher_cannon_hardpoint_base.png",
+  "id": "shpe_butcher_cannon",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      255,
+      120,
+      90,
+      175
+    ],
+    "particleCount": 18,
+    "particleDuration": 0.2,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "spread": 28
+  },
+  "projectileSpecId": "shpe_butcher_shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "specialWeaponGlowHeight": 30,
+  "specialWeaponGlowWidth": 12,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    18,
+    2,
+    18,
+    -2
+  ],
+  "turretSprite": "graphics/weapons/shpe_butcher_cannon_turret_base.png",
+  "type": "BALLISTIC",
+  #"visualRecoil": 7
+}

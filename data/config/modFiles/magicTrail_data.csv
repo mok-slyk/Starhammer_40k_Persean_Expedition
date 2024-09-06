@@ -20,7 +20,7 @@ shpe_starbreaker_trail_glow,shpe_starbreaker_shot,trail_fog,1,0,0.1,0.7,25,15,"[
 shpe_mezoa_trail_core,shpe_mezoa_shot,trail_clean,1,0,0.2,0.5,6,2,"[255,255,255]","[255,255,180]",0.9,5000,0,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_mezoa_trail_glow,shpe_mezoa_shot,trail_fog,1,0,0.1,0.7,18,12,"[255,170,150]","[255,140,120]",0.7,-1,0,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shpe_bolter_trail_smoke,shpe_bolter_shot,trail_fog,3,0.3,0.2,0.6,3,6,"[170,120,120]","[120,120,140]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
+shpe_bolter_trail_smoke,shpe_bolter_shot,trail_fog,3,0.1,0.1,0.3,3,6,"[170,120,120]","[120,120,140]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
 shpe_bolter_trail_exhaust,shpe_bolter_shot,trail_fog,1,0,0,0.06,2,0.3,"[180,170,100]","[180,150,80]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_bolter_trail_exhaust2,shpe_bolter_shot,trail_fog,1,0,0,0.03,1,0.1,"[180,190,140]","[180,170,100]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

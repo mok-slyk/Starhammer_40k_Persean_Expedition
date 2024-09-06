@@ -36,7 +36,7 @@ public class LanceBeam {
                 Vector2f collisionPoint = null;
                 if (entity instanceof ShipAPI) {
                     ShipAPI ship = (ShipAPI) entity;
-                    if (entity != source &&
+                    if (entity != source && !(source.isShipWithModules() && source.getChildModulesCopy().contains(entity)) &&
                     !(entity.getCollisionClass() == CollisionClass.FIGHTER && entity.getOwner() == source.getOwner() && !ship.getEngineController().isFlamedOut()) &&
                     CollisionUtils.getCollides(start, beamEnd, entity.getLocation(), entity.getCollisionRadius())){
                         collisionPoint = getLanceShipCollisionPoint(ship, start, beamEnd, ignoreShields);
