@@ -56,6 +56,13 @@
 		},	
 		"chaos_ships":{
 			"styx_tzeentch":"graphics/ships/shpe_styx_tzeentch.png",
+			"styx_khorne":"graphics/ships/shpe_styx_khorne.png",
+			"styx_slaanesh":"graphics/ships/shpe_styx_slaanesh.png",
+			"styx_nurgle":"graphics/ships/shpe_styx_nurgle.png",
+			"acheron_tzeentch":"graphics/ships/shpe_acheron_tzeentch.png",
+			"acheron_khorne":"graphics/ships/shpe_acheron_khorne.png",
+			"acheron_slaanesh":"graphics/ships/shpe_acheron_slaanesh.png",
+			"acheron_nurgle":"graphics/ships/shpe_acheron_nurgle.png",
 		},
 		"spores":{
 			"spores_0001":"graphics/fx/spores/0001.png",

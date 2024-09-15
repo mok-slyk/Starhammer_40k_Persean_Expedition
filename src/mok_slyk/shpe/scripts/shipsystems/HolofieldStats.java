@@ -21,7 +21,8 @@ public class HolofieldStats extends BaseShipSystemScript {
     public static Color HOLO_COLOR = new Color(155, 135, 255, 200);
     public static float HOLO_RANGE = 30f;
     public static float HOLO_DRIFT = 10f;
-    public static float INVULN_PERCENTAGE = 0.6f;
+    //public static float INVULN_PERCENTAGE = 0.6f;
+    public static float INVULN_PERCENTAGE = 1f;
 
     private Vector2f[] imageOffsets = null;
     private IntervalUtil invulnInterval = new IntervalUtil(0.3f, 1f);

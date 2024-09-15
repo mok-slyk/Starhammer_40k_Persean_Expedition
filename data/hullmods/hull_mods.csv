@@ -87,6 +87,11 @@ Mark of Khorne,shpe_khorne_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hu
 Weapon range is reduced by %s but all damage is increased by %s.
 
 %s",,,graphics/hullmods/shpe_khorne_mark.png
+Mark of Nurgle,shpe_nurgle_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.NurgleMark,"The ship is marked by the lord of decay.
+",,,graphics/hullmods/shpe_nurgle_mark.png
+Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
+",,,graphics/hullmods/shpe_slaanesh_mark.png
+,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
