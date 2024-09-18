@@ -16,6 +16,10 @@ shpe_heldrake_Engine_wing,shpe_heldrake_Engine,"fighter, fighter5",3,,8,15,CLAW,
 shpe_fire_lord_Engine_wing,shpe_fire_lord_Engine,"fighter, fighter5",3,,12,15,CLAW,4000,300,,1,FIGHTER,Fighter,20,5000,,,,,,,,,,,,,
 shpe_doom_wing_Engine_wing,shpe_doom_wing_Engine,"fighter, fighter5",3,,12,15,CLAW,4000,300,,3,FIGHTER,Fighter,15,5000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+shpe_lotus_Interceptor_wing,shpe_lotus_Interceptor,"fighter, fighter4, shpe_chaos",2,,6,13,V,4000,500,,3,INTERCEPTOR,Interceptor,10,2000,,,,,,,,,,,,,v
+shpe_apis_Bomber_wing,shpe_apis_Bomber,"bomber5, bomber, shpe_chaos",2,,6,15,V,4000,1000,600,2,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_screamer_Daemon_wing,shpe_screamer_Daemon,"fighter, fighter5",3,,12,15,CLAW,4000,10,-100,3,FIGHTER,Fighter,15,5000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

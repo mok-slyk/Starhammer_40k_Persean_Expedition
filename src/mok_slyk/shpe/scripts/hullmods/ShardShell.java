@@ -7,7 +7,7 @@ public class ShardShell extends BaseHullMod {
 
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
-        if (!ship.getVariant().hasHullMod("shpe_broadside_batteries")) return false;
+        if (!(ship.getVariant().hasHullMod("shpe_broadside_batteries") || ship.getVariant().hasHullMod("shpe_light_batteries"))) return false;
         if (ship.getVariant().hasHullMod("shpe_hecutor_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_pyros_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_disruptor_shell")) return false;
@@ -17,7 +17,7 @@ public class ShardShell extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (!ship.getVariant().hasHullMod("shpe_broadside_batteries")) {
+        if (!(ship.getVariant().hasHullMod("shpe_broadside_batteries") || ship.getVariant().hasHullMod("shpe_light_batteries"))) {
             return "Requires Integrated Broadside Batteries";
         }
         if (ship.getVariant().hasHullMod("shpe_hecutor_shell")) {

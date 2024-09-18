@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    0.5,
+    19,
+    14,
+    -0,
+    0.5,
+    -19,
+    -16,
+    -0
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "center": [
+    20,
+    17
+  ],
+  "collisionRadius": 28,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 16.5,
+      "location": [
+        -13,
+        6
+      ],
+      "style": "OMEGA",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 16.5,
+      "location": [
+        -13,
+        -6
+      ],
+      "style": "OMEGA",
+      "width": 6
+    }
+  ],
+  "height": 34,
+  "hullId": "shpe_lotus",
+  "hullName": "Lotus",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 23.5,
+  "spriteName": "graphics/ships/shpe_lotus.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 53,
+      "id": "WS0001",
+      "locations": [
+        14,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 40
+}

@@ -24,7 +24,7 @@ Macrobatteries: Staravar Laser Battery,shpe_staravar_shell,,,Archaeotech,,,,,,,4
 Macrobatteries: Shard Cannons,shpe_shard_shell,,,Ancient Xenotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.ShardShell,"Turns the ship's built-in macrocannon batteries into xenotech shardcannons that create almost no flux.
 ",,,graphics/hullmods/shpe_shard_shell.png
 Reactive Hull,shpe_reactive_hull,,,Necron,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReactiveHull,The ship slowly repairs lost hull.,,,graphics/hullmods/shpe_reactive_hull.png
-,,,,,,,,,,,,,,,,,,,
+Light Integrated Broadside Batteries,shpe_light_batteries,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.LightBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
 ,,,,,,,,,,,,,,,,,,,
 Novacannon,shpe_novacannon,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Novacannon,"This ship has a built-in imperial novacannon under its prow, a devastating artillery cannon, firing explosive shells at relativistic speeds.
 

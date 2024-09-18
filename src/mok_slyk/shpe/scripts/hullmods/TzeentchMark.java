@@ -13,11 +13,11 @@ public class TzeentchMark extends BaseHullMod {
     @Override
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         for (ShipAPI fighter: getFighters(ship)) {
-            fighter.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT);
-            fighter.getMutableStats().getBallisticWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT);
-            fighter.getMutableStats().getMissileWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT);
+            fighter.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
+            fighter.getMutableStats().getBallisticWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
+            fighter.getMutableStats().getMissileWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
         }
-        ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT);
+        ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
     }
 
     private List<ShipAPI> getFighters(ShipAPI carrier) {

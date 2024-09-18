@@ -1,0 +1,96 @@
+{
+  "bounds": [
+    -6.5,
+    20.5,
+    17,
+    -0,
+    -6.5,
+    -20.5,
+    -17,
+    -0
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "center": [
+    22,
+    19
+  ],
+  "collisionRadius": 33,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 24.5,
+      "location": [
+        -19,
+        9
+      ],
+      "style": "OMEGA",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 24.5,
+      "location": [
+        -19,
+        -9
+      ],
+      "style": "OMEGA",
+      "width": 7
+    }
+  ],
+  "height": 38,
+  "hullId": "shpe_apis",
+  "hullName": "Apis",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 26,
+  "spriteName": "graphics/ships/shpe_apis.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 23,
+      "id": "WS0001",
+      "locations": [
+        18,
+        1.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 23,
+      "id": "WS0002",
+      "locations": [
+        18,
+        -1.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 23,
+      "id": "WS0003",
+      "locations": [
+        -4.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 44
+}
