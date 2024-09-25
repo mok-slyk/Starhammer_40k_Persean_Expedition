@@ -4,6 +4,7 @@ Holofield,shpe_holofield,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,FALSE,,,,TRUE,,TRUE
 Lock On,shpe_lockon,,,,,,,,,,1,4,1,6,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png
 Inertialess Drive,shpe_travel_inertialess,1,,,,,,,,,2,,2,0,TRUE,,,,TRUE,TRUE,TRUE,TRUE,TRUE,,,,graphics/icons/hullsys/burn_drive.png
 All Ahead Full,shpe_allaheadfull,1,,,,,,,,,2,5,1,10,TRUE,,,,,TRUE,TRUE,TRUE,TRUE,,,,graphics/icons/hullsys/burn_drive.png
+Haunting,shpe_haunting,,,,,,,,,,2,,2,10,TRUE,,,,,,,,,,TRUE,,graphics/icons/hullsys/phase_cloak.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Gun Drones,shpe_gun_drone,,,,,,,,12,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_borer.png

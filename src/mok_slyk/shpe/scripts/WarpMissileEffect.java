@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static mok_slyk.shpe.scripts.utils.RiftUtils.createStandardWarpRift;
+
 public class WarpMissileEffect implements OnFireEffectPlugin, EveryFrameWeaponEffectPlugin, OnHitEffectPlugin, DamageDealtModifier {
     protected static Map<MissileAPI, Float> missiles = new HashMap<>();
     private static final Logger LOG = Global.getLogger(WarpMissileEffect.class);
@@ -52,8 +54,8 @@ public class WarpMissileEffect implements OnFireEffectPlugin, EveryFrameWeaponEf
             }
             timer-=amount;
             if (timer <= 0) {
+                createStandardWarpRift(missile.getLocation(), engine);
                 undoMissileWarpedEffect(missile);
-                createWarpRift(missile.getLocation(), engine);
                 LOG.info("set alpha 1");
                 if (missile.getCollisionClass() == CollisionClass.NONE) {
                     List<ShipAPI> ships = CombatUtils.getShipsWithinRange(missile.getLocation(), 2000);
@@ -106,74 +108,12 @@ public class WarpMissileEffect implements OnFireEffectPlugin, EveryFrameWeaponEf
         missile.getEngineController().fadeToOtherColor("warp", new Color(255,0,0,0), new Color(0,255,0,0), 1, 1);
     }
 
-    public void createWarpRift(Vector2f point, CombatEngineAPI engine){
-        WarpRiftParams params = (WarpRiftParams) VortexTorpedoOnHitEffect.createVortexRiftParams(new Color(255, 0, 255), 10);
-        params.fadeOut = 2f;
-        params.hitGlowSizeMult = 1f;
-        CombatEntityAPI prev = null;
-        for (int i = 0; i < 2; i++) {
-            WarpRiftParams p = params.clone();
-            p.radius *= 0.75f + 0.5f * (float) Math.random();
-
-            p.withHitGlow = prev == null;
-
-            Vector2f loc = new Vector2f(point);
-            //loc = Misc.getPointWithinRadius(loc, p.radius * 1f);
-            loc = Misc.getPointAtRadius(loc, p.radius * 0.4f);
-
-            CombatEntityAPI e = engine.addLayeredRenderingPlugin(new NegativeExplosionVisual(p));
-            e.getLocation().set(loc);
-
-            if (prev != null) {
-                float dist = Misc.getDistance(prev.getLocation(), loc);
-                Vector2f vel = Misc.getUnitVectorAtDegreeAngle(Misc.getAngleInDegrees(loc, prev.getLocation()));
-                vel.scale(dist / (p.fadeIn + p.fadeOut) * 0.7f);
-                e.getVelocity().set(vel);
-            }
-
-            prev = e;
-        }
-    }
-
-    public static class WarpRiftParams extends NegativeExplosionVisual.NEParams {
-        public WarpRiftParams clone() {
-            return (WarpRiftParams) super.clone();
-        }
-    }
-
-    public static WarpRiftParams createVortexRiftParams(Color borderColor, float radius) {
-        WarpRiftParams p = new WarpRiftParams();
-        //p.radius = 50f;
-        p.hitGlowSizeMult = .75f;
-        //p.hitGlowSizeMult = .67f;
-        p.spawnHitGlowAt = 0f;
-        p.noiseMag = 1f;
-        //p.fadeIn = 0f;
-        //p.fadeOut = 0.25f;
-
-        //p.color = new Color(175,100,255,255);
-
-        //p.hitGlowSizeMult = .75f;
-        p.fadeIn = 0.1f;
-        //p.noisePeriod = 0.05f;
-        p.underglow = new Color(150, 30, 255);
-        //p.withHitGlow = i == 0;
-        p.withHitGlow = true;
-
-        //p.radius = 20f;
-        p.radius = radius;
-        //p.radius *= 0.75f + 0.5f * (float) Math.random();
-
-        p.color = borderColor;
-        return p;
-    }
-
     @Override
     public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
         MissileAPI missile = (MissileAPI) projectile;
         float time = calculateWarpTime(missile);
         if (time > 0.01) {
-            createWarpRift(missile.getLocation(), engine);
+            createStandardWarpRift(Vector2f.add(missile.getLocation(), (Vector2f) missile.getVelocity().normalise().scale(200f), null), engine);
             missiles.put(missile, time);
             missile.setCollisionClass(CollisionClass.NONE);
             doMissileWarpedEffect(missile);

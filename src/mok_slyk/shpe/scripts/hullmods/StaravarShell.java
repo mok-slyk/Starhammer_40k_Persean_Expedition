@@ -1,5 +1,6 @@
 package mok_slyk.shpe.scripts.hullmods;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI;
 
@@ -13,6 +14,7 @@ public class StaravarShell extends BaseHullMod {
         if (ship.getVariant().hasHullMod("shpe_disruptor_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_stygies_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) return false;
+        if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) return false;
         return ship != null;
     }
 
@@ -34,6 +36,9 @@ public class StaravarShell extends BaseHullMod {
         }
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) {
             return "Incompatible with Macrocannon: Shard Shells";
+        }
+        if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) {
+            return "Incompatible with Macrocannon: Hives of Nurgle";
         }
         return "Incompatible";
     }

@@ -1,0 +1,49 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    30,
+    7,
+    30,
+    -7
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_ursus_claw_hardpoint_base.png",
+  "id": "shpe_ursus_claw",
+  "projectileSpecId": "shpe_ursus_claw_shot",
+  "size": "LARGE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    23,
+    7,
+    23,
+    -7
+  ],
+  "turretSprite": "graphics/weapons/shpe_ursus_claw_turret_base.png",
+  "type": "BALLISTIC"
+}

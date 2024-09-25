@@ -1,0 +1,90 @@
+{
+  "bounds": [
+    -18,
+    -9,
+    -2.5,
+    -13,
+    23,
+    -8,
+    2,
+    -0,
+    23,
+    8,
+    -2.5,
+    13,
+    -18,
+    9
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux",
+  ],
+  "center": [
+    15,
+    25
+  ],
+  "collisionRadius": 37.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -20,
+        2
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -20,
+        -2
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 50,
+  "hullId": "shpe_helltalon",
+  "hullName": "Hell Talon",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 35,
+  "spriteName": "graphics/ships/shpe_helltalon.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 44,
+      "id": "WS0001",
+      "locations": [
+        3,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 44,
+      "id": "WS0002",
+      "locations": [
+        -7,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 30
+}

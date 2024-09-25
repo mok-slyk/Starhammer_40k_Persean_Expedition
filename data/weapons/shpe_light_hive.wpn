@@ -1,0 +1,65 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "LINKED",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "hellbore_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointOffsets": [
+    5.5,
+    0,
+    5.5,
+    0.5,
+    5.5,
+    -0.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointUnderSprite": "graphics/weapons/shpe_light_nurgle_hive_turret_under.png",
+  "id": "shpe_light_hive",
+  "projectileSpecId": "shpe_hive_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": -38,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 15,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 8,
+    "cloudRadius": 10,
+    "particleColor": [
+      35,
+      45,
+      25,
+      55
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 18
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretOffsets": [
+    3.5,
+    0,
+    3.5,
+    0.5,
+    3.5,
+    -0.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretUnderSprite": "graphics/weapons/shpe_light_nurgle_hive_turret_under.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 3
+}

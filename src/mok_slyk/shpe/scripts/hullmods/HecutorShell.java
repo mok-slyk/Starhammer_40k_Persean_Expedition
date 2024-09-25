@@ -13,6 +13,7 @@ public class HecutorShell extends BaseHullMod {
         if (ship.getVariant().hasHullMod("shpe_disruptor_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_staravar_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) return false;
+        if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) return false;
         return ship != null;
     }
 
@@ -34,6 +35,9 @@ public class HecutorShell extends BaseHullMod {
         }
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) {
             return "Incompatible with Macrocannon: Shard Shells";
+        }
+        if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) {
+            return "Incompatible with Macrocannon: Hives of Nurgle";
         }
         return "Incompatible";
     }

@@ -25,11 +25,13 @@
 			"trail_fog":"graphics/fx/shpe_trail_fog.png",
 			"trail_arc":"graphics/fx/shpe_trail_arc.png",
 			"trail_clean":"graphics/fx/shpe_trail_smooth.png",
+			"trail_sparks":"graphics/fx/shpe_trail_sparks.png",
 			"soft_glow":"graphics/fx/shpe_soft_glow.png",
 			"pulse_1":"graphics/fx/pulse/shpe_pulse_1.png",
 			"pulse_2":"graphics/fx/pulse/shpe_pulse_2.png",
 			"pulse_3":"graphics/fx/pulse/shpe_pulse_3.png",
 			"nova_burst":"graphics/fx/shpe_nova_burst.png",
+			"ursus_cable":"graphics/fx/shpe_ursus_cable.png",
 		},
 		"icons":{
 			"slaanesh_gold":"graphics/icons/campaign/shpe_slaanesh_symbol_gold.png",
@@ -182,5 +184,6 @@
 		"Eldar":[50,100,220,255],
 		"Necrons":[50,225,50,255],
 		"Mechanicus":[250,180,120,255],
+		"Chaos":[250,60,160,255],
 	}
 }

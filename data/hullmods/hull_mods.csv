@@ -92,7 +92,8 @@ Mark of Nurgle,shpe_nurgle_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hu
 Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
 ",,,graphics/hullmods/shpe_slaanesh_mark.png
 ,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,
+Macrobatteries: Hives of Nurgle,shpe_nurgle_hives,,,Chaos,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.NurgleHive,"Turns the ship's built-in macrocannon batteries into diseased hives.
+",,,graphics/hullmods/shpe_nurgle_hive.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 #Heavy Ballistics Integration,hbi,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.HeavyBallisticsIntegration,Reduces the ordnance point cost of large ballistic weapons by %s.,Reduces ordnance point cost of large ballistic weapons.,,graphics/hullmods/ballistics_integration.png

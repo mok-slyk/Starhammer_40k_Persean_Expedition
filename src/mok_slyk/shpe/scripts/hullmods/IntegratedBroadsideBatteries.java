@@ -11,7 +11,7 @@ public class IntegratedBroadsideBatteries extends BaseHullMod {
     public final String DEFAULT_STATS_ID = "shpe_marsvi";
     public final String PREFIX = "shpe_";
     public final String SUFFIX = "_reference";
-    public final Set<String> VALID_IDS = new HashSet<>(Arrays.asList("shpe_stygies_shell", "shpe_pyros_shell", "shpe_disruptor_shell", "shpe_hecutor_shell", "shpe_staravar_shell", "shpe_shard_shell"));
+    public final Set<String> VALID_IDS = new HashSet<>(Arrays.asList("shpe_stygies_shell", "shpe_pyros_shell", "shpe_disruptor_shell", "shpe_hecutor_shell", "shpe_staravar_shell", "shpe_shard_shell", "shpe_nurgle_hives"));
     public final int MAX_SLOT_COUNT = 24; //last slot: BIB23
 
     @Override
@@ -46,6 +46,9 @@ public class IntegratedBroadsideBatteries extends BaseHullMod {
                 break;
             case "shpe_shard_shell":
                 weaponSpecID = "shpe_shard_reference";
+                break;
+            case "shpe_nurgle_hives":
+                weaponSpecID = "shpe_hive";
                 break;
             default:
                 weaponSpecID = "shpe_marsvi_builtin";

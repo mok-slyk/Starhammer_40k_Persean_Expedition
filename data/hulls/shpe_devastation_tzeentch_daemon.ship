@@ -1,0 +1,333 @@
+{
+  "bounds": [
+    -157,
+    28,
+    -136,
+    60,
+    -77.5,
+    43.5,
+    30,
+    36,
+    53.5,
+    15.5,
+    68,
+    48,
+    107.5,
+    25.5,
+    211.5,
+    -0,
+    107.5,
+    -25.5,
+    68,
+    -48,
+    53.5,
+    -15.5,
+    30,
+    -36,
+    -77.5,
+    -43.5,
+    -136,
+    -60,
+    -157,
+    -28,
+    -212,
+    -0
+  ],
+  "builtInMods": [
+    "shpe_hellforged",
+    "shpe_light_batteries"
+  ],
+  "builtInWings": [],
+  "center": [
+    70,
+    215
+  ],
+  "collisionRadius": 242.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 76.5,
+      "location": [
+        -175,
+        19.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 76.5,
+      "location": [
+        -175,
+        -19.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 19
+    },
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 81.5,
+      "location": [
+        -155.5,
+        35
+      ],
+      "style": "HIGH_TECH",
+      "width": 23
+    },
+    {
+      "angle": -180,
+      "contrailSize": 23,
+      "length": 81.5,
+      "location": [
+        -155.5,
+        -35
+      ],
+      "style": "HIGH_TECH",
+      "width": 23
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 55,
+      "location": [
+        -143,
+        52
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 55,
+      "location": [
+        -143,
+        -52
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    }
+  ],
+  "height": 430,
+  "hullId": "shpe_devastation_tzeentch_daemon",
+  "hullName": "Devastation (Tz)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 287.5,
+  "spriteName": "graphics/ships/shpe_devastation_daemon_tzeentch.png",
+  "style": "OMEGA",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        15,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        64,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 86,
+      "arc": 179,
+      "id": "WS0008",
+      "locations": [
+        -111,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -86,
+      "arc": 179,
+      "id": "WS0009",
+      "locations": [
+        -111,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 154,
+      "id": "WS0006",
+      "locations": [
+        -51,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 154,
+      "id": "WS0007",
+      "locations": [
+        -51,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0015",
+      "locations": [
+        87,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 71.5,
+      "arc": 120,
+      "id": "BIL0",
+      "locations": [
+        -33,
+        19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -71.5,
+      "arc": 120,
+      "id": "BIL1",
+      "locations": [
+        -33,
+        -19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 71.5,
+      "arc": 120,
+      "id": "BIL2",
+      "locations": [
+        -31,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -71.5,
+      "arc": 120,
+      "id": "BIL3",
+      "locations": [
+        -31,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 71.5,
+      "arc": 120,
+      "id": "BIL4",
+      "locations": [
+        -72,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -71.5,
+      "arc": 120,
+      "id": "BIL5",
+      "locations": [
+        -72,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 71.5,
+      "arc": 120,
+      "id": "BIL6",
+      "locations": [
+        -70,
+        35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -71.5,
+      "arc": 120,
+      "id": "BIL7",
+      "locations": [
+        -70,
+        -35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 78.5,
+      "arc": 169,
+      "id": "WS0002",
+      "locations": [
+        -16,
+        18
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -78.5,
+      "arc": 169,
+      "id": "WS0004",
+      "locations": [
+        -16,
+        -18
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 140
+}

@@ -1,0 +1,108 @@
+{
+  "bounds": [
+    -4,
+    7.5,
+    -19.5,
+    -0,
+    -4,
+    -7.5,
+    10.5,
+    -6,
+    10.5,
+    6
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux",
+  ],
+  "center": [
+    11,
+    23
+  ],
+  "collisionRadius": 34,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -13.5,
+        3
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    },
+    {
+      "angle": -180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -13.5,
+        -3
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    },
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -9.5,
+        5
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    },
+    {
+      "angle": -180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -9.5,
+        -5
+      ],
+      "style": "LOW_TECH",
+      "width": 4
+    }
+  ],
+  "height": 46,
+  "hullId": "shpe_hellblade",
+  "hullName": "Hell Blade",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 29.5,
+  "spriteName": "graphics/ships/shpe_hellblade.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        3.5,
+        -2
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        3.5,
+        2
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 22
+}

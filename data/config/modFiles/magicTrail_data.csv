@@ -24,6 +24,13 @@ shpe_bolter_trail_smoke,shpe_bolter_shot,trail_fog,3,0.1,0.1,0.3,3,6,"[170,120,1
 shpe_bolter_trail_exhaust,shpe_bolter_shot,trail_fog,1,0,0,0.06,2,0.3,"[180,170,100]","[180,150,80]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_bolter_trail_exhaust2,shpe_bolter_shot,trail_fog,1,0,0,0.03,1,0.1,"[180,190,140]","[180,170,100]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+shpe_inferno_trail_smoke,shpe_inferno_shot,trail_fog,3,0.1,0.1,0.3,3,6,"[170,70,140]","[120,120,190]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
+shpe_inferno_trail_exhaust,shpe_inferno_shot,trail_fog,1,0,0,0.06,2,0.3,"[250,100,250]","[140,40,255]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+shpe_inferno_trail_exhaust2,shpe_inferno_shot,trail_fog,1,0,0,0.03,1,0.1,"[190,140,190]","[160,100,190]",0.7,-1,100,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+shpe_inferno_trail_sparks,shpe_inferno_shot,trail_sparks,10,0,0,0.2,4,9,"[90,250,190]","[60,250,190]",1,128,2000,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+shpe_hellfyre_trail_sparks,shpe_hellfyre_missile,trail_sparks,10,0,0,0.3,5,10,"[90,250,190]","[60,250,190]",1,128,2000,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_hecutor_trail,shpe_hecutor_shot,base_trail_heavySmoke,1,0,0.1,0.3,12,6,"[110,130,255]","[110,70,255]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
 shpe_light_hecutor_trail,shpe_light_hecutor_shot,base_trail_heavySmoke,1,0,0.1,0.1,10,5,"[110,130,255]","[110,70,255]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
 shpe_aetherfire_trail,shpe_aetherfire_shot,base_trail_heavySmoke,1,0,0.1,0.1,10,5,"[110,230,255]","[110,150,255]",0.4,-1,0,TRUE,-10,2,1,TRUE,FALSE,FALSE,0,0,0,0,0,0,false,false
