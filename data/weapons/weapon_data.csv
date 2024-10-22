@@ -77,8 +77,8 @@ Baleflamer,shpe_baleflamer,3,,10000,300,,17,,3,60,15,60,10,60,ENERGY,50,,,0.05,6
 Flame Cannon,shpe_flame_cannon,3,,10000,600,,40,,3,60,15,20,3,20,ENERGY,50,,,0.05,60,0.01,0,0,0,0,,500,,,,,,,,,Chaos,,General,,,,,,,,,,
 Mutalith,shpe_mutalith,3,,10000,300,,100,,3,60,15,20,5,20,ENERGY,50,,,0.05,60,0.03,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
 Inferno Bolter,shpe_inferno,2,,400,450,,50,,0,50,5,,,,HIGH_EXPLOSIVE,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,PD,"pd2, kinetic2, SR, shpe_imperium",,Imperium,,Point Defense,,,,,,,,,,0.7
-Hive of Nurgle,shpe_hive,1,,2000,600,,300,,10,15,0,,,,FRAGMENTATION,20,,0,4,1,,35,45,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
-Hive of Nurgle,shpe_light_hive,1,,1000,600,,150,,6,25,0,,,,FRAGMENTATION,10,,0,3,1,,35,45,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hive of Nurgle,shpe_hive,1,,2000,600,,300,,10,15,0,,,,FRAGMENTATION,20,,0,4,3,0,35,45,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hive of Nurgle,shpe_light_hive,1,,1000,600,,150,,6,25,0,,,,FRAGMENTATION,10,,0,3,4,0,35,45,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
 Hellfyre Missile,shpe_hellfyre,1,,250,1000,,100,,5,60,0,18,,9,HIGH_EXPLOSIVE,0,,0,6,9,0.1,0,0,0,0,,400,100,5,50,,,DO_NOT_AIM,"strike5, missile0",,Chaos,,Anti Armor,Fast,Excellent,,,,,,,,10
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Drake Wings,shpe_heldrake_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,47

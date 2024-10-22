@@ -54,11 +54,11 @@ public class HauntingStats extends BaseShipSystemScript {
         if (state == ShipSystemStatsScript.State.OUT) {
             stats.getMaxSpeed().unmodify(id); // to slow down ship to its regular top speed while powering drive down
         } else {
-            stats.getMaxSpeed().modifyFlat(id, 600f * effectLevel);
+            stats.getMaxSpeed().modifyFlat(id, 400f * effectLevel);
             stats.getAcceleration().modifyFlat(id, 600f * effectLevel);
-            stats.getDeceleration().modifyFlat(id, 300f * effectLevel);
-            stats.getMaxTurnRate().modifyMult(id, 3);
-            stats.getTurnAcceleration().modifyMult(id, 3);
+            stats.getDeceleration().modifyFlat(id, 600f * effectLevel);
+            stats.getMaxTurnRate().modifyMult(id, 5);
+            stats.getTurnAcceleration().modifyMult(id, 5);
             //stats.getAcceleration().modifyPercent(id, 200f * effectLevel);
         }
 
@@ -68,7 +68,7 @@ public class HauntingStats extends BaseShipSystemScript {
         }
 
         if (state == State.IN && !didWarpEffect && jitterFactor > 0.9f) {
-            doWarpEffect(Global.getCombatEngine(), ship);
+            doWarpEffect(Global.getCombatEngine(), ship, 500);
             didWarpEffect = true;
         }
 
@@ -80,15 +80,15 @@ public class HauntingStats extends BaseShipSystemScript {
 
 
         if (state == State.OUT && !didWarpEffect && jitterFactor > 0.9f) {
-            doWarpEffect(Global.getCombatEngine(), ship);
+            doWarpEffect(Global.getCombatEngine(), ship, 1000);
             didWarpEffect = true;
         }
     }
 
-    private void doWarpEffect(CombatEngineAPI engine, ShipAPI ship) {
+    private void doWarpEffect(CombatEngineAPI engine, ShipAPI ship, float velocity) {
         Vector2f loc = Vector2f.add(ship.getLocation(), VectorUtils.rotate(new Vector2f(0, 200), ship.getFacing()-90), null);
-        createWarpRift(engine, loc, 50f, new Color(255, 0, 255), new Color(79, 13, 23), 2, 25);
-        Vector2f.add(ship.getVelocity(), VectorUtils.rotate(new Vector2f(0, 600), ship.getFacing()-90), ship.getVelocity());
+        createWarpRift(engine, loc, 50f, new Color(255, 0, 255), new Color(13, 16, 79), 2, 25);
+        Vector2f.add(ship.getVelocity(), VectorUtils.rotate(new Vector2f(0, velocity), ship.getFacing()-90), ship.getVelocity());
 
     }
 

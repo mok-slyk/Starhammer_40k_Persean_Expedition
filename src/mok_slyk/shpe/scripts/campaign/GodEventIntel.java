@@ -171,6 +171,31 @@ public class GodEventIntel extends BaseEventIntel {
                             , h
                             , "Chosen of Khorne");
                 }
+                if (stageID == Stage.GIFT_1) {
+                    info.addPara("The effect of the %s hullmod on your ships improves: "
+                                    + "While below 70%% hullm, the effect of the %s is doubled."
+                            , opad
+                            , h
+                            , "Mark of Khorne", "Mark of Khorne");
+                }
+                if (stageID == Stage.GIFT_2) {
+                    info.addPara("You can acquire the %s and %s"
+                                    + "weapons through the %s abillity."
+                            , opad
+                            , h
+                            , "Ursus Claw", "Butcher Cannon", "Chaos Summon");
+                }
+                if (stageID == Stage.GIFT_3) {
+                    info.addPara("WIP"
+                            , opad
+                            , h);
+                }
+                if (stageID == Stage.GIFT_4) {
+                    info.addPara("You can gain the %s skill"
+                            , opad
+                            , h
+                            , "Exalted Champion of Khorne");
+                }
                 break;
             case ChaosGodsEventIntel.TZEENTCH_I:
                 if (stageID == Stage.MARK) {
@@ -186,6 +211,30 @@ public class GodEventIntel extends BaseEventIntel {
                             , opad
                             , h
                             , "Chosen of Tzeentch");
+                }
+                if (stageID == Stage.GIFT_1) {
+                    info.addPara("You unlock the %s hullmod "
+                            , opad
+                            , h
+                            , "Strands of Fortune");
+                }
+                if (stageID == Stage.GIFT_2) {
+                    info.addPara("You can acquire the %s, %s, %s and "
+                                    + "%s fighters through the %s abillity."
+                            , opad
+                            , h
+                            , "Apis", "Lotus", "Doom Wing", "Fire Lord", "Chaos Summon");
+                }
+                if (stageID == Stage.GIFT_3) {
+                    info.addPara("WIP"
+                            , opad
+                            , h);
+                }
+                if (stageID == Stage.GIFT_4) {
+                    info.addPara("You unlock the %s hullmod "
+                            , opad
+                            , h
+                            , "Ark of Pestilence");
                 }
                 break;
             case ChaosGodsEventIntel.NURGLE_I:
@@ -203,6 +252,29 @@ public class GodEventIntel extends BaseEventIntel {
                             , h
                             , "Chosen of Nurgle");
                 }
+                if (stageID == Stage.GIFT_1) {
+                    info.addPara("You unlock the %s hullmod "
+                            , opad
+                            , h
+                            , "Miasma");
+                }
+                if (stageID == Stage.GIFT_2) {
+                    info.addPara("You unlock the %s hullmod"
+                            , opad
+                            , h
+                            , "Hives of Nurgle");
+                }
+                if (stageID == Stage.GIFT_3) {
+                    info.addPara("WIP"
+                            , opad
+                            , h);
+                }
+                if (stageID == Stage.GIFT_4) {
+                    info.addPara("You unlock the %s hullmod "
+                            , opad
+                            , h
+                            , "Warp Beasts");
+                }
                 break;
             case ChaosGodsEventIntel.SLAANESH_I:
                 if (stageID == Stage.MARK) {
@@ -218,6 +290,30 @@ public class GodEventIntel extends BaseEventIntel {
                             , opad
                             , h
                             , "Chosen of Slaanesh");
+                }
+                if (stageID == Stage.GIFT_1) {
+                    info.addPara("You unlock the %s hullmod "
+                            , opad
+                            , h
+                            , "Siren's Summon");
+                }
+                if (stageID == Stage.GIFT_2) {
+                    info.addPara("You can acquire the %s and %s"
+                                    + "weapons through the %s abillity."
+                            , opad
+                            , h
+                            , "Harvester Cannon", "Tormentor Cannon", "Chaos Summon");
+                }
+                if (stageID == Stage.GIFT_3) {
+                    info.addPara("WIP"
+                            , opad
+                            , h);
+                }
+                if (stageID == Stage.GIFT_4) {
+                    info.addPara("You can gain the %s skill"
+                            , opad
+                            , h
+                            , "Exalted Champion of Slaanesh");
                 }
                 break;
         }
