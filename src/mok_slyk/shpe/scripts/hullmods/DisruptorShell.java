@@ -13,6 +13,7 @@ public class DisruptorShell extends BaseHullMod {
         if (ship.getVariant().hasHullMod("shpe_stygies_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_staravar_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) return false;
+        if (ship.getVariant().hasHullMod("shpe_atomic_shell")) return false;
         return ship != null;
     }
 
@@ -34,6 +35,9 @@ public class DisruptorShell extends BaseHullMod {
         }
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) {
             return "Incompatible with Macrocannon: Shard Shells";
+        }
+        if (ship.getVariant().hasHullMod("shpe_atomic_shell")) {
+            return "Incompatible with Macrocannon: Atomic Shells";
         }
         return "Incompatible";
     }

@@ -18,6 +18,7 @@ Mezoa Hybrid Lance,shpe_mezoa_lance,2,,2500,600,,500,,0,40,14,,,,ENERGY,90,,0.5,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #For internal Reference only,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Atomic Macrocannon,shpe_atomic_reference,1,,5000,900,,1200,,50,15,0,,,,ENERGY,300,,0,6,1,,0,5,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Everything,,,,,,,,,,0.75
 Stygies Macrocannon,shpe_stygies_reference,6,0,2000,700,,600,,40,15,0,,,,KINETIC,90,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
 Hecutor Plasma Cannon,shpe_hecutor_reference,6,0,2000,900,,400,,10,15,0,,,,ENERGY,90,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
 Pyros Macrocannon,shpe_pyros_reference,6,0,2000,800,,350,,10,15,0,,,,HIGH_EXPLOSIVE,90,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75

@@ -20,6 +20,7 @@ public class StygiesShell extends BaseHullMod {
         if (ship.getVariant().hasHullMod("shpe_staravar_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_shard_shell")) return false;
         if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) return false;
+        if (ship.getVariant().hasHullMod("shpe_atomic_shell")) return false;
         return ship != null;
     }
 
@@ -44,6 +45,9 @@ public class StygiesShell extends BaseHullMod {
         }
         if (ship.getVariant().hasHullMod("shpe_nurgle_hives")) {
             return "Incompatible with Macrocannon: Hives of Nurgle";
+        }
+        if (ship.getVariant().hasHullMod("shpe_atomic_shell")) {
+            return "Incompatible with Macrocannon: Atomic Shells";
         }
         return "Incompatible";
     }

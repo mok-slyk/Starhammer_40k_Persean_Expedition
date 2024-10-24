@@ -173,13 +173,13 @@ public class GodEventIntel extends BaseEventIntel {
                 }
                 if (stageID == Stage.GIFT_1) {
                     info.addPara("The effect of the %s hullmod on your ships improves: "
-                                    + "While below 70%% hullm, the effect of the %s is doubled."
+                                    + "While below 70%% hull, the effect of the %s is doubled."
                             , opad
                             , h
                             , "Mark of Khorne", "Mark of Khorne");
                 }
                 if (stageID == Stage.GIFT_2) {
-                    info.addPara("You can acquire the %s and %s"
+                    info.addPara("You can acquire the %s and %s "
                                     + "weapons through the %s abillity."
                             , opad
                             , h
@@ -234,7 +234,7 @@ public class GodEventIntel extends BaseEventIntel {
                     info.addPara("You unlock the %s hullmod "
                             , opad
                             , h
-                            , "Ark of Pestilence");
+                            , "Warp Beasts");
                 }
                 break;
             case ChaosGodsEventIntel.NURGLE_I:
@@ -273,7 +273,7 @@ public class GodEventIntel extends BaseEventIntel {
                     info.addPara("You unlock the %s hullmod "
                             , opad
                             , h
-                            , "Warp Beasts");
+                            , "Ark of Pestilence");
                 }
                 break;
             case ChaosGodsEventIntel.SLAANESH_I:
@@ -298,7 +298,7 @@ public class GodEventIntel extends BaseEventIntel {
                             , "Siren's Summon");
                 }
                 if (stageID == Stage.GIFT_2) {
-                    info.addPara("You can acquire the %s and %s"
+                    info.addPara("You can acquire the %s and %s "
                                     + "weapons through the %s abillity."
                             , opad
                             , h
