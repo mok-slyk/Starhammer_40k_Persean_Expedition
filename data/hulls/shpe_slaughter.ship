@@ -1,36 +1,36 @@
 {
   "bounds": [
-    -157,
+    -99.5,
     28,
-    -136,
+    -78.5,
     60,
-    -77.5,
+    -20,
     43.5,
-    30,
+    87.5,
     36,
-    53.5,
+    111,
     15.5,
-    68,
+    125.5,
     48,
-    107.5,
+    165,
     25.5,
-    211.5,
+    269,
     -0,
-    107.5,
+    165,
     -25.5,
-    68,
+    125.5,
     -48,
-    53.5,
+    111,
     -15.5,
-    30,
+    87.5,
     -36,
-    -77.5,
+    -20,
     -43.5,
-    -136,
+    -78.5,
     -60,
-    -157,
+    -99.5,
     -28,
-    -212,
+    -154.5,
     -0
   ],
   "builtInMods": [
@@ -40,16 +40,16 @@
   "builtInWings": [],
   "center": [
     70,
-    215
+    157.5
   ],
-  "collisionRadius": 242.5,
+  "collisionRadius": 352,
   "engineSlots": [
     {
       "angle": 180,
       "contrailSize": 19,
       "length": 76.5,
       "location": [
-        -175,
+        -117.5,
         19.5
       ],
       "style": "LOW_TECH",
@@ -60,7 +60,7 @@
       "contrailSize": 19,
       "length": 76.5,
       "location": [
-        -175,
+        -117.5,
         -19.5
       ],
       "style": "LOW_TECH",
@@ -71,7 +71,7 @@
       "contrailSize": 23,
       "length": 81.5,
       "location": [
-        -155.5,
+        -98,
         35
       ],
       "style": "LOW_TECH",
@@ -82,7 +82,7 @@
       "contrailSize": 23,
       "length": 81.5,
       "location": [
-        -155.5,
+        -98,
         -35
       ],
       "style": "LOW_TECH",
@@ -93,7 +93,7 @@
       "contrailSize": 15,
       "length": 55,
       "location": [
-        -143,
+        -85.5,
         52
       ],
       "style": "LOW_TECH",
@@ -104,7 +104,7 @@
       "contrailSize": 15,
       "length": 55,
       "location": [
-        -143,
+        -85.5,
         -52
       ],
       "style": "LOW_TECH",
@@ -116,7 +116,7 @@
   "hullName": "Slaughter",
   "hullSize": "CRUISER",
   "shieldCenter": [
-    0,
+    57.5,
     0
   ],
   "shieldRadius": 287.5,
@@ -129,7 +129,7 @@
       "arc": 270,
       "id": "WS0001",
       "locations": [
-        15,
+        72.5,
         -0
       ],
       "mount": "TURRET",
@@ -141,7 +141,7 @@
       "arc": 270,
       "id": "WS0003",
       "locations": [
-        64,
+        121.5,
         -0
       ],
       "mount": "TURRET",
@@ -153,7 +153,7 @@
       "arc": 179,
       "id": "WS0008",
       "locations": [
-        -111,
+        -53.5,
         28
       ],
       "mount": "TURRET",
@@ -165,7 +165,7 @@
       "arc": 179,
       "id": "WS0009",
       "locations": [
-        -111,
+        -53.5,
         -28
       ],
       "mount": "TURRET",
@@ -177,7 +177,7 @@
       "arc": 270,
       "id": "WS0010",
       "locations": [
-        -9,
+        48.5,
         -0
       ],
       "mount": "TURRET",
@@ -189,7 +189,7 @@
       "arc": 154,
       "id": "WS0006",
       "locations": [
-        -51,
+        6.5,
         28
       ],
       "mount": "TURRET",
@@ -201,7 +201,7 @@
       "arc": 154,
       "id": "WS0007",
       "locations": [
-        -51,
+        6.5,
         -28
       ],
       "mount": "TURRET",
@@ -213,7 +213,7 @@
       "arc": 154,
       "id": "WS0011",
       "locations": [
-        5,
+        62.5,
         23
       ],
       "mount": "TURRET",
@@ -225,7 +225,7 @@
       "arc": 154,
       "id": "WS0012",
       "locations": [
-        5,
+        62.5,
         -23
       ],
       "mount": "TURRET",
@@ -237,7 +237,7 @@
       "arc": 270,
       "id": "WS0015",
       "locations": [
-        87,
+        144.5,
         -0
       ],
       "mount": "TURRET",
@@ -249,7 +249,7 @@
       "arc": 120,
       "id": "BIL0",
       "locations": [
-        23,
+        80.5,
         14
       ],
       "mount": "TURRET",
@@ -261,7 +261,7 @@
       "arc": 120,
       "id": "BIL1",
       "locations": [
-        23,
+        80.5,
         -14
       ],
       "mount": "TURRET",
@@ -273,7 +273,7 @@
       "arc": 120,
       "id": "BIL2",
       "locations": [
-        25,
+        82.5,
         26
       ],
       "mount": "TURRET",
@@ -285,7 +285,7 @@
       "arc": 120,
       "id": "BIL3",
       "locations": [
-        25,
+        82.5,
         -26
       ],
       "mount": "TURRET",
@@ -297,7 +297,7 @@
       "arc": 120,
       "id": "BIL6",
       "locations": [
-        -14,
+        43.5,
         30
       ],
       "mount": "TURRET",
@@ -309,7 +309,7 @@
       "arc": 120,
       "id": "BIL7",
       "locations": [
-        -14,
+        43.5,
         -30
       ],
       "mount": "TURRET",
@@ -321,7 +321,7 @@
       "arc": 120,
       "id": "BIL4",
       "locations": [
-        -16,
+        41.5,
         18
       ],
       "mount": "TURRET",
@@ -333,7 +333,7 @@
       "arc": 120,
       "id": "BIL5",
       "locations": [
-        -16,
+        41.5,
         -18
       ],
       "mount": "TURRET",
@@ -345,7 +345,7 @@
       "arc": 120,
       "id": "BIL8",
       "locations": [
-        -33,
+        24.5,
         19
       ],
       "mount": "TURRET",
@@ -357,7 +357,7 @@
       "arc": 120,
       "id": "BIL9",
       "locations": [
-        -33,
+        24.5,
         -19
       ],
       "mount": "TURRET",
@@ -369,7 +369,7 @@
       "arc": 120,
       "id": "BIL10",
       "locations": [
-        -31,
+        26.5,
         31
       ],
       "mount": "TURRET",
@@ -381,7 +381,7 @@
       "arc": 120,
       "id": "BIL11",
       "locations": [
-        -31,
+        26.5,
         -31
       ],
       "mount": "TURRET",
@@ -393,7 +393,7 @@
       "arc": 120,
       "id": "BIL12",
       "locations": [
-        -72,
+        -14.5,
         23
       ],
       "mount": "TURRET",
@@ -405,7 +405,7 @@
       "arc": 120,
       "id": "BIL13",
       "locations": [
-        -72,
+        -14.5,
         -23
       ],
       "mount": "TURRET",
@@ -417,7 +417,7 @@
       "arc": 120,
       "id": "BIL14",
       "locations": [
-        -70,
+        -12.5,
         35
       ],
       "mount": "TURRET",
@@ -429,7 +429,7 @@
       "arc": 120,
       "id": "BIL15",
       "locations": [
-        -70,
+        -12.5,
         -35
       ],
       "mount": "TURRET",
