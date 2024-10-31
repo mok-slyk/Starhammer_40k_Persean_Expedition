@@ -1,7 +1,7 @@
 {
     "id":"shpe", 
 	"name":"Starhammer 40K: Persean Expedition", # Displayed to the player
-	"author":"Mok_slyk",
+	"author":"Mok'slyk",
     "utility":"false",
 	"version":"0.1.0",
 	"description":"WIP 40k mod attempt 2",

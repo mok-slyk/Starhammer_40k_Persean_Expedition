@@ -35,4 +35,14 @@ public class SHPEUtils {
         List<BoundsAPI.SegmentAPI> segments = bounds.getSegments();
         return segments.get(rand.nextInt(segments.size()));
     }
+
+    /**
+     * returns a scaled version of a vector without modifying the original.
+     * @param vec the vector to scale; will not be modified
+     * @param fac the factor to scale the vector by
+     * @return a scaled version of the vector
+     */
+    public static Vector2f scaleVector(Vector2f vec, float fac) {
+        return new Vector2f(vec.x*fac, vec.y*fac);
+    }
 }

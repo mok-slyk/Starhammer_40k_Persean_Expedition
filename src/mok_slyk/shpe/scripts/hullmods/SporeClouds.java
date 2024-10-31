@@ -6,11 +6,13 @@ import com.fs.starfarer.api.combat.listeners.AdvanceableListener;
 import com.fs.starfarer.api.combat.listeners.DamageTakenModifier;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
+import com.fs.starfarer.api.util.Misc;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
+import org.magiclib.util.MagicUI;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -124,6 +126,11 @@ public class SporeClouds extends BaseHullMod {
                         timeSinceDeath = 0;
                     }
                 }
+            }
+
+            if (ship.isAlive()) {
+                float healthFraction = health/maxHealth;
+                MagicUI.drawInterfaceStatusBar(ship, healthFraction, Misc.getPositiveHighlightColor(), Misc.getPositiveHighlightColor(), 1f, "Spores", Math.round(health));
             }
         }
 

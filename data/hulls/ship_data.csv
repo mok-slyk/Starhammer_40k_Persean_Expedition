@@ -71,6 +71,8 @@ Slaughter,shpe_slaughter,Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,110
 Devastation,shpe_devastation,Carrier Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,2,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
 Devastation (Tz),shpe_devastation_tzeentch_daemon,Daemonship,Chaos,shpe_haunting,15,10000,1250,10000,11000,550,165,2,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Idolator,shpe_idolator,Raider,Chaos,shpe_allaheadfull,10,5000,500,4200,4167,250,95,,90,60,40,30,60,400,OMNI,,180,0.4,0.8,,,50,100,100,60,2,30,9,40000,5,12,360,0.25,10,10,,,,,,,,shpe_chaos_bp,,0.5,2,3,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Aurora,aurora,Cruiser,High Tech,plasmajets,17,8000,800,11000,16000,800,165,,80,50,25,25,25,1800,OMNI,,180,0.5,0.6,,,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,,"rare_bp, hist2t, merc, ind",,0.6,2,3,,405
 #Heron,heron,Fast Carrier,Midline,targetingfeed,14,6000,750,5000,6000,300,100,3,80,60,40,20,25,800,OMNI,,180,0.5,0.8,,,150,250,90,60,3,20,8,120000,3,12,360,0.25,20,20,,,,,,,CARRIER,"midline_bp, merc, ind",,0.5,2,3,,407
 #Falcon,falcon,Light Cruiser,Midline,maneuveringjets,12,6000,750,7000,8000,400,125,,80,70,50,20,25,650,FRONT,,270,0.4,0.8,,,100,180,120,100,3,33,9,80000,4,12,480,0.25,14,14,,,,,,,,"midline_bp, merc, ind",,0.5,2,3,,400

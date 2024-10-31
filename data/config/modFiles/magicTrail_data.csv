@@ -33,10 +33,10 @@ shpe_hellfyre_trail_sparks,shpe_hellfyre_missile,trail_sparks,10,0,0,0.3,5,10,"[
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_hecutor_trail,shpe_hecutor_shot,base_trail_heavySmoke,1,0,0.1,0.3,12,6,"[110,130,255]","[190,50,255]",0.3,-1,0,TRUE,-10,2,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_hecutor_trail_2,shpe_hecutor_shot,trail_arc,1,0,0.1,0.2,18,9,"[100,150,255]","[50,50,255]",0.5,128,-1000,TRUE,-10,2,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
-shpe_hecutor_trail_3,shpe_hecutor_shot,trail_arc,10,0.1,0,0.5,7,3,"[120,160,255]","[190,120,255]",0.7,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
+shpe_hecutor_trail_3,shpe_hecutor_shot,trail_arc,10,0.5,0,0.3,7,3,"[120,160,255]","[190,120,255]",0.7,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
 shpe_light_hecutor_trail,shpe_light_hecutor_shot,base_trail_heavySmoke,1,0,0.1,0.1,10,5,"[110,130,255]","[130,50,255]",0.2,-1,0,TRUE,-10,2,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_light_hecutor_trail_2,shpe_light_hecutor_shot,trail_arc,1,0,0.1,0.1,15,7,"[100,150,255]","[50,50,255]",0.5,128,-1000,TRUE,-10,2,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
-shpe_light_hecutor_trail_3,shpe_light_hecutor_shot,trail_arc,10,0.1,0,0.3,5,2,"[120,160,255]","[190,120,255]",0.7,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
+shpe_light_hecutor_trail_3,shpe_light_hecutor_shot,trail_arc,10,0.5,0,0.2,5,2,"[120,160,255]","[190,120,255]",0.7,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
 shpe_aetherfire_trail,shpe_aetherfire_shot,base_trail_heavySmoke,1,0,0.1,0.1,10,5,"[110,230,255]","[110,150,255]",0.4,-1,0,TRUE,-10,2,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

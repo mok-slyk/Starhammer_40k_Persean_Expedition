@@ -154,6 +154,7 @@ public class LanceBeam {
         float coreID = MagicTrailPlugin.getUniqueID();
 
         // 0.---1===2--.3
+        float offset = (float) (Math.random()*100);
 
         //0
         MagicTrailPlugin.addTrailMemberAdvanced(
@@ -178,7 +179,7 @@ public class LanceBeam {
                 GL_ONE,
                 texLength,
                 texScroll,
-                -1,
+                offset,
                 drift,
                 null,
                 CombatEngineLayers.BELOW_INDICATORS_LAYER,
@@ -207,7 +208,7 @@ public class LanceBeam {
                 GL_ONE,
                 texLength,
                 texScroll,
-                -1,
+                offset,
                 drift,
                 null,
                 CombatEngineLayers.BELOW_INDICATORS_LAYER,
@@ -237,7 +238,7 @@ public class LanceBeam {
                 GL_ONE,
                 texLength,
                 texScroll,
-                -1,
+                offset,
                 drift,
                 null,
                 CombatEngineLayers.BELOW_INDICATORS_LAYER,
@@ -267,7 +268,7 @@ public class LanceBeam {
                 GL_ONE,
                 texLength,
                 texScroll,
-                -1,
+                offset,
                 drift,
                 null,
                 CombatEngineLayers.BELOW_INDICATORS_LAYER,

@@ -82,6 +82,7 @@ Prismatic Aura,shpe_prismatic_aura,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hu
 Hellforged,shpe_hellforged,,,Chaos,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Hellforged,"This ship was constructed or extensively modified by servants of chaos.
 
 Chaos Marks applied to this ship are 50 percent more effective.",,,graphics/hullmods/shpe_hellforged.png
+Alien Targeting Core,shpe_alien_targeting_core,,,Ancient Xenotech,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.AlienTargetingCore,Extends the range of ballistic and energy weapons by %s.,,,graphics/hullmods/shpe_alien_targeting_core.png
 ,,,,,,,,,,,,,,,,,,,
 Mark of Tzeentch,shpe_tzeentch_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.TzeentchMark,"The ship is marked by the lord of change.
 

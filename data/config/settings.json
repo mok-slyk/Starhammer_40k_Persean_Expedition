@@ -73,6 +73,10 @@
 			"devastation_khorne":"graphics/ships/shpe_devastation_khorne.png",
 			"devastation_slaanesh":"graphics/ships/shpe_devastation_slaanesh.png",
 			"devastation_nurgle":"graphics/ships/shpe_devastation_nurgle.png",
+			"idolator_tzeentch":"graphics/ships/shpe_idolator_tzeentch.png",
+			"idolator_khorne":"graphics/ships/shpe_idolator_khorne.png",
+			"idolator_slaanesh":"graphics/ships/shpe_idolator_slaanesh.png",
+			"idolator_nurgle":"graphics/ships/shpe_idolator_nurgle.png",
 		},
 		"spores":{
 			"spores_0001":"graphics/fx/spores/0001.png",

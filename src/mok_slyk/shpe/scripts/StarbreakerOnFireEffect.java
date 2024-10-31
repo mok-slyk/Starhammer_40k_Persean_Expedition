@@ -9,9 +9,12 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 import mok_slyk.shpe.scripts.utils.LanceBeam;
 import org.dark.shaders.light.LightShader;
 import org.dark.shaders.light.StandardLight;
+import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
+
+import static mok_slyk.shpe.scripts.utils.SHPEUtils.scaleVector;
 
 public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
     @Override
@@ -27,7 +30,7 @@ public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
         ///*
         SpriteAPI coreSprite = Global.getSettings().getSprite("fx", "base_trail_smooth");
         SpriteAPI fringeSprite = Global.getSettings().getSprite("fx", "base_trail_smoke");
-        LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), (Vector2f) weapon.getShip().getVelocity().scale(0.8f),
+        LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 coreSprite, new Color(255, 214, 106), new Color(255, 196, 53), new Color(255, 151, 0), 4, 2, 0.7f, 100, 0, 1, 1f, 0, 0.3f, 0.2f,
                 fringeSprite, new Color(255, 145, 0), new Color(255, 60, 0), new Color(215, 43, 95), 8, 5, 1.3f, 100, -200, 1, 0.8f, 0, 0.3f, 0.3f,
                 5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, false);
@@ -35,7 +38,7 @@ public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
         float flashSize = 30f;
         engine.addHitParticle(
                 projectile.getSpawnLocation(),
-                (Vector2f) weapon.getShip().getVelocity().scale(0.8f),
+                scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 (float) Math.random() * flashSize / 2 + flashSize,
                 1,
                 0.3f,
@@ -43,14 +46,14 @@ public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
         );
         engine.addHitParticle(
                 projectile.getSpawnLocation(),
-                (Vector2f) weapon.getShip().getVelocity().scale(0.8f),
+                scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 (float) Math.random() * flashSize / 4 + flashSize / 2,
                 1,
                 0.9f,
                 new Color(255, 83, 83)
         );
         //Muzzle Flash Glow:
-        StandardLight flash = new StandardLight(projectile.getSpawnLocation(), (Vector2f) weapon.getShip().getVelocity().scale(0.8f), new Vector2f(), null, 0.3f, 50);
+        StandardLight flash = new StandardLight(projectile.getSpawnLocation(), scaleVector(weapon.getShip().getVelocity(), 0.8f), new Vector2f(), null, 0.3f, 50);
         flash.setColor(new Color(255, 230, 99));
         flash.fadeOut(1);
         LightShader.addLight(flash);
