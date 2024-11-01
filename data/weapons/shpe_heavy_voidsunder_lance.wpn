@@ -11,14 +11,14 @@
   "hardpointAngleOffsets": [
     0
   ],
-  "hardpointGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointGlowSprite": "graphics/weapons/shpe_voidsunder_lance_hardpoint_glow.png",
   "hardpointOffsets": [
-    4,
+    47,
     0
   ],
-  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "hardpointSprite": "graphics/weapons/shpe_voidsunder_lance_hardpoint_base.png",
   "hardpointUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
-  "id": "shpe_voidsunder_lance",
+  "id": "shpe_heavy_voidsunder_lance",
   "projectileSpecId": "shpe_voidsunder_shot",
   "size": "LARGE",
   "specClass": "projectile",
@@ -26,12 +26,12 @@
   "turretAngleOffsets": [
     0
   ],
-  "turretGlowSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretGlowSprite": "graphics/weapons/shpe_voidsunder_lance_turret_glow.png",
   "turretOffsets": [
-    8,
+    44,
     0
   ],
-  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "turretSprite": "graphics/weapons/shpe_voidsunder_lance_turret_base.png",
   "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
   "type": "ENERGY"
 }

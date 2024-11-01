@@ -41,7 +41,9 @@ Light Laser Battery,shpe_light_staravar,6,0,2000,1000,300,,,0,15,0,,,,ENERGY,75,
 Light Shard Cannon,shpe_light_shard,6,0,2000,350,,300,,5,15,0,,,,KINETIC,15,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
 Aetherfire Cannon,shpe_aetherfire,6,0,1000,500,,400,,5,25,0,,,,ENERGY,50,,0,3,3,0.7,0,15,3,10,,700,,,5,,,,,,Chaos,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Voidsunder Lance,shpe_voidsunder_lance,2,,2000,900,7000,,,0,40,,,,,HIGH_EXPLOSIVE,,3000,0,0.3,0.1,3,,,,,10000,,,,,,,USE_LESS_VS_SHIELDS,"beam10, he10",,Imperium,,Anti Armor,,,,,,,,,,22.5
+Voidsunder Lance,shpe_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,22.5
+Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
+Godsbane Lance,shpe_godsbane_lance,2,,10000,1100,,400,,0,40,18,,,,ENERGY,300,,0.7,4,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Gauss Particle Whip,shpe_particle_whip,2,,2000,900,8000,,500,0,180,12,,,,ENERGY,,3000,0,0.3,0.1,2,,,,,10000,,,,,,,,beam10,,Necron,,Anti Armor,,,,,,,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,54 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "heavy_blaster_fire",
+  "glowColor": [
+    255,
+    20,
+    20,
+    180
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_godsbane_lance_hardpoint_glow.png",
+  "hardpointOffsets": [
+    42.5,
+    7,
+    42.5,
+    -7,
+    38.5,
+    -11,
+    38.5,
+    11
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_godsbane_lance_hardpoint_base.png",
+  "id": "shpe_godsbane_lance",
+  "projectileSpecId": "shpe_godsbane_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_godsbane_lance_turret_glow.png",
+  "turretOffsets": [
+    41,
+    -7,
+    41,
+    7,
+    37,
+    11,
+    37,
+    -11
+  ],
+  "turretSprite": "graphics/weapons/shpe_godsbane_lance_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
+}

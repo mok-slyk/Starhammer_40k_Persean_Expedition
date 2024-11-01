@@ -25,7 +25,7 @@ import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
  * Utility for spawning fake beams for lance weapons etc. Heavily inspired by MagicFakeBeam
  */
 public class LanceBeam {
-    public static void spawnLanceBeam(CombatEngineAPI engine, Vector2f start, float angle, float range, Vector2f drift, SpriteAPI coreSprite, Color coreColorStart, Color coreColorEnd, Color coreColorFade, float coreWidthStart, float coreWidthEnd, float coreGrowthFactor, float coreTexLength, float coreTexScroll, float coreOpacityStart, float coreOpacityEnd, float coreIntro, float coreFull , float coreFade, SpriteAPI fringeSprite, Color fringeColorStart, Color fringeColorEnd, Color fringeColorFade, float fringeWidthStart, float fringeWidthEnd, float fringeGrowthFactor, float fringeTexLength, float fringeTexScroll, float fringeOpacityStart, float fringeOpacityEnd, float fringeIntro, float fringeFull , float fringeFade, float blendIn, float blendOut,  float damage, DamageType damageType, float emp, float impactSize, float force, ShipAPI source, boolean ignoreShields, boolean softFlux) {
+    public static void spawnLanceBeam(CombatEngineAPI engine, Vector2f start, float angle, float range, Vector2f drift, SpriteAPI coreSprite, Color coreColorStart, Color coreColorEnd, Color coreColorFade, float coreWidthStart, float coreWidthEnd, float coreGrowthFactor, float coreTexLength, float coreTexScroll, float coreOpacityStart, float coreOpacityEnd, float coreIntro, float coreFull , float coreFade, SpriteAPI fringeSprite, Color fringeColorStart, Color fringeColorEnd, Color fringeColorFade, float fringeWidthStart, float fringeWidthEnd, float fringeGrowthFactor, float fringeTexLength, float fringeTexScroll, float fringeOpacityStart, float fringeOpacityEnd, float fringeIntro, float fringeFull , float fringeFade, float blendIn, float blendOut,  float damage, DamageType damageType, float emp, float impactSize, float force, ShipAPI source, boolean ignoreShields, boolean softFlux, OnHitEffectPlugin onHit) {
         //do collision
         CombatEntityAPI target = null;
         Vector2f beamEnd = MathUtils.getPointOnCircumference(start, range, angle);
@@ -52,7 +52,16 @@ public class LanceBeam {
             //do pass-through?
         }
 
-        if (target != null) blendOut = 10;
+        if (target != null) {
+            blendOut = 10;
+            if (onHit != null) {
+                boolean shieldHit = false;
+                if (target.getShield() != null) {
+                    shieldHit = target.getShield().isOn() && target.getShield().isWithinArc(beamEnd) && !ignoreShields;
+                }
+                onHit.onHit(null, target, beamEnd, shieldHit, null, engine);
+            }
+        }
 
         //engine.addHitParticle(beamEnd, new Vector2f(), 100, 1, 1, new Color(255, 255, 0));
         //draw beam
