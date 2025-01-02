@@ -34,14 +34,14 @@
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0012": "shpe_marsvi_builtin",
-                "WS0011": "shpe_marsvi_builtin",
-                "WS0014": "shpe_marsvi_builtin",
-                "WS0013": "shpe_marsvi_builtin",
-                "WS0010": "shpe_marsvi_builtin",
-                "WS0009": "shpe_marsvi_builtin",
-                "WS0008": "shpe_marsvi_builtin",
-                "WS0007": "shpe_marsvi_builtin",
+                "BIB0": "shpe_marsvi_builtin",
+                "BIB1": "shpe_marsvi_builtin",
+                "BIB2": "shpe_marsvi_builtin",
+                "BIB3": "shpe_marsvi_builtin",
+                "BIB4": "shpe_marsvi_builtin",
+                "BIB5": "shpe_marsvi_builtin",
+                "BIB6": "shpe_marsvi_builtin",
+                "BIB7": "shpe_marsvi_builtin",
             }
         },
         {

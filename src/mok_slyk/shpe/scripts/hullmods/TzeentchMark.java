@@ -41,4 +41,24 @@ public class TzeentchMark extends BaseHullMod {
         }
         return null;
     }
+
+    public boolean isApplicableToShip(ShipAPI ship) {
+        if (ship.getVariant().hasHullMod("shpe_khorne_mark")) return false;
+        if (ship.getVariant().hasHullMod("shpe_nurgle_mark")) return false;
+        if (ship.getVariant().hasHullMod("shpe_slaanesh_mark")) return false;
+        return ship != null;
+    }
+
+    public String getUnapplicableReason(ShipAPI ship) {
+        if (ship.getVariant().hasHullMod("khorne_mark")) {
+            return "Incompatible with Mark of Khorne";
+        }
+        if (ship.getVariant().hasHullMod("nurgle_mark")) {
+            return "Incompatible with Mark of Nurgle";
+        }
+        if (ship.getVariant().hasHullMod("slaanesh_mark")) {
+            return "Incompatible with Mark of Slaanesh";
+        }
+        return "Incompatible";
+    }
 }

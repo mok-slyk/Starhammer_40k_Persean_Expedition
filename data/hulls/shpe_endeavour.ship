@@ -84,14 +84,6 @@
     "shpe_variable_torpedo_tubes"
   ],
   "builtInWeapons": {
-    "WS0007": "shpe_marsvi_builtin",
-    "WS0008": "shpe_marsvi_builtin",
-    "WS0009": "shpe_marsvi_builtin",
-    "WS0010": "shpe_marsvi_builtin",
-    "WS0011": "shpe_marsvi_builtin",
-    "WS0012": "shpe_marsvi_builtin",
-    "WS0013": "shpe_marsvi_builtin",
-    "WS0014": "shpe_marsvi_builtin",
     "WS0015": "shpe_torptube",
     "WS0016": "shpe_torptube"
   },
@@ -257,7 +249,7 @@
     {
       "angle": 90,
       "arc": 10,
-      "id": "WS0007",
+      "id": "BIB7",
       "locations": [
         -0.5,
         23
@@ -269,7 +261,7 @@
     {
       "angle": -90,
       "arc": 10,
-      "id": "WS0008",
+      "id": "BIB6",
       "locations": [
         -0.5,
         -23
@@ -281,7 +273,7 @@
     {
       "angle": 90,
       "arc": 10,
-      "id": "WS0009",
+      "id": "BIB5",
       "locations": [
         15.5,
         23
@@ -293,7 +285,7 @@
     {
       "angle": -90,
       "arc": 10,
-      "id": "WS0010",
+      "id": "BIB4",
       "locations": [
         15.5,
         -23
@@ -305,7 +297,7 @@
     {
       "angle": 90,
       "arc": 10,
-      "id": "WS0011",
+      "id": "BIB3",
       "locations": [
         31.5,
         23
@@ -317,7 +309,7 @@
     {
       "angle": -90,
       "arc": 10,
-      "id": "WS0012",
+      "id": "BIB2",
       "locations": [
         31.5,
         -23
@@ -329,7 +321,7 @@
     {
       "angle": 90,
       "arc": 10,
-      "id": "WS0013",
+      "id": "BIB1",
       "locations": [
         47.5,
         23
@@ -341,7 +333,7 @@
     {
       "angle": -90,
       "arc": 10,
-      "id": "WS0014",
+      "id": "BIB0",
       "locations": [
         47.5,
         -23

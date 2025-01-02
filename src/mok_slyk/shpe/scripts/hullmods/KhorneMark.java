@@ -36,4 +36,24 @@ public class KhorneMark extends BaseHullMod {
             return null;
         }
     }
+
+    public boolean isApplicableToShip(ShipAPI ship) {
+        if (ship.getVariant().hasHullMod("shpe_tzeentch_mark")) return false;
+        if (ship.getVariant().hasHullMod("shpe_nurgle_mark")) return false;
+        if (ship.getVariant().hasHullMod("shpe_slaanesh_mark")) return false;
+        return ship != null;
+    }
+
+    public String getUnapplicableReason(ShipAPI ship) {
+        if (ship.getVariant().hasHullMod("tzeentch_mark")) {
+            return "Incompatible with Mark of Tzeentch";
+        }
+        if (ship.getVariant().hasHullMod("nurgle_mark")) {
+            return "Incompatible with Mark of Nurgle";
+        }
+        if (ship.getVariant().hasHullMod("slaanesh_mark")) {
+            return "Incompatible with Mark of Slaanesh";
+        }
+        return "Incompatible";
+    }
 }
