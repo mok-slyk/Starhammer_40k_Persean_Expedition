@@ -10,6 +10,8 @@ import org.dark.shaders.util.ShaderLib;
 import java.awt.*;
 
 public class Hellforged extends BaseHullMod {
+    public static float MARK_EFFECT_MULT = 1.5f;
+
     @Override
     public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
         if (stats.getEntity() == null) {

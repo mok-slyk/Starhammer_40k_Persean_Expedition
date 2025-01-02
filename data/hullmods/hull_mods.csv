@@ -94,9 +94,11 @@ Weapon range is reduced by %s but all damage is increased by %s.
 
 %s",,,graphics/hullmods/shpe_khorne_mark.png
 Mark of Nurgle,shpe_nurgle_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.NurgleMark,"The ship is marked by the lord of decay.
-",,,graphics/hullmods/shpe_nurgle_mark.png
+
+Increases hull by %s and reduces EMP damage taken by %s but decreases top speed by %s.",,,graphics/hullmods/shpe_nurgle_mark.png
 Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
-",,,graphics/hullmods/shpe_slaanesh_mark.png
+
+Increases movement speed by %s and reduces weapon flux generation by %s but decreases hull by %s.",,,graphics/hullmods/shpe_slaanesh_mark.png
 ,,,,,,,,,,,,,,,,,,,
 Macrobatteries: Hives of Nurgle,shpe_nurgle_hives,,,Chaos,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.NurgleHive,"Turns the ship's built-in macrocannon batteries into diseased hives.
 ",,,graphics/hullmods/shpe_nurgle_hive.png

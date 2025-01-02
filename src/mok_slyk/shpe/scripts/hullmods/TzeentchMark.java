@@ -13,11 +13,11 @@ public class TzeentchMark extends BaseHullMod {
     @Override
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         for (ShipAPI fighter: getFighters(ship)) {
-            fighter.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
-            fighter.getMutableStats().getBallisticWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
-            fighter.getMutableStats().getMissileWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
+            fighter.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, getDamageIncreasePercent(ship)*0.01f);
+            fighter.getMutableStats().getBallisticWeaponDamageMult().modifyFlat(ID, getDamageIncreasePercent(ship)*0.01f);
+            fighter.getMutableStats().getMissileWeaponDamageMult().modifyFlat(ID, getDamageIncreasePercent(ship)*0.01f);
         }
-        ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, DAMAGE_INCREASE_PERCENT*0.01f);
+        ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat(ID, getDamageIncreasePercent(ship)*0.01f);
     }
 
     private List<ShipAPI> getFighters(ShipAPI carrier) {
@@ -34,10 +34,17 @@ public class TzeentchMark extends BaseHullMod {
         return result;
     }
 
+    private float getDamageIncreasePercent(ShipAPI ship) {
+        if (ship.getVariant().hasHullMod("shpe_hellforged")){
+            return Hellforged.MARK_EFFECT_MULT*DAMAGE_INCREASE_PERCENT;
+        }
+        return DAMAGE_INCREASE_PERCENT;
+    }
+
     @Override
-    public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
+    public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
         if (index == 0) {
-            return ((int) DAMAGE_INCREASE_PERCENT) + "%";
+            return ((int) getDamageIncreasePercent(ship)) + "%";
         }
         return null;
     }
@@ -50,13 +57,13 @@ public class TzeentchMark extends BaseHullMod {
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
-        if (ship.getVariant().hasHullMod("khorne_mark")) {
+        if (ship.getVariant().hasHullMod("shpe_khorne_mark")) {
             return "Incompatible with Mark of Khorne";
         }
-        if (ship.getVariant().hasHullMod("nurgle_mark")) {
+        if (ship.getVariant().hasHullMod("shpe_nurgle_mark")) {
             return "Incompatible with Mark of Nurgle";
         }
-        if (ship.getVariant().hasHullMod("slaanesh_mark")) {
+        if (ship.getVariant().hasHullMod("shpe_slaanesh_mark")) {
             return "Incompatible with Mark of Slaanesh";
         }
         return "Incompatible";
