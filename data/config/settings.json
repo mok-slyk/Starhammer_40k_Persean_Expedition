@@ -53,6 +53,10 @@
 			"nurgle_demonships":"graphics/icons/campaign/shpe_nurgle_demonships.png",
 			"slaanesh_demonships":"graphics/icons/campaign/shpe_slaanesh_demonships.png",
 		},
+		"blueprint_packages":{
+			"shpe_imperium_bp":"graphics/icons/cargo/shpe_imperium_bp.png",
+			"shpe_mechanicus_bp":"graphics/icons/cargo/shpe_mechanicus_bp.png",
+		},
 		"illustrations":{
 			"chaos_summon":"graphics/illustrations/shpe_chaos_summon.jpg",
 		},	
