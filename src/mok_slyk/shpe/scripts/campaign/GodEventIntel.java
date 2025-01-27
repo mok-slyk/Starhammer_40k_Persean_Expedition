@@ -351,6 +351,49 @@ public class GodEventIntel extends BaseEventIntel {
     }
 
     @Override
+    protected void notifyEnding() {
+        super.notifyEnding();
+    }
+
+    @Override
+    protected void notifyEnded() {
+        super.notifyEnded();
+        Global.getSector().getMemoryWithoutUpdate().unset(key);
+    }
+
+    @Override
+    protected void notifyStageReached(EventStageData stage) {
+        switch (godID) {
+            case ChaosGodsEventIntel.KHORNE_I:
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_khorne_mark");
+                }
+                break;
+            case ChaosGodsEventIntel.TZEENTCH_I:
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_tzeentch_mark");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_warp_beasts");
+                }
+                break;
+            case ChaosGodsEventIntel.NURGLE_I:
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_nurgle_mark");
+                }
+                if (stage.id == Stage.GIFT_2) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_nurgle_hives");
+                }
+                break;
+            case ChaosGodsEventIntel.SLAANESH_I:
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_slaanesh_mark");
+                }
+                break;
+        }
+    }
+
+    @Override
     public void setProgress(int progress) {
         //if (this.progress == progress) return;
         int actualMaxProgress = maxProgress;

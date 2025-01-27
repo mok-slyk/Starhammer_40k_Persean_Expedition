@@ -1,0 +1,12 @@
+{
+	"id":"shpe_aptitude_gifts",
+	"governingAptitude":"shpe_gifts",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":0,
+			"effects":[
+				{"type":"DESCRIPTION", "script":"com.fs.starfarer.api.impl.campaign.skills.AptitudeDesc$Level0"},
+			]
+		},
+	],
+}

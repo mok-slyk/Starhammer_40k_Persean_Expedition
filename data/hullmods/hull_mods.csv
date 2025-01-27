@@ -96,6 +96,9 @@ Weapon range is reduced by %s but all damage is increased by %s.
 Mark of Nurgle,shpe_nurgle_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.NurgleMark,"The ship is marked by the lord of decay.
 
 Increases hull by %s and reduces EMP damage taken by %s but decreases top speed by %s.",,,graphics/hullmods/shpe_nurgle_mark.png
+Ark of Pestilence,shpe_ark_of_pestilence,,,Chaos,,,,,,,10,15,20,30,mok_slyk.shpe.scripts.hullmods.ArkOfPestilence,"The ship is covered in a thick cloud of spores and warp-borne pestilence.
+
+Enemy ships in close range are infected with pestilence, continually taking light hull damage and infecting others around them.",,,graphics/hullmods/shpe_ark_of_pestilence.png
 Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
 
 Increases movement speed by %s and reduces weapon flux generation by %s but decreases hull by %s.",,,graphics/hullmods/shpe_slaanesh_mark.png

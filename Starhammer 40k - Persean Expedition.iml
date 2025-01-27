@@ -72,5 +72,29 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Second in Command-1.2.3/jars/SecondInCommand.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../Second in Command-1.2.3/src" />
+          <root url="file://$MODULE_DIR$/../Second in Command-1.2.3/src/second_in_command" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Random Assortment of Things-2.4.7/jars/RandomAssortmentofThings.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../Random Assortment of Things-2.4.7/src" />
+          <root url="file://$MODULE_DIR$/../Random Assortment of Things-2.4.7/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

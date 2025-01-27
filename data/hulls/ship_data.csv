@@ -26,7 +26,7 @@ Retribution,shpe_retribution,Battleship,Imperium,shpe_allaheadfull,28,20000,1750
 Emperor,shpe_emperor,Carrier Battleship,Imperium,shpe_allaheadfull,28,20000,1750,17000,15000,600,360,4,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,55,55,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.4,2,4,,500
 Apocalypse,shpe_apocalypse,Battleship,Imperium,shpe_lockon,30,20000,1750,19000,15000,800,360,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Truth's Razor,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,19000,15000,800,360,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,,shpe_imperium_bp,,0.4,2,4,,500
+Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,29000,15000,1500,480,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,,shpe_imperium_bp,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Holotest,shpe_holotest,Frigate,Midline,plasmajets,6,20000,500,2100,1750,140,45,,120,110,90,60,90,200,PHASE,shpe_holofield,90,,,0.03,0.04,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,,,0.4,2,2,,204
 Eclipse,shpe_eclipse,Cruiser,Corsairs,maneuveringjets,17,8000,800,11000,16000,800,165,2,80,50,25,25,25,1800,PHASE,shpe_holofield,90,0.5,0.6,0.03,0.1,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT",,,1,2,3,,405

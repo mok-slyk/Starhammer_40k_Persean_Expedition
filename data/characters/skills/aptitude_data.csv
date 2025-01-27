@@ -1,0 +1,5 @@
+id,name,color,description,order,effect_skill_id,sound1,sound2,sound3,sound4,sound5,sound_story,elite_overlay,elite_overlay_medium,elite_overlay_small
+shpe_gifts,Gifts of Chaos,"220,34,215,255",Skills granted by the powers of chaos,5,shpe_aptitude_gifts,combat1,combat2,combat3,combat4,combat5,ui_char_spent_story_point_combat,graphics/icons/skills/elite_combat.png,graphics/icons/skills/elite_combat48.png,graphics/icons/skills/elite_combat32.png
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

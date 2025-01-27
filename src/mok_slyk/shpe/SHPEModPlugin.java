@@ -6,10 +6,12 @@ import com.fs.starfarer.api.campaign.TextPanelAPI;
 import exerelin.campaign.SectorManager;
 import mok_slyk.shpe.scripts.campaign.ChaosCorruptionEventIntel;
 import mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel;
+import mok_slyk.shpe.scripts.campaign.ChaosSkillScript;
 import mok_slyk.shpe.scripts.world.SHPERelations;
 import mok_slyk.shpe.scripts.world.SHPESectorGen;
 import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.TextureData;
+import org.magiclib.achievements.MagicAchievementIntel;
 
 public class SHPEModPlugin extends BaseModPlugin {
 
@@ -41,11 +43,20 @@ public class SHPEModPlugin extends BaseModPlugin {
     }
 
     @Override
+    public void onGameLoad(boolean newGame) {
+        super.onGameLoad(newGame);
+        //if (!Global.getSector().hasTransientScript(ChaosSkillScript.class)) {
+        //    Global.getSector().addTransientScript(new ChaosSkillScript());
+        //}
+    }
+
+    @Override
     public void onNewGameAfterTimePass() {
         super.onNewGameAfterTimePass();
         TextPanelAPI text = null;
         new ChaosGodsEventIntel(text, true);
 
-        Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
+        //Global.getSector().addScript(new ChaosSkillScript());
+        // Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
     }
 }

@@ -4,6 +4,8 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.TextPanelAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.intel.events.BaseEventIntel;
+import com.fs.starfarer.api.impl.campaign.intel.events.EventFactor;
+import com.fs.starfarer.api.impl.campaign.intel.events.ht.HyperspaceTopographyEventIntel;
 import com.fs.starfarer.api.ui.*;
 import com.fs.starfarer.api.util.Misc;
 
@@ -49,16 +51,16 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
 
     protected TooltipMakerAPI intelMain;
 
-    public GodEventIntel[] gods = {
-            new GodEventIntel(KHORNE_I,"Khorne", "$shpe_khorne_ref", new Color(180, 5, 18)),
-            new GodEventIntel(TZEENTCH_I,"Tzeentch", "$shpe_tzeentch_ref", new Color(36, 115, 189)),
-            new GodEventIntel(NURGLE_I,"Nurgle", "$shpe_nurgle_ref", new Color(115, 190, 104)),
-            new GodEventIntel(SLAANESH_I,"Slaanesh", "$shpe_slaanesh_ref", new Color(135, 50, 162))
-    };
+    public GodEventIntel[] gods = new GodEventIntel[4];
     public ChaosGodsEventIntel(TextPanelAPI text, boolean withIntelNotification) {
         super();
 
         Global.getSector().getMemoryWithoutUpdate().set(KEY, this);
+
+        gods[KHORNE_I] = new GodEventIntel(KHORNE_I,"Khorne", "$shpe_khorne_ref", new Color(180, 5, 18));
+        gods[TZEENTCH_I] = new GodEventIntel(TZEENTCH_I,"Tzeentch", "$shpe_tzeentch_ref", new Color(36, 115, 189));
+        gods[NURGLE_I] = new GodEventIntel(NURGLE_I,"Nurgle", "$shpe_nurgle_ref", new Color(115, 190, 104));
+        gods[SLAANESH_I] = new GodEventIntel(SLAANESH_I,"Slaanesh", "$shpe_slaanesh_ref", new Color(135, 50, 162));
 
         for (GodEventIntel god: gods) {
             god.masterEvent = this;
@@ -72,6 +74,24 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
 
     public static ChaosGodsEventIntel get() {
         return (ChaosGodsEventIntel) Global.getSector().getMemoryWithoutUpdate().get(KEY);
+    }
+
+    @Override
+    protected void notifyEnding() {
+        super.notifyEnding();
+    }
+
+    @Override
+    protected void notifyEnded() {
+        super.notifyEnded();
+        Global.getSector().getMemoryWithoutUpdate().unset(KEY);
+    }
+
+    protected Object readResolve() {
+        if (getDataFor(Stage.START) == null) {
+            setup();
+        }
+        return this;
     }
 
     EventProgressBarAPI[] bars = new EventProgressBarAPI[4];
@@ -411,7 +431,12 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
         return false;
     }
 
-    //RunCode mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.get().addGodProgress(0,20);
+    @Override
+    protected String getSoundForOneTimeFactorUpdate(EventFactor factor) {
+        return null;
+    }
+
+    //RunCode mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.get().addGodProgress(1,20);
     public void addGodProgress(int godID, int prog) {
         gods[godID].setProgress(gods[godID].getProgress()+prog);
     }

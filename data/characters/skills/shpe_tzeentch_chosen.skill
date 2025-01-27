@@ -1,0 +1,20 @@
+{
+	"id":"shpe_tzeentch_chosen",
+	"governingAptitude":"shpe_gifts",
+	"compressHullmods":false,
+	"elite":false,
+	"scope":"CUSTOM",
+	"scopeStr":"all combat ships, including carriers and militarized civilian ships:",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"mok_slyk.shpe.scripts.skills.ChosenOfTzeentch$Level1"},
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"mok_slyk.shpe.scripts.skills.ChosenOfTzeentch$Level2"},
+				{"type":"SHIP", "script":"mok_slyk.shpe.scripts.skills.ChosenOfTzeentch$Level3"},
+				{"type":"SHIP", "script":"mok_slyk.shpe.scripts.skills.ChosenOfTzeentch$Level4"},
+			]
+		},
+	],
+}
