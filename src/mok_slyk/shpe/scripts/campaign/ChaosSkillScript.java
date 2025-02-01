@@ -10,6 +10,7 @@ import org.json.JSONException;
 
 import java.io.IOException;
 
+@Deprecated
 public class ChaosSkillScript implements EveryFrameScript {
     private static final Logger log = Global.getLogger(ChaosSkillScript.class);
     @Override

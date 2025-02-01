@@ -20,12 +20,12 @@ import static mok_slyk.shpe.scripts.utils.SHPEUtils.getRandomPointInBounds;
 public class ArkOfPestilence extends BaseHullMod {
     protected final static float INFECTION_RANGE = 200f;
     protected final static int STARTING_STACKS = 20;
-    protected final static float HULL_DAMAGE_PERCENT = 1f;
+    protected final static float HULL_DAMAGE_PERCENT = 0.3f;
     private final static String KEY = "ark_of_pestilence_data_key";
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
         if (ship.isAlive()) {
-            doPlagueParticles(ship, amount*ship.getMass()/8);
+            doPlagueParticles(ship, amount*ship.getMaxHitpoints()/120);
             for (ShipAPI enemy : AIUtils.getNearbyEnemies(ship, INFECTION_RANGE)) {
                 if (enemy.isAlive()) {
                     PestilenceListener pestilenceListener = getOrAddPestilenceListener(enemy, ship);
@@ -34,16 +34,6 @@ public class ArkOfPestilence extends BaseHullMod {
                 }
             }
         }
-    }
-
-    protected PestilenceArkData getOrAddArkData (ShipAPI ship) {
-        PestilenceArkData data = (PestilenceArkData) ship.getCustomData().get(KEY);
-        if (data != null) {
-            return data;
-        }
-        data = new PestilenceArkData();
-        ship.setCustomData(KEY, data);
-        return data;
     }
 
     protected static PestilenceListener getOrAddPestilenceListener(ShipAPI ship, ShipAPI source) {
@@ -60,38 +50,58 @@ public class ArkOfPestilence extends BaseHullMod {
             CombatEngineAPI engine = Global.getCombatEngine();
             Vector2f point = getRandomPointInBounds(ship);
             Vector2f point2 = getRandomPointInBounds(ship);
-            float size = 20f;
+            float size = 30f;
             //size = Misc.getHitGlowSize(size, projectile.getDamage().getBaseDamage(), damageResult);
             float sizeMult = (float)Math.random()+0.5f;
-            float dur = 0.5f;
+            float dur = 1f;
+            float durMult = (float)Math.random()+0.5f;
             float rampUp = 0f;
-            Color c = new Color(30, 60, 20, 40);
-            Color inv = new Color(200, 100, 180, 30);
+            Color c = new Color(30, 60, 20, 20);
+            Color inv = new Color(200, 100, 180, 10);
             engine.addNebulaParticle(point, vel, size, 1f + sizeMult,
-                    rampUp, 0f, dur, c);
+                    rampUp, 0f, dur*durMult, c);
             engine.addNegativeNebulaParticle(point2, vel, size, 2f,
-                    rampUp, 0f, dur, inv);
+                    rampUp, 0f, dur*durMult, inv);
             elapsed -= 0.1;
             if (elapsed<0) elapsed = 0;
         }
     }
 
     protected static void doDamage(ShipAPI ship, ShipAPI source) {
+        if (ship.getHullLevel() <= 0.05f) return;
         CombatEngineAPI engine = Global.getCombatEngine();
         Vector2f point = getRandomPointInBounds(ship);
         float damage = (0.01f*HULL_DAMAGE_PERCENT*ship.getMaxHitpoints());
-        engine.applyDamage(ship, point, damage, DamageType.ENERGY, 0, true, false, source, false);
+        ship.setHitpoints(ship.getHitpoints()-damage);
+        Color c = new Color(90, 220, 60, 200);
+        //engine.applyDamage(ship, point, damage, DamageType.ENERGY, 0, true, false, source, false);
+        if (!ship.isFighter()) {
+            engine.addFloatingDamageText(point, damage, c, ship, source);
+        }
     }
 
-    public static class PestilenceArkData {
-
+    @Override
+    public boolean isApplicableToShip(ShipAPI ship) {
+        return ship.getVariant().hasHullMod("shpe_hellforged") && ship.getVariant().hasHullMod("shpe_nurgle_mark");
     }
+
+    @Override
+    public String getUnapplicableReason(ShipAPI ship) {
+        if (!ship.getVariant().hasHullMod("shpe_nurgle_mark")) {
+            return "Requires Mark of Nurgle";
+        }
+        if (!ship.getVariant().hasHullMod("shpe_hellforged")) {
+            return "Requires Hellforged";
+        }
+        return "";
+    }
+
     public static class PestilenceListener implements AdvanceableListener {
         protected ShipAPI ship;
         protected ShipAPI source;
         protected int stacks = STARTING_STACKS;
         protected float reInfectTimer = 10;
-        public IntervalUtil interval = new IntervalUtil(0.1f, 0.5f);
+        public IntervalUtil interval = new IntervalUtil(0.3f, 0.8f);
         public PestilenceListener(ShipAPI ship, ShipAPI source) {
             this.ship = ship;
             this.source = source;
@@ -100,9 +110,9 @@ public class ArkOfPestilence extends BaseHullMod {
         public void advance(float amount) {
             interval.advance(amount);
             if (stacks > 0) {
+                doPlagueParticles(ship, amount*ship.getMaxHitpoints()/140);
                 if (interval.intervalElapsed()) {
                     stacks--;
-                    doPlagueParticles(ship, amount*ship.getMass());
                     doDamage(ship, source);
                     for (ShipAPI ally : AIUtils.getNearbyAllies(ship, INFECTION_RANGE)) {
                         if (ally.isAlive()) {
@@ -118,5 +128,7 @@ public class ArkOfPestilence extends BaseHullMod {
                 reInfectTimer -= amount;
             }
         }
+
+
     }
 }

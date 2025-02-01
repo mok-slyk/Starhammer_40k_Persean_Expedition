@@ -1,7 +1,8 @@
 package mok_slyk.shpe.scripts.campaign;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.TextPanelAPI;
+import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.intel.events.BaseEventIntel;
 import com.fs.starfarer.api.impl.campaign.intel.events.EventFactor;
@@ -9,11 +10,12 @@ import com.fs.starfarer.api.impl.campaign.intel.events.ht.HyperspaceTopographyEv
 import com.fs.starfarer.api.ui.*;
 import com.fs.starfarer.api.util.Misc;
 
-import java.awt.*;
-import java.util.HashSet;
-import java.util.Set;
 
-public class ChaosGodsEventIntel extends BaseEventIntel {
+import java.awt.*;
+import java.util.*;
+import java.util.List;
+
+public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventListener {
     public static String KEY = "$shpe_cgods_ref";
     public static int PROGRESS_MAX = 100;
 
@@ -35,12 +37,15 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
     public static final String SLAANESH_MARK_BUTTON = "slaanesh_mark_button";
     public static final String SLAANESH_UNMARK_BUTTON = "slaanesh_unmark_button";
 
+    public static final Color UNDIVIDED_COLOR = new Color(120, 60, 211);
     public Stage stageAt = Stage.START;
 
     public static final int KHORNE_I = 0;
     public static final int TZEENTCH_I = 1;
     public static final int NURGLE_I = 2;
     public static final int SLAANESH_I = 3;
+
+    public static final int SMALL_TO_LARGE_FLEET_THRESHOLD = 100;
 
     protected Set<ButtonAPI> buttons = new HashSet<>(8);
     boolean updatePanel = false;
@@ -243,7 +248,25 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
                 buttons.add(b3);
             }
         }
+
+        float barW = getBarWidth();
+        float factorWidth = (barW - opad) / 2f;
+
+        if (withMonthlyFactors() != withOneTimeFactors()) {
+            //factorWidth = barW;
+            factorWidth = (int) (barW * 0.6f);
+        }
+
+        TooltipMakerAPI mFac = main.beginSubTooltip(factorWidth);
+
         panel.addUIElement(main).inTL(0, 0);
+
+        List<EventFactor> godFactors = new ArrayList<>();
+        godFactors.addAll(gods[KHORNE_I].getFactors());
+        godFactors.addAll(gods[TZEENTCH_I].getFactors());
+        godFactors.addAll(gods[NURGLE_I].getFactors());
+        godFactors.addAll(gods[SLAANESH_I].getFactors());
+
     }
 
     @Override
@@ -434,6 +457,84 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
     @Override
     protected String getSoundForOneTimeFactorUpdate(EventFactor factor) {
         return null;
+    }
+
+    @Override
+    public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, CampaignEventListener.FleetDespawnReason reason, Object param) {}
+
+    @Override
+    public void reportBattleOccurred(CampaignFleetAPI fleet, CampaignFleetAPI primaryWinner, BattleAPI battle) {
+        if (isEnded() || isEnding()) return;
+
+        if (!battle.isPlayerInvolved()) return;
+
+        int totalFleetPointsDefeated = 0;
+        boolean foughtImperium = false;
+        boolean foughtChaos = false;
+        boolean foughtKhorne = false;
+        boolean foughtTzeentch = false;
+        boolean foughtNurgle = false;
+        boolean foughtSlaanesh = false;
+
+        boolean bigBattle = false;
+        boolean superiorFoe = false;
+        if (battle.getPlayerSide().contains(primaryWinner)) {
+            if (battle.getPlayerCombined().getFleetPoints()*1.1f<battle.getNonPlayerCombined().getFleetPoints()) {
+                superiorFoe = true;
+            }
+            for (CampaignFleetAPI otherFleet : battle.getNonPlayerSideSnapshot()) {
+                totalFleetPointsDefeated += otherFleet.getFleetPoints();
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_imperium")) {
+                    foughtImperium = true;
+                }
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_chaos")) {
+                    foughtChaos = true;
+                }
+            }
+            if (totalFleetPointsDefeated > SMALL_TO_LARGE_FLEET_THRESHOLD) {
+                bigBattle = true;
+            }
+
+            // Gain on kill imperium ships:
+            if (foughtImperium) {
+                if (bigBattle) {
+                    addFactor(new ChaosGodOneTimeFactor(1, "Imperial ships destroyed", "Imperial ships destroyed by your fleet."), null);
+                } else {
+                    addFactor(new ChaosGodOneTimeFactor(2, "Imperial ships destroyed", "Imperial ships destroyed by your fleet."), null);
+                }
+            }
+            if (foughtChaos) {
+                addFactor(new ChaosGodOneTimeFactor(-1, "Chaos ships destroyed", "Chaos Undivided ships destroyed by your fleet."), null);
+            }
+            if (superiorFoe) {
+                addFactor(new ChaosGodOneTimeFactor(1, KHORNE_I, "Superior foe defeated", "Superior fleet defeated by your fleet."), null);
+            }
+        }
+    }
+
+    @Override
+    public void addFactor(EventFactor factor, InteractionDialogAPI dialog) {
+        addingFactorDialog = dialog;
+        factors.add(factor);
+        if (factor.isOneTime()) {
+            TextPanelAPI textPanel = dialog == null ? null : dialog.getTextPanel();
+            sendUpdateIfPlayerHasIntel(factor, textPanel);
+        }
+        addingFactorDialog = null;
+        if (factor instanceof BaseChaosGodFactor) {
+            if (((BaseChaosGodFactor) factor).undivided) {
+                gods[KHORNE_I].addFactor(factor);
+                gods[TZEENTCH_I].addFactor(factor);
+                gods[NURGLE_I].addFactor(factor);
+                gods[SLAANESH_I].addFactor(factor);
+            } else {
+                gods[((BaseChaosGodFactor) factor).godIndex].addFactor(factor);
+            }
+        }
+    }
+
+    protected void addBulletPoints(TooltipMakerAPI info, ListInfoMode mode, boolean isUpdate, Color tc, float initPad) {
+        addEventFactorBulletPoints(info, mode, isUpdate, tc, initPad);
     }
 
     //RunCode mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.get().addGodProgress(1,20);
