@@ -11,8 +11,8 @@
 	"fadeTime":0.2,
 	#"fringeColor":[255,125,125,255],
 	#"coreColor":[255,200,200,150],
-	"fringeColor":[120,255,70,185],
-	"coreColor":[50,255,10,130],	
+	"fringeColor":[80,125,50,130],
+	"coreColor":[50,140,10,130],	
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
 	"bulletSprite":"graphics/missiles/shpe_hive_shot.png"

@@ -95,7 +95,7 @@ public class GodEventIntel extends BaseEventIntel {
             case ChaosGodsEventIntel.TZEENTCH_I:
                 if (esd.id == Stage.MARK) title = "Mark of Tzeentch"; //hullmod: reduced armor, increased range and accuracy
                 if (esd.id == Stage.DEVOTION) title = "Devotion to Tzeentch"; //skill: all ships: +10% fighter and energy damage X
-                if (esd.id == Stage.GIFT_1) title = "Strands of Fortune"; //hullmod
+                if (esd.id == Stage.GIFT_1) title = "Strands of Fortune"; //hullmod: autofire accuracy projectile speed and less recoil
                 if (esd.id == Stage.GIFT_2) title = "Flaming Terrors"; //apis, lotus for all ships; doomwing, firelord for marked ships only X
                 if (esd.id == Stage.GIFT_3) title = "Demonships of Tzeentch";
                 if (esd.id == Stage.GIFT_4) title = "Warp Beasts"; //hullmod: ship fires random high-damage bursts of flame at random enemies, might get screamers?
