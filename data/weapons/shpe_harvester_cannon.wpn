@@ -1,0 +1,62 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "light_dual_autocannon_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_harvester_cannon_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    8.5,
+    3,
+    12.5,
+    0,
+    10.5,
+    -3
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_harvester_cannon_hardpoint_base.png",
+  "id": "shpe_harvester_cannon",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      255,
+      180,
+      80,
+      175
+    ],
+    "particleCount": 18,
+    "particleDuration": 0.2,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "spread": 28
+  },
+  "projectileSpecId": "shpe_harvester_shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+  "specialWeaponGlowHeight": 30,
+  "specialWeaponGlowWidth": 12,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/shpe_harvester_cannon_turret_recoil.png",
+  "turretOffsets": [
+    8,
+    3,
+    12,
+    0,
+    10,
+    -3
+  ],
+  "turretSprite": "graphics/weapons/shpe_harvester_cannon_turret_base.png",
+  "type": "BALLISTIC"
+}

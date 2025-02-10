@@ -1,0 +1,49 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "disintegrator_fire",
+  "glowColor": [
+    255,
+    125,
+    220,
+    180
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_tormentor_cannon_hardpoint_glow.png",
+  "hardpointOffsets": [
+    32.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_tormentor_cannon_hardpoint_base.png",
+  "id": "shpe_tormentor_cannon",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      255,
+      155,
+      190,
+      180
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 13,
+    "spread": 20
+  },
+  "projectileSpecId": "shpe_tormentor_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_tormentor_cannon_turret_glow.png",
+  "turretOffsets": [
+    30.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_tormentor_cannon_turret_base.png",
+  "type": "ENERGY"
+}

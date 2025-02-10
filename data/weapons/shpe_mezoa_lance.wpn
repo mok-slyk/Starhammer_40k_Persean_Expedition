@@ -43,10 +43,16 @@
   "specClass": "projectile",
   "textureType": ROUGH,
   "turretAngleOffsets": [
+    0,
+    0,
     0
   ],
   "turretGlowSprite": "graphics/weapons/shpe_mezoa_lance_turret_glow.png",
   "turretOffsets": [
+    24,
+    -5,
+    24,
+    5,
     26,
     0
   ],

@@ -14,54 +14,8 @@ public class Witchcraft {
     protected static final MethodHandles.Lookup lookup = MethodHandles.lookup();
     protected static final Class<?> lookupClass = lookup.getClass();
 
-    public static Class<?> fieldClass;
-    private static MethodHandle isAccessible;
-    private static MethodHandle setAccessible;
-    private static MethodHandle getName;
-    private static MethodHandle getModifiers;
-    private static MethodHandle getType;
-    private static MethodHandle get;
-    private static MethodHandle set;
-
-    static {
-        try {
-            fieldClass = Class.forName("java.lang.reflect.Field", false, Class.class.getClassLoader());
-            isAccessible = lookup.findVirtual(fieldClass, "isAccessible", MethodType.methodType(boolean.class));
-            setAccessible = lookup.findVirtual(fieldClass, "setAccessible", MethodType.methodType(void.class, boolean.class));
-            getName = lookup.findVirtual(fieldClass, "getName", MethodType.methodType(String.class));
-            getModifiers = lookup.findVirtual(fieldClass, "getModifiers", MethodType.methodType(int.class));
-            getType = lookup.findVirtual(fieldClass, "getType", MethodType.methodType(Class.class));
-            get = lookup.findVirtual(fieldClass, "get", MethodType.methodType(Object.class, Object.class));
-            set = lookup.findVirtual(fieldClass, "set", MethodType.methodType(void.class, Object.class, Object.class));
-        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException e) {
-            log.warn("Failed to initialize reflection tools for fields", e);
-        }
-    }
 
     private Witchcraft() {}
-    private static Class<?> getFieldClass() {
-        Class<?> fieldClass = null;
-        try {
-            fieldClass = Class.forName("java.lang.reflect.Field", false, Class.class.getClassLoader());
-        } catch (ClassNotFoundException ignored) {}
-        return fieldClass;
-    }
-
-    private static MethodHandle getFieldGetHandle() {
-        MethodHandle fieldGetHandle = null;
-        try {
-            fieldGetHandle = MethodHandles.lookup().findVirtual(fieldClass, "get", MethodType.methodType(Object.class, Object.class));
-        } catch (Exception ignored) {}
-        return fieldGetHandle;
-    }
-
-    private static MethodHandle getFieldAccessHandle() {
-        MethodHandle fieldAccessHandle = null;
-        try {
-            fieldAccessHandle = MethodHandles.lookup().findVirtual(fieldClass, "setAccessible", MethodType.methodType(Void.class, Boolean.class));
-        } catch (Exception ignored) {}
-        return fieldAccessHandle;
-    }
 
     public static Object getFromFieldInObject(Object object, String fieldName) {
         log.info("getting from object");
@@ -74,18 +28,6 @@ public class Witchcraft {
         }
     }
 
-    public static Object getFromField(Object object, Field field) {
-        //FromFieldGetter action = new FromFieldGetter(object, field);
-        log.info("getting from field");
-        //return AccessController.doPrivileged(action);
-        try {
-            setAccessible.invoke(field,true);
-            return get.invoke(field, object);
-        } catch (Throwable e) {
-            log.warn("problem getting from field: " + e);
-            return null;
-        }
-    }
     public static Field findField(Object instance, String fieldName) {
         return findField(instance, fieldName, true);
     }
@@ -163,24 +105,6 @@ public class Witchcraft {
                 set.invoke(this.field, this.instance, value);
             } catch (Throwable t) {
                 log.error("Failed to use set for '"+this.name, t);
-            }
-        }
-    }
-    public static class FromFieldGetter implements PrivilegedAction<Object>{
-        Object object;
-        Field field;
-        public FromFieldGetter(Object object, Field field) {
-            this.object = object;
-            this.field = field;
-        }
-        @Override
-        public Object run() {
-            try {
-                setAccessible.invoke(field,true);
-                return get.invoke(field, object);
-            } catch (Throwable e) {
-                log.warn(e);
-                return null;
             }
         }
     }
