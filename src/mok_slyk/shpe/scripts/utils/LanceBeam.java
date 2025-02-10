@@ -164,7 +164,8 @@ public class LanceBeam {
     }
 
     public static void drawLanceTrail(CombatEngineAPI engine, Vector2f start, Vector2f end, float angle, Vector2f drift, SpriteAPI sprite, Color colorStart, Color colorEnd, Color colorFade, float widthStart, float widthEnd, float growthFactor, float texLength, float texScroll, float opacityStart, float opacityEnd, float intro, float full , float fade, float blendIn, float blendOut, int trailCount) {
-        float offset = (float) (Math.random()*100);
+        //float offset = (float) (Math.random()*100);
+        float offset = -1f;
 
         for (int i = 0; i < trailCount; i++) {
 
@@ -174,7 +175,7 @@ public class LanceBeam {
             // 0.---1===2--.3
 
             //0
-            MagicTrailPlugin.addTrailMemberAdvanced(
+            LanceTrailTracker.addTrailMemberAdvanced(
                     null,
                     coreID,
                     sprite,
@@ -204,7 +205,7 @@ public class LanceBeam {
             );
 
             //1
-            MagicTrailPlugin.addTrailMemberAdvanced(null,
+            LanceTrailTracker.addTrailMemberAdvanced(null,
                     coreID,
                     sprite,
                     MathUtils.getPoint(start, blendIn, angle),
@@ -233,7 +234,7 @@ public class LanceBeam {
             //engine.addHitParticle(MathUtils.getPoint(start, blendIn, angle), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
 
             //2
-            MagicTrailPlugin.addTrailMemberAdvanced(null,
+            LanceTrailTracker.addTrailMemberAdvanced(null,
                     coreID,
                     sprite,
                     //MathUtils.getPoint(beamEnd, blendOut, angle + 180),
@@ -263,7 +264,7 @@ public class LanceBeam {
             //engine.addHitParticle(MathUtils.getPoint(beamEnd, blendOut, angle + 180), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
 
             //3
-            MagicTrailPlugin.addTrailMemberAdvanced(null,
+            LanceTrailTracker.addTrailMemberAdvanced(null,
                     coreID,
                     sprite,
                     //beamEnd,

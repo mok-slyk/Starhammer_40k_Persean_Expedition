@@ -72,7 +72,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" scope="PROVIDED">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../Second in Command-1.2.3/jars/SecondInCommand.jar!/" />
@@ -94,6 +94,17 @@
           <root url="file://$MODULE_DIR$/../Random Assortment of Things-2.4.7/src" />
           <root url="file://$MODULE_DIR$/../Random Assortment of Things-2.4.7/src" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../LunaLib-1.8.5/jars/LunaLib.jar!/" />
+          <root url="jar://$MODULE_DIR$/../LunaLib-1.8.5/jars/LunaLib-Kotlin.jar!/" />
+          <root url="jar://$MODULE_DIR$/../LunaLib-1.8.5/jars/libs/fuzzywuzzy-1.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
