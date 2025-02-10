@@ -6,9 +6,6 @@ import com.fs.starfarer.api.combat.CombatEngineLayers;
 import com.fs.starfarer.api.combat.CombatEntityAPI;
 import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import lunalib.lunaSettings.LunaSettings;
-import lunalib.lunaUtil.LunaCommons;
-import lunalib.lunaUtil.campaign.SystemUtils;
 import org.jetbrains.annotations.Nullable;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -24,11 +21,10 @@ import java.util.Map;
 
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL11.glPopMatrix;
-import static org.lwjgl.util.glu.GLU.gluPerspective;
 import static org.magiclib.plugins.MagicTrailPlugin.getPlugin;
 
 /*
-Sections of the following code are derived from code by Nicke535 that was published as part of MagicLib under this license:
+Sections of the following code are derived from code by Nicke535 that was published as part of MagicLib (1.4.6) under this license:
 
 MIT License
 
@@ -53,17 +49,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
 public class LanceTrailTracker extends MagicTrailTracker{
-    private List<MagicTrailObject> allTrailParts;
-    protected Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>> mainMap;
-    private Witchcraft.FieldWrapper latestTrailObjectField;
+    protected List<MagicTrailObject> myAllTrailParts;
+    protected static Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>> mainMap;
+    protected static Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>> cuttingMap;
+    protected MagicTrailObject myLatestTrailObject;
+    protected float myScrollingTextureOffset = 0f;
+    private static MagicTrailPlugin currentPlugin = null;
 
     public static MagicTrailTracker addOrGetTrailTracker(MagicTrailPlugin plugin, Float ID, CombatEntityAPI linkedEntity, CombatEngineLayers layer, SpriteAPI sprite, boolean isAnim) {
 
         int texID;
         texID = isAnim ? -1 : sprite.getTextureId();
 
-        Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>> mainMap = (Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>>)Witchcraft.getFromFieldInObject(plugin, "mainMap");
-        Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>> cuttingMap = (Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>>)Witchcraft.getFromFieldInObject(plugin, "cuttingMap");
+        updatePluginIfNeeded(plugin);
 
         Map<Float, MagicTrailTracker> trailTrackerMap;
         Map<Integer, Map<Float, MagicTrailTracker>> layerMap = mainMap.get(layer);
@@ -107,8 +105,22 @@ public class LanceTrailTracker extends MagicTrailTracker{
         return trailTracker;
     }
 
+    private static void updatePluginIfNeeded(MagicTrailPlugin plugin) {
+        if (currentPlugin != plugin) {
+            currentPlugin = plugin;
+            mainMap = (Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>>) Witchcraft.getFromFieldInObject(plugin, "mainMap");
+            cuttingMap = (Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>>) Witchcraft.getFromFieldInObject(plugin, "cuttingMap");
+        }
+    }
+
     public LanceTrailTracker(){
         super();
+        MagicTrailPlugin plugin = getPlugin();
+        if (plugin == null) return;
+        //mainMap = (Map<CombatEngineLayers, Map<Integer, Map<Float, MagicTrailTracker>>>)Witchcraft.getFromFieldInObject(plugin, "mainMap");
+        //cuttingMap = (Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>>)Witchcraft.getFromFieldInObject(plugin, "cuttingMap");
+        myAllTrailParts = (List<MagicTrailObject>) Witchcraft.getFromFieldInObject(this, "allTrailParts");
+        myLatestTrailObject = (MagicTrailObject) Witchcraft.getFromFieldInObject(this, "latestTrailObject");
 
     }
 
@@ -201,25 +213,25 @@ public class LanceTrailTracker extends MagicTrailTracker{
         //First, clear all dead objects, as they can be a pain to calculate around
 //        clearAllDeadObjects();
 
-        List<MagicTrailObject> allTrailParts = (List<MagicTrailObject>) Witchcraft.getFromFieldInObject(this, "allTrailParts");
-        MagicTrailObject latestTrailObject = (MagicTrailObject) Witchcraft.getFromFieldInObject(this, "latestTrailObject");
-        float scrollingTextureOffset = (float) Witchcraft.getFromFieldInObject(this, "scrollingTextureOffset");
+        //List<MagicTrailObject> allTrailParts = (List<MagicTrailObject>) Witchcraft.getFromFieldInObject(this, "allTrailParts");
+        //MagicTrailObject latestTrailObject = (MagicTrailObject) Witchcraft.getFromFieldInObject(this, "latestTrailObject");
+        //float scrollingTextureOffset = (float) Witchcraft.getFromFieldInObject(this, "scrollingTextureOffset");
 
         //Then, if we have too few segments to render properly, cancel the function
-        int size = allTrailParts.size();
+        int size = myAllTrailParts.size();
         if (size <= 1) {
             return;
         }
 
         //New trail object's movement
-        MagicTrailObject currentLatestTrailObject = allTrailParts.get(size - 1);
-        if (latestTrailObject == null) {
-            latestTrailObject = currentLatestTrailObject;
-        } else if (latestTrailObject != currentLatestTrailObject) {
-            float partDistance = MathUtils.getDistance(latestTrailObject.currentLocation, currentLatestTrailObject.currentLocation);
+        MagicTrailObject currentLatestTrailObject = myAllTrailParts.get(size - 1);
+        if (myLatestTrailObject == null) {
+            myLatestTrailObject = currentLatestTrailObject;
+        } else if (myLatestTrailObject != currentLatestTrailObject) {
+            float partDistance = MathUtils.getDistance(myLatestTrailObject.currentLocation, currentLatestTrailObject.currentLocation);
             //scroll back
-            scrollingTextureOffset -= partDistance / currentLatestTrailObject.textureLoopLength;
-            latestTrailObject = currentLatestTrailObject;
+            myScrollingTextureOffset -= partDistance / currentLatestTrailObject.textureLoopLength;
+            myLatestTrailObject = currentLatestTrailObject;
         }
 
         //If we are animated, we use our "currentAnimRenderTexture" rather than the textureID we just got supplied
@@ -236,7 +248,7 @@ public class LanceTrailTracker extends MagicTrailTracker{
         glBindTexture(GL_TEXTURE_2D, trueTextureID);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
         glEnable(GL_BLEND);
-        glBlendFunc(allTrailParts.get(size - 1).blendModeSRC, allTrailParts.get(size - 1).blendModeDEST); //NOTE: uses the most recent blend mode added to the trail
+        glBlendFunc(myAllTrailParts.get(size - 1).blendModeSRC, myAllTrailParts.get(size - 1).blendModeDEST); //NOTE: uses the most recent blend mode added to the trail
         glBegin(GL_QUADS);
 
         CombatEngineAPI engine = Global.getCombatEngine();
@@ -248,8 +260,8 @@ public class LanceTrailTracker extends MagicTrailTracker{
         float texLocator = 0f;
         for (int i = size - 1; i > 0; i--) {
             //First, get a handle for our parts so we can make the code shorter
-            MagicTrailObject part1 = allTrailParts.get(i);    //Current part
-            MagicTrailObject part2 = allTrailParts.get(i - 1);    //Next part
+            MagicTrailObject part1 = myAllTrailParts.get(i);    //Current part
+            MagicTrailObject part2 = myAllTrailParts.get(i - 1);    //Next part
 
             //Then, determine the corner points of both this and the next trail part
             float partRadius = part1.currentSize * 0.5f;
@@ -288,7 +300,7 @@ public class LanceTrailTracker extends MagicTrailTracker{
             //Sets the current render color
             glColor4ub((byte) part1.currentColor.getRed(), (byte) part1.currentColor.getGreen(), (byte) part1.currentColor.getBlue(), (byte) (part1.currentOpacity * opacityMult * 255));
 
-            texLocator = texDistTracker + scrollingTextureOffset;
+            texLocator = texDistTracker + myScrollingTextureOffset;
 
             //Sets corner 1, or the first left corner
             glTexCoord4f(0f, texLocator, 0f, 1f);
@@ -321,7 +333,7 @@ public class LanceTrailTracker extends MagicTrailTracker{
                     (byte) part2.currentColor.getBlue(),
                     (byte) (part2.currentOpacity * opacityMult * 255));
 
-            texLocator = texDistTracker + scrollingTextureOffset;
+            texLocator = texDistTracker + myScrollingTextureOffset;
 
             // Calculate widths
             float bottomWidth = point1Right.getX() - point1Left.getX();
@@ -344,5 +356,16 @@ public class LanceTrailTracker extends MagicTrailTracker{
         //And finally stops OpenGL
         glEnd();
         glPopMatrix();
+    }
+
+    @Override
+    public void tickTimersInTrail(float amount) {
+        if (!isExpired()) {
+            if (myAllTrailParts.isEmpty()) {
+                myLatestTrailObject = null;
+            }
+            myScrollingTextureOffset -= (amount * scrollSpeed) / 1000f;
+        }
+        super.tickTimersInTrail(amount);
     }
 }
