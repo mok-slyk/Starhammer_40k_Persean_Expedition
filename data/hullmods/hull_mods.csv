@@ -87,7 +87,17 @@ Alien Targeting Core,shpe_alien_targeting_core,,,Ancient Xenotech,,,,,TRUE,,0,0,
 Mark of Tzeentch,shpe_tzeentch_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.TzeentchMark,"The ship is marked by the lord of change.
 
 Energy weapon and fighter damage is increased by %s.",,,graphics/hullmods/shpe_tzeentch_mark.png
-Warp Beasts,shpe_warp_beasts,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.WarpBeasts,The ship is surrounded by horrors of the warp that occasionally fire bursts of flame at neargy enemies.,,,graphics/hullmods/shpe_warp_beasts.png
+Strands of Fortune,shpe_strands_of_fortune,,,Chaos,,,,,,,3,6,9,12,mok_slyk.shpe.scripts.hullmods.StrandsOfFortune,"The weave of fate twists in favor of this ship.
+
+Increases autofire accuracy and decreases recoil by %s.
+
+Increases projectile speed by %s.",,,graphics/hullmods/shpe_strands_of_fortune.png
+Warp Beasts,shpe_warp_beasts,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.WarpBeasts,"The ship is surrounded by horrors of the warp. 
+
+Occasionally fire bursts of lightning at nearby enemies.
+
+Screamers of Tzeentch circle the ship and autonomously attack nearby enemies.
+",,,graphics/hullmods/shpe_warp_beasts.png
 Mark of Khorne,shpe_khorne_mark,,,Chaos,,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.KhorneMark,"The ship is marked by the lord of slaughter.
 
 Weapon range is reduced by %s but all damage is increased by %s.

@@ -78,19 +78,19 @@ public class WarpBeasts extends BaseHullMod {
 
     @Override
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
-        int num = 2;
+        int num = 1;
         switch (ship.getHullSize()) {
             case FRIGATE:
-                num = 2;
+                num = 1;
                 break;
             case DESTROYER:
-                num = 3;
+                num = 2;
                 break;
             case CRUISER:
-                num = 5;
+                num = 3;
                 break;
             case CAPITAL_SHIP:
-                num = 7;
+                num = 5;
                 break;
         }
         MagicSubsystemsManager.addSubsystemToShip(ship, new ScreamerSubsystem(ship, num));

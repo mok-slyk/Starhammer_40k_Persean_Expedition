@@ -1,0 +1,42 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "heavy_blaster_fire",
+  "glowColor": [
+    255,
+    20,
+    20,
+    180
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_banefire_lance_hardpoint_glow.png",
+  "hardpointOffsets": [
+    26.5,
+    5,
+    27,
+    -5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_banefire_lance_hardpoint_base.png",
+  "id": "shpe_banefire_lance",
+  "projectileSpecId": "shpe_banefire_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_banefire_lance_turret_glow.png",
+  "turretOffsets": [
+    25,
+    5,
+    25,
+    -5
+  ],
+  "turretSprite": "graphics/weapons/shpe_banefire_lance_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
+}

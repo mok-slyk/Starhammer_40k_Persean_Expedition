@@ -159,129 +159,138 @@ public class LanceBeam {
         }
     }
 
-    public static void drawLanceTrail(CombatEngineAPI engine, Vector2f start, Vector2f end, float angle, Vector2f drift, SpriteAPI sprite, Color colorStart, Color colorEnd, Color colorFade, float widthStart, float widthEnd, float growthFactor, float texLength, float texScroll, float opacityStart, float opacityEnd, float intro, float full , float fade, float blendIn, float blendOut) {
-        float coreID = MagicTrailPlugin.getUniqueID();
+    public static void drawLanceTrail(CombatEngineAPI engine, Vector2f start, Vector2f end, float angle, Vector2f drift, SpriteAPI sprite, Color colorStart, Color colorEnd, Color colorFade, float widthStart, float widthEnd, float growthFactor, float texLength, float texScroll, float opacityStart, float opacityEnd, float intro, float full , float fade, float blendIn, float blendOut){
+        drawLanceTrail(engine, start, end, angle, drift, sprite, colorStart, colorEnd, colorFade, widthStart, widthEnd, growthFactor, texLength, texScroll, opacityStart, opacityEnd, intro, full, fade, blendIn, blendOut, 2);
+    }
 
-        // 0.---1===2--.3
+    public static void drawLanceTrail(CombatEngineAPI engine, Vector2f start, Vector2f end, float angle, Vector2f drift, SpriteAPI sprite, Color colorStart, Color colorEnd, Color colorFade, float widthStart, float widthEnd, float growthFactor, float texLength, float texScroll, float opacityStart, float opacityEnd, float intro, float full , float fade, float blendIn, float blendOut, int trailCount) {
         float offset = (float) (Math.random()*100);
 
-        //0
-        MagicTrailPlugin.addTrailMemberAdvanced(
-                null,
-                coreID,
-                sprite,
-                start,
-                0,
-                0,
-                angle,
-                0,
-                0,
-                widthStart/2,
-                widthStart*growthFactor/2,
-                colorStart,
-                colorFade == null ? colorStart : colorFade,
-                0.5f*opacityStart,
-                intro,
-                full,
-                fade,
-                GL_SRC_ALPHA,
-                GL_ONE,
-                texLength,
-                texScroll,
-                offset,
-                drift,
-                null,
-                CombatEngineLayers.BELOW_INDICATORS_LAYER,
-                1
-        );
+        for (int i = 0; i < trailCount; i++) {
 
-        //1
-        MagicTrailPlugin.addTrailMemberAdvanced(null,
-                coreID,
-                sprite,
-                MathUtils.getPoint(start, blendIn, angle),
-                0,
-                0,
-                angle,
-                0,
-                0,
-                widthStart, //?
-                widthStart*growthFactor, //?
-                colorStart,
-                colorFade == null ? colorStart : colorFade,
-                opacityStart,
-                intro,
-                full,
-                fade,
-                GL_SRC_ALPHA,
-                GL_ONE,
-                texLength,
-                texScroll,
-                offset,
-                drift,
-                null,
-                CombatEngineLayers.BELOW_INDICATORS_LAYER,
-                1);
-        //engine.addHitParticle(MathUtils.getPoint(start, blendIn, angle), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
 
-        //2
-        MagicTrailPlugin.addTrailMemberAdvanced(null,
-                coreID,
-                sprite,
-                //MathUtils.getPoint(beamEnd, blendOut, angle + 180),
-                end,
-                0,
-                0,
-                angle,
-                0,
-                0,
-                widthEnd,
-                widthEnd*growthFactor,
-                colorEnd,
-                colorFade == null ? colorEnd : colorFade,
-                opacityEnd,
-                intro,
-                full,
-                fade,
-                GL_SRC_ALPHA,
-                GL_ONE,
-                texLength,
-                texScroll,
-                offset,
-                drift,
-                null,
-                CombatEngineLayers.BELOW_INDICATORS_LAYER,
-                1);
-        //engine.addHitParticle(MathUtils.getPoint(beamEnd, blendOut, angle + 180), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
+            float coreID = MagicTrailPlugin.getUniqueID();
 
-        //3
-        MagicTrailPlugin.addTrailMemberAdvanced(null,
-                coreID,
-                sprite,
-                //beamEnd,
-                MathUtils.getPoint(end, blendOut, angle),
-                0,
-                0,
-                angle,
-                0,
-                0,
-                widthEnd /2,
-                widthEnd*growthFactor/2,
-                colorEnd,
-                colorFade == null ? colorEnd : colorFade,
-                0.5f*opacityEnd,
-                intro,
-                full,
-                fade,
-                GL_SRC_ALPHA,
-                GL_ONE,
-                texLength,
-                texScroll,
-                offset,
-                drift,
-                null,
-                CombatEngineLayers.BELOW_INDICATORS_LAYER,
-                1);
+            // 0.---1===2--.3
+
+            //0
+            MagicTrailPlugin.addTrailMemberAdvanced(
+                    null,
+                    coreID,
+                    sprite,
+                    start,
+                    0,
+                    0,
+                    angle,
+                    0,
+                    0,
+                    widthStart / 2,
+                    widthStart * growthFactor / 2,
+                    colorStart,
+                    colorFade == null ? colorStart : colorFade,
+                    0.5f*opacityStart,
+                    intro,
+                    full,
+                    fade,
+                    GL_SRC_ALPHA,
+                    GL_ONE,
+                    texLength,
+                    texScroll,
+                    offset,
+                    drift,
+                    null,
+                    CombatEngineLayers.BELOW_INDICATORS_LAYER,
+                    1
+            );
+
+            //1
+            MagicTrailPlugin.addTrailMemberAdvanced(null,
+                    coreID,
+                    sprite,
+                    MathUtils.getPoint(start, blendIn, angle),
+                    0,
+                    0,
+                    angle,
+                    0,
+                    0,
+                    widthStart, //?
+                    widthStart * growthFactor, //?
+                    colorStart,
+                    colorFade == null ? colorStart : colorFade,
+                    opacityStart,
+                    intro,
+                    full,
+                    fade,
+                    GL_SRC_ALPHA,
+                    GL_ONE,
+                    texLength,
+                    texScroll,
+                    offset,
+                    drift,
+                    null,
+                    CombatEngineLayers.BELOW_INDICATORS_LAYER,
+                    1);
+            //engine.addHitParticle(MathUtils.getPoint(start, blendIn, angle), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
+
+            //2
+            MagicTrailPlugin.addTrailMemberAdvanced(null,
+                    coreID,
+                    sprite,
+                    //MathUtils.getPoint(beamEnd, blendOut, angle + 180),
+                    end,
+                    0,
+                    0,
+                    angle,
+                    0,
+                    0,
+                    widthEnd,
+                    widthEnd * growthFactor,
+                    colorEnd,
+                    colorFade == null ? colorEnd : colorFade,
+                    opacityEnd,
+                    intro,
+                    full,
+                    fade,
+                    GL_SRC_ALPHA,
+                    GL_ONE,
+                    texLength,
+                    texScroll,
+                    offset,
+                    drift,
+                    null,
+                    CombatEngineLayers.BELOW_INDICATORS_LAYER,
+                    1);
+            //engine.addHitParticle(MathUtils.getPoint(beamEnd, blendOut, angle + 180), new Vector2f(), 100, 1, 1, new Color(255, 0, 0));
+
+            //3
+            MagicTrailPlugin.addTrailMemberAdvanced(null,
+                    coreID,
+                    sprite,
+                    //beamEnd,
+                    MathUtils.getPoint(end, blendOut, angle),
+                    0,
+                    0,
+                    angle,
+                    0,
+                    0,
+                    widthEnd / 2,
+                    widthEnd * growthFactor / 2,
+                    colorEnd,
+                    colorFade == null ? colorEnd : colorFade,
+                    0.5f*opacityEnd,
+                    intro,
+                    full,
+                    fade,
+                    GL_SRC_ALPHA,
+                    GL_ONE,
+                    texLength,
+                    texScroll,
+                    offset,
+                    drift,
+                    null,
+                    CombatEngineLayers.BELOW_INDICATORS_LAYER,
+                    1);
+        }
     }
 
     public static Vector2f getLanceShipCollisionPoint(ShipAPI ship, Vector2f start, Vector2f end, boolean ignoreShields) {

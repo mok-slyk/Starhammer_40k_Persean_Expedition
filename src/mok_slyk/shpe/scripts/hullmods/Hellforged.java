@@ -61,14 +61,33 @@ public class Hellforged extends BaseHullMod {
         }
          */
 
-        if (hasChaosMark(ship)) {
-            float x = ship.getSpriteAPI().getCenterX();
-            float y = ship.getSpriteAPI().getCenterY();
-            float alpha = ship.getSpriteAPI().getAlphaMult();
-            float angle = ship.getSpriteAPI().getAngle();
-            Color color = ship.getSpriteAPI().getColor();
 
-            String override = null;
+
+        float x = ship.getSpriteAPI().getCenterX();
+        float y = ship.getSpriteAPI().getCenterY();
+        float alpha = ship.getSpriteAPI().getAlphaMult();
+        float angle = ship.getSpriteAPI().getAngle();
+        Color color = ship.getSpriteAPI().getColor();
+
+        String override = null;
+
+        if (motherShipHasChaosMark(ship)) {
+            ShipAPI source = ship.getWing().getSourceShip();
+            if (source.getVariant().hasHullMod("shpe_khorne_mark")) {
+
+            }
+            if (source.getVariant().hasHullMod("shpe_tzeentch_mark")) {
+
+            }
+            if (source.getVariant().hasHullMod("shpe_nurgle_mark")) {
+
+            }
+            if (source.getVariant().hasHullMod("shpe_slaanesh_mark")) {
+
+            }
+        }
+
+        if (hasChaosMark(ship)) {
             if (ship.getVariant().hasHullMod("shpe_tzeentch_mark")) {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_acheron")) override = "acheron_tzeentch";
@@ -97,21 +116,29 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_slaughter")) override = "slaughter_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_idolator")) override = "idolator_nurgle";
             }
-
-            if (override != null) {
-                ship.setSprite("chaos_ships", override);
-                ShaderLib.overrideShipTexture(ship, override);
-            }
-            ship.getSpriteAPI().setCenter(x, y);
-            ship.getSpriteAPI().setAlphaMult(alpha);
-            ship.getSpriteAPI().setAngle(angle);
-            ship.getSpriteAPI().setColor(color);
         }
+        if (override != null) {
+            ship.setSprite("chaos_ships", override);
+            ShaderLib.overrideShipTexture(ship, override);
+        }
+        ship.getSpriteAPI().setCenter(x, y);
+        ship.getSpriteAPI().setAlphaMult(alpha);
+        ship.getSpriteAPI().setAngle(angle);
+        ship.getSpriteAPI().setColor(color);
+
 
     }
 
     private boolean hasChaosMark(ShipAPI ship) {
         return ship.getVariant().hasHullMod("shpe_tzeentch_mark") || ship.getVariant().hasHullMod("shpe_khorne_mark")
                 || ship.getVariant().hasHullMod("shpe_slaanesh_mark") || ship.getVariant().hasHullMod("shpe_nurgle_mark");
+    }
+
+    private boolean motherShipHasChaosMark(ShipAPI ship) {
+        if (!ship.isFighter()) return false;
+        ShipAPI source = ship.getWing().getSourceShip();
+        return source.getVariant().hasHullMod("shpe_tzeentch_mark") || source.getVariant().hasHullMod("shpe_khorne_mark")
+                || source.getVariant().hasHullMod("shpe_slaanesh_mark") || source.getVariant().hasHullMod("shpe_nurgle_mark");
+
     }
 }

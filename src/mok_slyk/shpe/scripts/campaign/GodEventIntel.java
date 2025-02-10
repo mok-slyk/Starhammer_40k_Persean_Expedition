@@ -334,17 +334,23 @@ public class GodEventIntel extends BaseEventIntel {
             case ChaosGodsEventIntel.TZEENTCH_I:
                 if (esd.id == Stage.MARK) return Global.getSettings().getSpriteName("icons", "tzeentch_gold");
                 if (esd.id == Stage.DEVOTION) return Global.getSettings().getSpriteName("icons", "tzeentch_glow");
+                if (esd.id == Stage.GIFT_1) return Global.getSettings().getSpriteName("icons", "tzeentch_strands");
                 if (esd.id == Stage.GIFT_3) return Global.getSettings().getSpriteName("icons", "tzeentch_demonships");
+                if (esd.id == Stage.GIFT_4) return Global.getSettings().getSpriteName("icons", "tzeentch_beasts");
                 return Global.getSettings().getSpriteName("icons", "chaos_gold");
             case ChaosGodsEventIntel.NURGLE_I:
                 if (esd.id == Stage.MARK) return Global.getSettings().getSpriteName("icons", "nurgle_gold");
                 if (esd.id == Stage.DEVOTION) return Global.getSettings().getSpriteName("icons", "nurgle_glow");
+                if (esd.id == Stage.GIFT_1) return Global.getSettings().getSpriteName("icons", "nurgle_miasma");
                 if (esd.id == Stage.GIFT_3) return Global.getSettings().getSpriteName("icons", "nurgle_demonships");
+                if (esd.id == Stage.GIFT_4) return Global.getSettings().getSpriteName("icons", "nurgle_ark");
                 return Global.getSettings().getSpriteName("icons", "chaos_gold");
             case ChaosGodsEventIntel.SLAANESH_I:
                 if (esd.id == Stage.MARK) return Global.getSettings().getSpriteName("icons", "slaanesh_gold");
                 if (esd.id == Stage.DEVOTION) return Global.getSettings().getSpriteName("icons", "slaanesh_glow");
+                if (esd.id == Stage.GIFT_1) return Global.getSettings().getSpriteName("icons", "slaanesh_sirens");
                 if (esd.id == Stage.GIFT_3) return Global.getSettings().getSpriteName("icons", "slaanesh_demonships");
+                if (esd.id == Stage.GIFT_4) return Global.getSettings().getSpriteName("icons", "slaanesh_champion");
                 return Global.getSettings().getSpriteName("icons", "chaos_gold");
         }
         return null;

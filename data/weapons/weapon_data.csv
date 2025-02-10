@@ -43,7 +43,8 @@ Aetherfire Cannon,shpe_aetherfire,6,0,1000,500,,400,,5,25,0,,,,ENERGY,50,,0,3,3,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Voidsunder Lance,shpe_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,22.5
 Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
-Godsbane Lance,shpe_godsbane_lance,2,,10000,1100,,400,,0,40,18,,,,ENERGY,300,,0.7,4,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
+Godsbane Lance,shpe_godsbane_lance,2,,10000,1100,,400,,0,40,18,,,,ENERGY,300,,0.7,4,1,,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,,,,,,22.5
+Banefire Lance,shpe_banefire_lance,2,,5000,900,,300,,0,40,18,,,,ENERGY,300,,0.7,3,1,,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,,,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Gauss Particle Whip,shpe_particle_whip,2,,2000,900,8000,,500,0,180,12,,,,ENERGY,,3000,0,0.3,0.1,2,,,,,10000,,,,,,,,beam10,,Necron,,Anti Armor,,,,,,,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -71,7 +72,7 @@ Sonic Charge,shpe_sonic_charge,2,,200,400,,1200,,50,15,4,5,,,ENERGY,0,,0,1,1,,0,
 Shuriken Cannon,shpe_shuriken_cannon,3,0.3,800,700,,150,,1,20,8,,,,FRAGMENTATION,30,,0,2.5,12,0.05,0,10,0.66,5,,1200,,,10,,,,"pd7, SR",,,,Point Defense,,,,,,,,,,3.65
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Standard Chaos Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Butcher Cannon,shpe_butcher_cannon,1,,300,600,,50,,3,20,5,,,,KINETIC,40,,0,0.6,2,0.1,0,20,3,9,,800,,,20,,,,kinetic7,,Chaos,,Anti Shield,,,,,,,,,,2.5
+Butcher Cannon,shpe_butcher_cannon,1,,300,600,,20,,3,20,5,,,,KINETIC,40,,0,0.8,8,0.03,0,20,3,9,,800,,,20,,,,kinetic7,,Chaos,,Anti Shield,,,,,,,,,,2.5
 Ursus Claw,shpe_ursus_claw,1,,2000,800,,400,,10,15,7,,,,KINETIC,80,,0,3,1,,0,5,3,10,,500,,,10,,,,,,Chaos,,Fleet Disruption,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -85,7 +86,7 @@ Hive of Nurgle,shpe_light_hive,1,,1000,600,,150,,6,25,0,,,,FRAGMENTATION,10,,0,3
 Hellfyre Missile,shpe_hellfyre,1,,250,1000,,100,,5,60,0,18,,9,HIGH_EXPLOSIVE,0,,0,6,9,0.1,0,0,0,0,,400,100,5,50,,,DO_NOT_AIM,"strike5, missile0",,Chaos,,Anti Armor,Fast,Excellent,,,,,,,,10
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Drake Wings,shpe_heldrake_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,47
-Screamer Bite,shpe_screamer_bite,1,,2000,5,,100,,3,60,7,,,,KINETIC,0,,0,0.5,1,,0,0,0,0,,500,,,10,,,,,,Chaos,,General,,,,,,,,,,0.75
+Screamer Bite,shpe_screamer_bite,1,,2000,5,,200,,3,60,7,,,,KINETIC,0,,0,0.5,1,,0,0,0,0,,500,,,10,,,,,,Chaos,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
