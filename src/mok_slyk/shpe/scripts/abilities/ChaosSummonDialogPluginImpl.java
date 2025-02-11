@@ -28,13 +28,21 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
 
         //gear options:
         URSUS,
+        URSUS_BUY,
         BUTCHER,
+        BUTCHER_BUY,
         APIS,
+        APIS_BUY,
         DOOM,
         DOOM_BUY,
         FIRE,
+        FIRE_BUY,
         LOTUS,
-        HARVESTER
+        LOTUS_BUY,
+        HARVESTER,
+        HARVESTER_BUY,
+        TORMENTOR,
+        TORMENTOR_BUY,
     }
     protected InteractionDialogAPI dialog;
     protected TextPanelAPI textPanel;
@@ -83,12 +91,12 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
                 textPanel.addParagraph("Make your demand.");
 
                 options.clearOptions();
-                boolean canWeapons = true;
-                boolean canShips = true;
-                boolean canFighters = true;
+                boolean canWeapons = isChaosGodStage(ChaosGodsEventIntel.KHORNE_I, Stage.GIFT_2) || isChaosGodStage(ChaosGodsEventIntel.SLAANESH_I, Stage.GIFT_2);
+                boolean canShips = false;
+                boolean canFighters = isChaosGodStage(ChaosGodsEventIntel.TZEENTCH_I, Stage.GIFT_2);
 
                 options.addOption("Summon fighters", OptionId.FIGHTERS, null);
-                options.setEnabled(OptionId.FIGHTERS, canShips);
+                options.setEnabled(OptionId.FIGHTERS, canFighters);
                 options.addOption("Summon ships", OptionId.SHIPS, null);
                 options.setEnabled(OptionId.SHIPS, canShips);
                 options.addOption("Summon weapons", OptionId.WEAPONS, null);
@@ -100,9 +108,9 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
                 textPanel.addParagraph("Make your demand.");
 
                 options.clearOptions();
-                boolean canChooseWeapons = true;
-                boolean canChooseShips = true;
-                boolean canChooseFighters = true;
+                boolean canChooseWeapons = isChaosGodStage(ChaosGodsEventIntel.KHORNE_I, Stage.GIFT_2) || isChaosGodStage(ChaosGodsEventIntel.SLAANESH_I, Stage.GIFT_2);
+                boolean canChooseShips = false;
+                boolean canChooseFighters = isChaosGodStage(ChaosGodsEventIntel.TZEENTCH_I, Stage.GIFT_2);
 
                 options.addOption("Summon fighters", OptionId.FIGHTERS, null);
                 options.setEnabled(OptionId.FIGHTERS, canChooseFighters);
@@ -112,6 +120,8 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
                 options.setEnabled(OptionId.WEAPONS, canChooseWeapons);
                 options.addOption("Cancel", OptionId.CANCEL, null);
                 break;
+
+            //SHIPS:----------------------------------------------------------------------------------
             case SHIPS:
                 textPanel.addParagraph("Choose a ship to summon.");
 
@@ -120,18 +130,98 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
 
                 options.addOption("Cancel", OptionId.CHOOSE, null);
                 break;
+
+            //WEAPONS:----------------------------------------------------------------------------------
             case WEAPONS:
                 textPanel.addParagraph("Choose a weapon to summon.");
 
                 options.clearOptions();
 
-                if (isChaosGodStage(0, Stage.GIFT_2)) {
+                if (isChaosGodStage(ChaosGodsEventIntel.KHORNE_I, Stage.GIFT_2)) {
                     options.addOption("Butcher Cannon", OptionId.BUTCHER, null);
                     options.addOption("Ursus Claw", OptionId.URSUS, null);
+                }
+                if (isChaosGodStage(ChaosGodsEventIntel.SLAANESH_I, Stage.GIFT_2)) {
+                    options.addOption("Harvester Cannon", OptionId.HARVESTER, null);
+                    options.addOption("Tormentor Cannon", OptionId.TORMENTOR, null);
                 }
 
                 options.addOption("Cancel", OptionId.CHOOSE, null);
                 break;
+            case BUTCHER:
+                textPanel.addParagraph("Do you want to summon a butcher cannon?");
+                boolean canAffordButcher = textPanel.addCostPanel("Each weapon will cost (available)",Commodities.CREW, 5, true, Commodities.METALS, 80, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.BUTCHER_BUY, null);
+                options.setEnabled(OptionId.BUTCHER_BUY, canAffordButcher);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case BUTCHER_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 5, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 5);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 80, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 80);
+                AddRemoveCommodity.addWeaponGainText("shpe_butcher_cannon", 1, textPanel);
+                cargo.addWeapons("shpe_butcher_cannon", 1);
+                optionSelected(null, OptionId.BUTCHER);
+                break;
+            case URSUS:
+                textPanel.addParagraph("Do you want to summon an ursus claw?");
+                boolean canAffordUrsus = textPanel.addCostPanel("Each weapon will cost (available)",Commodities.CREW, 50, true, Commodities.METALS, 250, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.URSUS_BUY, null);
+                options.setEnabled(OptionId.URSUS_BUY, canAffordUrsus);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case URSUS_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 50, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 50);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 250, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 250);
+                AddRemoveCommodity.addWeaponGainText("shpe_ursus_claw", 1, textPanel);
+                cargo.addWeapons("shpe_ursus_claw", 1);
+                optionSelected(null, OptionId.URSUS);
+                break;
+            case TORMENTOR:
+                textPanel.addParagraph("Do you want to summon a tormentor cannon?");
+                boolean canAffordTormentor = textPanel.addCostPanel("Each weapon will cost (available)",Commodities.CREW, 20, true, Commodities.METALS, 100, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.TORMENTOR_BUY, null);
+                options.setEnabled(OptionId.TORMENTOR_BUY, canAffordTormentor);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case TORMENTOR_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 20, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 20);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 100, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 100);
+                AddRemoveCommodity.addWeaponGainText("shpe_tormentor_cannon", 1, textPanel);
+                cargo.addWeapons("shpe_tormentor_cannon", 1);
+                optionSelected(null, OptionId.TORMENTOR);
+                break;
+            case HARVESTER:
+                textPanel.addParagraph("Do you want to summon a tormentor cannon?");
+                boolean canAffordHarvester = textPanel.addCostPanel("Each weapon will cost (available)",Commodities.CREW, 10, true, Commodities.METALS, 30, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.HARVESTER_BUY, null);
+                options.setEnabled(OptionId.HARVESTER_BUY, canAffordHarvester);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case HARVESTER_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 10, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 10);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 30, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 30);
+                AddRemoveCommodity.addWeaponGainText("shpe_harvester_cannon", 1, textPanel);
+                cargo.addWeapons("shpe_harvester_cannon", 1);
+                optionSelected(null, OptionId.HARVESTER);
+                break;
+
+            //FIGHTERS:----------------------------------------------------------------------------------
             case FIGHTERS:
                 textPanel.addParagraph("Choose a fighter wing to summon.");
 
@@ -145,9 +235,44 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
                 }
                 options.addOption("Cancel", OptionId.CHOOSE, null);
                 break;
+            case APIS:
+                textPanel.addParagraph("Do you want to summon a wing of Apis bombers?");
+                boolean canAffordApis = textPanel.addCostPanel("Each wing will cost (available)",Commodities.CREW, 5, true, Commodities.METALS, 150, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.APIS_BUY, null);
+                options.setEnabled(OptionId.APIS_BUY, canAffordApis);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case APIS_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 5, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 5);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 150, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 150);
+                AddRemoveCommodity.addFighterGainText("shpe_apis_Bomber_wing", 1, textPanel);
+                cargo.addFighters("shpe_apis_Bomber_wing", 1);
+                optionSelected(null, OptionId.APIS);
+                break;
+            case LOTUS:
+                textPanel.addParagraph("Do you want to summon a wing of Lotus interceptors?");
+                boolean canAffordLotus = textPanel.addCostPanel("Each wing will cost (available)",Commodities.CREW, 5, true, Commodities.METALS, 150, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.LOTUS_BUY, null);
+                options.setEnabled(OptionId.LOTUS_BUY, canAffordLotus);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case LOTUS_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 5, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 5);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 150, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 150);
+                AddRemoveCommodity.addFighterGainText("shpe_lotus_Interceptor_wing", 1, textPanel);
+                cargo.addFighters("shpe_lotus_Interceptor_wing", 1);
+                optionSelected(null, OptionId.LOTUS);
+                break;
             case DOOM:
                 textPanel.addParagraph("Do you want to summon a wing of Doom Wing daemon engines?");
-                //textPanel.addParagraph("Each wing will cost:");
                 boolean canAffordDoom = textPanel.addCostPanel("Each wing will cost (available)",Commodities.CREW, 30, true, Commodities.METALS, 100, true);
                 options.clearOptions();
 
@@ -164,6 +289,26 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
                 cargo.addFighters("shpe_doom_wing_Engine_wing", 1);
                 optionSelected(null, OptionId.DOOM);
                 break;
+            case FIRE:
+                textPanel.addParagraph("Do you want to summon a wing of Fire Lord daemon engines?");
+                boolean canAffordFire = textPanel.addCostPanel("Each wing will cost (available)",Commodities.CREW, 50, true, Commodities.METALS, 100, true);
+                options.clearOptions();
+
+                options.addOption("Summon", OptionId.FIRE_BUY, null);
+                options.setEnabled(OptionId.FIRE_BUY, canAffordFire);
+                options.addOption("Cancel", OptionId.CHOOSE, null);
+                break;
+            case FIRE_BUY:
+                AddRemoveCommodity.addCommodityLossText(Commodities.CREW, 50, textPanel);
+                cargo.removeCommodity(Commodities.CREW, 50);
+                AddRemoveCommodity.addCommodityLossText(Commodities.METALS, 100, textPanel);
+                cargo.removeCommodity(Commodities.METALS, 100);
+                AddRemoveCommodity.addFighterGainText("shpe_fire_lord_Engine_wing", 1, textPanel);
+                cargo.addFighters("shpe_fire_lord_Engine_wing", 1);
+                optionSelected(null, OptionId.FIRE);
+                break;
+
+            //CANCEL:----------------------------------------------------------------------------------
             case CANCEL:
                 Global.getSector().setPaused(false);
                 dialog.dismiss();

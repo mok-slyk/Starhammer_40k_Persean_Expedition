@@ -54,7 +54,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
     protected float intelWidth;
     protected float intelHeight;
 
-    protected TooltipMakerAPI intelMain;
+    //protected TooltipMakerAPI intelMain;
 
     public GodEventIntel[] gods = new GodEventIntel[4];
     public ChaosGodsEventIntel(TextPanelAPI text, boolean withIntelNotification) {
@@ -133,7 +133,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
         uiWidth = width;
 
         TooltipMakerAPI main = panel.createUIElement(width, height, true);
-        intelMain = main;
+        //intelMain = main;
 
         main.setTitleOrbitronVeryLarge();
         main.addTitle(getName(), Misc.getBasePlayerColor());
