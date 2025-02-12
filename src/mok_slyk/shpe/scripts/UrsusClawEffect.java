@@ -5,6 +5,7 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import org.apache.log4j.Logger;
+import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
 
@@ -20,7 +21,7 @@ public class UrsusClawEffect implements OnFireEffectPlugin, OnHitEffectPlugin, E
     @Override
     public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
         ensurePlugin();
-        Objects.requireNonNull(UrsusClawCablePlugin.getPlugin()).projectiles.put(projectile, new UrsusClawProjectileData(this, weapon, 1));
+        Objects.requireNonNull(UrsusClawCablePlugin.getPlugin()).projectiles.put(projectile, new UrsusClawProjectileData(this, weapon, closestBarrel(projectile)));
     }
 
     @Override
@@ -32,10 +33,30 @@ public class UrsusClawEffect implements OnFireEffectPlugin, OnHitEffectPlugin, E
             log.warn("data is null");
             return;
         }
-        Vector2f offset = Vector2f.sub(point, target.getLocation(), null);
+        Vector2f offset = VectorUtils.rotate(Vector2f.sub(point, target.getLocation(), null), -target.getFacing(), new Vector2f());
         if (!shieldHit && (target instanceof CombatAsteroidAPI || target instanceof ShipAPI)) {
             UrsusClawCablePlugin.getPlugin().hits.add(new UrsusClawHitData(data.weapon, data.barrel, target, offset));
         }
+    }
+
+    private int closestBarrel(DamagingProjectileAPI proj){
+        int closest = 0;
+        float shortestSquare = Float.MAX_VALUE;
+        Vector2f pos = proj.getLocation();
+        int i = 0;
+        while (true) {
+            try {
+                Vector2f point = proj.getWeapon().getFirePoint(i);
+                if (point == null) break;
+                float dist = Math.abs(Vector2f.sub(point, pos, null).lengthSquared());
+                if (dist < shortestSquare) {
+                    shortestSquare = dist;
+                    closest = i;
+                }
+            } catch (NullPointerException | IndexOutOfBoundsException e) {break;}
+            i++;
+        }
+        return closest;
     }
 
     private void ensurePlugin() {
@@ -69,6 +90,14 @@ public class UrsusClawEffect implements OnFireEffectPlugin, OnHitEffectPlugin, E
             this.barrel = barrel;
             this.target = target;
             this.offset = offset;
+        }
+
+        public Vector2f getPosition(){
+            return Vector2f.add(target.getLocation(), getGlobalOffset(), null);
+        }
+
+        public Vector2f getGlobalOffset(){
+            return VectorUtils.rotate(offset, target.getFacing(), new Vector2f());
         }
     }
 }

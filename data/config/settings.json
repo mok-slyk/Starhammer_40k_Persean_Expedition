@@ -68,6 +68,11 @@
 		"illustrations":{
 			"chaos_summon":"graphics/illustrations/shpe_chaos_summon.jpg",
 		},	
+		"debug":{
+			"dot":"graphics/debug/shpe_debug_dot.png",
+			"line":"graphics/debug/shpe_debug_line.png",
+			"vector":"graphics/debug/shpe_debug_vector.png",
+		},
 		"chaos_ships":{
 			"styx_tzeentch":"graphics/ships/shpe_styx_tzeentch.png",
 			"styx_khorne":"graphics/ships/shpe_styx_khorne.png",

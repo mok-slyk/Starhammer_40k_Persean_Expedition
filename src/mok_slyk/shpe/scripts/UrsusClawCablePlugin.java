@@ -34,18 +34,18 @@ public class UrsusClawCablePlugin extends BaseEveryFrameCombatPlugin {
         for (Map.Entry<DamagingProjectileAPI, UrsusClawEffect.UrsusClawProjectileData> entry: projectiles.entrySet()) {
             DamagingProjectileAPI proj = entry.getKey();
             if(proj.getLocation() == null || proj.isExpired()){
-                projectiles.remove(proj);
+                despawnProjectileCable(proj);
                 continue;
             }
             UrsusClawEffect.UrsusClawProjectileData data = entry.getValue();
             renderCable(data.weapon.getFirePoint(data.barrel), proj.getLocation());
         }
         for (UrsusClawEffect.UrsusClawHitData hit: hits) {
-            renderCable(hit.weapon.getFirePoint(hit.barrel), Vector2f.add(hit.target.getLocation(), hit.offset, null));
+            renderCable(hit.weapon.getFirePoint(hit.barrel), hit.getPosition());
             //do movement:
             Vector2f forceDirection = Vector2f.sub(hit.weapon.getFirePoint(hit.barrel), hit.target.getLocation(), null).normalise(null);
             CombatUtils.applyForce(hit.target, forceDirection, 500f*amount);
-            float torque = (float) Math.abs(Math.toRadians(VectorUtils.getFacing(forceDirection)-VectorUtils.getFacing(hit.offset)))*100*amount;
+            float torque = (float) Math.abs(Math.toRadians(VectorUtils.getFacing(forceDirection)-VectorUtils.getFacing(hit.getGlobalOffset())))*100*amount;
             hit.target.setAngularVelocity(hit.target.getAngularVelocity()+torque/hit.target.getMass());
         }
     }
@@ -57,7 +57,21 @@ public class UrsusClawCablePlugin extends BaseEveryFrameCombatPlugin {
         Vector2f scale = new Vector2f(6, length);
         MagicRender.singleframe(sprite, Vector2f.add(start, (Vector2f) dist.scale(0.5f), null), scale, VectorUtils.getFacing(dist)-90, new Color(255, 255, 255), false);
     }
+    private void despawnProjectileCable(DamagingProjectileAPI proj){
+        UrsusClawEffect.UrsusClawProjectileData data = projectiles.get(proj);
 
+        Vector2f start = data.weapon.getFirePoint(data.barrel);
+        Vector2f end = proj.getLocation();
+        SpriteAPI sprite = Global.getSettings().getSprite("fx", "ursus_cable");
+        Vector2f dist = Vector2f.sub(end, start, null);
+        float length = dist.length();
+        Vector2f scale = new Vector2f(6, length);
+        MagicRender.battlespace(sprite, Vector2f.add(start, (Vector2f) dist.scale(0.5f), null), proj.getVelocity(), scale, new Vector2f(), VectorUtils.getFacing(dist)-90, 0,
+                new Color(255, 255, 255), false, 0,0, 1
+        );
+
+        projectiles.remove(proj);
+    }
     @Override
     public void processInputPreCoreControls(float amount, List<InputEventAPI> events) {}
     @Override
