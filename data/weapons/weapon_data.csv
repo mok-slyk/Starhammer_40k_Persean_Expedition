@@ -32,7 +32,7 @@ Staravar Laser Battery,shpe_staravar_reference,6,0,2000,1000,600,,,0,15,0,,,,ENE
 Shard Cannon,shpe_shard_reference,6,0,2000,700,,300,,10,15,0,,,,KINETIC,30,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
 Staravar Muzzle Flash,shpe_staravar_flash,6,0,2000,700,,500,,40,15,0,,,,KINETIC,150,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,,,Anti Shield,,,,,,,,,,0.75
 Particle Whip Muzzle Flash,shpe_particle_whip_flash,6,0,2000,700,,500,,40,15,0,,,,KINETIC,150,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,,,Anti Shield,,,,,,,,,,0.75
-Light Macrocannon,shpe_light_macro,1,,1000,800,,200,,6,25,0,,,,KINETIC,40,,0,2,1,,0,5,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hellus Macrocannon,shpe_light_macro,1,,1000,800,,200,,6,25,0,,,,KINETIC,40,,0,2,1,,0,5,3,10,,500,,,10,,,,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
 Light Stygies Macrocannon,shpe_light_stygies,6,0,1000,700,,420,,30,20,0,,,,KINETIC,90,,0,4,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
 Light Hecutor Plasma Cannon,shpe_light_hecutor,6,0,1000,900,,200,,5,25,0,,,,ENERGY,90,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
 Light Pyros Macrocannon,shpe_light_pyros,6,0,1000,800,,156,,5,25,0,,,,HIGH_EXPLOSIVE,40,,0,2,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75

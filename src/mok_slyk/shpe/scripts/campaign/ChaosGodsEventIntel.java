@@ -272,45 +272,67 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
     @Override
     public void buttonPressConfirmed(Object buttonId, IntelUIAPI ui) {
         if (buttonId == KHORNE_MARK_BUTTON) {
-            stageAt = Stage.KHORNE_MARK;
+            setStage(Stage.KHORNE_MARK);
             gods[SLAANESH_I].setProgress(gods[SLAANESH_I].getProgress());
+            gods[KHORNE_I].notifyStageReached(gods[KHORNE_I].getLastActiveStage(false));
             ui.updateUIForItem(this);
         }
         if (buttonId == TZEENTCH_MARK_BUTTON) {
-            stageAt = Stage.TZEENTCH_MARK;
+            setStage(Stage.TZEENTCH_MARK);
             gods[NURGLE_I].setProgress(gods[NURGLE_I].getProgress());
+            gods[TZEENTCH_I].notifyStageReached(gods[TZEENTCH_I].getLastActiveStage(false));
             ui.updateUIForItem(this);
         }
         if (buttonId == NURGLE_MARK_BUTTON) {
-            stageAt = Stage.NURGLE_MARK;
+            setStage(Stage.NURGLE_MARK);
             gods[TZEENTCH_I].setProgress(gods[TZEENTCH_I].getProgress());
+            gods[NURGLE_I].notifyStageReached(gods[NURGLE_I].getLastActiveStage(false));
             ui.updateUIForItem(this);
         }
         if (buttonId == SLAANESH_MARK_BUTTON) {
-            stageAt = Stage.SLAANESH_MARK;
+            setStage(Stage.SLAANESH_MARK);
             gods[KHORNE_I].setProgress(gods[KHORNE_I].getProgress());
+            gods[SLAANESH_I].notifyStageReached(gods[SLAANESH_I].getLastActiveStage(false));
             ui.updateUIForItem(this);
         }
         if (buttonId == KHORNE_UNMARK_BUTTON) {
-            stageAt = Stage.UNALIGNED;
+            setStage(Stage.UNALIGNED);
+            Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 0);
             gods[KHORNE_I].setProgress(0);
             ui.updateUIForItem(this);
         }
         if (buttonId == TZEENTCH_UNMARK_BUTTON) {
-            stageAt = Stage.UNALIGNED;
+            setStage(Stage.UNALIGNED);
+            Global.getSector().getPlayerStats().setSkillLevel("shpe_tzeentch_chosen", 0);
             gods[TZEENTCH_I].setProgress(0);
             ui.updateUIForItem(this);
         }
         if (buttonId == NURGLE_UNMARK_BUTTON) {
-            stageAt = Stage.UNALIGNED;
+            setStage(Stage.UNALIGNED);
+            Global.getSector().getPlayerStats().setSkillLevel("shpe_nurgle_chosen", 0);
             gods[NURGLE_I].setProgress(0);
             ui.updateUIForItem(this);
         }
         if (buttonId == SLAANESH_UNMARK_BUTTON) {
-            stageAt = Stage.UNALIGNED;
+            setStage(Stage.UNALIGNED);
+            Global.getSector().getPlayerStats().setSkillLevel("shpe_slaanesh_chosen", 0);
             gods[SLAANESH_I].setProgress(0);
             ui.updateUIForItem(this);
         }
+    }
+
+    protected EventStageData getStage(Object stageId) {
+        for (EventStageData stage : stages) {
+            if (stage.id == stageId) {
+                return stage;
+            }
+        }
+        return null;
+    }
+
+    public void setStage(Stage stageId){
+        stageAt = stageId;
+        setProgress(getStage(stageId).progress);
     }
 
     public boolean doesButtonHaveConfirmDialog(Object buttonId) {

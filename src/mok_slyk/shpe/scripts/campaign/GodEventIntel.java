@@ -8,12 +8,15 @@ import com.fs.starfarer.api.impl.campaign.intel.events.ht.HyperspaceTopographyEv
 import com.fs.starfarer.api.ui.SectorMapAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
+import mok_slyk.shpe.scripts.utils.Witchcraft;
+import org.apache.log4j.Logger;
 
 import java.awt.*;
 import java.util.Set;
 
 // Event for individual favor and progress bar
 public class GodEventIntel extends BaseEventIntel {
+    private static final Logger log = Global.getLogger(GodEventIntel.class);
     public static int PROGRESS_MAX = 100;
 
     public static Color[] GOD_COLORS = {
@@ -371,29 +374,123 @@ public class GodEventIntel extends BaseEventIntel {
     protected void notifyStageReached(EventStageData stage) {
         switch (godID) {
             case ChaosGodsEventIntel.KHORNE_I:
+                if (stage.id == Stage.DEVOTION && masterEvent.isStageActive(ChaosGodsEventIntel.Stage.KHORNE_MARK)) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
+                }
                 if (stage.id == Stage.MARK) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_khorne_mark");
                 }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_champion", 1);
+                }
                 break;
             case ChaosGodsEventIntel.TZEENTCH_I:
+                if (stage.id == Stage.DEVOTION && masterEvent.isStageActive(ChaosGodsEventIntel.Stage.TZEENTCH_MARK)) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_tzeentch_chosen", 1);
+                }
                 if (stage.id == Stage.MARK) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_tzeentch_mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_strands_of_fortune");
                 }
                 if (stage.id == Stage.GIFT_4) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_warp_beasts");
                 }
                 break;
             case ChaosGodsEventIntel.NURGLE_I:
+                if (stage.id == Stage.DEVOTION && masterEvent.isStageActive(ChaosGodsEventIntel.Stage.NURGLE_MARK)) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_nurgle_chosen", 1);
+                }
                 if (stage.id == Stage.MARK) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_nurgle_mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_miasma");
                 }
                 if (stage.id == Stage.GIFT_2) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_nurgle_hives");
                 }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_ark_of_pestilence");
+                }
                 break;
             case ChaosGodsEventIntel.SLAANESH_I:
+                if (stage.id == Stage.DEVOTION && masterEvent.isStageActive(ChaosGodsEventIntel.Stage.SLAANESH_MARK)) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_slaanesh_chosen", 1);
+                }
                 if (stage.id == Stage.MARK) {
                     Global.getSector().getPlayerFaction().addKnownHullMod("shpe_slaanesh_mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().addKnownHullMod("shpe_sirens_summon");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_slaanesh_champion", 1);
+                }
+                break;
+        }
+    }
+
+    public void notifyStageLost(EventStageData stage) {
+        log.info("stage lost");
+        switch (godID) {
+            case ChaosGodsEventIntel.KHORNE_I:
+                if (stage.id == Stage.DEVOTION) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 0);
+                }
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_khorne_mark");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_champion", 0);
+                }
+                break;
+            case ChaosGodsEventIntel.TZEENTCH_I:
+                if (stage.id == Stage.DEVOTION) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_tzeentch_chosen", 0);
+                }
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_tzeentch_mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_strands_of_fortune");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_warp_beasts");
+                }
+                break;
+            case ChaosGodsEventIntel.NURGLE_I:
+                if (stage.id == Stage.DEVOTION) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_nurgle_chosen", 0);
+                }
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_nurgle_mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_miasma");
+                }
+                if (stage.id == Stage.GIFT_2) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_nurgle_hives");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_ark_of_pestilence");
+                }
+                break;
+            case ChaosGodsEventIntel.SLAANESH_I:
+                if (stage.id == Stage.DEVOTION) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_slaanesh_chosen", 0);
+                }
+                if (stage.id == Stage.MARK) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_slaanesh_mark");
+                    //log.info("removed slaanesh mark");
+                }
+                if (stage.id == Stage.GIFT_1) {
+                    Global.getSector().getPlayerFaction().removeKnownHullMod("shpe_sirens_summon");
+                    //log.info("removed sirens summon");
+                }
+                if (stage.id == Stage.GIFT_4) {
+                    Global.getSector().getPlayerStats().setSkillLevel("shpe_slaanesh_champion", 0);
                 }
                 break;
         }
@@ -450,6 +547,16 @@ public class GodEventIntel extends BaseEventIntel {
         EventStageData prev = getLastActiveStage(true);
         prevProgressDeltaWasPositive = this.progress < progress;
 
+        //go through all stages lost if progress was negative and remove their benefits
+        if (!prevProgressDeltaWasPositive) {
+            for (EventStageData esd : getStages()) {
+                //log.info("checked stage "+esd.id);
+                if (!esd.wasEverReached || esd.progress <= progress || esd.progress >= this.progress) continue;
+                //log.info("doing stage "+esd.id);
+                notifyStageLost(esd);
+            }
+        }
+
         //progress += 30;
         //progress = 40;
         //progress = 40;
@@ -457,13 +564,14 @@ public class GodEventIntel extends BaseEventIntel {
 
         this.progress = progress;
 
-
         if (progress < 0) {
             progress = 0;
         }
         if (progress > getMaxProgress()) {
             progress = getMaxProgress();
         }
+
+        //log.info("prev detlta positive: "+prevProgressDeltaWasPositive);
 
         // Check to see if randomized events need to be rolled/reset
         for (EventStageData esd : getStages()) {
