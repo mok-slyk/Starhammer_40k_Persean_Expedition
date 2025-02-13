@@ -8,7 +8,7 @@ shpe_slaanesh_chosen,Chosen of Slaanesh,15300,0,,,"They pursue a rapturous, tort
 shpe_khorne_champion,Exalted Champion of Khorne,25300,0,,,Blood for the Blood God!,Khornite battlecry,TRUE,,,,graphics/icons/campaign/shpe_khorne_symbol_gold.png,
 shpe_slaanesh_champion,Exalted Champion of Slaanesh,25300,0,,,"Embrace ecstasy, revel in perfection.",Whispers of Slaanesh,TRUE,,,,graphics/icons/campaign/shpe_slaanesh_symbol_gold.png,
 ,,,,,,,,,,,,,
-shpe_aptitude_gifts,,0,,,,,,,,,npc_omly,graphics/icons/skills/shpe_category_gifts.png,
+shpe_aptitude_gifts,,0,,,,,,,,,npc_only,graphics/icons/skills/shpe_category_gifts.png,
 ,,,,,,,,,,,,,
 ,,,,,,,,,,,,,
 ,,,,,,,,,,,,,
