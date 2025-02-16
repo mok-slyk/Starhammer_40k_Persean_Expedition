@@ -1,0 +1,230 @@
+{
+  "bounds": [
+    -70,
+    12,
+    -63.5,
+    17,
+    -64.5,
+    50.5,
+    -57,
+    51,
+    -49,
+    21,
+    -42.5,
+    22,
+    -36,
+    50.5,
+    -29.5,
+    51,
+    -25.5,
+    18,
+    31.5,
+    17,
+    34.5,
+    22,
+    83,
+    -0,
+    34.5,
+    -22,
+    31.5,
+    -17,
+    -25.5,
+    -18,
+    -29.5,
+    -51,
+    -36,
+    -50.5,
+    -42.5,
+    -22,
+    -49,
+    -21,
+    -57,
+    -51,
+    -64.5,
+    -50.5,
+    -63.5,
+    -17,
+    -70,
+    -12
+  ],
+  "builtInMods": [
+    "shpe_hellforged",
+    "shpe_variable_torpedo_tubes"
+  ],
+  "builtInWings": [],
+  "center": [
+    54,
+    71
+  ],
+  "collisionRadius": 123.5,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 38,
+      "location": [
+        -71.5,
+        10
+      ],
+      "style": "LOW_TECH",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 38,
+      "location": [
+        -71.5,
+        -10
+      ],
+      "style": "LOW_TECH",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 35,
+      "location": [
+        -67,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 160,
+  "hullId": "shpe_infidel",
+  "hullName": "Infidel",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 106.5,
+  "spriteName": "graphics/ships/shpe_infidel_unaligned.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 69.5,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        -8,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -69.5,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -8,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 69.5,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        14,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -69.5,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        14,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT3",
+      "locations": [
+        59.5,
+        8
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT2",
+      "locations": [
+        59.5,
+        -8
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT5",
+      "locations": [
+        55,
+        14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT4",
+      "locations": [
+        55,
+        -14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "BIT1",
+      "locations": [
+        67,
+        8.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "BIT0",
+      "locations": [
+        67,
+        -8.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 108
+}

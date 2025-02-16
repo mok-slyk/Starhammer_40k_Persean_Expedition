@@ -1,0 +1,42 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "glowColor": [
+    50,
+    190,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_ryza_hardpoint_glow.png",
+  "hardpointOffsets": [
+    19.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_ryza_hardpoint_base.png",
+  "id": "shpe_ryza",
+  "muzzleFlashSpec":{"length":80.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":2.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.4,
+					   "particleCount":12,
+					  "particleColor":[100,130,255,255]},
+  "projectileSpecId":"shpe_hecutor_shot",  # projectile that will be fired
+  "fireSoundTwo":"disintegrator_fire",	
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_ryza_turret_glow.png",
+  "turretOffsets": [
+    17,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_ryza_turret_base.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,162 @@
+{
+  "bounds": [
+    -49.5,
+    8,
+    -42,
+    15.5,
+    -36,
+    33.5,
+    -30.5,
+    15.5,
+    -23,
+    30.5,
+    -16.5,
+    13.5,
+    -8.5,
+    28.5,
+    -1.5,
+    14.5,
+    5,
+    26.5,
+    7,
+    14,
+    16.5,
+    12,
+    25,
+    19.5,
+    65,
+    -0,
+    25,
+    -19.5,
+    16.5,
+    -12,
+    7,
+    -14,
+    5,
+    -26.5,
+    -1.5,
+    -14.5,
+    -8.5,
+    -28.5,
+    -16.5,
+    -13.5,
+    -23,
+    -30.5,
+    -30.5,
+    -15.5,
+    -36,
+    -33.5,
+    -42,
+    -15.5,
+    -49.5,
+    -8
+  ],
+  "builtInWings": [],
+    "builtInMods": [
+	"shpe_hellforged",
+  ],
+  "center": [
+    35,
+    52
+  ],
+  "collisionRadius": 107,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 44.5,
+      "location": [
+        -52,
+        7
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 44.5,
+      "location": [
+        -52,
+        -7
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    }
+  ],
+  "height": 118,
+  "hullId": "shpe_iconoclast",
+  "hullName": "Iconoclast",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 93,
+  "spriteName": "graphics/ships/shpe_iconoclast_unaligned.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        20,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 53,
+      "arc": 169,
+      "id": "WS0003",
+      "locations": [
+        -9,
+        10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -53,
+      "arc": 169,
+      "id": "WS0004",
+      "locations": [
+        -9,
+        -10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [
+        -37,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [
+        -37,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 70
+}

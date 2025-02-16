@@ -94,6 +94,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_slaughter")) override = "slaughter_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_idolator")) override = "idolator_tzeentch";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_iconoclast")) override = "iconoclast_tzeentch";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_tzeentch";
             }
             if (ship.getVariant().hasHullMod("shpe_khorne_mark")) {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_khorne";
@@ -101,6 +103,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_khorne";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_slaughter")) override = "slaughter_khorne";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_idolator")) override = "idolator_khorne";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_iconoclast")) override = "iconoclast_khorne";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_khorne";
             }
             if (ship.getVariant().hasHullMod("shpe_slaanesh_mark")) {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_slaanesh";
@@ -108,6 +112,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_slaanesh";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_slaughter")) override = "slaughter_slaanesh";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_idolator")) override = "idolator_slaanesh";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_iconoclast")) override = "iconoclast_slaanesh";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_slaanesh";
             }
             if (ship.getVariant().hasHullMod("shpe_nurgle_mark")) {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_nurgle";
@@ -115,6 +121,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_slaughter")) override = "slaughter_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_idolator")) override = "idolator_nurgle";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_iconoclast")) override = "iconoclast_nurgle";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_nurgle";
             }
         }
         if (override != null) {
