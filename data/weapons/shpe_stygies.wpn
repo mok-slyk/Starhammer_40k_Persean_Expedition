@@ -1,26 +1,23 @@
 {
   "animationType": "MUZZLE_FLASH",
-  "barrelMode": "LINKED",
+  "barrelMode": "ALTERNATING",
   "displayArcRadius": 400,
   "fireSoundTwo": "hellbore_fire",
   "hardpointAngleOffsets": [
-    0,
     0
   ],
-  "hardpointGunSprite": "graphics/weapons/shpe_mars_hardpoint_recoil.png",
+  "hardpointGunSprite": "graphics/weapons/shpe_stygies_hardpoint_recoil.png",
   "hardpointOffsets": [
-    20,
-    4,
-    20,
-    -4
+    35.5,
+    0
   ],
-  "hardpointSprite": "graphics/weapons/shpe_mars_hardpoint_base.png",
-  "id": "shpe_marsvi",
+  "hardpointSprite": "graphics/weapons/shpe_stygies_hardpoint_base.png",
+  "id": "shpe_stygies",
   "muzzleFlashSpec": {
-    "length": 25,
+    "length": 5,
     "particleColor": [
       255,
-      210,
+      110,
       105,
       255
     ],
@@ -28,27 +25,24 @@
     "particleDuration": 0.4,
     "particleSizeMin": 12,
     "particleSizeRange": 15,
-    "spread": 16
+    "spread": 19
   },
-  "projectileSpecId": "shpe_marsvi_shot",
+  "projectileSpecId": "shpe_stygies_shot",
   "renderHints": [
     RENDER_BARREL_BELOW
   ],
-  "size": "MEDIUM",
+  "size": "LARGE",
   "specClass": "projectile",
   "textureType": ROUGH,
   "turretAngleOffsets": [
-    0,
     0
   ],
-  "turretGunSprite": "graphics/weapons/shpe_mars_turret_recoil.png",
+  "turretGunSprite": "graphics/weapons/shpe_stygies_turret_recoil.png",
   "turretOffsets": [
-    18,
-    4,
-    18,
-    -4
+    32,
+    0
   ],
-  "turretSprite": "graphics/weapons/shpe_mars_turret_base.png",
+  "turretSprite": "graphics/weapons/shpe_stygies_turret_base.png",
   "type": "BALLISTIC",
-  "visualRecoil": 5
+  "visualRecoil": 2
 }

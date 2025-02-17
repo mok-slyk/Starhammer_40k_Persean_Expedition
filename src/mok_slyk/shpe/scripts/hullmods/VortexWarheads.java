@@ -10,7 +10,7 @@ public class VortexWarheads extends BaseHullMod {
 
     public void advanceInCombat(ShipAPI ship, float amount) {
         for (WeaponAPI weapon: ship.getAllWeapons()) {
-            if(weapon.getId().equals("shpe_torptube")) {
+            if(weapon.getId().equals("shpe_vortextorp_reference")) {
                 weapon.setMaxAmmo(Math.round(ship.getMutableStats().getMissileAmmoBonus().getPercentMod()/100f+1));
                 //test:
                 WeaponSpecAPI stats = weapon.getSpec();

@@ -80,28 +80,76 @@
   "viewOffset": 0,
   "weaponSlots": [
     {
-      "angle": -0,
-      "arc": 270,
-      "id": "WS0002",
+      "angle": 0,
+      "arc": 122,
+      "id": "WS0001",
       "locations": [
-        15,
-        0
+        28,
+        8.5
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "UNIVERSAL"
     },
     {
       "angle": -0,
-      "arc": 270,
-      "id": "WS0004",
+      "arc": 122,
+      "id": "WS0002",
       "locations": [
-        -5,
-        0
+        28,
+        -8.5
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 122,
+      "id": "WS0003",
+      "locations": [
+        9.5,
+        9
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 122,
+      "id": "WS0004",
+      "locations": [
+        9.5,
+        -9
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 122,
+      "id": "WS0005",
+      "locations": [
+        -11,
+        9
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 122,
+      "id": "WS0006",
+      "locations": [
+        -11,
+        -9
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "UNIVERSAL"
     }
   ],
   "width": 42

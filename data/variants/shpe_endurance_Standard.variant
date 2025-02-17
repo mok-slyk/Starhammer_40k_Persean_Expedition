@@ -28,8 +28,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0012": "shpe_torptube",
-                "WS0011": "shpe_torptube",
+                "BIT0": "shpe_plasmatorp_reference",
+                "BIT1": "shpe_plasmatorp_reference",
             }
         },
         {

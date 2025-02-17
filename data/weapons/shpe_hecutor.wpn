@@ -1,0 +1,60 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "LINKED",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "hellbore_fire",
+  "glowColor": [
+    55,
+    165,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_hecutor_hardpoint_glow.png",
+  "hardpointOffsets": [
+    33.5,
+    -7.5,
+    33.5,
+    7.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_hecutor_hardpoint_base.png",
+  "id": "shpe_hecutor",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "particleColor": [
+      100,
+      130,
+      255,
+      255
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.4,
+    "particleSizeMin": 12,
+    "particleSizeRange": 15,
+    "spread": 2
+  },
+  "projectileSpecId": "shpe_hecutor_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_hecutor_turret_glow.png",
+  "turretOffsets": [
+    30,
+    7.5,
+    30,
+    -7.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_hecutor_turret_base.png",
+  "type": "ENERGY",
+  "mountTypeOverride":"HYBRID",
+}

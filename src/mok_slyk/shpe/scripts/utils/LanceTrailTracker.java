@@ -24,7 +24,7 @@ import static org.lwjgl.opengl.GL11.glPopMatrix;
 import static org.magiclib.plugins.MagicTrailPlugin.getPlugin;
 
 /*
-Sections of the following code are derived from code by Nicke535 that was published as part of MagicLib (1.4.6) under this license:
+Sections of the following code are derived from code by Nicke535 that was published as part of MagicLib (1.4.6) under the following license:
 
 MIT License
 

@@ -82,10 +82,6 @@
   "builtInMods": [
     "shpe_variable_torpedo_tubes"
   ],
-  "builtInWeapons": {
-    "WS0011": "shpe_torptube",
-    "WS0012": "shpe_torptube"
-  },
   "builtInWings": [],
   "center": [
     39,
@@ -285,7 +281,7 @@
     {
       "angle": 0,
       "arc": 5,
-      "id": "WS0011",
+      "id": "BIT1",
       "locations": [
         122.5,
         9.5
@@ -297,7 +293,7 @@
     {
       "angle": -0,
       "arc": 7,
-      "id": "WS0012",
+      "id": "BIT0",
       "locations": [
         122.5,
         -9.5

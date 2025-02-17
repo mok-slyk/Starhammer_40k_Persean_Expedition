@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "hellbore_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_bombardment_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    25,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_bombardment_hardpoint_base.png",
+  "id": "shpe_bombardment",
+  "muzzleFlashSpec": {
+    "length": 35,
+    "particleColor": [
+      220,
+      200,
+      255,
+      255
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.4,
+    "particleSizeMin": 8,
+    "particleSizeRange": 15,
+    "spread": 10
+  },
+  "projectileSpecId": "shpe_disruptor_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/shpe_bombardment_turret_recoil.png",
+  "turretOffsets": [
+    23,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_bombardment_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 3
+}

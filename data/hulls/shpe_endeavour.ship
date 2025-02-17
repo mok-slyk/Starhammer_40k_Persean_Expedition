@@ -83,10 +83,6 @@
     "shpe_broadside_batteries",
     "shpe_variable_torpedo_tubes"
   ],
-  "builtInWeapons": {
-    "WS0015": "shpe_torptube",
-    "WS0016": "shpe_torptube"
-  },
   "builtInWings": [],
   "center": [
     36,
@@ -180,7 +176,7 @@
       "id": "WS0001",
       "locations": [
         111.5,
-        -0
+        -3
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -192,7 +188,7 @@
       "id": "WS0002",
       "locations": [
         51.5,
-        -0
+        -3
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
@@ -204,7 +200,7 @@
       "id": "WS0003",
       "locations": [
         9.5,
-        -0
+        -3
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
@@ -216,7 +212,7 @@
       "id": "WS0004",
       "locations": [
         -93.5,
-        -0
+        -3
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -228,7 +224,7 @@
       "id": "WS0005",
       "locations": [
         -116.5,
-        14
+        11
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -240,7 +236,7 @@
       "id": "WS0006",
       "locations": [
         -116.5,
-        -14
+        -17
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -252,7 +248,7 @@
       "id": "BIB7",
       "locations": [
         -0.5,
-        23
+        19
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -264,7 +260,7 @@
       "id": "BIB6",
       "locations": [
         -0.5,
-        -23
+        -25
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -276,7 +272,7 @@
       "id": "BIB5",
       "locations": [
         15.5,
-        23
+        19
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -288,7 +284,7 @@
       "id": "BIB4",
       "locations": [
         15.5,
-        -23
+        -25
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -300,7 +296,7 @@
       "id": "BIB3",
       "locations": [
         31.5,
-        23
+        19
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -312,7 +308,7 @@
       "id": "BIB2",
       "locations": [
         31.5,
-        -23
+        -25
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -324,7 +320,7 @@
       "id": "BIB1",
       "locations": [
         47.5,
-        23
+        19
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -336,7 +332,7 @@
       "id": "BIB0",
       "locations": [
         47.5,
-        -23
+        -25
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -345,10 +341,10 @@
     {
       "angle": 0,
       "arc": 7,
-      "id": "WS0015",
+      "id": "BIT0",
       "locations": [
         124.5,
-        -8
+        -12
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
@@ -357,15 +353,15 @@
     {
       "angle": -0,
       "arc": 7,
-      "id": "WS0016",
+      "id": "BIT1",
       "locations": [
         124.5,
-        8
+        6
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
       "type": "BUILT_IN"
     }
   ],
-  "width": 72
+  "width": 78
 }

@@ -26,8 +26,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0016": "shpe_torptube",
-                "WS0015": "shpe_torptube",
+                "BIT0": "shpe_meltatorp_reference",
+                "BIT1": "shpe_meltatorp_reference",
             }
         },
         {

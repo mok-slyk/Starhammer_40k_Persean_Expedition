@@ -38,5 +38,6 @@
     0
   ],
   "turretSprite": "graphics/weapons/shpe_ryza_turret_base.png",
-  "type": "ENERGY"
+  "type": "ENERGY",
+  "mountTypeOverride":"HYBRID",
 }
