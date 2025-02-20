@@ -14,18 +14,18 @@
   "hardpointSprite": "graphics/weapons/shpe_stygies_hardpoint_base.png",
   "id": "shpe_stygies",
   "muzzleFlashSpec": {
-    "length": 5,
+    "length": 55,
     "particleColor": [
       255,
-      110,
-      105,
+      150,
+      135,
       255
     ],
-    "particleCount": 12,
+    "particleCount": 35,
     "particleDuration": 0.4,
     "particleSizeMin": 12,
     "particleSizeRange": 15,
-    "spread": 19
+    "spread": 25
   },
   "projectileSpecId": "shpe_stygies_shot",
   "renderHints": [

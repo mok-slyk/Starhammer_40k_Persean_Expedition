@@ -21,7 +21,7 @@ public class UrsusClawEffect implements OnFireEffectPlugin, OnHitEffectPlugin, E
     @Override
     public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
         ensurePlugin();
-        Objects.requireNonNull(UrsusClawCablePlugin.getPlugin()).projectiles.put(projectile, new UrsusClawProjectileData(this, weapon, closestBarrel(projectile)));
+        Objects.requireNonNull(UrsusClawCablePlugin.getPlugin()).addProjectile(projectile, new UrsusClawProjectileData(this, weapon, closestBarrel(projectile)));
     }
 
     @Override

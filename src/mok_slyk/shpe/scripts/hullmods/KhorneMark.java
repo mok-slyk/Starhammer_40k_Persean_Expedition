@@ -8,7 +8,7 @@ import mok_slyk.shpe.scripts.campaign.GodEventIntel;
 public class KhorneMark extends BaseHullMod {
     public static float RANGE_REDUCTION_PERCENT = 10;
     public static float DAMAGE_INCREASE_PERCENT = 20;
-    public static float HULL_FRACTION_THRESHOLD = 0.6f;
+    public static float HULL_FRACTION_THRESHOLD = 0.8f;
     public static float EXTRA_DAMAGE_PERCENT = 20;
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
@@ -24,7 +24,22 @@ public class KhorneMark extends BaseHullMod {
         ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
         ship.getMutableStats().getBallisticWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
         ship.getMutableStats().getMissileWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
+        ship.getMutableStats().getEnergyWeaponRangeBonus().modifyFlat("shpe_khorne_mark", RANGE_REDUCTION_PERCENT*0.01f);
+        ship.getMutableStats().getBallisticWeaponRangeBonus().modifyFlat("shpe_khorne_mark", RANGE_REDUCTION_PERCENT*0.01f);
         super.advanceInCombat(ship, amount);
+    }
+
+    @Override
+    public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+        float totalPlusPercent = DAMAGE_INCREASE_PERCENT;
+        if (ship.getVariant().hasHullMod("shpe_hellforged")){
+            totalPlusPercent *= Hellforged.MARK_EFFECT_MULT;
+        }
+        ship.getMutableStats().getEnergyWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
+        ship.getMutableStats().getBallisticWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
+        ship.getMutableStats().getMissileWeaponDamageMult().modifyFlat("shpe_khorne_mark", totalPlusPercent*0.01f);
+        ship.getMutableStats().getEnergyWeaponRangeBonus().modifyFlat("shpe_khorne_mark", RANGE_REDUCTION_PERCENT*0.01f);
+        ship.getMutableStats().getBallisticWeaponRangeBonus().modifyFlat("shpe_khorne_mark", RANGE_REDUCTION_PERCENT*0.01f);
     }
 
     @Override

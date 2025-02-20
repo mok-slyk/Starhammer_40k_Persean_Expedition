@@ -90,7 +90,7 @@ public class GodEventIntel extends BaseEventIntel {
             case ChaosGodsEventIntel.KHORNE_I:
                 if (esd.id == Stage.MARK) title = "Mark of Khorne"; //hullmod: reduced range, increased damage
                 if (esd.id == Stage.DEVOTION) title = "Devotion to Khorne"; //skill: piloted ship: damage dealt increases damage for this combat to a maximum of +100%
-                if (esd.id == Stage.GIFT_1) title = "Furious Vengeance"; //buff to mark: effect doubled when below 60% hull
+                if (esd.id == Stage.GIFT_1) title = "Furious Vengeance"; //buff to mark: effect doubled when below 80% hull
                 if (esd.id == Stage.GIFT_2) title = "World Eaters Arsenal"; //ursus claw and butcher cannon + gorestorm/daemongore/ichor cannon
                 if (esd.id == Stage.GIFT_3) title = "Demonships of Khorne";
                 if (esd.id == Stage.GIFT_4) title = "Exalted Champion of Khorne"; //player skill: piloted ship (and all ships with reckless officer at 50%):

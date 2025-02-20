@@ -14,20 +14,20 @@
   "hardpointSprite": "graphics/weapons/shpe_bombardment_hardpoint_base.png",
   "id": "shpe_bombardment",
   "muzzleFlashSpec": {
-    "length": 35,
+    "length": 45,
     "particleColor": [
-      220,
+      250,
       200,
-      255,
+      100,
       255
     ],
-    "particleCount": 12,
+    "particleCount": 16,
     "particleDuration": 0.4,
     "particleSizeMin": 8,
     "particleSizeRange": 15,
-    "spread": 10
+    "spread": 20,
   },
-  "projectileSpecId": "shpe_disruptor_shot",
+  "projectileSpecId": "shpe_bombardment_shot",
   "renderHints": [
     RENDER_BARREL_BELOW
   ],

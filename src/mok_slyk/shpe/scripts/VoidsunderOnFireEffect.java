@@ -32,7 +32,7 @@ public class VoidsunderOnFireEffect implements OnFireEffectPlugin {
         LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 coreSprite, new Color(255, 234, 190), new Color(255, 216, 123), new Color(255, 151, 0), 11, 9, 0.7f, 100, 0, 1, 1f, 0, 0.3f, 0.2f,
                 fringeSprite, new Color(255, 145, 0), new Color(255, 60, 0), new Color(215, 43, 95), 19, 17, 1.3f, 100, 200, 1, 0.8f, 0, 0.3f, 0.3f,
-                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 170, 0, weapon.getShip(), false, false, null);
+                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 170, 0, weapon.getShip(), false, true, null);
 
         float flashSize = 50f;
         engine.addHitParticle(

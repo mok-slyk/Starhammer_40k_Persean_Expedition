@@ -2,17 +2,17 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # PLAYER FACING MODULAR:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Titanforge Lance,shpe_titanforge_lance,2,,2000,900,,500,,0,40,12,,,,ENERGY,100,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
-Starbreaker Lance,shpe_starbreaker_lance,1,,1000,800,,250,,0,40,9,,,,ENERGY,50,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
-Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,500,,0,40,14,,,,ENERGY,90,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
-Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,,,,,,22.5
+Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Banefire Lance,shpe_banefire_lance,2,,5000,1000,,300,,0,15,18,,,,ENERGY,350,,0.7,3,3,0.8,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Godsbane Lance,shpe_godsbane_lance,2,,10000,1100,,400,,0,40,18,,,,ENERGY,300,,0.7,4,1,,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,,,,,,22.5
-Banefire Lance,shpe_banefire_lance,2,,5000,900,,300,,0,40,18,,,,ENERGY,100,,0.7,3,1,,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,,,,,,22.5
+Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,1000,,2500,,0,40,18,,,,ENERGY,2200,,1,6,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Godsbane Lance,shpe_godsbane_lance,2,,10000,1200,,300,,0,40,18,,,,ENERGY,320,,0.7,4,1,,0,0,0,0,,900,,,,,,,shpe_chaos,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Heavy Bolter,shpe_bolter,2,,400,450,,20,,0,45,5,,,,KINETIC,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,PD,"pd2, kinetic2, SR, shpe_imperium",,Imperium,,Point Defense,,,,,,,,,,0.7
-Hydra Flak Cannon,shpe_hydra,2,,400,300,,18,,1,45,5,,,,KINETIC,3,,0,0.2,5,0.1,0,3,1,15,,800,,,10,,,PD,"pd7, kinetic2, SR, shpe_imperium",,Imperium,,Point Defense,,,,,,,,,,0.7
-Lascannon,shpe_lascannon,2,0.5,5000,600,150,,,0,55,5,40,3,,ENERGY,,25,0,0,0.1,0.1,,,,,1000000,,,,,,,"PD, ANTI_FTR","pd10, beam15",,Imperium,,Point Defense,,,,,,,,,,26
+Heavy Bolter,shpe_bolter,2,,200,300,,35,,0,45,5,,,,KINETIC,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,PD,"pd2, kinetic2, SR, shpe_imperium",,Imperium,,Point Defense,,,,,,,,,,0.7
+Hydra Flak Cannon,shpe_hydra,2,,100,300,,20,,1,45,4,,,,KINETIC,3,,0,0.2,5,0.1,0,3,1,15,,800,,,10,,,PD,"pd7, kinetic2, SR, shpe_imperium",,Imperium,,Point Defense,,,,,,,,,,0.7
+Lascannon,shpe_lascannon,2,0.5,150,500,240,,,0,55,7,40,3,,ENERGY,,180,0,0,0.1,0.1,,,,,1000000,,,,,,,"PD, ANTI_FTR","pd10, beam15",,Imperium,,Point Defense,,,,,,,,,,26
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Thunderstrike Macrocannon,shpe_thunderstrike,1,,350,700,,400,,25,25,4,,,,KINETIC,320,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4,shpe_imperium",,Imperium,,Anti Shield,,,,,,,,,,0.75
 Pyros Macrocannon,shpe_pyros,2,,500,700,,370,,20,25,6,,,,HIGH_EXPLOSIVE,350,,0,3,1,,0,15,3,10,,500,,,40,,,,"he6, shpe_imperium",,Imperium,,Anti Armor,,,,,,,,,,0.75
@@ -38,12 +38,12 @@ Starcannon,shpe_starcannon,4,0,2000,800,,400,,10,15,15,,,,ENERGY,90,,0,3,5,0.3,0
 Firestorm Scatter Laser,shpe_firestorm,3,,2000,800,90,,,0,100,5,,,,ENERGY,,30,0,0.15,0.1,0,,,,,3600,,,,,,,PD,"pd7, beam5, restricted",,Eldar,,Point Defense,,,,,,,,,,19.5
 Disruption Cannon,shpe_d_cannon,6,0,2000,900,,400,,10,15,15,,,,HIGH_EXPLOSIVE,120,,0,3,1,,0,15,3,10,,700,,,5,,,,restricted,,Eldar,,Anti Armor,,,,,,,,,,0.75
 Fusion Beamer,shpe_fusion_beamer,4,0,2000,600,,50,,10,15,7,,,,HIGH_EXPLOSIVE,15,,0,10,6,0.01,0,2,3,10,,500,,,5,,,,restricted,,Eldar,,Anti Armor,,,,,,,,,,0.75
-Shuriken Cannon,shpe_shuriken_cannon,3,0.3,800,700,,150,,1,20,8,,,,FRAGMENTATION,30,,0,2.5,12,0.05,0,10,0.66,5,,1200,,,10,,,,"pd7, SR",,,,Point Defense,,,,,,,,,,3.65
+Shuriken Cannon,shpe_shuriken_cannon,3,0.3,800,700,,150,,1,20,8,,,,FRAGMENTATION,30,,0,2.5,12,0.05,0,10,0.66,5,,1200,,,10,,,,"pd7, SR, restricted",,,,Point Defense,,,,,,,,,,3.65
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Butcher Cannon,shpe_butcher_cannon,1,,300,600,,20,,3,20,5,,,,KINETIC,40,,0,0.8,8,0.03,0,20,3,9,,800,,,20,,,,"kinetic7, restricted",,Chaos,,Anti Shield,,,,,,,,,,2.5
-Ursus Claw,shpe_ursus_claw,1,,2000,800,,400,,10,15,7,,,,KINETIC,80,,0,3,1,,0,5,3,10,,500,,,10,,,,restricted,,Chaos,,Fleet Disruption,,,,,,,,,,0.75
-Harvester Cannon,shpe_harvester_cannon,1,,300,600,,60,,3,20,5,,,,HIGH_EXPLOSIVE,40,,0,0.5,3,0.1,0,15,3,7,,700,,,20,,,PD,"pd5, SR, restricted",,Chaos,,Anti Shield,,,,,,,,,,2.5
-Tormentor Cannon,shpe_tormentor_cannon,4,0,2000,800,,100,400,10,15,15,,,,ENERGY,90,,0,1,1,0,0,5,1,10,,900,,,5,,,,restricted,,Chaos,,General,,,,,,,,,,0.75
+Butcher Cannon,shpe_butcher_cannon,1,,300,600,,20,,3,20,5,,,,KINETIC,40,,0,0.8,8,0.03,0,20,3,9,,800,,,20,,,,"kinetic7, restricted, no_sell, no_drop, no_drop_salvage",,Chaos,,Anti Shield,,,,,,,,,,2.5
+Ursus Claw,shpe_ursus_claw,1,,2000,800,,400,,10,15,7,,,,KINETIC,80,,0,3,1,,0,5,3,10,,500,,,10,,,,"restricted, no_sell, no_drop, no_drop_salvage",,Chaos,,Fleet Disruption,,,,,Attaches to the target on a direct hits and reels it in.,,,,,0.75
+Harvester Cannon,shpe_harvester_cannon,1,,300,600,,60,,3,20,5,,,,HIGH_EXPLOSIVE,40,,0,0.5,3,0.1,0,15,3,7,,700,,,20,,,PD,"pd5, SR, restricted, no_sell, no_drop, no_drop_salvage",,Chaos,,Anti Shield,,,,,,,,,,2.5
+Tormentor Cannon,shpe_tormentor_cannon,4,0,2000,800,,100,400,10,15,15,,,,ENERGY,90,,0,1,1,0,0,5,1,10,,900,,,5,,,,"restricted, no_sell, no_drop, no_drop_salvage",,Chaos,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -52,32 +52,34 @@ Tormentor Cannon,shpe_tormentor_cannon,4,0,2000,800,,100,400,10,15,15,,,,ENERGY,
 # NON-MODULAR / HIDDEN:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # builtin references:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mars VI Macrocannon,shpe_marsvi_builtin,1,,2000,800,,400,,10,15,0,,,,KINETIC,80,,0,3,1,,0,5,3,10,,500,,,10,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Mars VI Macrocannon,shpe_marsvi_builtin,1,,2000,800,,300,,10,15,0,,,,KINETIC,75,,0,3,1,,0,5,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hellus Macrocannon,shpe_light_macro,1,,1000,800,,100,,6,25,0,,,,KINETIC,30,,0,2,1,,0,5,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Shield,,,,,,,,,,0.75
 Atomic Macrocannon,shpe_atomic_reference,1,,5000,900,,1200,,50,15,0,,,,ENERGY,300,,0,6,1,,0,5,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Everything,,,,,,,,,,0.75
-Stygies Macrocannon,shpe_stygies_reference,6,0,2000,700,,600,,40,15,0,,,,KINETIC,90,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
-Hecutor Plasma Cannon,shpe_hecutor_reference,6,0,2000,900,,400,,10,15,0,,,,ENERGY,90,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Pyros Macrocannon,shpe_pyros_reference,6,0,2000,800,,350,,10,15,0,,,,HIGH_EXPLOSIVE,90,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Disruptor Macrocannon,shpe_disruptor_reference,6,0,2000,800,,300,200,10,15,0,,,,KINETIC,90,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Staravar Laser Battery,shpe_staravar_reference,6,0,2000,1000,600,,,0,15,0,,,,ENERGY,150,,0.2,0.7,0.3,,0,0,3,10,10000,,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Shard Cannon,shpe_shard_reference,6,0,2000,700,,300,,10,15,0,,,,KINETIC,30,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Staravar Muzzle Flash,shpe_staravar_flash,6,0,2000,700,,500,,40,15,0,,,,KINETIC,150,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,,,Anti Shield,,,,,,,,,,0.75
+# no light atomics?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Stygies Macrocannon,shpe_stygies_reference,6,0,2000,700,,600,,40,15,0,,,,KINETIC,200,,0,5,1,,0,15,3,10,,400,,,20,,,SYSTEM,,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Light Stygies Macrocannon,shpe_light_stygies,6,0,1000,700,,300,,30,20,0,,,,KINETIC,100,,0,3.5,1,,0,15,3,10,,400,,,20,,,SYSTEM,,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hecutor Plasma Cannon,shpe_hecutor_reference,6,0,2000,1000,,300,,10,15,0,,,,ENERGY,120,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Light Hecutor Plasma Cannon,shpe_light_hecutor,6,0,1000,1000,,150,,5,25,0,,,,ENERGY,60,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Pyros Macrocannon,shpe_pyros_reference,6,0,2000,800,,300,,10,15,0,,,,HIGH_EXPLOSIVE,80,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Armor,,,,,,,,,,0.75
+Light Pyros Macrocannon,shpe_light_pyros,6,0,1000,800,,100,,5,25,0,,,,HIGH_EXPLOSIVE,30,,0,2,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Anti Armor,,,,,,,,,,0.75
+Disruptor Macrocannon,shpe_disruptor_reference,6,0,2000,800,,100,200,10,15,0,,,,KINETIC,85,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Disruption,,,,,,,,,,0.75
+Light Disruptor Macrocannon,shpe_light_disruptor,6,0,1000,800,,50,100,5,25,0,,,,KINETIC,45,,0,2,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,Disruption,,,,,,,,,,0.75
+Staravar Laser Battery,shpe_staravar_reference,6,0,2000,1000,750,,,0,15,0,,,,ENERGY,,180,0.2,0.7,0.3,,0,0,3,10,10000,,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Light Laser Battery,shpe_light_staravar,6,0,2000,1000,375,,,0,15,0,,,,ENERGY,,90,0.2,0.7,0.3,,0,0,3,10,10000,,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Shard Cannon,shpe_shard_reference,6,0,2000,700,,150,,10,15,0,,,,KINETIC,0,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Light Shard Cannon,shpe_light_shard,6,0,2000,700,,85,,5,15,0,,,,KINETIC,0,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Hellus Macrocannon,shpe_light_macro,1,,1000,800,,200,,6,25,0,,,,KINETIC,40,,0,2,1,,0,5,3,10,,500,,,10,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
-Light Stygies Macrocannon,shpe_light_stygies,6,0,1000,700,,420,,30,20,0,,,,KINETIC,90,,0,4,1,,0,15,3,10,,400,,,20,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
-Light Hecutor Plasma Cannon,shpe_light_hecutor,6,0,1000,900,,200,,5,25,0,,,,ENERGY,90,,0,3,1,,0,15,3,10,,700,,,5,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Light Pyros Macrocannon,shpe_light_pyros,6,0,1000,800,,156,,5,25,0,,,,HIGH_EXPLOSIVE,40,,0,2,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Light Disruptor Macrocannon,shpe_light_disruptor,6,0,1000,800,,150,100,5,25,0,,,,KINETIC,90,,0,3,1,,0,15,3,10,,500,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Light Laser Battery,shpe_light_staravar,6,0,2000,1000,300,,,0,15,0,,,,ENERGY,75,,0.2,0.7,0.3,,0,0,3,10,10000,,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
-Light Shard Cannon,shpe_light_shard,6,0,2000,350,,300,,5,15,0,,,,KINETIC,15,,0,2,1,,0,15,3,10,,600,,,10,,,SYSTEM,,,Imperium,,General,,,,,,,,,,0.75
+Staravar Muzzle Flash,shpe_staravar_flash,6,0,2000,700,,500,,40,15,0,,,,KINETIC,150,,0,3,1,,0,15,3,10,,400,,,20,,,SYSTEM,,,,,Anti Shield,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Hive of Nurgle,shpe_hive,1,,2000,600,,300,,10,15,0,,,,FRAGMENTATION,20,,0,4,3,0,35,45,3,10,,500,,,10,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
-Hive of Nurgle,shpe_light_hive,1,,1000,600,,150,,6,25,0,,,,FRAGMENTATION,10,,0,3,4,0,35,45,3,10,,500,,,10,,,SYSTEM,kinetic4,,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hive of Nurgle,shpe_hive,1,,2000,700,,100,,10,15,0,,,,FRAGMENTATION,10,,0,4,15,0,35,45,3,10,,500,,,10,,,SYSTEM,,,Chaos,,Anti Hull,,,,,,,,,,0.75
+Hive of Nurgle,shpe_light_hive,1,,1000,700,,50,,6,25,0,,,,FRAGMENTATION,5,,0,3,15,0,35,45,3,10,,500,,,10,,,SYSTEM,,,Chaos,,Anti Hull,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Plasma Torpedo,shpe_plasmatorp_reference,6,0,200,1400,,2000,,75,10,0,3,,,ENERGY,0,,0,5,1,,0,0,0,0,,600,100,4,150,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
-Melta Torpedo,shpe_meltatorp_reference,6,0,200,1400,,2000,,75,10,0,3,,,HIGH_EXPLOSIVE,0,,0,5,1,,0,0,0,0,,600,100,4,150,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
-Barrage Torpedo,shpe_barragetorp_reference,6,0,200,1400,,2000,,75,10,0,3,,,KINETIC,0,,0,5,1,,0,0,0,0,,600,100,4,150,,,SYSTEM,"kinetic4, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
-Vortex Torpedo,shpe_vortextorp_reference,6,0,200,1400,,4000,,75,10,0,3,,,ENERGY,0,,0,5,1,,0,0,0,0,,600,100,4,150,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
-Seeking Torpedo,shpe_seekingtorp_reference,6,0,200,1400,,1000,,75,10,0,3,,,ENERGY,0,,0,5,1,,0,0,0,0,,600,100,4,150,,,"STRIKE, GUIDED_POOR, DIRECT_AIM, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,Good,,,,,,,TRUE,9
+Plasma Torpedo,shpe_plasmatorp_reference,6,0,200,1400,,1700,,75,10,0,3,,,ENERGY,0,,0,5,1,,0,0,0,0,,500,100,4,450,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
+Melta Torpedo,shpe_meltatorp_reference,6,0,200,1400,,1500,,75,10,0,3,,,HIGH_EXPLOSIVE,0,,0,5,1,,0,0,0,0,,500,100,4,450,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
+Barrage Torpedo,shpe_barragetorp_reference,6,0,200,1400,,1700,,75,10,0,3,,,KINETIC,0,,0,5,1,,0,0,0,0,,500,100,4,450,,,SYSTEM,"kinetic4, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
+Vortex Torpedo,shpe_vortextorp_reference,6,0,200,1400,,5000,,75,10,0,1,,,ENERGY,0,,0,5,1,,0,0,0,0,,500,100,4,250,,,"STRIKE, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,None,,,,,,,TRUE,9
+Seeking Torpedo,shpe_seekingtorp_reference,6,0,200,1400,,1000,,75,10,0,3,,,ENERGY,0,,0,5,1,,0,0,0,0,,500,100,4,250,,,"STRIKE, GUIDED_POOR, DIRECT_AIM, SYSTEM","strike8, rocket3",,Imperium,,Torpedo,Fast,Good,,,,,,,TRUE,9
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Aetherfire Cannon,shpe_aetherfire,6,0,1000,500,,400,,5,25,0,,,,ENERGY,50,,0,3,3,0.7,0,15,3,10,,700,,,5,,,SYSTEM,,,Chaos,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Voidsunder Lance,shpe_voidsunder_lance,2,,10000,900,,1000,,0,40,18,,,,ENERGY,300,,1,6,1,,0,0,0,0,,900,,,,,,SYSTEM,,,Imperium,,General,,,,,,,,,,22.5
@@ -114,7 +116,7 @@ Ion Cannon,shpe_light_ion,3,0.5,2500,1000,100,,400,0,15,12,,,,ENERGY,0,0,0.5,0.5
 Mars-Pattern Nova Cannon,shpe_marsnova,5,0,50000,1500,,4000,,300,5,0,,,,KINETIC,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
 Ryza-Pattern Nova Cannon,shpe_ryzanova,5,0,50000,1500,,3000,,300,5,0,,,,ENERGY,5000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"energy,LR,shpe_imperium",,Imperium,,General (Area),,,,,,,,,,
 Lathe-Pattern Nova Cannon,shpe_lathenova,5,0,50000,1500,,3000,,300,5,0,,,,KINETIC,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
-Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENERGY,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
+Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENERGY,3000,,0.1,15,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -2,20 +2,14 @@
   "animationType": "SMOKE",
   "barrelMode": "LINKED",
   "displayArcRadius": 400,
-  "fireSoundTwo": "hellbore_fire",
+  "fireSoundTwo": "sabot_srm_fire",
   "hardpointAngleOffsets": [
-    0,
-    0,
     0
   ],
   "hardpointGunSprite": "graphics/weapons/shpe_empty_weapon.png",
   "hardpointOffsets": [
     5.5,
-    0,
-    5.5,
-    0.5,
-    5.5,
-    -0.5
+    0
   ],
   "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
   "hardpointUnderSprite": "graphics/weapons/shpe_light_nurgle_hive_turret_under.png",
@@ -45,18 +39,12 @@
   "specClass": "projectile",
   "textureType": ROUGH,
   "turretAngleOffsets": [
-    0,
-    0,
     0
   ],
   "turretGunSprite": "graphics/weapons/shpe_empty_weapon.png",
   "turretOffsets": [
     3.5,
-    0,
-    3.5,
-    0.5,
-    3.5,
-    -0.5
+    0
   ],
   "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
   "turretUnderSprite": "graphics/weapons/shpe_light_nurgle_hive_turret_under.png",

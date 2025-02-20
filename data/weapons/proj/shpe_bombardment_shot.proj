@@ -1,18 +1,18 @@
 {
-	"id":"shpe_stygies_shot",
+	"id":"shpe_bombardment_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
-	"length":80.0,
-	"hitGlowRadius":20,
+	"length":120.0,
+	"hitGlowRadius":40,
 	"width":8.0,
 	"fadeTime":0.2,
 	#"fringeColor":[255,125,125,255],
 	#"coreColor":[255,200,200,150],
-	"fringeColor":[190,190,220,235],
-	"coreColor":[255,255,255,170],	
+	"fringeColor":[230,150,70,205],
+	"coreColor":[255,255,255,160],	
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/missiles/shpe_shell_stygies.png"
+	"bulletSprite":"graphics/missiles/shpe_shell_bombardment.png"
 }
