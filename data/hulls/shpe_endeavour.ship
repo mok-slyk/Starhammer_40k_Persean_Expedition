@@ -1,82 +1,82 @@
 {
   "bounds": [
-    -146,
+    -148.5,
     2.5,
-    -157,
+    -156.5,
     5.5,
-    -157,
+    -156.5,
     13.5,
-    -144,
-    15,
     -142.5,
     19,
-    -83.5,
-    19,
-    -65,
-    17,
+    -84.5,
+    20.5,
+    -64.5,
+    17.5,
     -65.5,
-    28,
-    -83,
-    30.5,
-    -83.5,
-    35,
-    -10.5,
-    35,
-    -10.5,
-    29.5,
-    -30,
     27.5,
+    -83,
+    29.5,
+    -83.5,
+    34.5,
+    -10.5,
+    34.5,
+    -11,
+    29.5,
+    -27,
+    28.5,
     -30.5,
-    16.5,
-    -16,
-    16.5,
-    -9.5,
-    23.5,
-    57,
-    22.5,
-    70,
-    18.5,
-    109.5,
-    18,
+    16,
+    -15.5,
+    17,
+    -8.5,
+    23,
+    55.5,
+    23,
+    64.5,
+    13.5,
+    69.5,
+    19,
+    98.5,
+    19,
     157.5,
     -0,
-    109.5,
-    -18,
-    70,
-    -18.5,
-    57,
-    -22.5,
-    -9.5,
-    -23.5,
-    -16,
-    -16.5,
+    98.5,
+    -19,
+    69.5,
+    -19,
+    64.5,
+    -13.5,
+    55.5,
+    -23,
+    -8.5,
+    -23,
+    -15.5,
+    -17,
     -30.5,
-    -16.5,
-    -30,
-    -27.5,
-    -10.5,
+    -16,
+    -27,
+    -28.5,
+    -11,
     -29.5,
     -10.5,
-    -35,
+    -34.5,
     -83.5,
-    -35,
+    -34.5,
     -83,
-    -30.5,
+    -29.5,
     -65.5,
-    -28,
-    -65,
-    -17,
-    -83.5,
-    -19,
+    -27.5,
+    -64.5,
+    -17.5,
+    -84.5,
+    -20.5,
     -142.5,
     -19,
-    -144,
-    -15,
-    -157,
+    -156.5,
     -13.5,
-    -157,
+    -156.5,
     -5.5,
-    -146,
+    -148.5,
     -2.5
   ],
   "builtInMods": [
@@ -85,7 +85,7 @@
   ],
   "builtInWings": [],
   "center": [
-    36,
+    39,
     158.5
   ],
   "collisionRadius": 221,
@@ -95,7 +95,7 @@
       "contrailSize": 17,
       "length": 44.5,
       "location": [
-        -157.5,
+        -158.5,
         9
       ],
       "style": "LOW_TECH",
@@ -106,7 +106,7 @@
       "contrailSize": 17,
       "length": 44.5,
       "location": [
-        -157.5,
+        -158.5,
         -9
       ],
       "style": "LOW_TECH",
@@ -135,23 +135,12 @@
       "width": 10
     },
     {
-      "angle": 180,
-      "contrailSize": 10,
-      "length": 23.5,
-      "location": [
-        -146.5,
-        -0
-      ],
-      "style": "LOW_TECH",
-      "width": 10
-    },
-    {
       "angle": -180,
       "contrailSize": 10,
       "length": 23.5,
       "location": [
-        -146.5,
-        0
+        -147,
+        -0
       ],
       "style": "LOW_TECH",
       "width": 10
@@ -163,7 +152,7 @@
   "hullSize": "DESTROYER",
   "shieldCenter": [
     0,
-    0
+    -0
   ],
   "shieldRadius": 201,
   "spriteName": "graphics/ships/shpe_endeavour.png",
@@ -176,7 +165,7 @@
       "id": "WS0001",
       "locations": [
         111.5,
-        -3
+        0
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -188,7 +177,7 @@
       "id": "WS0002",
       "locations": [
         51.5,
-        -3
+        0
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
@@ -200,7 +189,7 @@
       "id": "WS0003",
       "locations": [
         9.5,
-        -3
+        0
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
@@ -212,7 +201,7 @@
       "id": "WS0004",
       "locations": [
         -93.5,
-        -3
+        0
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -224,7 +213,7 @@
       "id": "WS0005",
       "locations": [
         -116.5,
-        11
+        14
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -236,7 +225,7 @@
       "id": "WS0006",
       "locations": [
         -116.5,
-        -17
+        -14
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -248,7 +237,7 @@
       "id": "BIB7",
       "locations": [
         -0.5,
-        19
+        22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -260,7 +249,7 @@
       "id": "BIB6",
       "locations": [
         -0.5,
-        -25
+        -22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -272,7 +261,7 @@
       "id": "BIB5",
       "locations": [
         15.5,
-        19
+        22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -284,7 +273,7 @@
       "id": "BIB4",
       "locations": [
         15.5,
-        -25
+        -22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -296,7 +285,7 @@
       "id": "BIB3",
       "locations": [
         31.5,
-        19
+        22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -308,7 +297,7 @@
       "id": "BIB2",
       "locations": [
         31.5,
-        -25
+        -22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -320,7 +309,7 @@
       "id": "BIB1",
       "locations": [
         47.5,
-        19
+        22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -332,7 +321,7 @@
       "id": "BIB0",
       "locations": [
         47.5,
-        -25
+        -22
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -344,7 +333,7 @@
       "id": "BIT0",
       "locations": [
         124.5,
-        -12
+        -9
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
@@ -356,7 +345,7 @@
       "id": "BIT1",
       "locations": [
         124.5,
-        6
+        9
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",

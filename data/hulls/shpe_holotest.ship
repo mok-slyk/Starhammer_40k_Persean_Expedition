@@ -48,6 +48,7 @@
     3
   ],
   "builtInWings": [],
+  "builtInMods": ["shpe_reinforced_prow",],
   "center": [
     21,
     78

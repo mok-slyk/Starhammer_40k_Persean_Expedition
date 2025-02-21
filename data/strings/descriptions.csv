@@ -19,7 +19,7 @@ shpe_lunar,SHIP,"Flexible and powerful, the Lunar works well in almost any fleet
 Lunar cruisers are not only powerful but also cheap and easy to produce, allowing even worlds that could not normally construct full-blown cruisers to build them with only rudimentary orbital works. Because of this, Lunars are the most common type of cruiser in the Imperium and maybe even in the galaxy at large.
 
 ",,,,
-shpe_gothic,SHIP,"A familliar sight throughout the Imperium, the Gothic deatures one of the largest lance broadsides in the Imperium, allowing it to quickly destroy even larger opponents if given the chance. Due to its lack of macrobatteries the Gothic works best if supported by other warhsips, allowing it to bring the full force of its lances to bear.
+shpe_gothic,SHIP,"A familliar sight throughout the galaxy, the Gothic features one of the largest lance broadsides in the Imperium, allowing it to quickly destroy even larger opponents if given the chance. Due to its lack of macrobatteries the Gothic works best if supported by other warhsips, allowing it to bring the full force of its lances to bear.
 
 The Gothic is the second most common Imperial cruiser after the Lunar and is commonly used in larger fleet engagements, where if properly supported it can threaten even grand cruisers and battleships.",,,,
 shpe_dictator,SHIP,"Originally developed from damaged Lunars for Orbital assaults, the Dictator has since become an ubiquitous and capable battlecarrier.
@@ -49,9 +49,25 @@ shpe_retribution,SHIP,"A traditional battleship, mounting a truly terrifying bro
 
 Most retribution battleships that are still in use were built on the ring of iron around mars.",,,,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+shpe_fury_mech,SHIP,"Flexible and well-armed, the Fury is the Imperial Navy's main Interceptor craft. While it can also attack larger ships it lacks the punch to truly threaten them, but excells at destroying torpedos and strikecraft.
+
+While it is larger and heavier and heavier than most fightercraft, including its predecessor, the Wrath, the Fury handles suprisingly well and can easily match the speed of the larger Starhawk-Bombers it waas designed to escort in battle.
+
+",,,,
+shpe_starhawk_mech,SHIP,"Sturdy and heavily armed, the Starhawk carries both bombs and missiles, making it a threat to much large warhships, especially if their shields are down. While it is also capable of defending itself against missiles and other fighters, it fares best with an escort.",,,,
+shpe_lunar_mech,SHIP,"Flexible and powerful, the Lunar works well in almost any fleet composition and at all ranges of engagement. Larger Imperial fleets will often feature multiple Lunars for their sheer flexibility.
+
+Lunar cruisers are not only powerful but also cheap and easy to produce, allowing even worlds that could not normally construct full-blown cruisers to build them with only rudimentary orbital works. Because of this, Lunars are the most common type of cruiser in the Imperium and maybe even in the galaxy at large.
+
+",,,,
+shpe_gothic_mech,SHIP,"A familliar sight throughout the galaxy, the Gothic features one of the largest lance broadsides in the Imperium, allowing it to quickly destroy even larger opponents if given the chance. Due to its lack of macrobatteries the Gothic works best if supported by other warhsips, allowing it to bring the full force of its lances to bear.
+
+The Gothic is the second most common Imperial cruiser after the Lunar and is commonly used in larger fleet engagements, where if properly supported it can threaten even grand cruisers and battleships.",,,,
+shpe_dictator_mech,SHIP,"Originally developed from damaged Lunars for Orbital assaults, the Dictator has since become an ubiquitous and capable battlecarrier.
+
+While the Dictator was originally an experimental retrofit, it has since become one of the main cruisers of the Imperial Navy, often being used as the flagship of larger anti-piracy patrols for its abillity to easily deal with small to medium sized enemies.
+
+",,,,
 ,,,,,,
 ,,,,,,
 shpe_darkstar,SHIP,"A tough and agile fighter, the darkstar excels at fighting hostile attack craft but can also do some damage to larger ships while being more survivable than other erldar ships of its size.",,,,
@@ -157,6 +173,7 @@ shpe_light_ion,WEAPON,"A powerful ion beam, effective against shields and, espec
 shpe_railgun,WEAPON,"A light rail weapon, firing kinetic projectiles at high speeds with relatively good fire rate.",,,,
 shpe_shuriken_cannon,WEAPON,A point-defense weapon that fires a hail of monomolecular blades.,,,,
 shpe_sonic_charge,WEAPON,"A self-contained sonic warhead, capable of tearing enemy starships to shreds.",,,,
+,,,,,,
 ,,,,,,
 ,,,,,,
 ,,,,,,

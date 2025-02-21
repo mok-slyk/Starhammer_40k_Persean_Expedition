@@ -1,0 +1,28 @@
+{
+	"id":"shpe_light_staravar_odd",  # this id must match what's in the spreadsheet
+	"beamEffect":"mok_slyk.shpe.scripts.StaravarOnFireEffect",
+	"specClass":"beam",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"turretSprite": "graphics/weapons/shpe_light_macro_turret_base.png",
+	"turretGunSprite": "graphics/weapons/shpe_light_macro_turret_recoil.png",
+	"hardpointSprite": "graphics/weapons/shpe_light_macro_turret_base.png",
+	"hardpointGunSprite": "graphics/weapons/shpe_light_macro_turret_recoil.png",
+	"turretOffsets": [8,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets": [12.5,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"fringeColor":[155,155,50,255],
+	"coreColor":[255,255,255,200],
+	"glowColor":[255,255,100,255],
+	"darkCore":false,
+	"width":18.0,
+	"textureType":SMOOTH,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],
+	"textureScrollSpeed":292.0,
+	"pixelsPerTexel":5.0,
+	"fireSoundOne":"mining_blaster_fire",	
+}

@@ -18,7 +18,7 @@ public class Witchcraft {
     private Witchcraft() {}
 
     public static Object getFromFieldInObject(Object object, String fieldName) {
-        log.info("getting from object");
+        //log.info("getting from object");
         //return getFromField(object, getAnyField(object, fieldName));
         //return ReflectionUtils.INSTANCE.get(fieldName, object);
         try {
@@ -36,22 +36,15 @@ public class Witchcraft {
         Field field = null;
         while (instanceClass != null && field == null) {
             try {
-                log.info("getting field name");
                 field = instanceClass.getField(fieldName);
-                log.info("got field");
             } catch (Exception e) {
-                log.info("problem getting field normall: " + e + " ; attempting to get declared");
                 try {
                     field = instanceClass.getDeclaredField(fieldName);
-                    log.info("got declared field");
                 } catch (Exception f) {
-                    log.warn("problem getting declared field: " + f);
                     instanceClass = recursive ? instanceClass.getSuperclass() : null;
-                    if (instanceClass != null) log.info("attempting to get from " + instanceClass.getName());
                 }
             }
         }
-        log.info("got field name?");
         return field;
     }
 

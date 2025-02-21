@@ -73,7 +73,8 @@
   ],
   "builtInMods": [
     "shpe_broadside_batteries",
-    "shpe_novacannon"
+    "shpe_novacannon",
+	"shpe_reinforced_prow",
   ],
   "builtInWings": [],
   "center": [

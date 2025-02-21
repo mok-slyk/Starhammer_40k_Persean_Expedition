@@ -7,7 +7,7 @@ shpe_eagle_wing,shpe_eagle_Bomber,"bomber5, bomber",3,,8,24,V,4000,300,600,1,BOM
 shpe_starhawk_mech_wing,shpe_starhawk_mech_Bomber,"bomber5, bomber, shpe_mechanicus",2,,6,15,V,4000,1000,600,1,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
 shpe_fury_mech_Interceptor_wing,shpe_fury_mech_Interceptor,"fighter, fighter4, shpe_mechanicus",2,,6,13,V,4000,500,,3,FIGHTER,Interceptor,10,2000,,,,,,,,,,,,,v
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shpe_tigershark_Fighter_wing,shpe_tigershark_Fighter,"fighter, fighter5",2,,9,14,V,4000,800,,1,FIGHTER,Fighter,20,2000,,,,,,,,,,,,,
+shpe_tigershark_Fighter_wing,shpe_tigershark_Fighter,"fighter, fighter5",2,,9,14,V,4000,800,700,1,FIGHTER,Fighter,20,2000,,,,,,,,,,,,,
 shpe_manta_Fighter_wing,shpe_manta_Fighter,"fighter, fighter5",4,,12,30,V,6000,1000,,1,FIGHTER,Fighter,40,2000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_hemlock_Wraithfighter_wing,shpe_hemlock_Wraithfighter,"fighter, fighter9",5,,11,30,V,4000,500,,1,FIGHTER,Wraithfighter,30,50000,,,,,,,,,,,,,

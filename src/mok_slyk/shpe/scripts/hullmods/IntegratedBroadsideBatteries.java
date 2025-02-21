@@ -66,7 +66,7 @@ public class IntegratedBroadsideBatteries extends BaseHullMod {
             for (WeaponSlotAPI slot: slots) {
                 if (slot.getId().equals(slotID)) {
                     stats.getVariant().clearSlot(slotID);
-                    stats.getVariant().addWeapon(slotID, weaponSpecID);
+                    stats.getVariant().addWeapon(slotID, ((i % 2 == 0) ? weaponSpecID : weaponSpecID+"_odd"));
                     slotExists = true;
                     break;
                 }

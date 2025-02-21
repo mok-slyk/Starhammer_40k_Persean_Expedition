@@ -68,7 +68,7 @@ Note that these stat changes are not shown in the refit screen!",,,graphics/hull
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 Armored Prow,shpe_armored_prow,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ArmoredProw,The ship's prow is heavily armored and has its own pool of health separate from the main hull.,,,graphics/hullmods/shpe_armored_prow.png
-,,,,,,,,,,,,,,,,,,,
+Reinforced Prow,shpe_reinforced_prow,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReinforcedProw,The ship's prow has double the armor value of the rest of the ship,,,graphics/hullmods/shpe_armored_prow.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 Spore Clouds,shpe_spore_clouds,,,Tyranid,,,,,,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png

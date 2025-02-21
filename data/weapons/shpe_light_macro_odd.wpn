@@ -1,0 +1,43 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "hellbore_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/shpe_light_macro_turret_recoil.png",
+  "hardpointOffsets": [
+    12.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_light_macro_turret_base.png",
+  "id": "shpe_light_macro_odd",
+  "muzzleFlashSpec": {
+    "length": 15,
+    "particleColor": [
+      255,
+      210,
+      105,
+      255
+    ],
+    "particleCount": 8,
+    "particleDuration": 0.4,
+    "particleSizeMin": 12,
+    "particleSizeRange": 15,
+    "spread": 16
+  },
+  "projectileSpecId": "shpe_marsvi_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [0],
+  "turretGunSprite": "graphics/weapons/shpe_light_macro_turret_recoil.png",
+  "turretOffsets": [8,0],
+  "turretSprite": "graphics/weapons/shpe_light_macro_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 5
+}
