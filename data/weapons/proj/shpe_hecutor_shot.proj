@@ -1,5 +1,6 @@
 {
 	"id":"shpe_hecutor_shot",
+	"onHitEffect":"mok_slyk.shpe.scripts.PlasmaCannonOnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",

@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "heavy_blaster_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    17.5,
+    2.5,
+    17.5,
+    -2.5
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_lasburner_hardpoint_base.png",
+  "id": "shpe_lasburner",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "particleColor": [
+      255,
+      220,
+      120,
+      40
+    ],
+    "particleCount": 25,
+    "particleDuration": 0.6,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "spread": 10
+  },
+  "projectileSpecId": "shpe_starbreaker_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    16,
+    2.5,
+    16,
+    -2.5
+  ],
+  "turretSprite": "graphics/weapons/shpe_lasburner_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
+}

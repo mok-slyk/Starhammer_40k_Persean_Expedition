@@ -2,6 +2,8 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # PLAYER FACING MODULAR:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Las-burner,shpe_lasburner,1,,300,500,,220,,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,900,,,,,,,shpe_imperium,,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
@@ -138,7 +140,7 @@ Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENER
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sensor Array,shpe_cobra_sensor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # Deprecated / old versions:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Marsvi,shpe_marsvi,1,0,2000,800,,400,,10,15,7,,,,KINETIC,80,,0,3,1,,0,5,3,10,,500,,,10,,,,"kinetic4,shpe_imperium",,Imperium,,Anti Shield,,,,,,,,,,0.75

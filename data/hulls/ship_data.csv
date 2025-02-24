@@ -18,7 +18,8 @@ Starhawk,shpe_starhawk,,Imperium,,,1200,70,400,,50,0,,200,400,200,20,90,60,NONE,
 Fury,shpe_fury,,Imperium,,,750,100,200,,40,0,,200,400,350,90,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,shpe_imperium,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Cobra,shpe_cobra,Cobra,Imperium,shpe_allaheadfull,6,2000,400,1900,1750,120,25,,120,110,90,60,90,200,FRONT,,210,0.4,1,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
+Cobra,shpe_cobra,Destroyer,Imperium,shpe_allaheadfull,6,2000,400,1900,1750,120,25,,120,110,90,60,90,200,FRONT,,210,0.4,1,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
+Cobra (W),shpe_cobra_w,Modified Destroyer,Imperium,shpe_allaheadfull,7,2000,400,1700,1750,120,20,,120,110,90,60,90,200,FRONT,,210,0.4,1,,,25,50,40,25,1,25,10,20000,8,10,240,0.25,7,7,,,,,,,,shpe_imperium_bp,0.3,0.4,2,2,,204
 Sword,shpe_sword,Frigate,Imperium,shpe_allaheadfull,6,2500,500,2100,1750,140,45,,120,110,90,60,90,200,FRONT,,210,0.4,1,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
 Firestorm,shpe_firestorm,Frigate,Imperium,shpe_allaheadfull,6,2500,500,2100,1750,140,35,,120,110,90,60,90,200,FRONT,,210,0.4,1,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

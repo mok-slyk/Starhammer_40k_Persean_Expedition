@@ -1,0 +1,50 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "everyFrameEffect": "com.fs.starfarer.api.impl.combat.SensorDishRotationEffect",
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_cobra_sensors.png",
+  "hitGlowRadius": 0,
+  "id": "shpe_cobra_sensor",
+  "pixelsPerTexel": 1,
+  "renderBelowAllWeapons": true,
+  "showDamageWhenDecorative": true,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 1,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    10,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_cobra_sensors.png",
+  "type": "DECORATIVE",
+  "width": 1
+}

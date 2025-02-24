@@ -33,6 +33,9 @@
 			"pulse_3":"graphics/fx/pulse/shpe_pulse_3.png",
 			"nova_burst":"graphics/fx/shpe_nova_burst.png",
 			"ursus_cable":"graphics/fx/shpe_ursus_cable.png",
+			"plasma_hit_1":"graphics/fx/shpe_plasma_hit_1.png",
+			"plasma_hit_2":"graphics/fx/shpe_plasma_hit_2.png",
+			"plasma_hit_3":"graphics/fx/shpe_plasma_hit_3.png",
 		},
 		"icons":{
 			"slaanesh_gold":"graphics/icons/campaign/shpe_slaanesh_symbol_gold.png",

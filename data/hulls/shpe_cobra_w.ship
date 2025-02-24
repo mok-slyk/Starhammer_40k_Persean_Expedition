@@ -1,0 +1,183 @@
+{
+  "bounds": [
+    -54.5,
+    12,
+    -45.5,
+    13,
+    -39,
+    25,
+    -42.5,
+    25,
+    -42.5,
+    28.5,
+    -27.5,
+    29,
+    -26.5,
+    26,
+    -31.5,
+    23.5,
+    -30.5,
+    13,
+    -9,
+    13,
+    -8.5,
+    8.5,
+    0,
+    13,
+    -0.5,
+    20.5,
+    10,
+    21.5,
+    10.5,
+    11,
+    40.5,
+    11,
+    56,
+    -0,
+    40.5,
+    -11,
+    10.5,
+    -11,
+    10,
+    -21.5,
+    -0.5,
+    -20.5,
+    0,
+    -13,
+    -8.5,
+    -8.5,
+    -9,
+    -13,
+    -30.5,
+    -13,
+    -31.5,
+    -23.5,
+    -26.5,
+    -26,
+    -27.5,
+    -29,
+    -42.5,
+    -28.5,
+    -42.5,
+    -25,
+    -39,
+    -25,
+    -45.5,
+    -13,
+    -54.5,
+    -12
+  ],
+  "builtInMods": [
+    "shpe_variable_torpedo_tubes",
+	"hiressensors",
+    "eccm"
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_cobra_sensor"
+  },
+  "builtInWings": [],
+  "center": [
+    30,
+    57
+  ],
+  "collisionRadius": 88,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 52,
+      "location": [
+        -55.5,
+        7
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 52,
+      "location": [
+        -55.5,
+        -7
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    }
+  ],
+  "height": 114,
+  "hullId": "shpe_cobra_w",
+  "hullName": "Cobra (W)",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 83,
+  "spriteName": "graphics/ships/shpe_cobra_w.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        29,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "BIT2",
+      "locations": [
+        38.5,
+        7.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "BIT3",
+      "locations": [
+        38.5,
+        -7.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "BIT0",
+      "locations": [
+        45,
+        6.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "BIT1",
+      "locations": [
+        45,
+        -6.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 60
+}
