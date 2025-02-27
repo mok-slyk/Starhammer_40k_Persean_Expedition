@@ -9,9 +9,8 @@ import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
 
 import java.awt.*;
-import java.util.Random;
 
-public class PlasmaCannonOnHitEffect implements OnHitEffectPlugin {
+public class LightPlasmaCannonOnHitEffect implements OnHitEffectPlugin {
     @Override
     public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
         if(target instanceof MissileAPI || target instanceof AsteroidAPI) return;
@@ -20,12 +19,12 @@ public class PlasmaCannonOnHitEffect implements OnHitEffectPlugin {
                 Global.getSettings().getSprite("fx","plasma_hit_"+ MathUtils.getRandomNumberInRange(1, 3)),
                 point,
                 new Vector2f(),
-                new Vector2f(50,50),
-                new Vector2f(200,200),
+                new Vector2f(10,10),
+                new Vector2f(100,100),
                 //angle,
                 360*(float)Math.random(),
                 0,
-                new Color(160,200,255,225),
+                new Color(160,200,255,205),
                 true,
                 0,
                 0.1f,
@@ -35,12 +34,12 @@ public class PlasmaCannonOnHitEffect implements OnHitEffectPlugin {
                 Global.getSettings().getSprite("fx","plasma_hit_"+ MathUtils.getRandomNumberInRange(1, 3)),
                 point,
                 new Vector2f(),
-                new Vector2f(60,60),
-                new Vector2f(100,100),
+                new Vector2f(30,30),
+                new Vector2f(50,50),
                 //angle,
                 360*(float)Math.random(),
                 0,
-                new Color(195,225,255,205),
+                new Color(195,225,255,185),
                 true,
                 0.2f,
                 0.0f,

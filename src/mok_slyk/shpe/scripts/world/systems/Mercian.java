@@ -36,7 +36,7 @@ public class Mercian {
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI mercianStar = system.initStar("Mercian", // unique id for this star
                 "star_orange", // id in planets.json
-                700f, // radius (in pixels at default zoom)
+                900f, // radius (in pixels at default zoom)
                 450); // corona radius, from star edge
         system.setLightColor(new Color(239, 195, 128));// light color in entire system, affects all entities
 
@@ -74,13 +74,8 @@ public class Mercian {
         mercianPrime.setFaction("shpe_imperium");
         mercianPrime.setMarket(mercianMarket);
 
-        // The Halo
-        system.addAsteroidBelt(mercianStar, 120, 7500f, 300f, 100, 360);
-        system.addRingBand(mercianStar, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 7700f, 200);
-        system.addRingBand(mercianStar, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 7300f, 200);
-
         // Halcyon
-        PlanetAPI halcyon = system.addPlanet("halcyon", mercianStar, "Halcyon", "terran-eccentric", 360 * (float) Math.random(), 100f, 8500f, 500f);
+        PlanetAPI halcyon = system.addPlanet("halcyon", mercianStar, "Halcyon", "terran-eccentric", 360 * (float) Math.random(), 100f, 6500f, 500f);
         MarketAPI halcyonMarket = MagicCampaign.addSimpleMarket(halcyon, "halcyon_market", "Halcyon", 3,  "shpe_imperium", false, false,
                 Arrays.asList(Conditions.POPULATION_3, Conditions.FARMLAND_ADEQUATE, Conditions.ORGANICS_COMMON),
                 Arrays.asList(Industries.SPACEPORT,Industries.POPULATION, Industries.MINING),
@@ -93,6 +88,11 @@ public class Mercian {
         sector.getEconomy().addMarket(halcyonMarket, true);
         halcyon.setFaction("shpe_imperium");
         halcyon.setMarket(halcyonMarket);
+
+        // The Halo
+        system.addAsteroidBelt(mercianStar, 120, 7500f, 300f, 100, 360);
+        system.addRingBand(mercianStar, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 7700f, 200);
+        system.addRingBand(mercianStar, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 7300f, 200);
 
         // Mercian Extimus
         PlanetAPI extimus = system.addPlanet("extimus", mercianStar, "Mercian Extimus", "ice_giant", 360 * (float) Math.random(), 300f, 10100f, 800f);

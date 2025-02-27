@@ -25,7 +25,7 @@ Vulcan Megabolter,shpe_vulcan,1,0.7,600,600,,17,,2,50,10,,,,KINETIC,7,,0,0.25,14
 Mars VI Macrocannon,shpe_marsvi,1,,1000,800,,300,,30,15,8,,,,KINETIC,180,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_imperium",,Imperium,,Anti Shield,,,,,,,,,,0.75
 Stygies-Pattern Bombardment Cannon,shpe_bombardment,6,0.5,2500,1000,,400,400,100,15,14,,,,HIGH_EXPLOSIVE,550,,0,6,1,,0,15,3,10,,400,,,100,,,,"he10, strike10, shpe_imperium",,Imperium,,Disruption,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Hecutor Plasma Cannon,shpe_hecutor,3,0.5,5000,1000,,1000,,20,15,22,,,,ENERGY,950,,1,5,1,,0,15,3,10,,700,,,5,,,,"energy10, shpe_imperium",,Imperium,,General,,,,,,,,,,0.75
+Hecutor Plasma Cannon,shpe_hecutor,3,0.5,5000,1000,,1000,,20,15,22,,,,ENERGY,950,,1,5,1,,0,10,2,10,,700,,,5,,,,"energy10, shpe_imperium",,Imperium,,General,,,,,,,,,,0.75
 Stygies Macrocannon,shpe_stygies,2,,2500,900,,1200,,150,15,0,,,,KINETIC,1200,,0,3,1,,0,15,3,10,,400,,,20,,,,"kinetic8, shpe_imperium",,Imperium,,Anti Shield,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Light Railgun Artillery,shpe_railgun,2,0.5,600,700,,100,,10,30,7,,,,KINETIC,90,,0,1,2,1,,,,,,1200,,,50,,,,"kinetic8, LR, restricted",,Tau,,Anti Shield,,,,,,,,,,3.75

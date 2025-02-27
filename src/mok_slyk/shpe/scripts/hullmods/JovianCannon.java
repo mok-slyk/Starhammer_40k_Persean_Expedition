@@ -7,8 +7,8 @@ public class JovianCannon extends BaseHullMod {
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
         if (!ship.getVariant().hasHullMod("shpe_novacannon")) return false;
-        if (ship.getVariant().hasHullMod("shpe_ryza_nova")) return false;
-        if (ship.getVariant().hasHullMod("shpe_lathe_nova")) return false;
+        if (ship.getVariant().hasHullMod("shpe_ryza_cannon")) return false;
+        if (ship.getVariant().hasHullMod("shpe_lathe_cannon")) return false;
         return ship != null;
     }
 

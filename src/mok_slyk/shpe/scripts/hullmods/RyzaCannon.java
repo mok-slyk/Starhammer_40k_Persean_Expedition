@@ -7,8 +7,8 @@ public class RyzaCannon extends BaseHullMod {
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
         if (!ship.getVariant().hasHullMod("shpe_novacannon")) return false;
-        if (ship.getVariant().hasHullMod("shpe_jovian_nova")) return false;
-        if (ship.getVariant().hasHullMod("shpe_lathe_nova")) return false;
+        if (ship.getVariant().hasHullMod("shpe_jovian_cannon")) return false;
+        if (ship.getVariant().hasHullMod("shpe_lathe_cannon")) return false;
         return ship != null;
     }
 

@@ -70,7 +70,7 @@
   "builtInMods": [
     "shpe_variable_torpedo_tubes",
 	"hiressensors",
-    "eccm"
+    shpe_widowmaker_sensors
   ],
   "builtInWeapons": {
     "WS0001": "shpe_cobra_sensor"

@@ -27,13 +27,13 @@ Retribution,shpe_retribution,Battleship,Imperium,shpe_allaheadfull,28,20000,1750
 Emperor,shpe_emperor,Carrier Battleship,Imperium,shpe_allaheadfull,28,20000,1750,17000,15000,600,360,4,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,55,55,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.4,2,4,,500
 Apocalypse,shpe_apocalypse,Battleship,Imperium,shpe_lockon,30,20000,1750,19000,15000,800,360,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,29000,15000,1500,480,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,,shpe_imperium_bp,,0.4,2,4,,500
+Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,29000,15000,1500,480,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Holotest,shpe_holotest,Frigate,Midline,plasmajets,6,20000,500,2100,1750,140,500,,120,110,90,60,90,200,PHASE,shpe_holofield,90,,,0.03,0.04,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,,,0.4,2,2,,204
-Eclipse,shpe_eclipse,Cruiser,Corsairs,maneuveringjets,17,8000,800,11000,16000,800,165,2,80,50,25,25,25,1800,PHASE,shpe_holofield,90,0.5,0.6,0.03,0.1,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT",,,1,2,3,,405
+Holotest,shpe_holotest,Frigate,Midline,plasmajets,6,20000,500,2100,1750,140,500,,120,110,90,60,90,200,PHASE,shpe_holofield,90,,,0.03,0.04,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
+Eclipse,shpe_eclipse,Cruiser,Corsairs,maneuveringjets,17,8000,800,11000,16000,800,165,2,80,50,25,25,25,1800,PHASE,shpe_holofield,90,0.5,0.6,0.03,0.1,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT, HIDE_IN_CODEX",,,1,2,3,,405
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Darkstar,shpe_darkstar,,Corsairs,,,800,75,3200,,10,0,,300,420,350,120,240,40,PHASE,shpe_holofield,90,0,0,0.03,0.1,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
-Eagle,shpe_eagle,,Corsairs,,,1000,70,400,,50,0,,250,400,200,60,120,60,PHASE,shpe_holofield,120,0,1,0.03,0.1,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,118
+Darkstar,shpe_darkstar,,Corsairs,,,800,75,3200,,10,0,,300,420,350,120,240,40,PHASE,shpe_holofield,90,0,0,0.03,0.1,1,1,,,,,,,,,,,,,,,,,,,HIDE_IN_CODEX,,,0,,,,104
+Eagle,shpe_eagle,,Corsairs,,,1000,70,400,,50,0,,250,400,200,60,120,60,PHASE,shpe_holofield,120,0,1,0.03,0.1,2,2,,,,,,,,,,,,,,,,,,,HIDE_IN_CODEX,,,0,,,,118
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Prow Armor,shpe_battleship_torpedo_prow,Prow Armour,,,1,5000,2000,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_unselectable",,1,2,3,,2051
 Prow Armor,shpe_battleship_nova_prow,Prow Armour,,,1,5000,2000,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_unselectable",,1,2,3,,2051
@@ -66,9 +66,9 @@ Hell Talon,shpe_helltalon,,Chaos,,,300,40,80,,10,0,,300,400,350,90,180,40,NONE,,
 Hell Blade,shpe_hellblade,,Chaos,,,500,40,80,,10,0,,300,400,350,90,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,shpe_imperium,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Styx,shpe_styx,Heavy Carrier Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,3,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,"CARRIER, COMBAT",shpe_chaos_bp,,0.5,2,4,,401.5
+Styx,shpe_styx,Heavy Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,3,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,"CARRIER, COMBAT",shpe_chaos_bp,,0.5,2,4,,401.5
 Acheron,shpe_acheron,Heavy Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
-Slaughter,shpe_slaughter,Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
+Slaughter,shpe_slaughter,Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,,70,45,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
 Devastation,shpe_devastation,Carrier Cruiser,Chaos,shpe_allaheadfull,15,10000,1250,10000,11000,550,165,2,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
 Devastation (Tz),shpe_devastation_tzeentch_daemon,Daemonship,Chaos,shpe_haunting,15,10000,1250,10000,11000,550,165,2,60,40,30,15,20,1500,OMNI,,180,0.4,0.8,,,200,300,150,150,4,38,8,125000,4,12,480,0.25,25,25,,,,,,,,shpe_chaos_bp,,0.5,2,4,,401.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
