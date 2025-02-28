@@ -89,6 +89,8 @@ public class Hellforged extends BaseHullMod {
 
         if (hasChaosMark(ship)) {
             if (ship.getVariant().hasHullMod("shpe_tzeentch_mark")) {
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_hades")) override = "hades_tzeentch";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_carnage")) override = "carnage_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_acheron")) override = "acheron_tzeentch";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_tzeentch";
@@ -98,6 +100,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_tzeentch";
             }
             if (ship.getVariant().hasHullMod("shpe_khorne_mark")) {
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_hades")) override = "hades_khorne";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_carnage")) override = "carnage_khorne";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_khorne";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_acheron")) override = "acheron_khorne";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_khorne";
@@ -107,6 +111,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_khorne";
             }
             if (ship.getVariant().hasHullMod("shpe_slaanesh_mark")) {
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_hades")) override = "hades_slaanesh";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_carnage")) override = "carnage_slaanesh";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_slaanesh";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_acheron")) override = "acheron_slaanesh";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_slaanesh";
@@ -116,6 +122,8 @@ public class Hellforged extends BaseHullMod {
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_infidel")) override = "infidel_slaanesh";
             }
             if (ship.getVariant().hasHullMod("shpe_nurgle_mark")) {
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_hades")) override = "hades_nurgle";
+                if (ship.getHullSpec().getBaseHullId().equals("shpe_carnage")) override = "carnage_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_styx")) override = "styx_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_acheron")) override = "acheron_nurgle";
                 if (ship.getHullSpec().getBaseHullId().equals("shpe_devastation")) override = "devastation_nurgle";

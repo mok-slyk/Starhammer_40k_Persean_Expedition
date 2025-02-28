@@ -1,274 +1,297 @@
 {
-    "hullName": "Acheron",
-    "hullId": "shpe_acheron",
-    "hullSize": "CRUISER",
-    "style": "LOW_TECH",
-    "spriteName": "graphics/ships/shpe_acheron_unaligned.png",
-    "height": 430,
-    "width": 140,
-    "center": [
-        70, 158
-    ],
-    "collisionRadius": 349.5,
-    "coversColor": "",
-    "shieldCenter": [
-        57, 0
-    ],
-    "shieldRadius": 287.5,
-    "viewOffset": 0,
-    "builtInMods": [
-        "shpe_hellforged",
-        "targetingunit"
-    ],
-    "builtInWings": [],
-    "builtInModules": null,
-    "weaponSlots": [
-        {
-            "id": "WS0001",
-            "size": "SMALL",
-            "type": "HYBRID",
-            "mount": "TURRET",
-            "renderOrderMod": 4,
-            "arc": 270,
-            "angle": 0,
-            "locations": [
-                      72,        0
-            ]
-        },
-        {
-            "id": "WS0002",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 6,
-            "arc": 270,
-            "angle": 0,
-            "locations": [
-                      21,        0
-            ]
-        },
-        {
-            "id": "WS0003",
-            "size": "MEDIUM",
-            "type": "BALLISTIC",
-            "mount": "TURRET",
-            "arc": 270,
-            "angle": 0,
-            "locations": [
-                     121,        0
-            ]
-        },
-        {
-            "id": "WS0008",
-            "size": "SMALL",
-            "type": "HYBRID",
-            "mount": "TURRET",
-            "arc": 179,
-            "angle": 86,
-            "locations": [
-                     -54,       28
-            ]
-        },
-        {
-            "id": "WS0009",
-            "size": "SMALL",
-            "type": "HYBRID",
-            "mount": "TURRET",
-            "arc": 179,
-            "angle": -86,
-            "locations": [
-                     -54,      -28
-            ]
-        },
-        {
-            "id": "WS0010",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 5,
-            "arc": 270,
-            "angle": 0,
-            "locations": [
-                      48,        0
-            ]
-        },
-        {
-            "id": "WS0004",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 2,
-            "arc": 154,
-            "angle": 90,
-            "locations": [
-                      18,       27
-            ]
-        },
-        {
-            "id": "WS0005",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 2,
-            "arc": 154,
-            "angle": -90,
-            "locations": [
-                      18,      -27
-            ]
-        },
-        {
-            "id": "WS0006",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 3,
-            "arc": 154,
-            "angle": 90,
-            "locations": [
-                      -8,       29
-            ]
-        },
-        {
-            "id": "WS0007",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 3,
-            "arc": 154,
-            "angle": -90,
-            "locations": [
-                      -8,      -29
-            ]
-        },
-        {
-            "id": "WS0011",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 1,
-            "arc": 154,
-            "angle": 90,
-            "locations": [
-                      48,       24
-            ]
-        },
-        {
-            "id": "WS0012",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "renderOrderMod": 1,
-            "arc": 154,
-            "angle": -90,
-            "locations": [
-                      48,      -24
-            ]
-        },
-        {
-            "id": "WS0013",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "arc": 155,
-            "angle": 90,
-            "locations": [
-                      74,       22
-            ]
-        },
-        {
-            "id": "WS0014",
-            "size": "MEDIUM",
-            "type": "ENERGY",
-            "mount": "TURRET",
-            "arc": 155,
-            "angle": -90,
-            "locations": [
-                      74,      -22
-            ]
-        }
-    ],
-    "engineSlots": [
-        {
-            "location": [
-                -118, 19.5
-            ],
-            "length": 76.5,
-            "width": 19,
-            "angle": 180,
-            "contrailSize": 19,
-            "style": "LOW_TECH"
-        },
-        {
-            "location": [
-                -118, -19.5
-            ],
-            "length": 76.5,
-            "width": 19,
-            "angle": -180,
-            "contrailSize": 19,
-            "style": "LOW_TECH"
-        },
-        {
-            "location": [
-                -98.5, 35
-            ],
-            "length": 81.5,
-            "width": 23,
-            "angle": 180,
-            "contrailSize": 23,
-            "style": "LOW_TECH"
-        },
-        {
-            "location": [
-                -98.5, -35
-            ],
-            "length": 81.5,
-            "width": 23,
-            "angle": -180,
-            "contrailSize": 23,
-            "style": "LOW_TECH"
-        },
-        {
-            "location": [
-                -86, 52
-            ],
-            "length": 55,
-            "width": 15,
-            "angle": 180,
-            "contrailSize": 15,
-            "style": "LOW_TECH"
-        },
-        {
-            "location": [
-                -86, -52
-            ],
-            "length": 55,
-            "width": 15,
-            "angle": -180,
-            "contrailSize": 15,
-            "style": "LOW_TECH"
-        }
-    ],
-    "bounds": [
-            -100,       28,
-             -79,       60,
-           -20.5,     43.5,
-              87,       36,
-           110.5,     15.5,
-        
-             125,       48,
-           164.5,     25.5,
-           268.5,        0,
-           164.5,    -25.5,
-             125,      -48,
-        
-           110.5,    -15.5,
-              87,      -36,
-           -20.5,    -43.5,
-             -79,      -60,
-            -100,      -28,
-        
-            -155,        0
-    # 16 points total.
-    ]
+  "bounds": [
+    -100,
+    28,
+    -79,
+    60,
+    -20.5,
+    43.5,
+    87,
+    36,
+    110.5,
+    15.5,
+    125,
+    48,
+    164.5,
+    25.5,
+    268.5,
+    0,
+    164.5,
+    -25.5,
+    125,
+    -48,
+    110.5,
+    -15.5,
+    87,
+    -36,
+    -20.5,
+    -43.5,
+    -79,
+    -60,
+    -100,
+    -28,
+    -155,
+    0
+  ],
+  "builtInMods": [
+    "shpe_hellforged",
+    "targetingunit"
+  ],
+  "builtInWings": [],
+  "center": [
+    70,
+    158
+  ],
+  "collisionRadius": 349.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 76.5,
+      "location": [
+        -118,
+        19.5
+      ],
+      "style": "LOW_TECH",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 76.5,
+      "location": [
+        -118,
+        -19.5
+      ],
+      "style": "LOW_TECH",
+      "width": 19
+    },
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 81.5,
+      "location": [
+        -98.5,
+        35
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": -180,
+      "contrailSize": 23,
+      "length": 81.5,
+      "location": [
+        -98.5,
+        -35
+      ],
+      "style": "LOW_TECH",
+      "width": 23
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 55,
+      "location": [
+        -86,
+        52
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 55,
+      "location": [
+        -86,
+        -52
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    }
+  ],
+  "height": 430,
+  "hullId": "shpe_acheron",
+  "hullName": "Acheron",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    57,
+    0
+  ],
+  "shieldRadius": 287.5,
+  "spriteName": "graphics/ships/shpe_acheron_unaligned.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        72,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        21,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        121,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 86,
+      "arc": 179,
+      "id": "WS0008",
+      "locations": [
+        -54,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -86,
+      "arc": 179,
+      "id": "WS0009",
+      "locations": [
+        -54,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0010",
+      "locations": [
+        48,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 154,
+      "id": "WS0004",
+      "locations": [
+        18,
+        27
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 154,
+      "id": "WS0005",
+      "locations": [
+        18,
+        -27
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 154,
+      "id": "WS0006",
+      "locations": [
+        -8,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 154,
+      "id": "WS0007",
+      "locations": [
+        -8,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 154,
+      "id": "WS0011",
+      "locations": [
+        48,
+        24
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 154,
+      "id": "WS0012",
+      "locations": [
+        48,
+        -24
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 155,
+      "id": "WS0013",
+      "locations": [
+        74,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 155,
+      "id": "WS0014",
+      "locations": [
+        74,
+        -22
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 140
 }

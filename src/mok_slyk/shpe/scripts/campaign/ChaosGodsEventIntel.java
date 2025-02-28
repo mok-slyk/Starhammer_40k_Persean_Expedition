@@ -267,6 +267,88 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
         godFactors.addAll(gods[NURGLE_I].getFactors());
         godFactors.addAll(gods[SLAANESH_I].getFactors());
 
+        Color c = getFactionForUIColors().getBaseUIColor();
+        Color bg = getFactionForUIColors().getDarkUIColor();
+        mFac.addSectionHeading("Monthly factors", c, bg, Alignment.MID, opad).getPosition().setXAlignOffset(0);
+
+        float strW = 40f;
+        float rh = 20f;
+        //rh = 15f;
+        mFac.beginTable2(getFactionForUIColors(), rh, false, false,
+                "Monthly factors", factorWidth - strW - 3,
+                "Progress", strW
+        );
+
+        for (EventFactor factor : factors) {
+            if (factor.isOneTime()) continue;
+            if (!factor.shouldShow(this)) continue;
+
+            String desc = factor.getDesc(this);
+            if (desc != null) {
+                mFac.addRowWithGlow(Alignment.LMID, factor.getDescColor(this), desc,
+                        Alignment.RMID, factor.getProgressColor(this), factor.getProgressStr(this));
+                TooltipMakerAPI.TooltipCreator t = factor.getMainRowTooltip(this);
+                if (t != null) {
+                    mFac.addTooltipToAddedRow(t, TooltipMakerAPI.TooltipLocation.RIGHT, false);
+                }
+            }
+            factor.addExtraRows(mFac, this);
+        }
+
+        //mFac.addButton("TEST", new String(), factorWidth, 20f, opad);
+        mFac.addTable("None", -1, opad);
+        mFac.getPrev().getPosition().setXAlignOffset(-5);
+
+        main.endSubTooltip();
+
+        TooltipMakerAPI oFac = main.beginSubTooltip(factorWidth);
+
+        oFac.addSectionHeading("Recent one-time factors", c, bg, Alignment.MID, opad).getPosition().setXAlignOffset(0);
+
+        oFac.beginTable2(getFactionForUIColors(), 20f, false, false,
+                "One-time factors", factorWidth - strW - 3,
+                "Progress", strW
+        );
+
+        List<EventFactor> reversed = new ArrayList<EventFactor>(factors);
+        Collections.reverse(reversed);
+        for (EventFactor factor : reversed) {
+            if (!factor.isOneTime()) continue;
+            if (!factor.shouldShow(this)) continue;
+
+            String desc = factor.getDesc(this);
+            if (desc != null) {
+                oFac.addRowWithGlow(Alignment.LMID, factor.getDescColor(this), desc,
+                        Alignment.RMID, factor.getProgressColor(this), factor.getProgressStr(this));
+                TooltipMakerAPI.TooltipCreator t = factor.getMainRowTooltip(this);
+                if (t != null) {
+                    oFac.addTooltipToAddedRow(t, TooltipMakerAPI.TooltipLocation.LEFT);
+                }
+            }
+            factor.addExtraRows(oFac, this);
+        }
+
+        oFac.addTable("None", -1, opad);
+        oFac.getPrev().getPosition().setXAlignOffset(-5);
+        main.endSubTooltip();
+
+
+        float factorHeight = Math.max(mFac.getHeightSoFar(), oFac.getHeightSoFar());
+        mFac.setHeightSoFar(factorHeight);
+        oFac.setHeightSoFar(factorHeight);
+
+
+        if (withMonthlyFactors() && withOneTimeFactors()) {
+            main.addCustom(mFac, opad * 2f);
+            main.addCustomDoNotSetPosition(oFac).getPosition().rightOfTop(mFac, opad);
+        } else if (withMonthlyFactors()) {
+            main.addCustom(mFac, opad * 2f);
+        } else if (withOneTimeFactors()) {
+            main.addCustom(oFac, opad * 2f);
+        }
+
+        panel.addUIElement(main).inTL(0, 0);
+
     }
 
     @Override
