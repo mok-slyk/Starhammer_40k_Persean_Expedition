@@ -19,7 +19,7 @@
 	"pixelsPerTexel":5.0,
 	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",	
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
-					"onExplosionEffect":"mok_slyk.shpe.scripts.NovaOnExplosionEffect",
+					"onExplosionEffect":"mok_slyk.shpe.scripts.RyzaNovaOnExplosionEffect",
 					"range":1,
 					"shotRangeVariance":0.1,
 					"explosionSpec":{"duration":0.42f,

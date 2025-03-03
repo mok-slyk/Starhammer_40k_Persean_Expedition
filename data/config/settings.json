@@ -36,6 +36,8 @@
 			"plasma_hit_1":"graphics/fx/shpe_plasma_hit_1.png",
 			"plasma_hit_2":"graphics/fx/shpe_plasma_hit_2.png",
 			"plasma_hit_3":"graphics/fx/shpe_plasma_hit_3.png",
+			"plasma_nova_hit_1":"graphics/fx/shpe_plasma_nova_hit_1.png",
+			"plasma_nova_hit_2":"graphics/fx/shpe_plasma_nova_hit_2.png",
 		},
 		"icons":{
 			"slaanesh_gold":"graphics/icons/campaign/shpe_slaanesh_symbol_gold.png",

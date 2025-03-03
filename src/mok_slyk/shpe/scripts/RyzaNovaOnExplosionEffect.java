@@ -13,36 +13,36 @@ import java.awt.*;
 public class RyzaNovaOnExplosionEffect implements ProximityExplosionEffect {
     @Override
     public void onExplosion(DamagingProjectileAPI explosion, DamagingProjectileAPI originalProjectile) {
-        drawBurst(explosion, 600, new Color(255,255,255,100));
+        //drawBurst(explosion, 600, new Color(255,255,255,60));
         MagicRender.battlespace(
-                Global.getSettings().getSprite("fx","plasma_hit_"+ MathUtils.getRandomNumberInRange(1, 3)),
+                Global.getSettings().getSprite("fx","plasma_nova_hit_"+ MathUtils.getRandomNumberInRange(1, 2)),
                 explosion.getLocation(),
                 new Vector2f(),
-                new Vector2f(290,290),
-                new Vector2f(1540,1540),
+                new Vector2f(90,90),
+                new Vector2f(2740,2740),
                 //angle,
                 360*(float)Math.random(),
                 0,
                 new Color(160,200,255,165),
                 true,
                 0,
-                0.1f,
-                0.5f
+                0.2f,
+                0.4f
         );
         MagicRender.battlespace(
-                Global.getSettings().getSprite("fx","plasma_hit_"+ MathUtils.getRandomNumberInRange(1, 3)),
+                Global.getSettings().getSprite("fx","plasma_nova_hit_"+ MathUtils.getRandomNumberInRange(1, 2)),
                 explosion.getLocation(),
                 new Vector2f(),
-                new Vector2f(520,520),
-                new Vector2f(780,780),
+                new Vector2f(320,320),
+                new Vector2f(1480,1480),
                 //angle,
                 360*(float)Math.random(),
                 0,
                 new Color(195,225,255,135),
                 true,
                 0.2f,
-                0.0f,
-                0.5f
+                0.2f,
+                0.3f
         );
     }
 

@@ -255,6 +255,10 @@
     "shpe_broadside_batteries",
     "hiressensors"
   ],
+  "builtInWeapons": {
+    "WS0023": "shpe_deco_battleship_bridge_l",
+    "WS0024": "shpe_deco_battleship_bridge_r"
+  },
   "builtInWings": [],
   "center": [
     146,
@@ -701,6 +705,30 @@
       "mount": "HIDDEN",
       "size": "LARGE",
       "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0023",
+      "locations": [
+        -100,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0024",
+      "locations": [
+        -100,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
     }
   ],
   "width": 292

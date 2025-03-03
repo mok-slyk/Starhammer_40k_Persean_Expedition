@@ -255,6 +255,10 @@
     "shpe_armored_prow",
     "shpe_novacannon"
   ],
+  "builtInWeapons": {
+    "WS0035": "shpe_deco_battleship_bridge_l",
+    "WS0036": "shpe_deco_battleship_bridge_r"
+  },
   "builtInWings": [],
   "center": [
     146,
@@ -729,6 +733,30 @@
       "mount": "TURRET",
       "size": "MEDIUM",
       "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0035",
+      "locations": [
+        -100,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0036",
+      "locations": [
+        -100,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
     }
   ],
   "width": 292

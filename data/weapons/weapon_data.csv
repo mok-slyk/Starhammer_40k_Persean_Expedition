@@ -138,8 +138,8 @@ Ryza-Pattern Nova Cannon,shpe_ryzanova,5,0,50000,1500,,3000,,300,5,0,,,,ENERGY,5
 Lathe-Pattern Nova Cannon,shpe_lathenova,5,0,50000,1500,,3000,,300,5,0,,,,KINETIC,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
 Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENERGY,3000,,0.1,15,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR,shpe_imperium",,Imperium,,Anti Armor (Area),,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hidden,shpe_deco_battleship_bridge_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
+Hidden,shpe_deco_battleship_bridge_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 Sensor Array,shpe_cobra_sensor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # Deprecated / old versions:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
