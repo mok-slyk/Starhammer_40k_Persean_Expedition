@@ -13,7 +13,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "shpe_krak"
+        "WS0001": "shpe_krak",
+        "WS0003": "shpe_plasma_bomb"
       }
     },
     {
@@ -26,9 +27,7 @@
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "bomb"
-      }
+      "weapons": {}
     }
   ],
   "wings": []

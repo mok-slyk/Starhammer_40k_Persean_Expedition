@@ -24,6 +24,20 @@
     -25.5,
     12,
     -23,
+    24,
+    -34,
+    32.5,
+    -26,
+    41,
+    -34,
+    49.5,
+    -26.5,
+    58,
+    -34,
+    66.5,
+    -26,
+    75,
+    -34,
     85,
     -22.5,
     88.5,
@@ -40,6 +54,20 @@
     25.5,
     85,
     22.5,
+    75,
+    34,
+    66.5,
+    26,
+    58,
+    34,
+    49.5,
+    26.5,
+    41,
+    34,
+    32.5,
+    26,
+    24,
+    34,
     12,
     23,
     9.5,
@@ -122,114 +150,18 @@
     }
   ],
   "height": 288,
-  "hullId": "shpe_endeavour_mech",
-  "hullName": "Endeavour (M)",
+  "hullId": "shpe_defiant_mech",
+  "hullName": "Defiant (M)",
   "hullSize": "DESTROYER",
   "shieldCenter": [
     0,
     0
   ],
   "shieldRadius": 217,
-  "spriteName": "graphics/ships/shpe_endeavour_mech.png",
+  "spriteName": "graphics/ships/shpe_defiant_mech.png",
   "style": "LOW_TECH",
   "viewOffset": 0,
   "weaponSlots": [
-    {
-      "angle": 90,
-      "arc": 30,
-      "id": "BIB0",
-      "locations": [
-        76,
-        23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": -90,
-      "arc": 30,
-      "id": "BIB1",
-      "locations": [
-        76,
-        -23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": 90,
-      "arc": 30,
-      "id": "BIB2",
-      "locations": [
-        58,
-        23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": -90,
-      "arc": 30,
-      "id": "BIB3",
-      "locations": [
-        58,
-        -23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": 90,
-      "arc": 30,
-      "id": "BIB4",
-      "locations": [
-        40,
-        23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": -90,
-      "arc": 30,
-      "id": "BIB5",
-      "locations": [
-        40,
-        -23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": 90,
-      "arc": 30,
-      "id": "BIB6",
-      "locations": [
-        22,
-        23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
-    {
-      "angle": -90,
-      "arc": 30,
-      "id": "BIB7",
-      "locations": [
-        22,
-        -23
-      ],
-      "mount": "HARDPOINT",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
-    },
     {
       "angle": 50,
       "arc": 150,
@@ -313,6 +245,42 @@
       "mount": "TURRET",
       "size": "SMALL",
       "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        28,
+        -28.5,
+        46,
+        -28,
+        63,
+        -28,
+        79.5,
+        -28
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        28,
+        28,
+        45.5,
+        28,
+        62.5,
+        28,
+        79.5,
+        28
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
     }
   ],
   "width": 88

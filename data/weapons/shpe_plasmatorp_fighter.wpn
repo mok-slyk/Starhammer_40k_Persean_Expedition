@@ -1,0 +1,45 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 1000,
+  "fireSoundTwo": "reaper_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    9,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "id": "shpe_plasmatorp_fighter",
+  "projectileSpecId": "shpe_plasma_torpedo",
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 28,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 15,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 8,
+    "cloudRadius": 10,
+    "particleColor": [
+      25,
+      25,
+      25,
+      105
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 18
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    9,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "MISSILE"
+}

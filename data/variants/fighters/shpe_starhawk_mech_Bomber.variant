@@ -13,7 +13,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "shpe_shieldbreaker_launcher"
+        "WS0001": "shpe_shieldbreaker_launcher",
+        "WS0003": "shpe_plasmatorp_fighter"
       }
     },
     {
@@ -26,9 +27,7 @@
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "bomb"
-      }
+      "weapons": {}
     }
   ],
   "wings": []

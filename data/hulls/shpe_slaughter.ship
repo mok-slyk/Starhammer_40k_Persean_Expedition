@@ -181,8 +181,8 @@
         -0
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
-      "type": "ENERGY"
+      "size": "SMALL",
+      "type": "HYBRID"
     },
     {
       "angle": 90,

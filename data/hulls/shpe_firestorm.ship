@@ -105,6 +105,30 @@
       "mount": "HARDPOINT",
       "size": "MEDIUM",
       "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 140,
+      "id": "WS0004",
+      "locations": [
+        -34,
+        -13
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 140,
+      "id": "WS0005",
+      "locations": [
+        -34,
+        13
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
     }
   ],
   "width": 42
