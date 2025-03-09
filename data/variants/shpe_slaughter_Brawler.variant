@@ -1,0 +1,75 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 2,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "shpe_slaughter",
+    "hullMods": [
+        "armoredweapons",
+        "safetyoverrides",
+        "shpe_pyros_shell",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_slaughter_Brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_pyros",
+                "BIL12": "shpe_light_pyros",
+                "BIL14": "shpe_light_pyros",
+                "BIL8": "shpe_light_pyros",
+                "BIL6": "shpe_light_pyros",
+                "BIL4": "shpe_light_pyros",
+                "BIL2": "shpe_light_pyros",
+                "BIL0": "shpe_light_pyros",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL11": "shpe_light_pyros_odd",
+                "BIL13": "shpe_light_pyros_odd",
+                "BIL15": "shpe_light_pyros_odd",
+                "BIL9": "shpe_light_pyros_odd",
+                "BIL7": "shpe_light_pyros_odd",
+                "BIL5": "shpe_light_pyros_odd",
+                "BIL3": "shpe_light_pyros_odd",
+                "BIL1": "shpe_light_pyros_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_marsvi",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_starbreaker_lance",
+                "WS0011": "shpe_starbreaker_lance",
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "shpe_hydra",
+                "WS0010": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

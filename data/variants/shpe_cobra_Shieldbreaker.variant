@@ -1,33 +1,33 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 3,
+    "displayName": "Shieldbreaker",
+    "fluxCapacitors": 1,
     "fluxVents": 0,
     "goalVariant": true,
     "hullId": "shpe_cobra",
     "hullMods": [
         "missleracks",
-        "shpe_melta_warheads",
+        "shpe_barrage_warheads",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_cobra_Standard",
+    "variantId": "shpe_cobra_Shieldbreaker",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_thunderstrike",
+                "WS0001": "shpe_pyros",
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "BIT3": "shpe_meltatorp_reference",
-                "BIT2": "shpe_meltatorp_reference",
-                "BIT1": "shpe_meltatorp_reference",
-                "BIT0": "shpe_meltatorp_reference",
+                "BIT3": "shpe_barragetorp_reference",
+                "BIT2": "shpe_barragetorp_reference",
+                "BIT1": "shpe_barragetorp_reference",
+                "BIT0": "shpe_barragetorp_reference",
             }
         },
     ],

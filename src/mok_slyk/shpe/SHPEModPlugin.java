@@ -4,9 +4,7 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.TextPanelAPI;
 import exerelin.campaign.SectorManager;
-import mok_slyk.shpe.scripts.campaign.ChaosCorruptionEventIntel;
-import mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel;
-import mok_slyk.shpe.scripts.campaign.ChaosSkillScript;
+import mok_slyk.shpe.scripts.campaign.*;
 import mok_slyk.shpe.scripts.world.SHPERelations;
 import mok_slyk.shpe.scripts.world.SHPESectorGen;
 import org.dark.shaders.light.LightData;
@@ -40,6 +38,7 @@ public class SHPEModPlugin extends BaseModPlugin {
             new SHPERelations().generate(Global.getSector());
             // Add code that creates a new star system (will only run if Nexerelin's Random (corvus) mode is disabled).
        }
+
     }
 
     @Override
@@ -56,6 +55,7 @@ public class SHPEModPlugin extends BaseModPlugin {
         TextPanelAPI text = null;
         new ChaosGodsEventIntel(text, true);
 
+        Global.getSector().addScript(new DisposableChaosFleetManager());
         //Global.getSector().addScript(new ChaosSkillScript());
         // Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
     }

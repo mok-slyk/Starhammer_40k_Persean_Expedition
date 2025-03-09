@@ -1,36 +1,38 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 10,
-    "fluxVents": 5,
+    "displayName": "Striker",
+    "fluxCapacitors": 4,
+    "fluxVents": 15,
     "goalVariant": true,
-    "hullId": "shpe_firestorm",
+    "hullId": "shpe_idolator",
     "hullMods": [
-        "hardenedshieldemitter",
+        "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_firestorm_Standard",
+    "variantId": "shpe_idolator_Striker",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_voidsunder_lance",
+                "WS0001": "shpe_godsbane_lance",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_thunderstrike",
+                "WS0005": "shpe_thunderstrike",
+                "WS0006": "shpe_thunderstrike",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "shpe_hydra",
+                "WS0003": "shpe_hydra",
+                "WS0002": "shpe_hydra",
                 "WS0004": "shpe_hydra",
             }
         },

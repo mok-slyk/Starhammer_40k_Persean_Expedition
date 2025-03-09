@@ -1,0 +1,33 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 0,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "shpe_idolator",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_idolator_Blaster",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hecutor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "shpe_ryza",
+                "WS0005": "shpe_ryza",
+                "WS0004": "shpe_ryza",
+                "WS0006": "shpe_ryza",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

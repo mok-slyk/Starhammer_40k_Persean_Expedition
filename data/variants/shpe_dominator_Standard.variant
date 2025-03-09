@@ -1,13 +1,11 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 26,
-    "fluxVents": 30,
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
     "goalVariant": true,
     "hullId": "shpe_dominator",
     "hullMods": [
         "armoredweapons",
-        "fluxdistributor",
-        "hardenedshieldemitter",
         "shpe_hecutor_shell",
         "shpe_ryza_cannon",
         "targetingunit",
@@ -21,41 +19,43 @@
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "BIN0": "shpe_ryzanova",
+                "BIB9": "shpe_hecutor_reference_odd",
+                "BIB7": "shpe_hecutor_reference_odd",
+                "BIB5": "shpe_hecutor_reference_odd",
+                "BIB3": "shpe_hecutor_reference_odd",
+                "BIB1": "shpe_hecutor_reference_odd",
+                "BIB13": "shpe_hecutor_reference_odd",
+                "BIB15": "shpe_hecutor_reference_odd",
+                "BIB11": "shpe_hecutor_reference_odd",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "BIB9": "shpe_hecutor_reference",
                 "BIB8": "shpe_hecutor_reference",
-                "BIB7": "shpe_hecutor_reference",
                 "BIB6": "shpe_hecutor_reference",
-                "BIB5": "shpe_hecutor_reference",
                 "BIB4": "shpe_hecutor_reference",
-                "BIB3": "shpe_hecutor_reference",
                 "BIB2": "shpe_hecutor_reference",
-                "BIB1": "shpe_hecutor_reference",
                 "BIB0": "shpe_hecutor_reference",
                 "BIB12": "shpe_hecutor_reference",
-                "BIB13": "shpe_hecutor_reference",
                 "BIB14": "shpe_hecutor_reference",
-                "BIB15": "shpe_hecutor_reference",
                 "BIB10": "shpe_hecutor_reference",
-                "BIB11": "shpe_hecutor_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIN0": "shpe_ryzanova",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_lascannon",
                 "WS0003": "shpe_lascannon",
-                "WS0002": "shpe_lascannon",
                 "WS0008": "shpe_lascannon",
-                "WS0005": "shpe_lascannon",
-                "WS0004": "shpe_lascannon",
                 "WS0007": "shpe_lascannon",
                 "WS0006": "shpe_lascannon",
             }

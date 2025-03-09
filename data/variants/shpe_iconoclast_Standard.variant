@@ -1,29 +1,30 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 10,
-    "fluxVents": 5,
+    "fluxVents": 2,
     "goalVariant": true,
-    "hullId": "shpe_firestorm",
+    "hullId": "shpe_iconoclast",
     "hullMods": [
-        "hardenedshieldemitter",
+        "stabilizedshieldemitter",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_firestorm_Standard",
+    "variantId": "shpe_iconoclast_Standard",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_voidsunder_lance",
+                "WS0001": "shpe_bombardment",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_thunderstrike",
+                "WS0003": "shpe_thunderstrike",
+                "WS0004": "shpe_thunderstrike",
             }
         },
         {
@@ -31,7 +32,7 @@
             "mode": "LINKED",
             "weapons": {
                 "WS0005": "shpe_hydra",
-                "WS0004": "shpe_hydra",
+                "WS0006": "shpe_hydra",
             }
         },
     ],

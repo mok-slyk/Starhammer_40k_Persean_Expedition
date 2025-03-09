@@ -1,0 +1,46 @@
+{
+    "displayName": "Hellfire",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "goalVariant": true,
+    "hullId": "shpe_styx",
+    "hullMods": [
+        "expanded_deck_crew",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_styx_Hellfire",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_banefire_lance",
+                "WS0002": "shpe_banefire_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_thunderstrike",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "shpe_hydra",
+                "WS0006": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_heldrake_Engine_wing",
+        "shpe_heldrake_Engine_wing",
+        "shpe_heldrake_Engine_wing",
+    ],
+    "modules": [],
+}

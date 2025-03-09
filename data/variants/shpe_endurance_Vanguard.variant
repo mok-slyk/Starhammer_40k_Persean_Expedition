@@ -1,25 +1,23 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 2,
-    "fluxVents": 20,
+    "displayName": "Vanguard",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
     "goalVariant": true,
     "hullId": "shpe_endurance",
-    "hullMods": [
-        "targetingunit",
-    ],
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_endurance_Standard",
+    "variantId": "shpe_endurance_Vanguard",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0010": "shpe_titanforge_lance",
-                "WS0009": "shpe_titanforge_lance",
-                "WS0008": "shpe_titanforge_lance",
-                "WS0007": "shpe_titanforge_lance",
+                "WS0010": "shpe_mezoa_lance",
+                "WS0009": "shpe_mezoa_lance",
+                "WS0008": "shpe_mezoa_lance",
+                "WS0007": "shpe_mezoa_lance",
             }
         },
         {

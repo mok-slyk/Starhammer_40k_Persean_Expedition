@@ -1,0 +1,57 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 11,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "shpe_acheron",
+    "hullMods": [
+        "armoredweapons",
+        "fluxdistributor",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_acheron_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_starbreaker_lance",
+                "WS0000": "shpe_starbreaker_lance",
+                "WS0003": "shpe_starbreaker_lance",
+                "WS0002": "shpe_starbreaker_lance",
+                "WS0005": "shpe_starbreaker_lance",
+                "WS0004": "shpe_starbreaker_lance",
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0102": "shpe_banefire_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0053": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0100": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

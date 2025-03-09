@@ -26,12 +26,8 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
-			"pirate_bp":2,
 		},
 		"hulls":{
-			"falcon_p":0.5, # it's pretty good, so make it more rare
-			"venture":0.3, # it's pretty annoying en masse, so, ditto
-			"venture_p":0.5, # it's also potentially annoying if there's too much of them
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -62,7 +58,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["shpe_chaos_bp", "shpe_chaos"],
+		"tags":["shpe_chaos_bp", "shpe_chaos", "shpe_imperium"],
 		"weapons":[
 		],
 	},
@@ -82,8 +78,8 @@
 		"phaseShips":1,
 		
 		"officerQuality":1,
-		"shipQuality":1,
-		"numShips":5,
+		"shipQuality":3,
+		"numShips":3,
 		
 		"shipSize":3,
 		
@@ -92,7 +88,7 @@
 		"combatFreighterProbability":0.1,     				# instead of some portion of the freighters in a fleet
 		"combatFreighterCombatUseFraction":0.5,  				# as part of the normal combat lineup
 		"combatFreighterCombatUseFractionWhenPriority":0.5,   # as part of normal combat lineup, when marked as priority ship
-		"autofitRandomizeProbability":0.5,
+		"autofitRandomizeProbability":0,
 
 		"commanderSkillsShuffleProbability":0,
 		"commanderSkills":[

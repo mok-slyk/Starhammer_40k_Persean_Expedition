@@ -1,37 +1,29 @@
 {
-    "displayName": "Standard",
+    "displayName": "Sunsear",
     "fluxCapacitors": 10,
-    "fluxVents": 5,
+    "fluxVents": 8,
     "goalVariant": true,
-    "hullId": "shpe_firestorm",
-    "hullMods": [
-        "hardenedshieldemitter",
-    ],
+    "hullId": "shpe_sword",
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_firestorm_Standard",
+    "variantId": "shpe_sword_Sunsear",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_voidsunder_lance",
+                "WS0002": "shpe_lasburner",
+                "WS0004": "shpe_lasburner",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_thunderstrike",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
+                "WS0003": "shpe_hydra",
                 "WS0005": "shpe_hydra",
-                "WS0004": "shpe_hydra",
             }
         },
     ],

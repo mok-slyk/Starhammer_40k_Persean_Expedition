@@ -1,37 +1,42 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 0,
     "fluxVents": 9,
     "goalVariant": true,
-    "hullId": "shpe_sword",
+    "hullId": "shpe_endurance_mech",
     "hullMods": [
-        "autorepair",
+        "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_sword_Standard",
+    "variantId": "shpe_endurance_mech_Standard",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_thunderstrike",
+                "WS0011": "shpe_starbreaker_lance",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "shpe_pyros",
+                "WS0003": "shpe_starbreaker_lance",
+                "WS0005": "shpe_starbreaker_lance",
+                "WS0004": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0005": "shpe_hydra",
+                "WS0012": "shpe_lascannon",
+                "WS0014": "shpe_lascannon",
+                "WS0010": "shpe_lascannon",
+                "WS0009": "shpe_lascannon",
             }
         },
     ],

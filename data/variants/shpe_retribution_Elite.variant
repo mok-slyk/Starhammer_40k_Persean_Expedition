@@ -1,0 +1,117 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 47,
+    "goalVariant": true,
+    "hullId": "shpe_retribution",
+    "hullMods": [
+        "autorepair",
+        "shpe_hecutor_shell",
+        "shpe_vortex_warheads",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_retribution_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB16": "shpe_hecutor_reference",
+                "BIB18": "shpe_hecutor_reference",
+                "BIB20": "shpe_hecutor_reference",
+                "BIB22": "shpe_hecutor_reference",
+                "BIB8": "shpe_hecutor_reference",
+                "BIB6": "shpe_hecutor_reference",
+                "BIB4": "shpe_hecutor_reference",
+                "BIB2": "shpe_hecutor_reference",
+                "BIB0": "shpe_hecutor_reference",
+                "BIB12": "shpe_hecutor_reference",
+                "BIB14": "shpe_hecutor_reference",
+                "BIB10": "shpe_hecutor_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_vortextorp_reference",
+                "BIT4": "shpe_vortextorp_reference",
+                "BIT3": "shpe_vortextorp_reference",
+                "BIT2": "shpe_vortextorp_reference",
+                "BIT1": "shpe_vortextorp_reference",
+                "BIT0": "shpe_vortextorp_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB17": "shpe_hecutor_reference_odd",
+                "BIB19": "shpe_hecutor_reference_odd",
+                "BIB23": "shpe_hecutor_reference_odd",
+                "BIB21": "shpe_hecutor_reference_odd",
+                "BIB9": "shpe_hecutor_reference_odd",
+                "BIB7": "shpe_hecutor_reference_odd",
+                "BIB5": "shpe_hecutor_reference_odd",
+                "BIB3": "shpe_hecutor_reference_odd",
+                "BIB1": "shpe_hecutor_reference_odd",
+                "BIB13": "shpe_hecutor_reference_odd",
+                "BIB15": "shpe_hecutor_reference_odd",
+                "BIB11": "shpe_hecutor_reference_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0022": "shpe_starbreaker_lance",
+                "WS0021": "shpe_starbreaker_lance",
+                "WS0020": "shpe_starbreaker_lance",
+                "WS0019": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0018": "shpe_bombardment",
+                "WS0017": "shpe_bombardment",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0016": "shpe_hydra",
+                "WS0015": "shpe_hydra",
+                "WS0001": "shpe_hydra",
+                "WS0012": "shpe_hydra",
+                "WS0011": "shpe_hydra",
+                "WS0014": "shpe_hydra",
+                "WS0013": "shpe_hydra",
+                "WS0010": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+                "WS0007": "shpe_hydra",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_lascannon",
+                "WS0002": "shpe_lascannon",
+                "WS0005": "shpe_lascannon",
+                "WS0004": "shpe_lascannon",
+                "WS0006": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"PROW": "shpe_battleship_torpedo_prow_Variant"},
+    ],
+}

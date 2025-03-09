@@ -1,0 +1,66 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "shpe_devastation",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_devastation_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL7": "shpe_light_macro_odd",
+                "BIL5": "shpe_light_macro_odd",
+                "BIL3": "shpe_light_macro_odd",
+                "BIL1": "shpe_light_macro_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL6": "shpe_light_macro",
+                "BIL4": "shpe_light_macro",
+                "BIL2": "shpe_light_macro",
+                "BIL0": "shpe_light_macro",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+                "WS0009": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+                "WS0015": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_helltalon_Bomber_wing",
+        "shpe_hellblade_Interceptor_wing",
+    ],
+    "modules": [],
+}

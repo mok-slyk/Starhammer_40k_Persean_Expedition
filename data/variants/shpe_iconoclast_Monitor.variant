@@ -1,29 +1,28 @@
 {
-    "displayName": "Standard",
+    "displayName": "Monitor",
     "fluxCapacitors": 10,
-    "fluxVents": 5,
+    "fluxVents": 3,
     "goalVariant": true,
-    "hullId": "shpe_firestorm",
-    "hullMods": [
-        "hardenedshieldemitter",
-    ],
+    "hullId": "shpe_iconoclast",
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_firestorm_Standard",
+    "variantId": "shpe_iconoclast_Monitor",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_voidsunder_lance",
+                "WS0003": "shpe_ryza",
+                "WS0004": "shpe_ryza",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_thunderstrike",
+                "WS0001": "shpe_vulcan",
             }
         },
         {
@@ -31,7 +30,7 @@
             "mode": "LINKED",
             "weapons": {
                 "WS0005": "shpe_hydra",
-                "WS0004": "shpe_hydra",
+                "WS0006": "shpe_hydra",
             }
         },
     ],

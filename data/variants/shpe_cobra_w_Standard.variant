@@ -1,0 +1,29 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 9,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "shpe_cobra_w",
+    "hullMods": [
+        "missleracks",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_cobra_w_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT3": "shpe_plasmatorp_reference",
+                "BIT2": "shpe_plasmatorp_reference",
+                "BIT1": "shpe_plasmatorp_reference",
+                "BIT0": "shpe_plasmatorp_reference",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,56 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 14,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "shpe_endeavour_mech",
+    "hullMods": [
+        "shpe_stygies_shell",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_endeavour_mech_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB7": "shpe_stygies_reference_odd",
+                "BIB5": "shpe_stygies_reference_odd",
+                "BIB3": "shpe_stygies_reference_odd",
+                "BIB1": "shpe_stygies_reference_odd",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB6": "shpe_stygies_reference",
+                "BIB4": "shpe_stygies_reference",
+                "BIB2": "shpe_stygies_reference",
+                "BIB0": "shpe_stygies_reference",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+                "WS0014": "shpe_lascannon",
+                "WS0010": "shpe_lascannon",
+                "WS0009": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

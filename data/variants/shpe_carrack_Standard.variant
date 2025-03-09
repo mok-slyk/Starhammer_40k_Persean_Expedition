@@ -1,13 +1,12 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 17,
-    "fluxVents": 20,
+    "fluxCapacitors": 1,
+    "fluxVents": 17,
     "goalVariant": true,
     "hullId": "shpe_carrack",
     "hullMods": [
-        "efficiency_overhaul",
-        "shpe_disruptor_shell",
-        "solar_shielding",
+        "auxiliary_fuel_tanks",
+        "expanded_cargo_holds",
     ],
     "permaMods": [],
     "sMods": [],
@@ -18,12 +17,18 @@
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "BIB5": "shpe_disruptor_reference",
-                "BIB4": "shpe_disruptor_reference",
-                "BIB3": "shpe_disruptor_reference",
-                "BIB2": "shpe_disruptor_reference",
-                "BIB1": "shpe_disruptor_reference",
-                "BIB0": "shpe_disruptor_reference",
+                "BIB5": "shpe_marsvi_builtin_odd",
+                "BIB3": "shpe_marsvi_builtin_odd",
+                "BIB1": "shpe_marsvi_builtin_odd",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB4": "shpe_marsvi_builtin",
+                "BIB2": "shpe_marsvi_builtin",
+                "BIB0": "shpe_marsvi_builtin",
             }
         },
         {

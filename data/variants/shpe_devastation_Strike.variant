@@ -1,0 +1,66 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "shpe_devastation",
+    "hullMods": [
+        "shpe_hecutor_shell",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_devastation_Strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL7": "shpe_light_hecutor_odd",
+                "BIL5": "shpe_light_hecutor_odd",
+                "BIL3": "shpe_light_hecutor_odd",
+                "BIL1": "shpe_light_hecutor_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL6": "shpe_light_hecutor",
+                "BIL4": "shpe_light_hecutor",
+                "BIL2": "shpe_light_hecutor",
+                "BIL0": "shpe_light_hecutor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "shpe_titanforge_lance",
+                "WS0006": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+                "WS0015": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_helltalon_Bomber_wing",
+        "shpe_helltalon_Bomber_wing",
+    ],
+    "modules": [],
+}

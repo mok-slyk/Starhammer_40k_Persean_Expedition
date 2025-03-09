@@ -1,33 +1,33 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 3,
+    "displayName": "Hunter",
+    "fluxCapacitors": 2,
     "fluxVents": 0,
     "goalVariant": true,
     "hullId": "shpe_cobra",
     "hullMods": [
         "missleracks",
-        "shpe_melta_warheads",
+        "shpe_seeking_warheads",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_cobra_Standard",
+    "variantId": "shpe_cobra_Hunter",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_thunderstrike",
+                "WS0001": "shpe_bolter",
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "BIT3": "shpe_meltatorp_reference",
-                "BIT2": "shpe_meltatorp_reference",
-                "BIT1": "shpe_meltatorp_reference",
-                "BIT0": "shpe_meltatorp_reference",
+                "BIT3": "shpe_seekingtorp_reference",
+                "BIT2": "shpe_seekingtorp_reference",
+                "BIT1": "shpe_seekingtorp_reference",
+                "BIT0": "shpe_seekingtorp_reference",
             }
         },
     ],

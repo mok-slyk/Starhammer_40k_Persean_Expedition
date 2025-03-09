@@ -1,11 +1,12 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 23,
-    "fluxVents": 30,
+    "fluxCapacitors": 0,
+    "fluxVents": 17,
     "goalVariant": true,
     "hullId": "shpe_lunar",
     "hullMods": [
-        "shpe_disruptor_shell",
+        "hardenedshieldemitter",
+        "shpe_barrage_warheads",
         "targetingunit",
     ],
     "permaMods": [],
@@ -14,6 +15,38 @@
     "variantId": "shpe_lunar_Standard",
     "weaponGroups": [
         {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB7": "shpe_marsvi_builtin_odd",
+                "BIB5": "shpe_marsvi_builtin_odd",
+                "BIB3": "shpe_marsvi_builtin_odd",
+                "BIB1": "shpe_marsvi_builtin_odd",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_barragetorp_reference",
+                "BIT4": "shpe_barragetorp_reference",
+                "BIT3": "shpe_barragetorp_reference",
+                "BIT2": "shpe_barragetorp_reference",
+                "BIT1": "shpe_barragetorp_reference",
+                "BIT0": "shpe_barragetorp_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB6": "shpe_marsvi_builtin",
+                "BIB4": "shpe_marsvi_builtin",
+                "BIB2": "shpe_marsvi_builtin",
+                "BIB0": "shpe_marsvi_builtin",
+            }
+        },
+        {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
@@ -21,32 +54,6 @@
                 "WS0011": "shpe_titanforge_lance",
                 "WS0010": "shpe_titanforge_lance",
                 "WS0009": "shpe_titanforge_lance",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "BIT5": "shpe_plasmatorp_reference",
-                "BIT4": "shpe_plasmatorp_reference",
-                "BIT3": "shpe_plasmatorp_reference",
-                "BIT2": "shpe_plasmatorp_reference",
-                "BIT1": "shpe_plasmatorp_reference",
-                "BIT0": "shpe_plasmatorp_reference",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "BIB7": "shpe_disruptor_reference",
-                "BIB6": "shpe_disruptor_reference",
-                "BIB5": "shpe_disruptor_reference",
-                "BIB4": "shpe_disruptor_reference",
-                "BIB3": "shpe_disruptor_reference",
-                "BIB2": "shpe_disruptor_reference",
-                "BIB1": "shpe_disruptor_reference",
-                "BIB0": "shpe_disruptor_reference",
             }
         },
         {

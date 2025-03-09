@@ -1,0 +1,82 @@
+{
+    "displayName": "Scorcher",
+    "fluxCapacitors": 0,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "shpe_carnage",
+    "hullMods": [
+        "autorepair",
+        "shpe_pyros_shell",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_carnage_Scorcher",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_pyros",
+                "BIL12": "shpe_light_pyros",
+                "BIL30": "shpe_light_pyros",
+                "BIL18": "shpe_light_pyros",
+                "BIL14": "shpe_light_pyros",
+                "BIL16": "shpe_light_pyros",
+                "BIL22": "shpe_light_pyros",
+                "BIL24": "shpe_light_pyros",
+                "BIL20": "shpe_light_pyros",
+                "BIL8": "shpe_light_pyros",
+                "BIL26": "shpe_light_pyros",
+                "BIL6": "shpe_light_pyros",
+                "BIL28": "shpe_light_pyros",
+                "BIL4": "shpe_light_pyros",
+                "BIL2": "shpe_light_pyros",
+                "BIL0": "shpe_light_pyros",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL11": "shpe_light_pyros_odd",
+                "BIL13": "shpe_light_pyros_odd",
+                "BIL31": "shpe_light_pyros_odd",
+                "BIL19": "shpe_light_pyros_odd",
+                "BIL15": "shpe_light_pyros_odd",
+                "BIL17": "shpe_light_pyros_odd",
+                "BIL21": "shpe_light_pyros_odd",
+                "BIL23": "shpe_light_pyros_odd",
+                "BIL29": "shpe_light_pyros_odd",
+                "BIL9": "shpe_light_pyros_odd",
+                "BIL25": "shpe_light_pyros_odd",
+                "BIL7": "shpe_light_pyros_odd",
+                "BIL27": "shpe_light_pyros_odd",
+                "BIL5": "shpe_light_pyros_odd",
+                "BIL3": "shpe_light_pyros_odd",
+                "BIL1": "shpe_light_pyros_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hydra",
+                "WS0015": "shpe_hydra",
+                "WS0010": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

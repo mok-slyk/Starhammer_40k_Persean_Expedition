@@ -1,0 +1,74 @@
+{
+    "displayName": "Disruption",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "shpe_dominator",
+    "hullMods": [
+        "armoredweapons",
+        "shpe_disruptor_shell",
+        "shpe_lathe_cannon",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_dominator_Disruption",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB9": "shpe_disruptor_reference_odd",
+                "BIB7": "shpe_disruptor_reference_odd",
+                "BIB5": "shpe_disruptor_reference_odd",
+                "BIB3": "shpe_disruptor_reference_odd",
+                "BIB1": "shpe_disruptor_reference_odd",
+                "BIB13": "shpe_disruptor_reference_odd",
+                "BIB15": "shpe_disruptor_reference_odd",
+                "BIB11": "shpe_disruptor_reference_odd",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIB8": "shpe_disruptor_reference",
+                "BIB6": "shpe_disruptor_reference",
+                "BIB4": "shpe_disruptor_reference",
+                "BIB2": "shpe_disruptor_reference",
+                "BIB0": "shpe_disruptor_reference",
+                "BIB12": "shpe_disruptor_reference",
+                "BIB14": "shpe_disruptor_reference",
+                "BIB10": "shpe_disruptor_reference",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BIN0": "shpe_lathenova",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_ryza",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+                "WS0007": "shpe_hydra",
+                "WS0006": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

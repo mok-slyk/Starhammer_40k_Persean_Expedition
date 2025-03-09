@@ -1,7 +1,7 @@
 {
-    "displayName": "Standard",
+    "displayName": "Strike",
     "fluxCapacitors": 0,
-    "fluxVents": 14,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "shpe_defiant",
     "hullMods": [
@@ -10,7 +10,7 @@
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_defiant_Standard",
+    "variantId": "shpe_defiant_Strike",
     "weaponGroups": [
         {
             "autofire": true,
@@ -30,8 +30,8 @@
         },
     ],
     "wings": [
-        "shpe_fury_Interceptor_wing",
-        "shpe_fury_Interceptor_wing",
+        "shpe_starhawk_wing",
+        "shpe_starhawk_wing",
     ],
     "modules": [],
 }
