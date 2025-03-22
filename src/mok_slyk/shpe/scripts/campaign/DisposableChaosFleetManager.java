@@ -16,12 +16,8 @@ import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.impl.campaign.intel.bases.LuddicPathCells;
 import com.fs.starfarer.api.impl.campaign.intel.bases.PirateBaseManager;
 import com.fs.starfarer.api.util.Misc;
+import org.lazywizard.lazylib.MathUtils;
 
-/**
- * Adds the following types of fleets:
- * 1) Occasional pather fleet in hyper around a populated system
- * 2) A few more in and around systems with pather/church presence
- */
 public class DisposableChaosFleetManager extends DisposableFleetManager {
 
 	protected Object readResolve() {
@@ -36,53 +32,12 @@ public class DisposableChaosFleetManager extends DisposableFleetManager {
 	
 	@Override
 	protected int getDesiredNumFleetsForSpawnLocation() {
-		MarketAPI pather = getLargestMarket(Factions.LUDDIC_PATH);
-		MarketAPI church = getLargestMarket(Factions.LUDDIC_CHURCH);
-		
-		float desiredNumFleets = 1f;
-		
-		if (church != null) {
-			desiredNumFleets++;
-		}
-		if (pather != null) {
-			desiredNumFleets += pather.getSize();
-		}
-		
-		int cells = getPatherCellsLevel();
-		desiredNumFleets += cells;
-		
-		//return (int) Math.round(desiredNumFleets);
-		return 100;
-	}
-	
-	protected int getPatherCellsLevel() {
-		if (currSpawnLoc == null) return 0;
-		int total = 0;
-		for (MarketAPI market : Global.getSector().getEconomy().getMarkets(currSpawnLoc)) {
-			if (market.isHidden()) continue;
-			MarketConditionAPI mc = market.getCondition(Conditions.PATHER_CELLS);
-			if (mc != null && mc.getPlugin() instanceof LuddicPathCells) {
-				LuddicPathCells cells = (LuddicPathCells) mc.getPlugin();
-				if (cells.getIntel() != null) {
-					if (cells.getIntel().isSleeper()) {
-						total++;
-					} else {
-						total += 2;
-					}
-				}
-			}
-		}
-		return 0;
+		return 1;
 	}
 
 	@Override
 	public float getSpawnRateMult() {
-		return 1000f;
-	}
-
-	@Override
-	protected int getMaxFleets() {
-		return 1000;
+		return 3*super.getSpawnRateMult();
 	}
 
 	protected MarketAPI getLargestMarket(String faction) {
@@ -142,7 +97,7 @@ public class DisposableChaosFleetManager extends DisposableFleetManager {
 				"shpe_chaos",
 				null,
 				fleetType,
-				5000, // combatPts
+				combat, // combatPts
 				0, // freighterPts 
 				0, // tankerPts
 				0f, // transportPts

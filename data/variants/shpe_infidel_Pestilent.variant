@@ -1,25 +1,27 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 14,
-    "fluxVents": 0,
-    "goalVariant": true,
+    "displayName": "Pestilent",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "goalVariant": false,
     "hullId": "shpe_infidel",
     "hullMods": [
-        "fluxbreakers",
-        "missleracks",
+        "shpe_ark_of_pestilence",
         "shpe_melta_warheads",
+        "shpe_nurgle_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_infidel_Standard",
+    "variantId": "shpe_infidel_Pestilent",
     "weaponGroups": [
         {
             "autofire": true,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0001": "shpe_thunderstrike",
+                "WS0003": "shpe_thunderstrike",
                 "WS0002": "shpe_thunderstrike",
+                "WS0004": "shpe_thunderstrike",
             }
         },
         {
@@ -32,14 +34,6 @@
                 "BIT2": "shpe_meltatorp_reference",
                 "BIT1": "shpe_meltatorp_reference",
                 "BIT0": "shpe_meltatorp_reference",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0004": "shpe_hydra",
             }
         },
     ],

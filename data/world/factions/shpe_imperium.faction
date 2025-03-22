@@ -3,12 +3,17 @@
 	"color":[245,210,150,255],
 	"displayName":"Imperium",
 	"displayNameWithArticle":"the Imperium",
+	"displayNameLong":"Imperium of Man",
+	"displayNameLongWithArticle":"the Imperium of Man",
 	"logo":"graphics/factions/shpe_imperium.png",
 	"crest":"graphics/factions/shpe_imperium_crest.png",
+	"personNamePrefixAOrAn":"an",
+	"displayNameIsOrAre":"is",
 	"shipNamePrefix":"",
 	"shipNameSources":{
-		"ROMAN":2,
+		"ROMAN":1,
 		"GREEK":1,
+		"SHPE_IMPERIUM":4,
 	},
 	"names":{
 		"old english":1,
@@ -70,7 +75,7 @@
 		#],
 	},
 	"knownHullMods":{
-		"tags":["standard", "shpe_imperium"],
+		"tags":["standard", "merc", "shpe_imperium"],
 		#"hullMods":[
 		#],
 	},
@@ -127,9 +132,6 @@
 		},
 	},	
 	"illegalCommodities":[
-		"drugs",
-		"organs",
-		"hand_weapons",
 		"ai_cores",	
 	],
 	"music":{

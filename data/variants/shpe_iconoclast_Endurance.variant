@@ -1,23 +1,19 @@
 {
-    "displayName": "Monitor",
+    "displayName": "Endurance",
     "fluxCapacitors": 10,
-    "fluxVents": 8,
-    "goalVariant": true,
+    "fluxVents": 7,
+    "goalVariant": false,
     "hullId": "shpe_iconoclast",
-    "hullMods": [],
+    "hullMods": [
+        "hardenedshieldemitter",
+        "pointdefenseai",
+        "shpe_nurgle_mark",
+    ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_iconoclast_Monitor",
+    "variantId": "shpe_iconoclast_Endurance",
     "weaponGroups": [
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "shpe_ryza",
-                "WS0004": "shpe_ryza",
-            }
-        },
         {
             "autofire": true,
             "mode": "LINKED",
@@ -29,8 +25,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "shpe_hydra",
-                "WS0006": "shpe_hydra",
+                "WS0003": "shpe_bolter",
+                "WS0004": "shpe_bolter",
             }
         },
     ],

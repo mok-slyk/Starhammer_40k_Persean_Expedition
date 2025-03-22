@@ -1,44 +1,45 @@
 {
-    "displayName": "Strike",
+    "displayName": "Diseased",
     "fluxCapacitors": 0,
-    "fluxVents": 14,
-    "goalVariant": true,
+    "fluxVents": 8,
+    "goalVariant": false,
     "hullId": "shpe_devastation",
     "hullMods": [
-        "shpe_hecutor_shell",
-        "targetingunit",
+        "defensive_targeting_array",
+        "shpe_ark_of_pestilence",
+        "shpe_nurgle_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_devastation_Strike",
+    "variantId": "shpe_devastation_Diseased",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL7": "shpe_light_hecutor_odd",
-                "BIL5": "shpe_light_hecutor_odd",
-                "BIL3": "shpe_light_hecutor_odd",
-                "BIL1": "shpe_light_hecutor_odd",
+                "BIL7": "shpe_light_macro_odd",
+                "BIL5": "shpe_light_macro_odd",
+                "BIL3": "shpe_light_macro_odd",
+                "BIL1": "shpe_light_macro_odd",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL6": "shpe_light_hecutor",
-                "BIL4": "shpe_light_hecutor",
-                "BIL2": "shpe_light_hecutor",
-                "BIL0": "shpe_light_hecutor",
+                "BIL6": "shpe_light_macro",
+                "BIL4": "shpe_light_macro",
+                "BIL2": "shpe_light_macro",
+                "BIL0": "shpe_light_macro",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "shpe_titanforge_lance",
-                "WS0006": "shpe_titanforge_lance",
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
             }
         },
         {
@@ -52,10 +53,9 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "shpe_hydra",
+                "WS0001": "shpe_hydra",
                 "WS0009": "shpe_hydra",
                 "WS0008": "shpe_hydra",
-                "WS0004": "shpe_hydra",
                 "WS0015": "shpe_hydra",
             }
         },

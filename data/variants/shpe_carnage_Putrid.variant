@@ -1,0 +1,81 @@
+{
+    "displayName": "Putrid",
+    "fluxCapacitors": 0,
+    "fluxVents": 17,
+    "goalVariant": false,
+    "hullId": "shpe_carnage",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "shpe_miasma",
+        "shpe_nurgle_hives",
+        "shpe_nurgle_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_carnage_Putrid",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_hive",
+                "BIL22": "shpe_light_hive",
+                "BIL12": "shpe_light_hive",
+                "BIL24": "shpe_light_hive",
+                "BIL30": "shpe_light_hive",
+                "BIL20": "shpe_light_hive",
+                "BIL18": "shpe_light_hive",
+                "BIL14": "shpe_light_hive",
+                "BIL8": "shpe_light_hive",
+                "BIL26": "shpe_light_hive",
+                "BIL16": "shpe_light_hive",
+                "BIL6": "shpe_light_hive",
+                "BIL28": "shpe_light_hive",
+                "BIL4": "shpe_light_hive",
+                "BIL2": "shpe_light_hive",
+                "BIL0": "shpe_light_hive",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL21": "shpe_light_hive_odd",
+                "BIL11": "shpe_light_hive_odd",
+                "BIL23": "shpe_light_hive_odd",
+                "BIL13": "shpe_light_hive_odd",
+                "BIL31": "shpe_light_hive_odd",
+                "BIL29": "shpe_light_hive_odd",
+                "BIL19": "shpe_light_hive_odd",
+                "BIL9": "shpe_light_hive_odd",
+                "BIL25": "shpe_light_hive_odd",
+                "BIL15": "shpe_light_hive_odd",
+                "BIL7": "shpe_light_hive_odd",
+                "BIL27": "shpe_light_hive_odd",
+                "BIL17": "shpe_light_hive_odd",
+                "BIL5": "shpe_light_hive_odd",
+                "BIL3": "shpe_light_hive_odd",
+                "BIL1": "shpe_light_hive_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_pyros",
+                "WS0010": "shpe_pyros",
+                "WS0015": "shpe_pyros",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

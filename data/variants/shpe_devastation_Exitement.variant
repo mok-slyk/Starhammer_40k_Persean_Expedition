@@ -1,50 +1,51 @@
 {
-    "displayName": "Standard",
+    "displayName": "Exitement",
     "fluxCapacitors": 0,
-    "fluxVents": 9,
-    "goalVariant": true,
+    "fluxVents": 17,
+    "goalVariant": false,
     "hullId": "shpe_devastation",
     "hullMods": [
-        "targetingunit",
+        "expanded_deck_crew",
+        "shpe_tzeentch_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_devastation_Standard",
+    "variantId": "shpe_devastation_Exitement",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL7": "shpe_light_macro_odd",
-                "BIL5": "shpe_light_macro_odd",
                 "BIL3": "shpe_light_macro_odd",
                 "BIL1": "shpe_light_macro_odd",
+                "BIL7": "shpe_light_macro_odd",
+                "BIL5": "shpe_light_macro_odd",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL6": "shpe_light_macro",
                 "BIL4": "shpe_light_macro",
                 "BIL2": "shpe_light_macro",
                 "BIL0": "shpe_light_macro",
+                "BIL6": "shpe_light_macro",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_hellus",
+                "WS0003": "shpe_marsvi",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "shpe_starbreaker_lance",
-                "WS0006": "shpe_starbreaker_lance",
+                "WS0007": "shpe_banefire_lance",
+                "WS0006": "shpe_banefire_lance",
             }
         },
         {
@@ -52,17 +53,13 @@
             "mode": "LINKED",
             "weapons": {
                 "WS0001": "shpe_lascannon",
-                "WS0002": "shpe_lascannon",
-                "WS0009": "shpe_lascannon",
-                "WS0008": "shpe_lascannon",
                 "WS0015": "shpe_lascannon",
-                "WS0004": "shpe_lascannon",
             }
         },
     ],
     "wings": [
-        "shpe_helltalon_Bomber_wing",
-        "shpe_hellblade_Interceptor_wing",
+        "shpe_apis_Bomber_wing",
+        "shpe_lotus_Interceptor_wing",
     ],
     "modules": [],
 }

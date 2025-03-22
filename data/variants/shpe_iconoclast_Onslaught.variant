@@ -1,0 +1,34 @@
+{
+    "displayName": "Onslaught",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": false,
+    "hullId": "shpe_iconoclast",
+    "hullMods": [
+        "autorepair",
+        "shpe_khorne_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_iconoclast_Onslaught",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_pyros",
+                "WS0004": "shpe_pyros",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

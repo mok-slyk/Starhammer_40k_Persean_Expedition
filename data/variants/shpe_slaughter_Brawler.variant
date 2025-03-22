@@ -1,11 +1,12 @@
 {
     "displayName": "Brawler",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 4,
     "fluxVents": 0,
     "goalVariant": true,
     "hullId": "shpe_slaughter",
     "hullMods": [
         "armoredweapons",
+        "fluxbreakers",
         "safetyoverrides",
         "shpe_pyros_shell",
     ],
@@ -63,6 +64,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
+                "WS0001": "shpe_hydra",
                 "WS0015": "shpe_hydra",
                 "WS0010": "shpe_hydra",
                 "WS0009": "shpe_hydra",

@@ -1,7 +1,7 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 0,
-    "fluxVents": 28,
+    "fluxVents": 30,
     "goalVariant": true,
     "hullId": "shpe_styx",
     "hullMods": [
@@ -40,6 +40,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
                 "WS0007": "shpe_hydra",
                 "WS0006": "shpe_hydra",
             }

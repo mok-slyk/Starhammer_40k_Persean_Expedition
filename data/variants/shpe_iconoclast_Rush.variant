@@ -1,17 +1,17 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 10,
-    "fluxVents": 4,
-    "goalVariant": true,
+    "displayName": "Rush",
+    "fluxCapacitors": 8,
+    "fluxVents": 0,
+    "goalVariant": false,
     "hullId": "shpe_iconoclast",
     "hullMods": [
-        "fluxbreakers",
-        "stabilizedshieldemitter",
+        "safetyoverrides",
+        "shpe_slaanesh_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_iconoclast_Standard",
+    "variantId": "shpe_iconoclast_Rush",
     "weaponGroups": [
         {
             "autofire": true,
@@ -26,14 +26,6 @@
             "weapons": {
                 "WS0003": "shpe_thunderstrike",
                 "WS0004": "shpe_thunderstrike",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0005": "shpe_hydra",
-                "WS0006": "shpe_hydra",
             }
         },
     ],

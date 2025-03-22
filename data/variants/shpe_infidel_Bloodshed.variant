@@ -1,0 +1,42 @@
+{
+    "displayName": "Bloodshed",
+    "fluxCapacitors": 5,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "shpe_infidel",
+    "hullMods": [
+        "armoredweapons",
+        "shpe_barrage_warheads",
+        "shpe_khorne_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_infidel_Bloodshed",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "shpe_pyros",
+                "WS0003": "shpe_pyros",
+                "WS0002": "shpe_pyros",
+                "WS0004": "shpe_pyros",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BIT5": "shpe_barragetorp_reference",
+                "BIT4": "shpe_barragetorp_reference",
+                "BIT3": "shpe_barragetorp_reference",
+                "BIT2": "shpe_barragetorp_reference",
+                "BIT1": "shpe_barragetorp_reference",
+                "BIT0": "shpe_barragetorp_reference",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

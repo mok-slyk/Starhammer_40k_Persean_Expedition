@@ -1,7 +1,7 @@
 {
     "displayName": "Hellfire",
     "fluxCapacitors": 0,
-    "fluxVents": 27,
+    "fluxVents": 29,
     "goalVariant": true,
     "hullId": "shpe_styx",
     "hullMods": [
@@ -32,6 +32,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
+                "WS0005": "shpe_hydra",
+                "WS0004": "shpe_hydra",
                 "WS0007": "shpe_hydra",
                 "WS0006": "shpe_hydra",
             }

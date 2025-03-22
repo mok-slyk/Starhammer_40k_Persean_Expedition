@@ -1,16 +1,18 @@
 {
-    "displayName": "Striker",
-    "fluxCapacitors": 4,
-    "fluxVents": 20,
-    "goalVariant": true,
+    "displayName": "Omniscience",
+    "fluxCapacitors": 6,
+    "fluxVents": 0,
+    "goalVariant": false,
     "hullId": "shpe_idolator",
     "hullMods": [
+        "hardenedshieldemitter",
+        "shpe_tzeentch_mark",
         "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_idolator_Striker",
+    "variantId": "shpe_idolator_Omniscience",
     "weaponGroups": [
         {
             "autofire": true,
@@ -23,17 +25,9 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "shpe_thunderstrike",
-                "WS0006": "shpe_thunderstrike",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0002": "shpe_hydra",
-                "WS0004": "shpe_hydra",
+                "WS0002": "shpe_lascannon",
+                "WS0005": "shpe_lascannon",
+                "WS0006": "shpe_lascannon",
             }
         },
     ],

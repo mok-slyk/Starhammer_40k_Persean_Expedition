@@ -1,25 +1,26 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 14,
-    "fluxVents": 0,
-    "goalVariant": true,
+    "displayName": "Butcher",
+    "fluxCapacitors": 20,
+    "fluxVents": 1,
+    "goalVariant": false,
     "hullId": "shpe_infidel",
     "hullMods": [
-        "fluxbreakers",
-        "missleracks",
+        "shpe_khorne_mark",
         "shpe_melta_warheads",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_infidel_Standard",
+    "variantId": "shpe_infidel_Butcher",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_thunderstrike",
-                "WS0002": "shpe_thunderstrike",
+                "WS0001": "shpe_butcher_cannon",
+                "WS0003": "shpe_butcher_cannon",
+                "WS0002": "shpe_butcher_cannon",
+                "WS0004": "shpe_butcher_cannon",
             }
         },
         {
@@ -32,14 +33,6 @@
                 "BIT2": "shpe_meltatorp_reference",
                 "BIT1": "shpe_meltatorp_reference",
                 "BIT0": "shpe_meltatorp_reference",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0004": "shpe_hydra",
             }
         },
     ],

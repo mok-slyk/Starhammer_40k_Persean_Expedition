@@ -1,22 +1,23 @@
 {
-    "displayName": "Striker",
-    "fluxCapacitors": 4,
-    "fluxVents": 20,
-    "goalVariant": true,
+    "displayName": "Charger",
+    "fluxCapacitors": 7,
+    "fluxVents": 0,
+    "goalVariant": false,
     "hullId": "shpe_idolator",
     "hullMods": [
-        "targetingunit",
+        "safetyoverrides",
+        "shpe_khorne_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_idolator_Striker",
+    "variantId": "shpe_idolator_Charger",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_godsbane_lance",
+                "WS0001": "shpe_heavy_voidsunder_lance",
             }
         },
         {
@@ -25,15 +26,6 @@
             "weapons": {
                 "WS0005": "shpe_thunderstrike",
                 "WS0006": "shpe_thunderstrike",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0002": "shpe_hydra",
-                "WS0004": "shpe_hydra",
             }
         },
     ],

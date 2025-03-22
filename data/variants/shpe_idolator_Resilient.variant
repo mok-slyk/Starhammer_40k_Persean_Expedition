@@ -1,22 +1,23 @@
 {
-    "displayName": "Striker",
-    "fluxCapacitors": 4,
-    "fluxVents": 20,
-    "goalVariant": true,
+    "displayName": "Resilient",
+    "fluxCapacitors": 5,
+    "fluxVents": 9,
+    "goalVariant": false,
     "hullId": "shpe_idolator",
     "hullMods": [
-        "targetingunit",
+        "shpe_miasma",
+        "shpe_nurgle_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_idolator_Striker",
+    "variantId": "shpe_idolator_Resilient",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_godsbane_lance",
+                "WS0001": "shpe_hecutor",
             }
         },
         {

@@ -1,36 +1,44 @@
 {
-    "displayName": "Strike",
+    "displayName": "Apotheosis",
     "fluxCapacitors": 0,
-    "fluxVents": 14,
-    "goalVariant": true,
+    "fluxVents": 15,
+    "goalVariant": false,
     "hullId": "shpe_devastation",
     "hullMods": [
         "shpe_hecutor_shell",
+        "shpe_tzeentch_mark",
         "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_devastation_Strike",
+    "variantId": "shpe_devastation_Apotheosis",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL7": "shpe_light_hecutor_odd",
-                "BIL5": "shpe_light_hecutor_odd",
                 "BIL3": "shpe_light_hecutor_odd",
                 "BIL1": "shpe_light_hecutor_odd",
+                "BIL7": "shpe_light_hecutor_odd",
+                "BIL5": "shpe_light_hecutor_odd",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BIL6": "shpe_light_hecutor",
                 "BIL4": "shpe_light_hecutor",
                 "BIL2": "shpe_light_hecutor",
                 "BIL0": "shpe_light_hecutor",
+                "BIL6": "shpe_light_hecutor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hellus",
             }
         },
         {
@@ -45,24 +53,16 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_vulcan",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0002": "shpe_hydra",
+                "WS0001": "shpe_hydra",
                 "WS0009": "shpe_hydra",
                 "WS0008": "shpe_hydra",
-                "WS0004": "shpe_hydra",
                 "WS0015": "shpe_hydra",
             }
         },
     ],
     "wings": [
-        "shpe_helltalon_Bomber_wing",
-        "shpe_helltalon_Bomber_wing",
+        "shpe_apis_Bomber_wing",
+        "shpe_apis_Bomber_wing",
     ],
     "modules": [],
 }

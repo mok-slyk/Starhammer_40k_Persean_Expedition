@@ -65,7 +65,7 @@ public class Miasma extends BaseHullMod {
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
         if (index == 0) {
-            return ((int) (1-PROFILE_MULT)*100) + "%";
+            return (int)((1-PROFILE_MULT)*100) + "%";
         }
         if (index == 1) {
             return ((int) DMG_REDUCTION_PERCENT) + "%";

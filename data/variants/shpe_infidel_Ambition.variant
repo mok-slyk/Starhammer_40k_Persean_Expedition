@@ -1,37 +1,36 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 14,
+    "displayName": "Ambition",
+    "fluxCapacitors": 19,
     "fluxVents": 0,
-    "goalVariant": true,
+    "goalVariant": false,
     "hullId": "shpe_infidel",
     "hullMods": [
-        "fluxbreakers",
-        "missleracks",
-        "shpe_melta_warheads",
+        "shpe_seeking_warheads",
+        "shpe_tzeentch_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_infidel_Standard",
+    "variantId": "shpe_infidel_Ambition",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_thunderstrike",
-                "WS0002": "shpe_thunderstrike",
+                "WS0001": "shpe_ryza",
+                "WS0002": "shpe_ryza",
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "BIT5": "shpe_meltatorp_reference",
-                "BIT4": "shpe_meltatorp_reference",
-                "BIT3": "shpe_meltatorp_reference",
-                "BIT2": "shpe_meltatorp_reference",
-                "BIT1": "shpe_meltatorp_reference",
-                "BIT0": "shpe_meltatorp_reference",
+                "BIT5": "shpe_seekingtorp_reference",
+                "BIT4": "shpe_seekingtorp_reference",
+                "BIT3": "shpe_seekingtorp_reference",
+                "BIT2": "shpe_seekingtorp_reference",
+                "BIT1": "shpe_seekingtorp_reference",
+                "BIT0": "shpe_seekingtorp_reference",
             }
         },
         {

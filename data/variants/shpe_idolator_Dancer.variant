@@ -1,14 +1,18 @@
 {
-    "displayName": "Blaster",
-    "fluxCapacitors": 0,
-    "fluxVents": 20,
-    "goalVariant": true,
+    "displayName": "Dancer",
+    "fluxCapacitors": 5,
+    "fluxVents": 8,
+    "goalVariant": false,
     "hullId": "shpe_idolator",
-    "hullMods": [],
+    "hullMods": [
+        "auxiliarythrusters",
+        "shpe_slaanesh_mark",
+        "targetingunit",
+    ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_idolator_Blaster",
+    "variantId": "shpe_idolator_Dancer",
     "weaponGroups": [
         {
             "autofire": true,
@@ -19,12 +23,11 @@
         },
         {
             "autofire": true,
-            "mode": "ALTERNATING",
+            "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_ryza",
-                "WS0005": "shpe_ryza",
-                "WS0004": "shpe_ryza",
-                "WS0006": "shpe_ryza",
+                "WS0002": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0006": "shpe_hydra",
             }
         },
     ],

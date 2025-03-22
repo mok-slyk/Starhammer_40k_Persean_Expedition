@@ -1,7 +1,7 @@
 {
     "displayName": "Escort",
     "fluxCapacitors": 20,
-    "fluxVents": 1,
+    "fluxVents": 6,
     "goalVariant": true,
     "hullId": "shpe_infidel",
     "hullMods": [

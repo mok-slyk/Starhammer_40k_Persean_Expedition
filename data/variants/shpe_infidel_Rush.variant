@@ -1,18 +1,18 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 14,
+    "displayName": "Rush",
+    "fluxCapacitors": 11,
     "fluxVents": 0,
-    "goalVariant": true,
+    "goalVariant": false,
     "hullId": "shpe_infidel",
     "hullMods": [
-        "fluxbreakers",
         "missleracks",
-        "shpe_melta_warheads",
+        "shpe_slaanesh_mark",
+        "shpe_vortex_warheads",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_infidel_Standard",
+    "variantId": "shpe_infidel_Rush",
     "weaponGroups": [
         {
             "autofire": true,
@@ -26,20 +26,20 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "BIT5": "shpe_meltatorp_reference",
-                "BIT4": "shpe_meltatorp_reference",
-                "BIT3": "shpe_meltatorp_reference",
-                "BIT2": "shpe_meltatorp_reference",
-                "BIT1": "shpe_meltatorp_reference",
-                "BIT0": "shpe_meltatorp_reference",
+                "BIT5": "shpe_vortextorp_reference",
+                "BIT4": "shpe_vortextorp_reference",
+                "BIT3": "shpe_vortextorp_reference",
+                "BIT2": "shpe_vortextorp_reference",
+                "BIT1": "shpe_vortextorp_reference",
+                "BIT0": "shpe_vortextorp_reference",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_hydra",
-                "WS0004": "shpe_hydra",
+                "WS0003": "shpe_harvester_cannon",
+                "WS0004": "shpe_harvester_cannon",
             }
         },
     ],

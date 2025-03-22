@@ -1,18 +1,19 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 16,
-    "fluxVents": 17,
-    "goalVariant": true,
+    "displayName": "Ambition",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "goalVariant": false,
     "hullId": "shpe_carnage",
     "hullMods": [
-        "fluxbreakers",
+        "converted_hangar",
+        "defensive_targeting_array",
         "shpe_hecutor_shell",
-        "targetingunit",
+        "shpe_tzeentch_mark",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_carnage_Standard",
+    "variantId": "shpe_carnage_Ambition",
     "weaponGroups": [
         {
             "autofire": true,
@@ -62,21 +63,21 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_hellus",
+                "WS0003": "shpe_marsvi",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_hydra",
-                "WS0010": "shpe_hydra",
-                "WS0009": "shpe_hydra",
-                "WS0008": "shpe_hydra",
-                "WS0015": "shpe_hydra",
+                "WS0009": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+                "WS0015": "shpe_lascannon",
             }
         },
     ],
-    "wings": [],
+    "wings": [
+        "shpe_apis_Bomber_wing",
+    ],
     "modules": [],
 }

@@ -1,17 +1,19 @@
 {
-    "displayName": "Challenger",
-    "fluxCapacitors": 7,
-    "fluxVents": 0,
-    "goalVariant": true,
-    "hullId": "shpe_hades",
+    "displayName": "Brawler",
+    "fluxCapacitors": 0,
+    "fluxVents": 12,
+    "goalVariant": false,
+    "hullId": "shpe_carnage",
     "hullMods": [
-        "safetyoverrides",
+        "armoredweapons",
+        "ballistic_rangefinder",
+        "shpe_khorne_mark",
         "shpe_stygies_shell",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_hades_Challenger",
+    "variantId": "shpe_carnage_Brawler",
     "weaponGroups": [
         {
             "autofire": true,
@@ -61,16 +63,24 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "shpe_banefire_lance",
-                "WS0010": "shpe_banefire_lance",
+                "WS0003": "shpe_bombardment",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_hydra",
+                "WS0001": "shpe_ryza",
+                "WS0010": "shpe_ryza",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS0015": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
             }
         },
     ],

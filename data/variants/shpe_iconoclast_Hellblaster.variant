@@ -1,14 +1,16 @@
 {
-    "displayName": "Monitor",
+    "displayName": "Hellblaster",
     "fluxCapacitors": 10,
-    "fluxVents": 8,
-    "goalVariant": true,
+    "fluxVents": 3,
+    "goalVariant": false,
     "hullId": "shpe_iconoclast",
-    "hullMods": [],
+    "hullMods": [
+        "shpe_tzeentch_mark",
+    ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "shpe_iconoclast_Monitor",
+    "variantId": "shpe_iconoclast_Hellblaster",
     "weaponGroups": [
         {
             "autofire": true,
@@ -22,15 +24,15 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "shpe_vulcan",
+                "WS0005": "shpe_ryza",
+                "WS0006": "shpe_ryza",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "shpe_hydra",
-                "WS0006": "shpe_hydra",
+                "WS0001": "shpe_hydra",
             }
         },
     ],

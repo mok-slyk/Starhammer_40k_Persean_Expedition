@@ -1,14 +1,19 @@
 {
 	id:"shpe_mechanicus",
 	"color":[230,100,70,255],
-	"displayName":"Adeptus Mechanicus",
-	"displayNameWithArticle":"the Adeptus Mechanicus",
+	"displayName":"Mechanicus",
+	"displayNameWithArticle":"the Mechanicus",
+	"displayNameLong":"Adeptus Mechanicus",
+	"displayNameLongWithArticle":"the Adeptus Mechanicus",
 	"logo":"graphics/factions/shpe_mechanicus.png",
 	"crest":"graphics/factions/shpe_mechanicus_crest.png",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"is",
 	"shipNamePrefix":"",
 	"shipNameSources":{
-		"ROMAN":2,
+		"ROMAN":1,
 		"GREEK":1,
+		"SHPE_MECHANICUS":3,
 	},
 	"names":{
 		"old english":1,
@@ -59,7 +64,7 @@
 		#],
 	},
 	"knownWeapons":{
-		"tags":["shpe_mechanicus"],
+		"tags":["shpe_mechanicus", "shpe_imperium"],
 		#"weapons":[
 
 		#],
@@ -70,7 +75,7 @@
 		#],
 	},
 	"knownHullMods":{
-		"tags":["standard", "shpe_mechanicus"],
+		"tags":["standard", "merc", "shpe_mechanicus", "shpe_imperium"],
 		#"hullMods":[
 		#],
 	},
@@ -95,7 +100,7 @@
 		
 		"shipSize":4,
 		
-		"aggression":4,
+		"aggression":3,
 		
 		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
 		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
@@ -127,9 +132,6 @@
 		},
 	},	
 	"illegalCommodities":[
-		"drugs",
-		"organs",
-		"hand_weapons",
 		"ai_cores",	
 	],
 	"music":{

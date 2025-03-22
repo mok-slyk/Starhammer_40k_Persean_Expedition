@@ -1,0 +1,79 @@
+{
+    "displayName": "Bloodflame",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "shpe_devastation",
+    "hullMods": [
+        "ballistic_rangefinder",
+        "shpe_khorne_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_devastation_Bloodflame",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL4": "shpe_light_macro",
+                "BIL2": "shpe_light_macro",
+                "BIL0": "shpe_light_macro",
+                "BIL6": "shpe_light_macro",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL3": "shpe_light_macro_odd",
+                "BIL1": "shpe_light_macro_odd",
+                "BIL7": "shpe_light_macro_odd",
+                "BIL5": "shpe_light_macro_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_bombardment",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "shpe_banefire_lance",
+                "WS0006": "shpe_banefire_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_butcher_cannon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "shpe_hydra",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "shpe_hydra",
+                "WS0015": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_heldrake_Engine_wing",
+        "shpe_heldrake_Engine_wing",
+    ],
+    "modules": [],
+}

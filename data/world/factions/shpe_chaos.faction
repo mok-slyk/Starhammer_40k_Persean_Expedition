@@ -12,8 +12,9 @@
 	"shipNameSources":{
 		"PIRATES":1,
 		"BEASTS":1,
-		"ROMAN":2,
+		"ROMAN":1,
 		"GREEK":1,
+		"SHPE_CHAOS":5,
 	},
 	"names":{
 		"old english":1,
@@ -68,7 +69,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["base_bp", "pirates", "standard", "shpe_chaos"],
+		"tags":["base_bp", "merc", "pirates", "standard", "shpe_chaos"],
 		"hullMods":[
 		],
 	},
