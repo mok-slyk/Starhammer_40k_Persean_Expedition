@@ -1,0 +1,59 @@
+{
+    "displayName": "Warpfire",
+    "fluxCapacitors": 10,
+    "fluxVents": 16,
+    "goalVariant": false,
+    "hullId": "shpe_acheron",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "shpe_tzeentch_mark",
+        "shpe_warp_beasts",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_acheron_Warpfire",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_starbreaker_lance",
+                "WS0000": "shpe_starbreaker_lance",
+                "WS0003": "shpe_starbreaker_lance",
+                "WS0002": "shpe_starbreaker_lance",
+                "WS0005": "shpe_starbreaker_lance",
+                "WS0004": "shpe_starbreaker_lance",
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0102": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0053": "shpe_hellus",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0100": "shpe_lascannon",
+                "WS0101": "shpe_lascannon",
+                "WS0009": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

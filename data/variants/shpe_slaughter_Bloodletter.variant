@@ -1,0 +1,81 @@
+{
+    "displayName": "Bloodletter",
+    "fluxCapacitors": 0,
+    "fluxVents": 29,
+    "goalVariant": false,
+    "hullId": "shpe_slaughter",
+    "hullMods": [
+        "fluxbreakers",
+        "shpe_khorne_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_slaughter_Bloodletter",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_macro",
+                "BIL12": "shpe_light_macro",
+                "BIL14": "shpe_light_macro",
+                "BIL8": "shpe_light_macro",
+                "BIL6": "shpe_light_macro",
+                "BIL4": "shpe_light_macro",
+                "BIL2": "shpe_light_macro",
+                "BIL0": "shpe_light_macro",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL11": "shpe_light_macro_odd",
+                "BIL13": "shpe_light_macro_odd",
+                "BIL15": "shpe_light_macro_odd",
+                "BIL9": "shpe_light_macro_odd",
+                "BIL7": "shpe_light_macro_odd",
+                "BIL5": "shpe_light_macro_odd",
+                "BIL3": "shpe_light_macro_odd",
+                "BIL1": "shpe_light_macro_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_mezoa_lance",
+                "WS0011": "shpe_mezoa_lance",
+                "WS0007": "shpe_mezoa_lance",
+                "WS0006": "shpe_mezoa_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_pyros",
+                "WS0010": "shpe_pyros",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

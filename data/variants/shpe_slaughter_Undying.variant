@@ -1,0 +1,78 @@
+{
+    "displayName": "Undying",
+    "fluxCapacitors": 0,
+    "fluxVents": 11,
+    "goalVariant": false,
+    "hullId": "shpe_slaughter",
+    "hullMods": [
+        "heavyarmor",
+        "shpe_miasma",
+        "shpe_nurgle_hives",
+        "shpe_nurgle_mark",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_slaughter_Undying",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_hive",
+                "BIL12": "shpe_light_hive",
+                "BIL14": "shpe_light_hive",
+                "BIL8": "shpe_light_hive",
+                "BIL6": "shpe_light_hive",
+                "BIL4": "shpe_light_hive",
+                "BIL2": "shpe_light_hive",
+                "BIL0": "shpe_light_hive",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL11": "shpe_light_hive_odd",
+                "BIL13": "shpe_light_hive_odd",
+                "BIL15": "shpe_light_hive_odd",
+                "BIL9": "shpe_light_hive_odd",
+                "BIL7": "shpe_light_hive_odd",
+                "BIL5": "shpe_light_hive_odd",
+                "BIL3": "shpe_light_hive_odd",
+                "BIL1": "shpe_light_hive_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_marsvi",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "shpe_starbreaker_lance",
+                "WS0011": "shpe_starbreaker_lance",
+                "WS0007": "shpe_starbreaker_lance",
+                "WS0006": "shpe_starbreaker_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_hydra",
+                "WS0015": "shpe_hydra",
+                "WS0010": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

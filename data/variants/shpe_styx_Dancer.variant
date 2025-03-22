@@ -1,0 +1,45 @@
+{
+    "displayName": "Dancer",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "shpe_styx",
+    "hullMods": [
+        "autorepair",
+        "auxiliarythrusters",
+        "shpe_slaanesh_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_styx_Dancer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_tormentor_cannon",
+                "WS0002": "shpe_tormentor_cannon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_harvester_cannon",
+                "WS0009": "shpe_harvester_cannon",
+                "WS0008": "shpe_harvester_cannon",
+                "WS0005": "shpe_harvester_cannon",
+                "WS0004": "shpe_harvester_cannon",
+                "WS0007": "shpe_harvester_cannon",
+                "WS0006": "shpe_harvester_cannon",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_helltalon_Bomber_wing",
+        "shpe_helltalon_Bomber_wing",
+        "shpe_hellblade_Interceptor_wing",
+    ],
+    "modules": [],
+}

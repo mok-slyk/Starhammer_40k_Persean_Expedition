@@ -1,0 +1,83 @@
+{
+    "displayName": "Fencer",
+    "fluxCapacitors": 0,
+    "fluxVents": 2,
+    "goalVariant": false,
+    "hullId": "shpe_hades",
+    "hullMods": [
+        "fluxbreakers",
+        "shpe_hecutor_shell",
+        "shpe_slaanesh_mark",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_hades_Fencer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL10": "shpe_light_hecutor",
+                "BIL12": "shpe_light_hecutor",
+                "BIL30": "shpe_light_hecutor",
+                "BIL18": "shpe_light_hecutor",
+                "BIL14": "shpe_light_hecutor",
+                "BIL16": "shpe_light_hecutor",
+                "BIL22": "shpe_light_hecutor",
+                "BIL24": "shpe_light_hecutor",
+                "BIL20": "shpe_light_hecutor",
+                "BIL8": "shpe_light_hecutor",
+                "BIL26": "shpe_light_hecutor",
+                "BIL6": "shpe_light_hecutor",
+                "BIL28": "shpe_light_hecutor",
+                "BIL4": "shpe_light_hecutor",
+                "BIL2": "shpe_light_hecutor",
+                "BIL0": "shpe_light_hecutor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "BIL11": "shpe_light_hecutor_odd",
+                "BIL13": "shpe_light_hecutor_odd",
+                "BIL31": "shpe_light_hecutor_odd",
+                "BIL19": "shpe_light_hecutor_odd",
+                "BIL15": "shpe_light_hecutor_odd",
+                "BIL17": "shpe_light_hecutor_odd",
+                "BIL21": "shpe_light_hecutor_odd",
+                "BIL23": "shpe_light_hecutor_odd",
+                "BIL29": "shpe_light_hecutor_odd",
+                "BIL9": "shpe_light_hecutor_odd",
+                "BIL25": "shpe_light_hecutor_odd",
+                "BIL7": "shpe_light_hecutor_odd",
+                "BIL27": "shpe_light_hecutor_odd",
+                "BIL5": "shpe_light_hecutor_odd",
+                "BIL3": "shpe_light_hecutor_odd",
+                "BIL1": "shpe_light_hecutor_odd",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_tormentor_cannon",
+                "WS0010": "shpe_tormentor_cannon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_lascannon",
+                "WS0015": "shpe_lascannon",
+                "WS0009": "shpe_lascannon",
+                "WS0008": "shpe_lascannon",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,45 @@
+{
+    "displayName": "Hive",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "goalVariant": false,
+    "hullId": "shpe_styx",
+    "hullMods": [
+        "defensive_targeting_array",
+        "shpe_ark_of_pestilence",
+        "shpe_nurgle_mark",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_styx_Hive",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shpe_titanforge_lance",
+                "WS0002": "shpe_titanforge_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "shpe_hydra",
+                "WS0009": "shpe_hydra",
+                "WS0008": "shpe_hydra",
+                "WS0005": "shpe_hydra",
+                "WS0004": "shpe_hydra",
+                "WS0007": "shpe_hydra",
+                "WS0006": "shpe_hydra",
+            }
+        },
+    ],
+    "wings": [
+        "shpe_hellblade_Interceptor_wing",
+        "shpe_hellblade_Interceptor_wing",
+        "shpe_hellblade_Interceptor_wing",
+    ],
+    "modules": [],
+}
