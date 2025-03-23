@@ -1,0 +1,52 @@
+{
+    "playableFaction":true,
+    "pirateFaction":true,
+    "corvusCompatible":true,
+    "noHomeworld":true,
+	"dropPrisoners":false,
+    "showIntelEvenIfDead":true,
+        
+    "rebelFleetSuffix":"Rivals",
+    
+    "difficultyString":"hard",
+    
+    "alignments":{
+        "hierarchical":-1,
+        "ideological":0.5,
+    },
+	
+	"startRelationships":{ "shpe_imperium": -1, "shpe_mechanicus":-1, "shpe_khorne":0.75, "shpe_nurgle":0.75, "shpe_tzeentch":0.75, "shpe_slaanesh":0.75 },
+    "maxRelationships":{ "shpe_imperium":-0.51, "shpe_mechanicus":-0.51 },
+	
+    "diplomacyTraits":["monstrous", "stalwart"],
+    "morality":"evil",
+    
+    "freeMarket":true,
+    
+    "vengeanceFleetNames":["Enforcers", "Hit-Fleet", "Horde"],
+    "vengeanceFleetNamesSingle":["an Enforcer fleet", "a Hit-Fleet", "a Horde"],
+   
+
+    "startShipsCombatSmall":[
+      ["shpe_infidel_Standard", "shpe_iconoclast_Standard", "shpe_carrack_Standard"], 
+      ["shpe_idolator_Blaster", "shpe_iconoclast_Monitor", "shpe_carrack_Standard"]
+    ],
+    "startShipsCombatLarge":[
+      ["shpe_slaughter_Standard", "shpe_infidel_Escort", "shpe_carrack_Standard"],
+      ["shpe_acheron_Standard", "shpe_iconoclast_Monitor", "shpe_carrack_Standard"]
+    ],
+    "startShipsCarrierLarge":[["shpe_styx_Standard", "shpe_carrack_Standard"]],
+    
+    "startSpecialItems":[
+        [["shpe_chaos_bp", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.05},
+        {"id":"fuelprod", "mult":0.05, "roundUp":false},
+    ],
+}

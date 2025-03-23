@@ -2,32 +2,32 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # PLAYER FACING MODULAR:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Las-burner,shpe_lasburner,1,,300,500,,220,,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,456
+Las-burner,shpe_lasburner,1,,300,500,,220,,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,456
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy9, shpe_imperium, shpe_chaos",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
-Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium, shpe_chaos",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,234
-Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy8, SR, shpe_imperium",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,435
-Banefire Lance,shpe_banefire_lance,2,,5000,1000,,300,,0,15,18,,,,ENERGY,350,,0.7,3,3,0.8,0,0,0,0,,900,,,,,,,"energy10, shpe_chaos",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,1233
+Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy9, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
+Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,234
+Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy8, SR, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,435
+Banefire Lance,shpe_banefire_lance,2,,5000,1000,,300,,0,15,18,,,,ENERGY,350,,0.7,3,3,0.8,0,0,0,0,,900,,,,,,,"energy10, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,1233
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,1000,,2500,,0,40,18,,,,ENERGY,2200,,1,6,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_imperium",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
-Godsbane Lance,shpe_godsbane_lance,2,,10000,1200,,300,,0,40,18,,,,ENERGY,320,,0.7,4,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_chaos",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,1000,,2500,,0,40,18,,,,ENERGY,2200,,1,6,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Godsbane Lance,shpe_godsbane_lance,2,,10000,1200,,300,,0,40,18,,,,ENERGY,320,,0.7,4,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Heavy Bolter,shpe_bolter,2,,200,300,,35,,0,45,5,,,,KINETIC,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,"PD, PD_ALSO","pd2, kinetic2, SR, shpe_imperium, shpe_chaos",,Imperium,,Point Defense,,,,,,,,,,0.7
-Hydra Flak Cannon,shpe_hydra,2,,100,300,,20,,1,45,4,,,,KINETIC,3,,0,0.2,5,0.1,0,3,1,15,,800,,,10,,,PD,"pd7, kinetic2, SR, shpe_imperium, shpe_chaos",,Imperium,,Point Defense,,,,,,,,,,0.7
-Lascannon,shpe_lascannon,2,0.5,150,500,240,,,0,55,7,40,3,,ENERGY,,180,0,0,0.1,0.1,,,,,1000000,,,,,,,"PD, ANTI_FTR","pd10, beam15, shpe_chaos",,Imperium,,Point Defense,,,,,,,,,,26
+Heavy Bolter,shpe_bolter,2,,200,300,,35,,0,45,5,,,,KINETIC,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,"PD, PD_ALSO","pd2, kinetic2, SR, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,Point Defense,,,,,,,,,,0.7
+Hydra Flak Cannon,shpe_hydra,2,,100,300,,20,,1,45,4,,,,KINETIC,3,,0,0.2,5,0.1,0,3,1,15,,800,,,10,,,PD,"pd7, kinetic2, SR, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,Point Defense,,,,,,,,,,0.7
+Lascannon,shpe_lascannon,2,0.5,150,500,240,,,0,55,7,40,3,,ENERGY,,180,0,0,0.1,0.1,,,,,1000000,,,,,,,"PD, ANTI_FTR","pd10, beam15, shpe_chaos, shpe_mechanicus_bp",,Imperium,,Point Defense,,,,,,,,,,26
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Thunderstrike Macrocannon,shpe_thunderstrike,1,,350,700,,400,,25,25,4,,,,KINETIC,320,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_imperium, shpe_chaos",,Imperium,,Anti Shield,,,,,,,,,,0.75
-Pyros Macrocannon,shpe_pyros,2,,500,700,,370,,20,25,6,,,,HIGH_EXPLOSIVE,350,,0,3,1,,0,15,3,10,,500,,,40,,,,"he6, shpe_imperium, shpe_chaos",,Imperium,,Anti Armor,,,,,,,,,,0.75
-Ryza Plasma Cannon,shpe_ryza,3,0.5,750,600,,700,,15,20,7,,,,ENERGY,650,,0.5,4,1,,0,15,3,10,,700,,,40,,,,"energy8, shpe_imperium, shpe_chaos",,Imperium,,General,,,,,,,,,,0.75
+Thunderstrike Macrocannon,shpe_thunderstrike,1,,350,700,,400,,25,25,4,,,,KINETIC,320,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,Anti Shield,,,,,,,,,,0.75
+Pyros Macrocannon,shpe_pyros,2,,500,700,,370,,20,25,6,,,,HIGH_EXPLOSIVE,350,,0,3,1,,0,15,3,10,,500,,,40,,,,"he6, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,Anti Armor,,,,,,,,,,0.75
+Ryza Plasma Cannon,shpe_ryza,3,0.5,750,600,,700,,15,20,7,,,,ENERGY,650,,0.5,4,1,,0,15,3,10,,700,,,40,,,,"energy8, shpe_imperium, shpe_chaos, shpe_mechanicus_bp",,Imperium,,General,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Vulcan Megabolter,shpe_vulcan,1,0.7,600,600,,17,,2,50,10,,,,KINETIC,7,,0,0.25,14,0.05,0,7,0.5,15,,800,600,0.7,10,,,"PD, PD_ALSO","pd7, kinetic4, SR, shpe_imperium, shpe_chaos",,Imperium,,Point Defense,,,,,,,,,,0.7
+Vulcan Megabolter,shpe_vulcan,1,0.7,600,600,,17,,2,50,10,,,,KINETIC,7,,0,0.25,14,0.05,0,7,0.5,15,,800,600,0.7,10,,,"PD, PD_ALSO","pd7, kinetic4, SR, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,Point Defense,,,,,,,,,,0.7
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mars VI Macrocannon,shpe_marsvi,1,,1000,800,,300,,30,15,8,,,,KINETIC,180,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_imperium, shpe_chaos",,Imperium,,Anti Shield,,,,,,,,,,0.75
-Stygies-Pattern Bombardment Cannon,shpe_bombardment,6,0.5,2500,1000,,400,400,100,15,14,,,,HIGH_EXPLOSIVE,550,,0,6,1,,0,15,3,10,,400,,,100,,,,"he10, strike10, shpe_imperium, shpe_chaos",,Imperium,,Disruption,,,,,,,,,,0.75
-Hellus Macrocannon,shpe_hellus,1,,1000,800,,260,,30,15,11,9,0.5,3,KINETIC,170,,0,1.2,3,0.3,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_chaos",,Imperium,,Anti Shield,,,,,,,,,,0.75
+Mars VI Macrocannon,shpe_marsvi,1,,1000,800,,300,,30,15,8,,,,KINETIC,180,,0,3,1,,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,Anti Shield,,,,,,,,,,0.75
+Stygies-Pattern Bombardment Cannon,shpe_bombardment,6,0.5,2500,1000,,400,400,100,15,14,,,,HIGH_EXPLOSIVE,550,,0,6,1,,0,15,3,10,,400,,,100,,,,"he10, strike10, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,Disruption,,,,,,,,,,0.75
+Hellus Macrocannon,shpe_hellus,1,,1000,800,,260,,30,15,11,9,0.5,3,KINETIC,170,,0,1.2,3,0.3,0,5,3,10,,500,,,40,,,,"kinetic4, shpe_chaos, shpe_chaos_bp",,Imperium,,Anti Shield,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Hecutor Plasma Cannon,shpe_hecutor,3,0.5,5000,1000,,1000,,20,15,22,,,,ENERGY,950,,1,5,1,,0,10,2,10,,700,,,5,,,,"energy10, shpe_imperium, shpe_chaos",,Imperium,,General,,,,,,,,,,0.75
-Stygies Macrocannon,shpe_stygies,2,,2500,900,,1200,,150,15,18,,,,KINETIC,1200,,0,3,1,,0,15,3,10,,400,,,20,,,,"kinetic8, shpe_imperium",,Imperium,,Anti Shield,,,,,,,,,,0.75
+Hecutor Plasma Cannon,shpe_hecutor,3,0.5,5000,1000,,1000,,20,15,22,,,,ENERGY,950,,1,5,1,,0,10,2,10,,700,,,5,,,,"energy10, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,General,,,,,,,,,,0.75
+Stygies Macrocannon,shpe_stygies,2,,2500,900,,1200,,150,15,18,,,,KINETIC,1200,,0,3,1,,0,15,3,10,,400,,,20,,,,"kinetic8, shpe_imperium, shpe_imperium_bp",,Imperium,,Anti Shield,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Light Railgun Artillery,shpe_railgun,2,0.5,600,700,,100,,10,30,7,,,,KINETIC,90,,0,1,2,1,,,,,,1200,,,50,,,,"kinetic8, LR, restricted",,Tau,,Anti Shield,,,,,,,,,,3.75
 Heavy Railgun Artillery,shpe_heavy_railgun,3,0.3,2250,1000,,500,,40,10,13,,,,KINETIC,350,,0,2,2,2,,,,,,1500,,,300,,,,"kinetic15, LR, restricted",,Tau,,Anti Shield,,,,,,,,,,5.5

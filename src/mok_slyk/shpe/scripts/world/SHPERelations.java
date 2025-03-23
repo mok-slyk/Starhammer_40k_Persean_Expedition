@@ -55,7 +55,8 @@ public class SHPERelations {
 
         boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
         if (isNexerelinEnabled) {
-            Alliance greaterImperium = new Alliance("Greater Imperium", Alliance.Alignment.IDEOLOGICAL, "shpe_imperium", "shpe_mechanicus");
+            Alliance greaterImperium = AllianceManager.createAlliance("shpe_imperium", "shpe_mechanicus", Alliance.Alignment.IDEOLOGICAL);
+            greaterImperium.setName("Greater Imperium");
             greaterImperium.addPermaMember("shpe_imperium");
             greaterImperium.addPermaMember("shpe_mechanicus");
         }

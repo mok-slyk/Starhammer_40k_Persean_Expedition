@@ -1,0 +1,68 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Hereteks",
+    
+    "marketSpawnWeight":0.4,
+
+    "startRelationships":{ "shpe_chaos": -1, "shpe_imperium":1, "shpe_khorne": -1, "shpe_nurgle": -1, "shpe_tzeentch": -1,"shpe_slaanesh": -1 },
+    "maxRelationships":{ "shpe_chaos":-0.51, "shpe_khorne": -0.51, "shpe_nurgle": -0.51, "shpe_tzeentch": -0.51,"shpe_slaanesh": -0.51 },
+    "diplomacyPositiveChance":{ },
+    "diplomacyNegativeChance":{ },
+    "dispositions":{
+        
+    },
+    
+    "alignments":{
+        "technocratic":1,
+        "hierarchical":1,
+        "militarist":0.75,
+        "diplomatic":-0.5,
+        "ideological":0.75,
+    },
+    "diplomacyTraits":["paranoid", "stalwart", "hates_ai", "law_and_order", "lowprofile"],
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":1,	# baseline expansion behaviour
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9,
+    },
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+    #"specialForcesFlagshipVariants":{ "paragon_Elite":1, "astral_Strike":0.5 },
+    
+    "startShipsCombatSmall":[
+      ["shpe_endeavour_mech_Standard", "shpe_cobra_Standard", "shpe_carrack_Standard"],
+      ["shpe_endurance_mech_Standard", "shpe_sword_Standard", "shpe_carrack_Standard"]
+    ],
+    "startShipsCombatLarge":[
+      ["shpe_lunar_mech_Standard", "shpe_endeavour_mech_Standard", "shpe_carrack_Standard"],
+      ["shpe_tyrant_mech_Standard", "shpe_endurance_mech_Standard", "shpe_carrack_Standard"]
+    ],
+    "startShipsTradeLarge":[["shpe_endeavour_mech_Standard", "shpe_carrack_Standard", "shpe_carrack_Standard"]],
+    "startShipsCarrierSmall":[["shpe_defiant_mech_Standard", "shpe_firestorm_Standard", "shpe_carrack_Standard"]],
+    "startShipsCarrierLarge":[["shpe_dictator_mech_Standard", "shpe_defiant_mech_Standard", "shpe_carrack_Standard"]],
+    
+    "startSpecialItems":[
+        [["shpe_mechanicus_bp", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"synchrotron", "count":1},
+    ],
+}

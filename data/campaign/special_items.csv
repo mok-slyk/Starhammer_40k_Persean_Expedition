@@ -1,7 +1,7 @@
 name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
 Imperial Blueprint Package,shpe_imperium_bp,package_bp,Imperium,,150000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,shpe_imperium_bp,An stc fragment that enables heavy industry to produce imperial navy vessels.,213
-Mechanicus Blueprint Package,shpe_mechanicus_bp,package_bp,Mechanicus,,500000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,shpe_mechanicus_bp,An stc fragment that enables heavy industry to produce ship variants otherwise only designated for use and production by the adpetus mechanicus. The adepts of mars fervently guard the knowledge contained within.,212
-,,,,,,,,,,,,,,,
+Mechanicus Blueprint Package,shpe_mechanicus_bp,package_bp,Mechanicus,,500000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,shpe_mechanicus_bp,211,212
+Chaos Blueprint Package,shpe_chaos_bp,package_bp,Chaos,,150000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,shpe_chaos_bp,An stc fragment that enables heavy industry to produce the modified ancient imperial vessels often used by the forces of chaos.,212
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 #Missile Blueprint Package,missile_package,package_bp,,,20000,1000,1,,graphics/icons/cargo/blueprint_missile.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,missile_bp,Enables heavy industry to construct a range of the more common missile weapons.,230
