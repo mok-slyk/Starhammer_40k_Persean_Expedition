@@ -2,10 +2,10 @@ faction
 data/world/factions/shpe_imperium.faction
 data/world/factions/shpe_mechanicus.faction
 data/world/factions/shpe_chaos.faction
-#data/world/factions/shpe_khorne.faction
-#data/world/factions/shpe_tzeentch.faction
-#data/world/factions/shpe_nurgle.faction
-#data/world/factions/shpe_slaanesh.faction
+data/world/factions/shpe_khorne.faction
+data/world/factions/shpe_tzeentch.faction
+data/world/factions/shpe_nurgle.faction
+data/world/factions/shpe_slaanesh.faction
 
 
 

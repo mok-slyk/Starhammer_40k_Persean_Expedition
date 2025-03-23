@@ -47,13 +47,6 @@
                 "WS0006": "shpe_starbreaker_lance",
             }
         },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0008": "null",
-            }
-        },
     ],
     "wings": [],
     "modules": [],

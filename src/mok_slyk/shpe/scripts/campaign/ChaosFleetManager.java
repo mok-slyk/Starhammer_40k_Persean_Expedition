@@ -12,7 +12,7 @@ import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import org.lwjgl.util.vector.Vector2f;
-
+@Deprecated
 public class ChaosFleetManager extends BaseLimitedFleetManager {
 
 	@Override

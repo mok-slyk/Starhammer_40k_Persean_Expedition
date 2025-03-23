@@ -594,6 +594,18 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                 if (Objects.equals(otherFleet.getFaction().getId(), "shpe_chaos")) {
                     foughtChaos = true;
                 }
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_khorne")) {
+                    foughtKhorne = true;
+                }
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_nurgle")) {
+                    foughtNurgle = true;
+                }
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_tzeentch")) {
+                    foughtTzeentch = true;
+                }
+                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_slaanesh")) {
+                    foughtSlaanesh = true;
+                }
             }
             if (totalFleetPointsDefeated > SMALL_TO_LARGE_FLEET_THRESHOLD) {
                 bigBattle = true;
@@ -609,6 +621,22 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
             }
             if (foughtChaos) {
                 addFactor(new ChaosGodOneTimeFactor(-1, "Chaos ships destroyed", "Chaos Undivided ships destroyed by your fleet."), null);
+            }
+            if (foughtKhorne) {
+                addFactor(new ChaosGodOneTimeFactor(-2, KHORNE_I ,"Khorne ships destroyed", "Khornite ships destroyed by your fleet."), null);
+                addFactor(new ChaosGodOneTimeFactor(2, SLAANESH_I ,"Khorne ships destroyed", "Khornite ships destroyed by your fleet."), null);
+            }
+            if (foughtNurgle) {
+                addFactor(new ChaosGodOneTimeFactor(-2, NURGLE_I ,"Nurgle ships destroyed", "Nurglite ships destroyed by your fleet."), null);
+                addFactor(new ChaosGodOneTimeFactor(2, TZEENTCH_I ,"Nurgle ships destroyed", "Nurglite ships destroyed by your fleet."), null);
+            }
+            if (foughtTzeentch) {
+                addFactor(new ChaosGodOneTimeFactor(-2, TZEENTCH_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
+                addFactor(new ChaosGodOneTimeFactor(2, NURGLE_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
+            }
+            if (foughtSlaanesh) {
+                addFactor(new ChaosGodOneTimeFactor(-2, SLAANESH_I ,"Slaanesh ships destroyed", "Slaaneshi ships destroyed by your fleet."), null);
+                addFactor(new ChaosGodOneTimeFactor(2, KHORNE_I ,"Slaanesh ships destroyed", "Slaaneshi ships destroyed by your fleet."), null);
             }
             if (superiorFoe) {
                 addFactor(new ChaosGodOneTimeFactor(1, KHORNE_I, "Superior foe defeated", "Superior fleet defeated by your fleet."), null);

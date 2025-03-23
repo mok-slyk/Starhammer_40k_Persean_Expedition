@@ -56,6 +56,7 @@ public class SHPEModPlugin extends BaseModPlugin {
         new ChaosGodsEventIntel(text, true);
 
         Global.getSector().addScript(new DisposableChaosFleetManager());
+        Global.getSector().addScript(new HyperspaceGodFleetManager());
         //Global.getSector().addScript(new ChaosSkillScript());
         // Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
     }

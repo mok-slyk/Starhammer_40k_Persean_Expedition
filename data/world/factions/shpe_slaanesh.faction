@@ -1,0 +1,207 @@
+{
+	"id":"shpe_slaanesh",
+	"color":[135,50,162,255],
+	"entityNamePrefix":"Slaaneshi",
+	"personNamePrefix":"Slaaneshi",
+	"displayName":"Slaanesh",
+	"displayNameWithArticle":"Slaanesh",
+	"displayNameLong":"Servants of Slaanesh",
+	"displayNameLongWithArticle":"the Servants of Slaanesh",
+	"displayNameIsOrAre":"are",
+	"logo":"graphics/factions/shpe_slaanesh.png",
+	"crest":"graphics/factions/shpe_slaanesh_crest.png",
+	"showInIntelTab":false,
+	"shipNamePrefix":"", 
+	"shipNameSources":{
+		"PIRATES":1,
+		"BEASTS":1,
+		"ROMAN":1,
+		"GREEK":1,
+		"SHPE_CHAOS":5,
+	},
+	"names":{
+		"old english":1,
+		"myth":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"shpe_acheron_Thrill":4,
+		"shpe_carnage_Rush":4,
+		"shpe_devastation_Exitement":4,
+		"shpe_hades_Fencer":4,
+		"shpe_hades_Seducer":4,
+		"shpe_iconoclast_Rush":4,
+		"shpe_idolator_Dancer":4,
+		"shpe_infidel_Rush":4,
+		"shpe_slaughter_Euphoria":4,
+		"shpe_styx_Dancer":4,
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":[],
+		"hulls":[
+		],
+	},
+	"knownShips":{
+		"tags":["shpe_chaos_bp", "shpe_chaos"],
+		"hulls":[
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+		],
+	},
+	"knownFighters":{
+		"tags":["shpe_chaos"],
+		"fighters":[
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["shpe_chaos_bp", "shpe_chaos", "shpe_imperium", "shpe_slaanesh"],
+		"weapons":[
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "merc", "pirates", "standard", "shpe_chaos", "shpe_slaanesh"],
+		"hullMods":[
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":1,
+		"shipQuality":3,
+		"numShips":3,
+		
+		"shipSize":3,
+		
+		"aggression":4,
+		
+		"combatFreighterProbability":0.1,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.5,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.5,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"crew_training",
+			"coordinated_maneuvers",
+		],
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_pirates_market_neutral",
+		"market_neutral":"music_pirates_market_neutral",
+		"market_hostile":"music_pirates_market_hostile",
+		"market_friendly":"music_pirates_market_friendly",
+		"encounter_neutral":"music_pirates_encounter_neutral",
+		"encounter_hostile":"music_pirates_encounter_hostile",
+		"encounter_friendly":"music_pirates_encounter_friendly",
+	},
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/shpe_portrait_slaanesh01.png",
+			"graphics/portraits/shpe_portrait_slaanesh02.png",
+		],
+		"standard_female":[
+			"graphics/portraits/shpe_portrait_slaanesh02.png",
+
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Captain"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Captain"},
+			"fleetCommander":{"name":"Fleet Master"},
+			"baseCommander":{"name":"Warlord"},
+			"stationCommander":{"name":"Warlord"},
+			"portmaster":{"name":"Portmaster"},
+			"administrator":{"name":"Boss"},
+		},
+	},
+	"voices":{
+		"LOW":{
+			"soldier":3,
+			"spacer":10,
+		},
+		"MEDIUM":{
+			"soldier":5,
+			"spacer":10,
+		},
+		"HIGH":{
+			"soldier":5,
+			"spacer":10,
+			"villain":10,
+		},
+	},	
+	"custom":{
+		"offersCommissions":false,
+		"decentralized":true,
+		"engageWhenEvenStrength":true,
+		"exemptFromFoodShortages":true,
+		"willTradeWhenHostile":true,
+		#"noPatrols":true, # no longer supported; if has patrol HQ/military base/etc, will have patrols
+		"ignoreTradeWithEnemiesForReputation":true,
+		"postsNoBounties":true,
+		"offerMissionsWhenHostile":true,
+		"allowsTransponderOffTrade":true,
+		"patrolsHaveNoPatrolMemoryKey":true,
+		"pirateBehavior":true, # for fleet behavior
+		"makesPirateBases":false,
+		"fightToTheLast":true, # order a full assault instead of retreating, in most cases
+		"pirateBaseStationTypes":{
+			"orbitalstation":10,
+			"orbitalstation_mid":6,
+			"orbitalstation_high":2,
+		},
+		"punitiveExpeditionData":{
+			"vsCompetitors":false,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},
+	"fleetTypeNames":{
+		"smallTrader":"Trade Convoy",
+		"trade":"Trade Convoy",
+		"tradeLiner":"Cultist Convoy",
+		"patrolSmall":"Corsair",
+		"patrolMedium":"Raiders",
+		"patrolLarge":"Armada",
+		"mercScout":"Scout",
+		"mercBountyHunter":"Raiders",
+		"mercPrivateer":"Raiders",
+		"mercPatrol":"Attack Fleet",
+		"mercArmada":"Armada",
+		"taskForce":"Revenge Fleet",
+	},
+}
+
+
+
+

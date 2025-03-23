@@ -64,9 +64,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "null",
                 "WS0015": "shpe_hydra",
-                "WS0010": "null",
                 "WS0009": "shpe_hydra",
                 "WS0008": "shpe_hydra",
             }

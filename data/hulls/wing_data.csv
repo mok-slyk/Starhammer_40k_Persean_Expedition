@@ -14,12 +14,12 @@ shpe_manta_Fighter_wing,shpe_manta_Fighter,"fighter, fighter5, restricted",4,,12
 shpe_hemlock_Wraithfighter_wing,shpe_hemlock_Wraithfighter,"fighter, fighter9, restricted",5,,11,30,V,4000,500,,1,FIGHTER,Wraithfighter,30,50000,,,,,,,,,,,,,
 shpe_nightshade_Interceptor_wing,shpe_nightshade_Interceptor,"interceptor3, interceptor, restricted",4,,9,22,V,4000,200,600,1,INTERCEPTOR,Interceptor,20,10000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shpe_heldrake_Engine_wing,shpe_heldrake_Engine,"fighter, fighter5",3,,8,15,CLAW,2000,100,,2,FIGHTER,Fighter,20,5000,,,,,,,,,,,,,
-shpe_fire_lord_Engine_wing,shpe_fire_lord_Engine,"fighter, fighter5",3,,12,15,CLAW,4000,300,,1,FIGHTER,Fighter,20,5000,,,,,,,,,,,,,
-shpe_doom_wing_Engine_wing,shpe_doom_wing_Engine,"fighter, fighter5",3,,12,15,CLAW,4000,300,,3,FIGHTER,Fighter,15,5000,,,,,,,,,,,,,
+shpe_heldrake_Engine_wing,shpe_heldrake_Engine,"fighter, fighter5, shpe_chaos",3,,8,15,CLAW,2000,100,,2,FIGHTER,Fighter,20,5000,,,,,,,,,,,,,
+shpe_fire_lord_Engine_wing,shpe_fire_lord_Engine,"fighter, fighter5, bomber, shpe_tzeentch, restricted",3,,12,15,CLAW,4000,300,,1,FIGHTER,Fighter,20,5000,,,,,,,,,,,,,
+shpe_doom_wing_Engine_wing,shpe_doom_wing_Engine,"fighter, fighter5, shpe_tzeentch, restricted",3,,12,15,CLAW,4000,300,,3,FIGHTER,Fighter,15,5000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-shpe_lotus_Interceptor_wing,shpe_lotus_Interceptor,"fighter, fighter4, shpe_chaos",2,,6,13,V,4000,500,,3,INTERCEPTOR,Interceptor,10,2000,,,,,,,,,,,,,v
-shpe_apis_Bomber_wing,shpe_apis_Bomber,"bomber5, bomber, shpe_chaos",2,,6,15,V,4000,1000,600,2,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
+shpe_lotus_Interceptor_wing,shpe_lotus_Interceptor,"fighter, fighter4, shpe_tzeentch, restricted",2,,6,13,V,4000,500,,3,INTERCEPTOR,Interceptor,10,2000,,,,,,,,,,,,,v
+shpe_apis_Bomber_wing,shpe_apis_Bomber,"bomber5, bomber, shpe_tzeentch, restricted",2,,6,15,V,4000,1000,600,2,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
 shpe_hellblade_Interceptor_wing,shpe_hellblade_Interceptor,"fighter, fighter4, shpe_chaos",2,,6,15,V,4000,500,,3,INTERCEPTOR,Interceptor,10,2000,,,,,,,,,,,,,v
 shpe_helltalon_Bomber_wing,shpe_helltalon_Bomber,"bomber5, bomber, shpe_chaos",2,,6,20,V,4000,1000,600,3,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
