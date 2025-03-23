@@ -60,7 +60,63 @@
     127
   ],
   "collisionRadius": 180,
-  "engineSlots": [],
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 82,
+      "location": [
+        -127,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 30
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 82,
+      "location": [
+        -124,
+        10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 30
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 82,
+      "location": [
+        -124,
+        -10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 30
+    },
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 56.5,
+      "location": [
+        -121,
+        19
+      ],
+      "style": "LOW_TECH",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 56.5,
+      "location": [
+        -121,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 19
+    }
+  ],
   "height": 254,
   "hullId": "shpe_carrack",
   "hullName": "Carrack",
