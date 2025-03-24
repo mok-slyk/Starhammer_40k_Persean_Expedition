@@ -136,7 +136,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 101
     },
     {
       "angle": -60.5,
@@ -148,7 +149,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 101
     },
     {
       "angle": 60.5,
@@ -160,7 +162,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 1
     },
     {
       "angle": -60.5,
@@ -172,7 +175,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 1
     }
   ],
   "width": 130

@@ -244,8 +244,8 @@
       "type": "HYBRID"
     },
     {
-      "angle": 90,
-      "arc": 90,
+      "angle": 69,
+      "arc": 120,
       "id": "WS0009",
       "locations": [
         -4,
@@ -256,8 +256,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": -90,
-      "arc": 90,
+      "angle": -69,
+      "arc": 120,
       "id": "WS0010",
       "locations": [
         -4,
@@ -268,8 +268,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": 90,
-      "arc": 90,
+      "angle": 69,
+      "arc": 120,
       "id": "WS0011",
       "locations": [
         24,
@@ -280,8 +280,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": -90,
-      "arc": 90,
+      "angle": -69,
+      "arc": 120,
       "id": "WS0012",
       "locations": [
         24,

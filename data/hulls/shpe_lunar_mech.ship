@@ -300,7 +300,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 101
     },
     {
       "angle": 61.5,
@@ -312,7 +313,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 101
     },
     {
       "angle": 180,

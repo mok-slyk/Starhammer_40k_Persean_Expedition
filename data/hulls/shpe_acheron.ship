@@ -133,7 +133,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 401
     },
     {
       "angle": 0,
@@ -145,7 +146,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 401
     },
     {
       "angle": 0,
@@ -193,7 +195,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "HYBRID"
+      "type": "HYBRID",
+	  "renderOrderMod": 401
     },
     {
       "angle": 90,
@@ -205,7 +208,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 201
     },
     {
       "angle": -90,
@@ -217,7 +221,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 201
     },
     {
       "angle": 90,
@@ -229,7 +234,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 301
     },
     {
       "angle": -90,
@@ -241,7 +247,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 301
     },
     {
       "angle": 90,
@@ -253,7 +260,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 101
     },
     {
       "angle": -90,
@@ -265,7 +273,8 @@
       ],
       "mount": "TURRET",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 101
     },
     {
       "angle": 90,
