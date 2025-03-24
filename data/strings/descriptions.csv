@@ -1,7 +1,7 @@
 id,type,text1,text2,text3,text4,notes
 shpe_fury,SHIP,"Flexible and well-armed, the Fury is the Imperial Navy's main Interceptor craft. While it can also attack larger ships it lacks the punch to truly threaten them, but excells at destroying torpedos and strikecraft.
 
-While it is larger and heavier and heavier than most fightercraft, including its predecessor, the Wrath, the Fury handles suprisingly well and can easily match the speed of the larger Starhawk-Bombers it waas designed to escort in battle.
+While it is larger and heavier and heavier than most fightercraft, including its predecessor, the Wrath, the Fury handles suprisingly well and can easily match the speed of the larger Starhawk-Bombers it was designed to escort in battle.
 
 ",,,,
 shpe_starhawk,SHIP,"Sturdy and heavily armed, the Starhawk carries both bombs and missiles, making it a threat to much large warhships, especially if their shields are down. While it is also capable of defending itself against missiles and other fighters, it fares best with an escort.",,,,
@@ -49,38 +49,124 @@ shpe_retribution,SHIP,"A traditional battleship, mounting a truly terrifying bro
 
 Most retribution battleships that are still in use were built on the ring of iron around mars.",,,,
 ,,,,,,
+shpe_defiant_mech,SHIP,"The lightest carrier in the imperial fleet, the defiant lacks the firepower of a proper battlecarrier but can bolster the fighter capabilities of larger fleets.
+
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
+shpe_endurance_mech,SHIP,"Essentially an Endeavour with lance batteries in place of macrocannons, the Endurance can punch through even heavy armor but can struggle with shielded targets.
+
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
+shpe_endeavour_mech,SHIP,"While lacking the speed of other light cruisers, the Endeavour has the firepower and durability to hold its own in a pitched battle, making them ideal as heavy escorts or convoy flagships.
+
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
+,,,,,,
+shpe_tyrant_mech,SHIP,"Developed late in the 38th millenium, the tyrant features a devastating broadside, designed to fit rows of plasma weapons.
+
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
+,,,,,,
+shpe_styx,SHIP,"Mustering a considerable array of long range weapons batteries to complement its sizeable launch bays, the Styx is a much older alternative to the Mars that has been phased out by most Imperial fleets but is still used by traitors and heretics.
+
+During the Gothic War the forces of chaos used Styx class ships against the Imperium on 39 separate occasions.",,,,
+shpe_acheron,SHIP,"The acheron class is a rarity even among the forces of chaos that still use it to this day, with only one single vessel originally being constructed as a testbed for exotic new weapon systems.
+
+Ships of this class are armed exclusively with lances or simillar weapons.",,,,
+shpe_hades,SHIP,"Combining a full broadside of superfiring light macrocannons with the addition of lances to punch through armor, the hades is a feared vessel on the battlefield.
+
+Once favored highly by the Imperial Navy, most surviving hades class heavy cruisers have fallen into the hands of the archenemy.",,,,
+shpe_carnage,SHIP,"The Carnage class cruisers were designed as fleet support vessels, utilising long range gun batteries to stand off and provide supporting fire for other ships.
+
+While largely considered an ill-fated design, the Carnage is still used to this day and can even act as an effective brawler if outfitted for close combat.",,,,
+shpe_slaughter,SHIP,"The Slaughter class cruiser utilises a Scartix engine coil, that provides the ship with a thrust considerably more powerful than any other vessel's of the same size.
+
+While the design for the Slaughter has alledgedly been lost, the continued usage of these agile vessels suggests it may have been reverse-engineered by the servants of chaos.",,,,
+shpe_devastation,SHIP,"A flexible battlecarrier, the Devastation carries both lances and macrobatteries while also fielding a sizeable fighter complement.
+
+A full-sized cruiser the Devastation is well suited for large fleet battles, but its flexibility and abillity to carry bombers for quick crippling strikes also makes it well suited for attacking transports and smaller convoys.",,,,
+shpe_devastation_tzeentch_daemon,SHIP,WIP,,,,
+,,,,,,
 shpe_fury_mech,SHIP,"Flexible and well-armed, the Fury is the Imperial Navy's main Interceptor craft. While it can also attack larger ships it lacks the punch to truly threaten them, but excells at destroying torpedos and strikecraft.
 
-While it is larger and heavier and heavier than most fightercraft, including its predecessor, the Wrath, the Fury handles suprisingly well and can easily match the speed of the larger Starhawk-Bombers it waas designed to escort in battle.
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.
 
 ",,,,
-shpe_starhawk_mech,SHIP,"Sturdy and heavily armed, the Starhawk carries both bombs and missiles, making it a threat to much large warhships, especially if their shields are down. While it is also capable of defending itself against missiles and other fighters, it fares best with an escort.",,,,
+shpe_starhawk_mech,SHIP,"Sturdy and heavily armed, the Starhawk carries both bombs and missiles, making it a threat to much large warhships, especially if their shields are down. While it is also capable of defending itself against missiles and other fighters, it fares best with an escort.
+
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
 shpe_lunar_mech,SHIP,"Flexible and powerful, the Lunar works well in almost any fleet composition and at all ranges of engagement. Larger Imperial fleets will often feature multiple Lunars for their sheer flexibility.
 
-Lunar cruisers are not only powerful but also cheap and easy to produce, allowing even worlds that could not normally construct full-blown cruisers to build them with only rudimentary orbital works. Because of this, Lunars are the most common type of cruiser in the Imperium and maybe even in the galaxy at large.
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.
 
 ",,,,
 shpe_gothic_mech,SHIP,"A familliar sight throughout the galaxy, the Gothic features one of the largest lance broadsides in the Imperium, allowing it to quickly destroy even larger opponents if given the chance. Due to its lack of macrobatteries the Gothic works best if supported by other warhsips, allowing it to bring the full force of its lances to bear.
 
-The Gothic is the second most common Imperial cruiser after the Lunar and is commonly used in larger fleet engagements, where if properly supported it can threaten even grand cruisers and battleships.",,,,
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.",,,,
 shpe_dictator_mech,SHIP,"Originally developed from damaged Lunars for Orbital assaults, the Dictator has since become an ubiquitous and capable battlecarrier.
 
-While the Dictator was originally an experimental retrofit, it has since become one of the main cruisers of the Imperial Navy, often being used as the flagship of larger anti-piracy patrols for its abillity to easily deal with small to medium sized enemies.
+This model has been modified from the original pattern for exclusive usage by the fleets of the Adeptus Mechanicus.
 
 ",,,,
 ,,,,,,
 ,,,,,,
 shpe_darkstar,SHIP,"A tough and agile fighter, the darkstar excels at fighting hostile attack craft but can also do some damage to larger ships while being more survivable than other erldar ships of its size.",,,,
 shpe_eagle,SHIP,"Favored by eldar corsairs, the eagle is a fast and powerful bomber. Using its sonic charges a single eagle can deal more damage to a capital ship than s squadron of lesser bombers.",,,,
-shpe_hemlock,SHIP,"A psychic fighter craft, each hemlock wraithfighter is piloted by a powerful spiritseer. The ultimate terror weapon of tzhe craftworlds, using this fighter is seen by some as an atrocity.
+shpe_hemlock,SHIP,"A psychic fighter craft, each hemlock wraithfighter is piloted by a powerful spiritseer. The ultimate terror weapon of the craftworlds, using this fighter is seen by some as an atrocity.
 
 The hemlock mounts two heavy D-scythes, terrifying disruption weapons that are considered frobidden by more traditionalist eldar, while the mindshock pod integrated into its hull allows the pilot to project their psychic might outside the vehicle, disabling or even destroying enemy craft.",,,,
-shpe_nightshade,SHIP,"A highly specialized interceptor, the nightshade is used exclusively by aspect warriors of the Crimson Hunters. The nightshade's unrivaled agillity and increased firepower over other eldar interceptors makes it unrivaled in fighter-to-fighter combat.",,,,
+shpe_nightshade,SHIP,"A highly specialized interceptor, the nightshade is used exclusively by aspect warriors of the Crimson Hunters. The nightshade's exceptional agillity and increased firepower over other eldar interceptors makes it unrivaled in fighter-to-fighter combat.",,,,
 shpe_manta,SHIP,"A massive gunship rivaling the size and firepower of some escort craft, the manta can take on entire squadrons of lesser fighters while its titan-grade weaponry can threaten larger voidcraft.",,,,
 shpe_tigershark,SHIP,"An unconventional fighter-bomber, the tigershark can release a swarm of tiny gun drones to verwhelm enemy defenses while its smart missiles and ion cannons punish larger ships.",,,,
 ,,,,,,
+shpe_heldrake,SHIP,"An unholy fusion of daemon, man and machine, the Heldrake breathes warpfire in a continuous torrent.",,,,
+shpe_fire_lord,SHIP,"A heavy tzentchian daemon engine, the Fire Lord moves with supprising speed while shooting bursts of warpfire.",,,,
+shpe_doom_wing,SHIP,"Cutting through the void with incredible speed, the Doom Wing moves incredibly fast and shoots bursts of unholy warpfire.",,,,
+shpe_screamer,SHIP,"A literal daemon of Tzeentch, swarms of Screamers can threaten even large ships while their screeching and the warp disturbances they leave in their wake break the minds of mortals.",,,,
+shpe_lotus,SHIP,"An ancient bespoke design of the Thousand Sons legion, the lotus uses arcane plasma weaponry to deal heavy energy damage.",,,,
+shpe_apis,SHIP,"An ancient bespoke design of the Thousand Sons legion, the apis is a capable gunship firing enchanted bolt rounds and missiles.",,,,
+shpe_helltalon,SHIP,"Bearing a lascannon for self-defense and a set of krak-missiles, the Helltalon is a simple but effective bomber that has replaced older Imperial bomber designs in most chaos fleets.",,,,
+shpe_hellblade,SHIP,"One of the few chaos vehicles designed by and for the renegades, the Hellblade is a fast and nimble interceptor, good at evading fire but with little other defenses. 
+
+",,,,
 ,,,,,,
+shpe_lasburner,WEAPON,"A scaled-down version of a true lance, very capable of cutting through armor for its size.",,,,
+shpe_mezoa_lance,WEAPON,"A short ranged lance that deals devastating damage.
+
+This recent design from Mezoa remains controversial since it doesn't fit into the traditional Imperial navy doctrine.",,,,
+shpe_banefire_lance,WEAPON,"This long-ranged lance fires in a lethal rapid burst but is slow to recharge while having a massive power draw.
+
+While it is still rarely seen on older Imperial vessels, this weapons is predominantly used by renegades nowadays.",,,,
+shpe_heavy_voidsunder_lance,WEAPON,"A modular-mounted variant of a heavy lance that would normally be mounted as an underslung prow weapon on a light cruiser, this lance deals massive damage on a slow recharge.",,,,
+shpe_godsbane_lance,WEAPON,"An near-acheotech relic weapon, the Godsbane has the highest effective range of any known human lance design.
+
+Due to its intense technological requirements, this weapon is most commonly found on the ancient grand cruisers of the Archenemy.",,,,
 ,,,,,,
+shpe_thunderstrike,WEAPON,"An economic light macrocannon, found both on freighters and lighter navy vessels.",,,,
+shpe_pyros,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
+
+Able to deal with much heavier armor than other macrocannons.",,,,
+shpe_ryza,WEAPON,An expensive plasma weapon that can deal both with armor and shields but has a significant power draw for its size.,,,,
+shpe_marsvi,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
+
+The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships but can also be turret-mounted.",,,,
+shpe_bombardment,WEAPON,"A cumbersome weapon firing heavy  explosive magma bombs to devastate even the strongest armor.
+
+Originally designed to reduce planetary defeses to rubble but can also be used in naval combat.",,,,
+shpe_hellus,WEAPON,"A heavier macrocannon, firing three ballistsic shells in quick succession but slow to reload.
+
+This weapon is almost exclusively used by the forces of chaos.",,,,
+shpe_hecutor,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
+
+Rarely seen in modern Imperial fleets outside of older vessels.",,,,
+shpe_stygies,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.",,,,
+,,,,,,
+shpe_butcher_cannon,,"Fires a hail of kinetic shells in quick bursts, dealing considerable damage to shields at short range.
+
+Can be used against strikecraft or missiles if needed but lacks the accuracy to excel as point defense.",,,,
+shpe_ursus_claw,,"A massive ship-mounted harpoon launcher. attaches to an anamy if it hits their hull and pulls them in close.
+
+Most famously an ursus claw, originally a weapon designed for titans, was mounted on the Conqueror, the falgship of the World Eaters legion.",,,,
+shpe_harvester_cannon,,"A rapid firing, void-bursting autocannon, both effective against strikecraft, especially armored ones, and against the armor of enemy ships.",,,,
+shpe_tormentor_cannon,,"An exotic energy weapon that behaves similar to plasma weaponry, dealing good damage to armor and shields at  a good range.
+
+Crew in ship sections hit by a tormentor are said to be killed by unbearable agony.",,,,
 ,,,,,,
 shpe_bolter,WEAPON,"A rapid-firing point defense weapon firing rocket-propelled mass-reactive shells. Originally designed for use on the ground it has plenty of destructive power to destroy torpedos and strikecraft but a lacks the accuracy to reliably hit faster missiles and fighters.
 
@@ -93,28 +179,13 @@ shpe_ryzanova,WEAPON,"A powerful artillery cannon firing a plasma round at relat
 Nova shells are higly voaltile and relatively inaccurate. Once they are fired the exact point of explosion is unpredictable.",,,,
 shpe_titanforge_lance,WEAPON,"A long raged lance weapon that can rapidly cut through even heavy armor. The Titanforge-Pattern of lance is the most common in the Imperium.
 
-The weapon's high range, precision and instantaneous firing time allows it to punish enemies that drop their shields even if the do so only for an instance.",,,,
-shpe_marsvi_builtin,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
-
-The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships.",,,,
+The weapon's high range, precision and instantaneous firing time allows it to punish enemies that drop their shields even if the do so only for an instant.",,,,
 shpe_vulcan,WEAPON,"A rapid-firing bolt weapon that saturates the void with enough rounds to shred entire squadrons of strikecraft.
 
  Megabolters are typically seen on super-heavy ground vehicles but this is a rare starship-mounted variant.",,,,
 shpe_starbreaker_lance,WEAPON,"A relatively light and cheap lance that performs acceptably against both armor and shields. Originally an unsuccessful attempt at replicating the success of the Titanforge.
 
 Not as powerful as other lances but cheap in infrastructure and flux, making it common on lighter vessels.",,,,
-shpe_stygies_reference,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.
-
-Uses linear accelerators to fire its titanic shell, originally designed to reduce planetary defenses to rubble.",,,,
-shpe_hecutor_reference,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
-
-Rarely seen in modern Imperial fleets outside of older vessels.",,,,
-shpe_pyros_reference,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
-
-Able to deal with much heavier armor than other macrocannons.",,,,
-shpe_disruptor_reference,WEAPON,"A macrocannon firing a ""shell"" of charged deuterium particles that disable enemy systems and weaponry.
-
-Particularly useful for disabling instead of destryong a target but also commonly used to set up a clean kill.",,,,
 shpe_plasmatorp_reference,WEAPON,"A long-ranged unguided torpedo equipped with a versatile plasma warhead.
 
 Commonly used as both a first-strike weapon and to finish of crippled targets.",,,,
@@ -134,12 +205,6 @@ Seen as unreliable and weak by some but nonetheless commonly used in the Imperia
 shpe_vortextorp_reference,WEAPON,"A rare long range torpedo equipped with a terrifying vortex warhead.
 
 Rips a hole in space itself, creating a short live gateway to the immaterium and dealing massive damage in a small area.",,,,
-shpe_staravar_reference,WEAPON,"An exotic weapons battery consisting not of ballistic cannons but of powerul lasers with high range and precision.
-
-One of the rarest types of Imperial macroweaponry.",,,,
-shpe_shard_reference,WEAPON,"An alien weapon firing shards of strange crystal without consuming ammo or energy.
-
-The original creators of this weapon are long forgotten and likely extinct.",,,,
 shpe_joviannova,WEAPON,"A powerful artillery cannon firing extremely rare vortex shells that tear open realspace, dealing massive damage albeit in a comparatively small area.
 
 Rarely if ever used by the Imperium, both because of their age and arrity and because of the dangers of storing many vortex shells in the Prow of a warship.",,,,
@@ -149,6 +214,93 @@ Deals nominally limited damage but is rather effective nonetheless due to its pr
 shpe_hydra,WEAPON,"A simple but effective ballistic autocannon, specialized in defending against strikecraft.
 
 fires low-calibre flak shells with high precision and at a high rate of fire.",,,,
+,,,,,,
+shpe_marsvi_builtin,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
+
+The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships.",,,,
+shpe_marsvi_builtin_odd,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
+
+The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships.",,,,
+shpe_light_macro,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
+
+The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships.",,,,
+shpe_light_macro_odd,WEAPON,"A medium ranged artillery piece firing heavy shells for consistent kinetic damage. The most common and reliable type of macrocannon.
+
+The Mars VI-Pattern macrocannon can be found on the broadsides of most Imperial warships.",,,,
+shpe_stygies_reference,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.
+
+Uses linear accelerators to fire its titanic shell, originally designed to reduce planetary defenses to rubble.",,,,
+shpe_stygies_reference_odd,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.
+
+Uses linear accelerators to fire its titanic shell, originally designed to reduce planetary defenses to rubble.",,,,
+shpe_light_stygies,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.
+
+Uses linear accelerators to fire its titanic shell, originally designed to reduce planetary defenses to rubble.",,,,
+shpe_light_stygies_odd,WEAPON,"A macrocannon firing an uncommonly heavy, admamantium-reinforced shell that takes long to reload and reach its target but deals devastating damage.
+
+Uses linear accelerators to fire its titanic shell, originally designed to reduce planetary defenses to rubble.",,,,
+shpe_hecutor_reference,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
+
+Rarely seen in modern Imperial fleets outside of older vessels.",,,,
+shpe_hecutor_reference_odd,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
+
+Rarely seen in modern Imperial fleets outside of older vessels.",,,,
+shpe_light_hecutor,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
+
+Rarely seen in modern Imperial fleets outside of older vessels.",,,,
+shpe_light_hecutor_odd,WEAPON,"An ancient type of macrocannon firing not ballistic shells but balls of concentrated plasma over vast distances.
+
+Rarely seen in modern Imperial fleets outside of older vessels.",,,,
+shpe_pyros_reference,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
+
+Able to deal with much heavier armor than other macrocannons.",,,,
+shpe_pyros_reference_odd,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
+
+Able to deal with much heavier armor than other macrocannons.",,,,
+shpe_light_pyros,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
+
+Able to deal with much heavier armor than other macrocannons.",,,,
+shpe_light_pyros_odd,WEAPON,"A type of heavy macrocannon firing shells tipped with melta-charges to punch through heavy armor.
+
+Able to deal with much heavier armor than other macrocannons.",,,,
+shpe_disruptor_reference,WEAPON,"A macrocannon firing a ""shell"" of charged deuterium particles that disable enemy systems and weaponry.
+
+Particularly useful for disabling instead of destryong a target but also commonly used to set up a clean kill.",,,,
+shpe_disruptor_reference_odd,WEAPON,"A macrocannon firing a ""shell"" of charged deuterium particles that disable enemy systems and weaponry.
+
+Particularly useful for disabling instead of destryong a target but also commonly used to set up a clean kill.",,,,
+shpe_light_disruptor,WEAPON,"A macrocannon firing a ""shell"" of charged deuterium particles that disable enemy systems and weaponry.
+
+Particularly useful for disabling instead of destryong a target but also commonly used to set up a clean kill.",,,,
+shpe_light_disruptor_odd,WEAPON,"A macrocannon firing a ""shell"" of charged deuterium particles that disable enemy systems and weaponry.
+
+Particularly useful for disabling instead of destryong a target but also commonly used to set up a clean kill.",,,,
+shpe_staravar_reference,WEAPON,"An exotic weapons battery consisting not of ballistic cannons but of powerul lasers with high range and precision.
+
+One of the rarest types of Imperial macroweaponry.",,,,
+shpe_staravar_reference_odd,WEAPON,"An exotic weapons battery consisting not of ballistic cannons but of powerul lasers with high range and precision.
+
+One of the rarest types of Imperial macroweaponry.",,,,
+shpe_light_staravar,WEAPON,"An exotic weapons battery consisting not of ballistic cannons but of powerul lasers with high range and precision.
+
+One of the rarest types of Imperial macroweaponry.",,,,
+shpe_light_staravar_odd,WEAPON,"An exotic weapons battery consisting not of ballistic cannons but of powerul lasers with high range and precision.
+
+One of the rarest types of Imperial macroweaponry.",,,,
+shpe_shard_reference,WEAPON,"An alien weapon firing shards of strange crystal without consuming ammo or energy.
+
+The original creators of this weapon are long forgotten and likely extinct.",,,,
+shpe_shard_reference_odd,WEAPON,"An alien weapon firing shards of strange crystal without consuming ammo or energy.
+
+The original creators of this weapon are long forgotten and likely extinct.",,,,
+shpe_light_shard,WEAPON,"An alien weapon firing shards of strange crystal without consuming ammo or energy.
+
+The original creators of this weapon are long forgotten and likely extinct.",,,,
+shpe_light_shard_odd,WEAPON,"An alien weapon firing shards of strange crystal without consuming ammo or energy.
+
+The original creators of this weapon are long forgotten and likely extinct.",,,,
+shpe_atomic_reference,WEAPON,"A macrocannon firing  a conventional nuclear warhead, capable of leveling a mountain or dealing heavy damage to a ship.",,,,
+shpe_atomic_reference_odd,WEAPON,"A macrocannon firing  a conventional nuclear warhead, capable of leveling a mountain or dealing heavy damage to a ship.",,,,
 ,,,,,,
 shpe_allaheadfull,SHIP_SYSTEM,"Redirects power to engines, resulting in a burst of speed but disabling steering.",,,,
 shpe_mindshock,SHIP_SYSTEM,Releases bolts of psychic energy disabling weapons and engines on nearby enemies.,,,,

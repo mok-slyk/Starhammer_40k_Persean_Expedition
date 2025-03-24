@@ -124,8 +124,8 @@ Warp Missile,shpe_warp_launcher,1,,200,1200,,4000,,75,10,2,10,,,HIGH_EXPLOSIVE,0
 Sonic Charge,shpe_sonic_charge,2,,200,400,,1200,,50,15,4,5,,,ENERGY,0,,0,1,1,,0,0,0,0,,120,600,4,150,,,"STRIKE, BOMB, SYSTEM","he0, no_sell, no_drop, no_drop_salvage",,Eldar,,Strike,,,,,,,,,TRUE,3.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Special Chaos Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Baleflamer,shpe_baleflamer,3,,10000,300,,17,,3,60,15,60,10,60,ENERGY,50,,,0.05,60,0.03,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
-Flame Cannon,shpe_flame_cannon,3,,10000,600,,40,,3,60,15,20,3,20,ENERGY,50,,,0.05,60,0.01,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
+Baleflamer,shpe_baleflamer,3,,10000,300,,40,,3,60,15,60,10,60,ENERGY,50,,,0.05,60,0.03,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
+Flame Cannon,shpe_flame_cannon,3,,10000,600,,72,,3,60,15,20,3,20,ENERGY,50,,,0.05,60,0.01,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
 Mutalith,shpe_mutalith,3,,10000,300,,100,,3,60,15,20,5,20,ENERGY,50,,,0.05,60,0.03,0,0,0,0,,500,,,,,,SYSTEM,,,Chaos,,General,,,,,,,,,,
 Inferno Bolter,shpe_inferno,2,,400,450,,50,,0,50,5,,,,HIGH_EXPLOSIVE,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,"PD, SYSTEM","pd2, kinetic2, SR,",,Chaos,,Point Defense,,,,,,,,,,0.7
 Hellfyre Missile,shpe_hellfyre,1,,250,1000,,100,,5,60,0,18,,9,HIGH_EXPLOSIVE,0,,0,6,9,0.1,0,0,0,0,,400,100,5,50,,,"DO_NOT_AIM, SYSTEM","strike5, missile0",,Chaos,,Anti Armor,Fast,Excellent,,,,,,,,10
