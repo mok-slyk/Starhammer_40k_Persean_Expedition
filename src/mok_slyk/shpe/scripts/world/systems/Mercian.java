@@ -55,6 +55,7 @@ public class Mercian {
         sector.getEconomy().addMarket(delphisMarket, true);
         delphis.setFaction("shpe_mechanicus");
         delphis.setMarket(delphisMarket);
+        delphis.setCustomDescriptionId("shpe_planet_delphis");
 
         // Delphis Ring:
         //system.addOrbitalJunk(delphis, "orbital_junk", 10, 12, 20, delphis.getRadius(), 110, delphis.getRadius()/20f, delphis.getRadius()/20f+10f, 60f, 360f);
@@ -73,6 +74,7 @@ public class Mercian {
         sector.getEconomy().addMarket(mercianMarket, true);
         mercianPrime.setFaction("shpe_imperium");
         mercianPrime.setMarket(mercianMarket);
+        mercianPrime.setCustomDescriptionId("shpe_planet_mercian");
 
         // Halcyon
         PlanetAPI halcyon = system.addPlanet("halcyon", mercianStar, "Halcyon", "terran-eccentric", 360 * (float) Math.random(), 100f, 6500f, 500f);
