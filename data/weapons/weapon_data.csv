@@ -2,15 +2,15 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # PLAYER FACING MODULAR:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Las-burner,shpe_lasburner,1,,300,500,,220,,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,456
+Las-burner,shpe_lasburner,1,,300,500,,220,,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,5000,,,,,,,"energy6, shpe_imperium, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,456
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy9, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
-Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,900,,,,,,,"energy6, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,234
-Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,900,,,,,,,"energy8, SR, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,435
-Banefire Lance,shpe_banefire_lance,2,,5000,1000,,300,,0,15,18,,,,ENERGY,350,,0.7,3,3,0.8,0,0,0,0,,900,,,,,,,"energy10, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,1233
+Titanforge Lance,shpe_titanforge_lance,2,,2000,1000,,525,,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,5000,,,,,,,"energy9, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
+Starbreaker Lance,shpe_starbreaker_lance,1,,1000,900,,125,,0,20,9,,,,ENERGY,75,,0.5,2,1,,0,0,0,0,,5000,,,,,,,"energy6, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,234
+Mezoa Hybrid Lance,shpe_mezoa_lance,2,0.8,2500,600,,580,,0,20,14,,,,ENERGY,435,,0.5,3,1,,0,0,0,0,,5000,,,,,,,"energy8, SR, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,435
+Banefire Lance,shpe_banefire_lance,2,,5000,1000,,300,,0,15,18,,,,ENERGY,350,,0.7,3,3,0.8,0,0,0,0,,5000,,,,,,,"energy10, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,1233
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,1000,,2500,,0,40,18,,,,ENERGY,2200,,1,6,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
-Godsbane Lance,shpe_godsbane_lance,2,,10000,1200,,300,,0,40,18,,,,ENERGY,320,,0.7,4,1,,0,0,0,0,,900,,,,,,,"energy8, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Voidsunder Lance,shpe_heavy_voidsunder_lance,2,,10000,1000,,2500,,0,40,18,,,,ENERGY,2200,,1,6,1,,0,0,0,0,,5000,,,,,,,"energy8, shpe_imperium, rare_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
+Godsbane Lance,shpe_godsbane_lance,2,,10000,1200,,300,,0,40,18,,,,ENERGY,320,,0.7,4,1,,0,0,0,0,,5000,,,,,,,"energy8, shpe_chaos, shpe_chaos_bp",,Imperium,,General,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,22.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Heavy Bolter,shpe_bolter,2,,200,300,,35,,0,45,5,,,,KINETIC,3,,0,0.35,4,0.05,0,2,0.5,15,,800,600,0.5,10,,,"PD, PD_ALSO","pd2, kinetic2, SR, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,Point Defense,,,,,,,,,,0.7
 Hydra Flak Cannon,shpe_hydra,2,,100,300,,20,,1,45,4,,,,KINETIC,3,,0,0.2,5,0.1,0,3,1,15,,800,,,10,,,PD,"pd7, kinetic2, SR, shpe_imperium, shpe_chaos, shpe_imperium_bp",,Imperium,,Point Defense,,,,,,,,,,0.7

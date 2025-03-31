@@ -10,8 +10,6 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lazywizard.lazylib.opengl.DrawUtils;
-import org.lazywizard.lazylib.ui.FontException;
-import org.lazywizard.lazylib.ui.LazyFont;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;

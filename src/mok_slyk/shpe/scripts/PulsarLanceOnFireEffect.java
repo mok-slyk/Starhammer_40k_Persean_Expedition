@@ -7,7 +7,6 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.loading.WeaponSpecAPI;
-import com.sun.corba.se.spi.legacy.connection.LegacyServerSocketEndPointInfo;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicLensFlare;
 import org.magiclib.util.MagicRender;

@@ -1,7 +1,7 @@
 name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
 #Built-ins:,,,,,,,,,,,,,,,,,,,
 #Dual Broadside Integration,shpe_dualbroadside,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.DualBroadsideIntegration,Mirrors the ship's starboard armaments to port at no additional OP cost. Note that this is not accounted for in the flux stats displayed in the refit screen.,,,graphics/hullmods/shpe_dual_broadside_integration.png
-Integrated Broadside Batteries,shpe_broadside_batteries,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.IntegratedBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
+Integrated Broadside Batteries,shpe_broadside_batteries,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.IntegratedBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
 Macrobatteries: Stygies Shells,shpe_stygies_shell,,,Imperial,"shpe_imperium, shpe_chaos",,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.StygiesShell,"Changes the ship's built-in macrocannon batteries to fire heavy adamantine-reinforced stygies shells.
 
 Increases shell damage and weight but decreases shell speed and adds inaccuracy.
@@ -23,15 +23,15 @@ Macrobatteries: Staravar Laser Battery,shpe_staravar_shell,,,Archaeotech,shpe_me
 ",,,graphics/hullmods/shpe_staravar_shell.png
 Macrobatteries: Shard Cannons,shpe_shard_shell,,,Ancient Xenotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.ShardShell,"Turns the ship's built-in macrocannon batteries into xenotech shardcannons that create almost no flux.
 ",,,graphics/hullmods/shpe_shard_shell.png
-Macrobatteries: Atomic Shells,shpe_atomic_shell,,,Archaeotech,,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.AtomicShell,"Changes the ship's built-in macrocannon batteries to fire atomic warheads.
+Macrobatteries: Atomic Shells,shpe_atomic_shell,,,Archaeotech,no_drop,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.AtomicShell,"Changes the ship's built-in macrocannon batteries to fire atomic warheads.
 
 Massively increases shell damagebut decreases shell speed and adds inaccuracy.
 
 ",,,graphics/hullmods/shpe_atomic_shell.png
-Reactive Hull,shpe_reactive_hull,,,Necron,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReactiveHull,The ship slowly repairs lost hull.,,,graphics/hullmods/shpe_reactive_hull.png
-Light Integrated Broadside Batteries,shpe_light_batteries,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.LightBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
+Reactive Hull,shpe_reactive_hull,,,Necron,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReactiveHull,The ship slowly repairs lost hull.,,,graphics/hullmods/shpe_reactive_hull.png
+Light Integrated Broadside Batteries,shpe_light_batteries,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.LightBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
 ,,,,,,,,,,,,,,,,,,,
-Novacannon,shpe_novacannon,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Novacannon,"This ship has a built-in imperial novacannon under its prow, a devastating artillery cannon, firing explosive shells at relativistic speeds.
+Novacannon,shpe_novacannon,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Novacannon,"This ship has a built-in imperial novacannon under its prow, a devastating artillery cannon, firing explosive shells at relativistic speeds.
 
 By default the novacannon is of the comparatively ubiquitous Mars-pattern, dealing high Kinetic damage, but the ship can also be equipped with other types of novacannons.",,,graphics/hullmods/shpe_novacannon.png
 Novacannon: Ryza Shells,shpe_ryza_cannon,,,Imperial,"shpe_imperium, shpe_chaos",,,,,,3,6,9,15,mok_slyk.shpe.scripts.hullmods.RyzaCannon,Changes the ship's built-in novacannon to fire Ryza-Pattern Plasma shells that explode in an even larger radius than other types of novacannon rounds and deal high Energy damage.,,,graphics/hullmods/shpe_ryza_cannon.png
@@ -40,7 +40,7 @@ Novacannon: Lathe Shells,shpe_lathe_cannon,,,Imperial,"shpe_imperium, shpe_chaos
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
-Variable Torpedo Tubes,shpe_variable_torpedo_tubes,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.VariableTorpedoTubes,"This ship has built-in heavy torpedo tubes.
+Variable Torpedo Tubes,shpe_variable_torpedo_tubes,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.VariableTorpedoTubes,"This ship has built-in heavy torpedo tubes.
 
 By default they fire plasma torpedos, dealing heavy energy damage.
 
@@ -67,60 +67,60 @@ They seek their target but deal reduced damage.
 Note that these stat changes are not shown in the refit screen!",,,graphics/hullmods/shpe_seeking_torpedos.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
-Armored Prow,shpe_armored_prow,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ArmoredProw,The ship's prow is heavily armored and has its own pool of health separate from the main hull.,,,graphics/hullmods/shpe_armored_prow.png
-Reinforced Prow,shpe_reinforced_prow,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReinforcedProw,The ship's prow has double the armor value of the rest of the ship,,,graphics/hullmods/shpe_armored_prow.png
+Armored Prow,shpe_armored_prow,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ArmoredProw,The ship's prow is heavily armored and has its own pool of health separate from the main hull.,,,graphics/hullmods/shpe_armored_prow.png
+Reinforced Prow,shpe_reinforced_prow,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReinforcedProw,The ship's prow has double the armor value of the rest of the ship,,,graphics/hullmods/shpe_armored_prow.png
 ,,,,,,,,,,,,,,,,,,,
-Widowmaker Detection Suite,shpe_widowmaker_sensors,,,Imperial,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.WidowmakerSensors,Increases the ship's in-combat vision range by %s.,,,graphics/hullmods/shpe_widowmaker_sensors.png
+Widowmaker Detection Suite,shpe_widowmaker_sensors,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.WidowmakerSensors,Increases the ship's in-combat vision range by %s.,,,graphics/hullmods/shpe_widowmaker_sensors.png
 ,,,,,,,,,,,,,,,,,,,
-Spore Clouds,shpe_spore_clouds,,,Tyranid,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png
-,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,
-Drake Wings,shpe_drake_wings,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.DrakeWings,Drake Wing animation.,,,graphics/hullmods/shpe_spore_cloud.png
-Flame Aura,shpe_flame_aura,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.FlameAura,Flame Aura for Daemon Engines,,,graphics/hullmods/shpe_spore_cloud.png
-Prismatic Aura,shpe_prismatic_aura,,,,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.PrismaticAura,Prismatic Aura for Screamers,,,graphics/hullmods/shpe_spore_cloud.png
+Spore Clouds,shpe_spore_clouds,,,Tyranid,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
-Hellforged,shpe_hellforged,,,Chaos,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Hellforged,"This ship was constructed or extensively modified by servants of chaos.
+Drake Wings,shpe_drake_wings,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.DrakeWings,Drake Wing animation.,,,graphics/hullmods/shpe_spore_cloud.png
+Flame Aura,shpe_flame_aura,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.FlameAura,Flame Aura for Daemon Engines,,,graphics/hullmods/shpe_spore_cloud.png
+Prismatic Aura,shpe_prismatic_aura,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.PrismaticAura,Prismatic Aura for Screamers,,,graphics/hullmods/shpe_spore_cloud.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Hellforged,shpe_hellforged,,,Chaos,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Hellforged,"This ship was constructed or extensively modified by servants of chaos.
 
 Chaos Marks applied to this ship are 50 percent more effective.",,,graphics/hullmods/shpe_hellforged.png
-Alien Targeting Core,shpe_alien_targeting_core,,,Ancient Xenotech,,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.AlienTargetingCore,Extends the range of ballistic and energy weapons by %s.,,,graphics/hullmods/shpe_alien_targeting_core.png
+Alien Targeting Core,shpe_alien_targeting_core,,,Ancient Xenotech,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.AlienTargetingCore,Extends the range of ballistic and energy weapons by %s.,,,graphics/hullmods/shpe_alien_targeting_core.png
 ,,,,,,,,,,,,,,,,,,,
-Mark of Tzeentch,shpe_tzeentch_mark,,,Chaos,shpe_tzeentch,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.TzeentchMark,"The ship is marked by the lord of change.
+Mark of Tzeentch,shpe_tzeentch_mark,,,Chaos,"shpe_tzeentch, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.TzeentchMark,"The ship is marked by the lord of change.
 
 Energy weapon and fighter damage is increased by %s.",,,graphics/hullmods/shpe_tzeentch_mark.png
-Strands of Fortune,shpe_strands_of_fortune,,,Chaos,shpe_tzeentch,,,,,,3,6,9,12,mok_slyk.shpe.scripts.hullmods.StrandsOfFortune,"The weave of fate twists in favor of this ship.
+Strands of Fortune,shpe_strands_of_fortune,,,Chaos,"shpe_tzeentch, no_drop",,,,,,3,6,9,12,mok_slyk.shpe.scripts.hullmods.StrandsOfFortune,"The weave of fate twists in favor of this ship.
 
 Increases autofire accuracy and decreases recoil by %s.
 
 Increases projectile speed by %s.",,,graphics/hullmods/shpe_strands_of_fortune.png
-Warp Beasts,shpe_warp_beasts,,,Chaos,shpe_tzeentch,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.WarpBeasts,"The ship is surrounded by horrors of the warp. 
+Warp Beasts,shpe_warp_beasts,,,Chaos,"shpe_tzeentch, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.WarpBeasts,"The ship is surrounded by horrors of the warp. 
 
 Occasionally fire bursts of lightning at nearby enemies.
 
 Screamers of Tzeentch circle the ship and autonomously attack nearby enemies.
 ",,,graphics/hullmods/shpe_warp_beasts.png
-Mark of Khorne,shpe_khorne_mark,,,Chaos,shpe_khorne,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.KhorneMark,"The ship is marked by the lord of slaughter.
+Mark of Khorne,shpe_khorne_mark,,,Chaos,"shpe_khorne, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.KhorneMark,"The ship is marked by the lord of slaughter.
 
 Weapon range is reduced by %s but all damage is increased by %s.
 
 %s",,,graphics/hullmods/shpe_khorne_mark.png
-Mark of Nurgle,shpe_nurgle_mark,,,Chaos,shpe_nurgle,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.NurgleMark,"The ship is marked by the lord of decay.
+Mark of Nurgle,shpe_nurgle_mark,,,Chaos,"shpe_nurgle, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.NurgleMark,"The ship is marked by the lord of decay.
 
 Increases hull by %s and reduces EMP damage taken by %s but decreases top speed by %s.",,,graphics/hullmods/shpe_nurgle_mark.png
-Miasma,shpe_miasma,,,Chaos,shpe_nurgle,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.Miasma,"The ship is shrouded in thick clouds of smog and bile, hiding and shielding it from enemies.
+Miasma,shpe_miasma,,,Chaos,"shpe_nurgle, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.Miasma,"The ship is shrouded in thick clouds of smog and bile, hiding and shielding it from enemies.
 
 Decreases ship sensor profile by %s and reduces damage taken by hull and armor by %s.",,,graphics/hullmods/shpe_miasma.png
-Ark of Pestilence,shpe_ark_of_pestilence,,,Chaos,shpe_nurgle,,,,,,10,15,20,30,mok_slyk.shpe.scripts.hullmods.ArkOfPestilence,"The ship is covered in a thick cloud of spores and warp-borne pestilence.
+Ark of Pestilence,shpe_ark_of_pestilence,,,Chaos,"shpe_nurgle, no_drop",,,,,,10,15,20,30,mok_slyk.shpe.scripts.hullmods.ArkOfPestilence,"The ship is covered in a thick cloud of spores and warp-borne pestilence.
 
 Enemy ships in close range are infected with pestilence, continually taking light hull damage and infecting others around them.",,,graphics/hullmods/shpe_ark_of_pestilence.png
-Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,shpe_slaanesh,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
+Mark of Slaanesh,shpe_slaanesh_mark,,,Chaos,"shpe_slaanesh, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SlaaneshMark,"The ship is marked by the lord of excess.
 
 Increases movement speed by %s and reduces weapon flux generation by %s but decreases hull by %s.",,,graphics/hullmods/shpe_slaanesh_mark.png
-Siren's Summon,shpe_sirens_summon,,,Chaos,shpe_slaanesh,,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SirensSummon,"The ship radiates waves of pain and pleasure, creating distracting visions ion the minds of enemies.
+Siren's Summon,shpe_sirens_summon,,,Chaos,"shpe_slaanesh, no_drop",,,,,,5,7,12,15,mok_slyk.shpe.scripts.hullmods.SirensSummon,"The ship radiates waves of pain and pleasure, creating distracting visions ion the minds of enemies.
 
 Decreases the maneuverability of nearby enemies by %s, increases the recoil suffered by nearby enemies by %s and decreases the autofire accuracy of nearby enemies by %s.",,,graphics/hullmods/shpe_sirens_summon.png
 ,,,,,,,,,,,,,,,,,,,
-Macrobatteries: Hives of Nurgle,shpe_nurgle_hives,,,Chaos,shpe_nurgle,,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.NurgleHive,"Turns the ship's built-in macrocannon batteries into diseased hives.
+Macrobatteries: Hives of Nurgle,shpe_nurgle_hives,,,Chaos,"shpe_nurgle, no_drop",,,,,,4,8,12,20,mok_slyk.shpe.scripts.hullmods.NurgleHive,"Turns the ship's built-in macrocannon batteries into diseased hives.
 ",,,graphics/hullmods/shpe_nurgle_hive.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,

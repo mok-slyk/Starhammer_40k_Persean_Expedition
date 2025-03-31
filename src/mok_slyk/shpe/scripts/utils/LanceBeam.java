@@ -34,11 +34,13 @@ public class LanceBeam {
             for (CombatEntityAPI entity : entities) {
                 if (entity.getCollisionClass() == CollisionClass.NONE) continue;
                 Vector2f collisionPoint = null;
-                if (entity instanceof ShipAPI) {
-                    ShipAPI ship = (ShipAPI) entity;
-                    if (entity != source && !(source.isShipWithModules() && source.getChildModulesCopy().contains(entity)) &&
-                    !(entity.getCollisionClass() == CollisionClass.FIGHTER && entity.getOwner() == source.getOwner() && !ship.getEngineController().isFlamedOut()) &&
-                    CollisionUtils.getCollides(start, beamEnd, entity.getLocation(), entity.getCollisionRadius())){
+                if (entity instanceof ShipAPI ship) {
+                    if (
+                            entity != source
+                            && !(source.isShipWithModules() && source.getChildModulesCopy().contains(entity))
+                            && !(entity.getCollisionClass() == CollisionClass.FIGHTER && entity.getOwner() == source.getOwner() && !ship.getEngineController().isFlamedOut())
+                            && CollisionUtils.getCollides(start, beamEnd, entity.getLocation(), entity.getCollisionRadius())
+                    ){
                         collisionPoint = getLanceShipCollisionPoint(ship, start, beamEnd, ignoreShields);
                     }
                 } else if ((entity instanceof CombatAsteroidAPI || (entity instanceof MissileAPI && entity.getOwner() != source.getOwner())) && CollisionUtils.getCollides(start, beamEnd, entity.getLocation(), entity.getCollisionRadius())) {
@@ -127,7 +129,7 @@ public class LanceBeam {
                 blendOut
         );
 
-        //apply damage if necessary
+        //apply damage to primary target if necessary
         if (target != null && !(damage == 0 && emp == 0)){
             engine.applyDamage(
                     target,
@@ -296,10 +298,13 @@ public class LanceBeam {
 
     public static Vector2f getLanceShipCollisionPoint(ShipAPI ship, Vector2f start, Vector2f end, boolean ignoreShields) {
         ShieldAPI shield = ship.getShield();
-        if (ignoreShields) {
-            return CollisionUtils.getCollisionPoint(start, end, ship);
-        } else {
-            return MagicFakeBeam.getShipCollisionPoint(start, end, ship, VectorUtils.getAngle(start, end));
+        Vector2f point = null;
+        if (!ignoreShields && shield != null && shield.isOn()) {
+            point = MagicFakeBeam.getShipCollisionPoint(start, end, ship, VectorUtils.getAngle(start, end));
         }
+        if (point == null) {
+            point = SHPEUtils.getLineEntityCollisionPoint(ship, start, end);
+        }
+        return point;
     }
 }

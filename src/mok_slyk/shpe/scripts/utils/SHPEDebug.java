@@ -3,6 +3,8 @@ package mok_slyk.shpe.scripts.utils;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
+import org.apache.log4j.Logger;
+import org.apache.log4j.Priority;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
@@ -10,6 +12,7 @@ import org.magiclib.util.MagicRender;
 import java.awt.*;
 
 public class SHPEDebug {
+    public static Logger publicLogger = Global.getLogger(SHPEDebug.class);
     public static Color DEFAULT = new Color(220, 130, 50);
     public static void drawDot(Vector2f point){
         drawDot(Global.getCombatEngine(), point, DEFAULT);
@@ -39,5 +42,9 @@ public class SHPEDebug {
         float length = dist.length();
         Vector2f scale = new Vector2f(10, length);
         MagicRender.singleframe(sprite, Vector2f.add(start, (Vector2f) dist.scale(0.5f), null), scale, VectorUtils.getFacing(dist)-90, color, false);
+    }
+
+    public static void debugLog(String source, Object message) {
+        publicLogger.info(source + ": " + message);
     }
 }

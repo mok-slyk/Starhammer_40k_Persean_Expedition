@@ -1,16 +1,16 @@
 name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
-Defiant,shpe_defiant,Light Carrier Cruiser,Imperium,shpe_allaheadfull,12,5000,1200,4500,,300,80,2,80,60,40,20,25,800,OMNI,,180,0.3,1.2,,,150,250,90,60,3,20,8,60000,3,12,360,0.25,15,15,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.5,2,3,,407
-Endeavour,shpe_endeavour,Light Cruiser,Imperium,shpe_allaheadfull,12,5000,700,5500,,300,65,,80,60,40,30,60,500,OMNI,,180,0.3,1.2,,,50,100,90,60,3,30,8,40000,4,12,360,0.25,13,13,,,,,,,,shpe_imperium_bp,,0.5,2,3,,407
-Endurance,shpe_endurance,Light Cruiser,Imperium,shpe_allaheadfull,12,5000,700,5500,,300,90,,80,60,40,30,60,500,OMNI,,180,0.3,1.2,,,50,100,90,60,3,30,8,40000,4,12,360,0.25,13,13,,,,,,,,shpe_imperium_bp,,0.5,2,3,,407
+Defiant,shpe_defiant,Light Carrier Cruiser,Imperium,shpe_allaheadfull,12,5000,1200,4500,,400,80,2,80,60,40,20,25,800,OMNI,,180,0.3,1.2,,,150,250,90,60,3,20,8,60000,3,12,360,0.25,15,15,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.5,2,3,,407
+Endeavour,shpe_endeavour,Light Cruiser,Imperium,shpe_allaheadfull,12,5000,700,5500,,600,65,,80,60,40,30,60,500,OMNI,,180,0.3,1.2,,,50,100,90,60,3,30,8,40000,4,12,360,0.25,13,13,,,,,,,,shpe_imperium_bp,,0.5,2,3,,407
+Endurance,shpe_endurance,Light Cruiser,Imperium,shpe_allaheadfull,12,5000,700,5500,,600,90,,80,60,40,30,60,500,OMNI,,180,0.3,1.2,,,50,100,90,60,3,30,8,40000,4,12,360,0.25,13,13,,,,,,,,shpe_imperium_bp,,0.5,2,3,,407
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Lunar,shpe_lunar,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,600,135,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
-Gothic,shpe_gothic,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,600,170,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
-Dictator,shpe_dictator,Carrier Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,10000,,600,95,2,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.5,2,4,,401.5
-Dominator,shpe_dominator,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,600,90,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Lunar,shpe_lunar,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,800,135,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Gothic,shpe_gothic,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,800,170,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Dictator,shpe_dictator,Carrier Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,10000,,800,95,2,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.5,2,4,,401.5
+Dominator,shpe_dominator,Cruiser,Imperium,shpe_allaheadfull,15,6000,1250,12000,,800,90,,60,40,30,15,20,1500,OMNI,,180,0.3,1.1,,,200,300,150,150,4,38,8,125000,4,12,380,0.25,25,25,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Armageddon,shpe_armageddon,Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,650,170,,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
-Overlord,shpe_overlord,Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,650,100,,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
-Mars,shpe_mars,Carrier Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,650,130,2,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Armageddon,shpe_armageddon,Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,900,170,,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Overlord,shpe_overlord,Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,900,100,,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
+Mars,shpe_mars,Carrier Battlecruiser,Imperium,shpe_allaheadfull,17,6500,1250,12000,,900,130,2,60,40,30,15,20,1500,OMNI,,180,0.4,1.1,,,200,300,150,150,4,38,8,125000,4,16,320,0.25,30,30,,,,,,,,shpe_imperium_bp,,0.5,2,4,,401.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Carrack,shpe_carrack,Combat Freighter,Imperium,shpe_allaheadfull,8,5000,650,3000,,150,50,,60,40,20,20,15,500,OMNI,,120,0.4,1,,,40,180,200,200,2,40,9,34000,5,9,420,0.25,6,6,36,125,,,,,"CIVILIAN, TANKER, FREIGHTER",shpe_imperium_bp,,0.5,2,3,,310
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -18,14 +18,14 @@ Starhawk,shpe_starhawk,,Imperium,,,1200,70,400,,50,0,,200,400,200,20,90,60,NONE,
 Fury,shpe_fury,,Imperium,,,750,100,200,,40,0,,200,400,350,90,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Cobra,shpe_cobra,Destroyer,Imperium,shpe_allaheadfull,6,1500,350,1500,,100,20,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
-Cobra (W),shpe_cobra_w,Modified Destroyer,Imperium,shpe_allaheadfull,7,1500,350,1300,,100,20,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,30,50,40,25,1,25,10,20000,8,20,240,0.25,7,7,,,,,,,,shpe_imperium_bp,0.3,0.4,2,2,,204
-Sword,shpe_sword,Frigate,Imperium,shpe_allaheadfull,6,2500,500,3000,,190,40,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,4,4,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
-Firestorm,shpe_firestorm,Frigate,Imperium,shpe_allaheadfull,6,2500,500,3000,,190,32,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,5,5,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
+Cobra,shpe_cobra,Destroyer,Imperium,shpe_allaheadfull,6,1500,350,1500,,140,20,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
+Cobra (W),shpe_cobra_w,Modified Destroyer,Imperium,shpe_allaheadfull,7,1500,350,1300,,140,20,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,30,50,40,25,1,25,10,20000,8,20,240,0.25,7,7,,,,,,,,shpe_imperium_bp,0.3,0.4,2,2,,204
+Sword,shpe_sword,Frigate,Imperium,shpe_allaheadfull,6,2500,500,3000,,220,40,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,4,4,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
+Firestorm,shpe_firestorm,Frigate,Imperium,shpe_allaheadfull,6,2500,500,3000,,220,32,,120,110,90,60,90,200,FRONT,,210,0.2,1.2,,,25,50,40,25,1,25,10,9000,8,10,240,0.25,5,5,,,,,,,,"shpe_imperium_bp, shpe_mechanicus_bp",,0.4,2,2,,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Retribution,shpe_retribution,Battleship,Imperium,shpe_allaheadfull,28,15000,1650,22000,,1200,260,,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,50,50,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
-Emperor,shpe_emperor,Carrier Battleship,Imperium,shpe_allaheadfull,28,15000,1650,22000,,1200,265,4,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,55,55,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.4,2,4,,500
-Apocalypse,shpe_apocalypse,Battleship,Imperium,shpe_lockon,30,15000,1650,25000,,1250,365,,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
+Retribution,shpe_retribution,Battleship,Imperium,shpe_allaheadfull,28,15000,1650,22000,,1400,260,,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,50,50,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
+Emperor,shpe_emperor,Carrier Battleship,Imperium,shpe_allaheadfull,28,15000,1650,22000,,1400,265,4,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,55,55,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.4,2,4,,500
+Apocalypse,shpe_apocalypse,Battleship,Imperium,shpe_lockon,30,15000,1650,25000,,1400,365,,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,29000,15000,1500,480,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
