@@ -45,11 +45,11 @@
   # OPTIONAL
   # A download link directly to the latest version of your mod.
   # This is used by mod managers/version checkers (eg SMOL, MOSS, LunaLib) to let users quickly update/download without visiting your mod page.
-  "directDownloadURL": "https://github.com/mok-slyk/Starhammer_40k_Persean_Expedition/releases/download/1.0.0/Starhammer_40K_Persean_Expedition-0.1.0.zip",
+  "directDownloadURL": "https://github.com/mok-slyk/Starhammer_40k_Persean_Expedition/releases/download/0.1.0/Starhammer_40K_Persean_Expedition-0.1.0.zip",
 
   # OPTIONAL
   # A link to your changelog.
   # This is used by mod managers/version checkers (eg SMOL, MOSS, LunaLib) to display changelogs without visiting your mod page.
   # May be plain text or markdown, though plain text is more likely to be rendered correctly in all viewers.
-  #"changelogURL": "https://raw.githubusercontent.com/MagicLibStarsector/MagicLib/master/CHANGELOGS.md",
+  "changelogURL": "https://raw.githubusercontent.com/mok-slyk/Starhammer_40k_Persean_Expedition/master/CHANGELOGS.md",
 }
