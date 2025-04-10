@@ -5,7 +5,7 @@
     "utility":"false",
 	"version":"0.1.0",
 	"description":"A 40k-inspired faction mod",
-    "gameVersion": "0.98a-RC5",
+    "gameVersion": "0.98a-RC7",
   	"jars":["jars/SHPE.jar"],
   	"modPlugin":"mok_slyk.shpe.SHPEModPlugin",
 	  	"dependencies": [
@@ -17,12 +17,12 @@
         {
             "id": "MagicLib",
             "name": "MagicLib",
-            "version": "1.5.1"
+            "version": "1.5.4"
         },
         {
             "id": "shaderLib",
             "name": "GraphicsLib",
-            "version": "1.9.0"
+            "version": "1.10.2"
         }
     ],
 }
