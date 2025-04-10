@@ -340,6 +340,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
         if (withMonthlyFactors() && withOneTimeFactors()) {
             main.addCustom(mFac, opad * 2f);
+            mFac.getPosition().inTL(10, 775);
             main.addCustomDoNotSetPosition(oFac).getPosition().rightOfTop(mFac, opad);
         } else if (withMonthlyFactors()) {
             main.addCustom(mFac, opad * 2f);

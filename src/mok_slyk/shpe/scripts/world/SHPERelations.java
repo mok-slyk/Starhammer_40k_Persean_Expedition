@@ -32,12 +32,16 @@ public class SHPERelations {
         imperium.setRelationship("shpe_nurgle", -1);
         imperium.setRelationship("shpe_tzeentch", -1);
         imperium.setRelationship("shpe_slaanesh", -1);
+        imperium.setRelationship(Factions.PIRATES, -0.75f);
+        imperium.setRelationship(Factions.LUDDIC_PATH, -0.5f);
 
         mechanicus.setRelationship("shpe_chaos", -1);
         mechanicus.setRelationship("shpe_khorne", -1);
         mechanicus.setRelationship("shpe_nurgle", -1);
         mechanicus.setRelationship("shpe_tzeentch", -1);
         mechanicus.setRelationship("shpe_slaanesh", -1);
+        mechanicus.setRelationship(Factions.PIRATES, -0.75f);
+        mechanicus.setRelationship(Factions.LUDDIC_PATH, -0.5f);
 
         chaos.setRelationship("shpe_khorne", 0.75f);
         chaos.setRelationship("shpe_nurgle", 0.75f);
