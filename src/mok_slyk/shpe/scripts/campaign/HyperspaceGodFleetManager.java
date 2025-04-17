@@ -42,7 +42,7 @@ public class HyperspaceGodFleetManager extends PlayerVisibleFleetManager {
 
     @Override
     protected int getMaxFleets() {
-        return (int) Math.min(5, Math.floor(Math.max(PirateBaseManager.getInstance().getDaysSinceStart()-180, 0)/90f));
+        return (int) Math.min(2, Math.floor(Math.max(PirateBaseManager.getInstance().getDaysSinceStart()-180, 0)/90f));
     }
 
     protected StarSystemAPI pickSystem() {
