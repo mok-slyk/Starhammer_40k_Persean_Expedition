@@ -3,8 +3,6 @@ import com.fs.starfarer.api.Global;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.Field;
-import java.security.PrivilegedAction;
-import java.security.AccessController;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;

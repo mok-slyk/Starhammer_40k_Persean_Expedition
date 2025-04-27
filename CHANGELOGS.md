@@ -1,3 +1,8 @@
+## 0.1.1
+Compatible with 0.1.0
+- Fix a bug that could corrupt savegames
+- Reduce the frequency of chaos fleets haunting hyperspace
+
 ## 0.1.0
 - Initial Release
 - Add Imperium faction

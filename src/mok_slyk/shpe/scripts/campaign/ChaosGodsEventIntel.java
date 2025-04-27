@@ -46,11 +46,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
     public static final int SLAANESH_I = 3;
 
     public static final int SMALL_TO_LARGE_FLEET_THRESHOLD = 100;
-
-    protected Set<ButtonAPI> buttons = new HashSet<>(8);
     boolean updatePanel = false;
-
-    protected CustomPanelAPI intelPanel;
     protected float intelWidth;
     protected float intelHeight;
 
@@ -124,10 +120,8 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
     @Override
     public void createLargeDescription(CustomPanelAPI panel, float width, float height) {
-        intelPanel = panel;
         intelWidth = width;
         intelHeight = height;
-        buttons.clear();
 
         float opad = 20f;
         uiWidth = width;
@@ -195,25 +189,21 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                         "Forsake", KHORNE_UNMARK_BUTTON, GodEventIntel.GOD_COLORS[0], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b0.getPosition().inTL(800, 150);
-                buttons.add(b0);
             } else if (stageAt == Stage.TZEENTCH_MARK) {
                 ButtonAPI b1 = main.addAreaCheckbox(
                         "Forsake", TZEENTCH_UNMARK_BUTTON, GodEventIntel.GOD_COLORS[1], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b1.getPosition().inTL(800, 150 + 1 * 155);
-                buttons.add(b1);
             } else if (stageAt == Stage.NURGLE_MARK) {
                 ButtonAPI b2 = main.addAreaCheckbox(
                         "Forsake", NURGLE_UNMARK_BUTTON, GodEventIntel.GOD_COLORS[2], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b2.getPosition().inTL(800, 150 + 2 * 155);
-                buttons.add(b2);
             } else if (stageAt == Stage.SLAANESH_MARK) {
                 ButtonAPI b3 = main.addAreaCheckbox(
                         "Forsake", SLAANESH_UNMARK_BUTTON, GodEventIntel.GOD_COLORS[3], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b3.getPosition().inTL(800, 150 + 3 * 155);
-                buttons.add(b3);
             }
         } else {
             if (gods[KHORNE_I].getProgress() == 50) {
@@ -221,7 +211,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                         "Take on Mark", KHORNE_MARK_BUTTON, GodEventIntel.GOD_COLORS[0], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b0.getPosition().inTL(800, 150);
-                buttons.add(b0);
             }
 
             if (gods[TZEENTCH_I].getProgress() == 50) {
@@ -229,7 +218,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                         "Take on Mark", TZEENTCH_MARK_BUTTON, GodEventIntel.GOD_COLORS[1], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b1.getPosition().inTL(800, 150 + 1 * 155);
-                buttons.add(b1);
             }
 
             if (gods[NURGLE_I].getProgress() == 50) {
@@ -237,7 +225,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                         "Take on Mark", NURGLE_MARK_BUTTON, GodEventIntel.GOD_COLORS[2], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b2.getPosition().inTL(800, 150 + 2 * 155);
-                buttons.add(b2);
             }
 
             if (gods[SLAANESH_I].getProgress() == 50) {
@@ -245,7 +232,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                         "Take on Mark", SLAANESH_MARK_BUTTON, GodEventIntel.GOD_COLORS[3], new Color(40, 40, 40), new Color(240, 240, 240), 120, 30, 0f
                 );
                 b3.getPosition().inTL(800, 150 + 3 * 155);
-                buttons.add(b3);
             }
         }
 
