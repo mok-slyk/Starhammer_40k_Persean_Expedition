@@ -49,8 +49,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
     protected Set<ButtonAPI> buttons = new HashSet<>(8);
     boolean updatePanel = false;
-
-    protected CustomPanelAPI intelPanel;
     protected float intelWidth;
     protected float intelHeight;
 
@@ -124,7 +122,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
     @Override
     public void createLargeDescription(CustomPanelAPI panel, float width, float height) {
-        intelPanel = panel;
         intelWidth = width;
         intelHeight = height;
         buttons.clear();
