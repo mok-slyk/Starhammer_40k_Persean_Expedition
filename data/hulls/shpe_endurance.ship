@@ -94,10 +94,11 @@
       "contrailSize": 15,
       "length": 48.5,
       "location": [
-        -158.5,
+        -160,
         9
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
       "width": 15
     },
     {
@@ -105,44 +106,36 @@
       "contrailSize": 15,
       "length": 48.5,
       "location": [
-        -158.5,
+        -160,
         -9
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
       "width": 15
     },
     {
       "angle": 180,
-      "contrailSize": 7,
-      "length": 15,
+      "contrailSize": 15,
+      "length": 19.5,
       "location": [
-        -145.5,
-        11
+        -159.5,
+        9
       ],
-      "style": "LOW_TECH",
-      "width": 7
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 15
     },
     {
       "angle": -180,
-      "contrailSize": 7,
-      "length": 15,
+      "contrailSize": 15,
+      "length": 19.5,
       "location": [
-        -145.5,
-        -11
+        -159.5,
+        -9
       ],
-      "style": "LOW_TECH",
-      "width": 7
-    },
-    {
-      "angle": 180,
-      "contrailSize": 7,
-      "length": 15,
-      "location": [
-        -146.5,
-        -0
-      ],
-      "style": "LOW_TECH",
-      "width": 7
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 15
     }
   ],
   "height": 317,

@@ -86,25 +86,51 @@
   "engineSlots": [
     {
       "angle": -180,
-      "contrailSize": 14,
-      "length": 41.5,
+      "contrailSize": 16,
+      "length": 46.5,
       "location": [
-        -158,
+        -159,
         9
       ],
-      "style": "MIDLINE",
-      "width": 14
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
+      "width": 16
     },
     {
       "angle": 180,
-      "contrailSize": 14,
-      "length": 41.5,
+      "contrailSize": 16,
+      "length": 46.5,
       "location": [
-        -158,
+        -159,
         -9
       ],
-      "style": "LOW_TECH",
-      "width": 14
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 20,
+      "location": [
+        -158.5,
+        9
+      ],
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 20,
+      "location": [
+        -158.5,
+        -9
+      ],
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 16
     }
   ],
   "height": 317,
