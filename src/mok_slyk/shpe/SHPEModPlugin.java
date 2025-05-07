@@ -47,17 +47,24 @@ public class SHPEModPlugin extends BaseModPlugin {
         //if (!Global.getSector().hasTransientScript(ChaosSkillScript.class)) {
         //    Global.getSector().addTransientScript(new ChaosSkillScript());
         //}
+        if (!Global.getSector().getListenerManager().hasListenerOfClass(ChaosGodsEventManager.class)){
+            Global.getSector().getListenerManager().addListener(new ChaosGodsEventManager(), true);
+        }
     }
 
     @Override
     public void onNewGameAfterTimePass() {
         super.onNewGameAfterTimePass();
-        TextPanelAPI text = null;
-        new ChaosGodsEventIntel(text, true);
 
         Global.getSector().addScript(new DisposableChaosFleetManager());
         Global.getSector().addScript(new HyperspaceGodFleetManager());
         //Global.getSector().addScript(new ChaosSkillScript());
         // Global.getSector().getPlayerStats().setSkillLevel("shpe_khorne_chosen", 1);
+        if (!Global.getSector().getListenerManager().hasListenerOfClass(ChaosGodsEventManager.class)){
+            Global.getSector().getListenerManager().addListener(new ChaosGodsEventManager(), true);
+        }
+        if (Global.getSector().getPlayerFaction().getRelationship("shpe_chaos") > 0.2f) {
+            ChaosGodsEventIntel.getOrCreate(true);
+        }
     }
 }

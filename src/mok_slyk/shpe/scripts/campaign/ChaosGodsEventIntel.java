@@ -15,7 +15,7 @@ import java.awt.*;
 import java.util.*;
 import java.util.List;
 
-public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventListener {
+public class ChaosGodsEventIntel extends BaseEventIntel {
     public static String KEY = "$shpe_cgods_ref";
     public static int PROGRESS_MAX = 100;
 
@@ -75,6 +75,14 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
     public static ChaosGodsEventIntel get() {
         return (ChaosGodsEventIntel) Global.getSector().getMemoryWithoutUpdate().get(KEY);
+    }
+
+    public static ChaosGodsEventIntel getOrCreate(boolean withNotification) {
+        ChaosGodsEventIntel intel = get();
+        if (intel == null) {
+            intel = new ChaosGodsEventIntel(null, withNotification);
+        }
+        return intel;
     }
 
     @Override
@@ -512,7 +520,7 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
                     small);
         } else {
             info.addPara("The gods take little interest in you. "
-                            + ""
+                            + "Destroy their enemies and embody their ideals to gain their favor."
                             + ""
                             + "",
                     small);
@@ -548,87 +556,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
     @Override
     protected String getSoundForOneTimeFactorUpdate(EventFactor factor) {
         return null;
-    }
-
-    @Override
-    public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, CampaignEventListener.FleetDespawnReason reason, Object param) {}
-
-    @Override
-    public void reportBattleOccurred(CampaignFleetAPI fleet, CampaignFleetAPI primaryWinner, BattleAPI battle) {
-        if (isEnded() || isEnding()) return;
-
-        if (!battle.isPlayerInvolved()) return;
-
-        int totalFleetPointsDefeated = 0;
-        boolean foughtImperium = false;
-        boolean foughtChaos = false;
-        boolean foughtKhorne = false;
-        boolean foughtTzeentch = false;
-        boolean foughtNurgle = false;
-        boolean foughtSlaanesh = false;
-
-        boolean bigBattle = false;
-        boolean superiorFoe = false;
-        if (battle.getPlayerSide().contains(primaryWinner)) {
-            if (battle.getPlayerCombined().getFleetPoints()*1.1f<battle.getNonPlayerCombined().getFleetPoints()) {
-                superiorFoe = true;
-            }
-            for (CampaignFleetAPI otherFleet : battle.getNonPlayerSideSnapshot()) {
-                totalFleetPointsDefeated += otherFleet.getFleetPoints();
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_imperium")) {
-                    foughtImperium = true;
-                }
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_chaos")) {
-                    foughtChaos = true;
-                }
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_khorne")) {
-                    foughtKhorne = true;
-                }
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_nurgle")) {
-                    foughtNurgle = true;
-                }
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_tzeentch")) {
-                    foughtTzeentch = true;
-                }
-                if (Objects.equals(otherFleet.getFaction().getId(), "shpe_slaanesh")) {
-                    foughtSlaanesh = true;
-                }
-            }
-            if (totalFleetPointsDefeated > SMALL_TO_LARGE_FLEET_THRESHOLD) {
-                bigBattle = true;
-            }
-
-            // Gain on kill imperium ships:
-            if (foughtImperium) {
-                if (bigBattle) {
-                    addFactor(new ChaosGodOneTimeFactor(1, "Imperial ships destroyed", "Imperial ships destroyed by your fleet."), null);
-                } else {
-                    addFactor(new ChaosGodOneTimeFactor(2, "Imperial ships destroyed", "Imperial ships destroyed by your fleet."), null);
-                }
-            }
-            if (foughtChaos) {
-                addFactor(new ChaosGodOneTimeFactor(-1, "Chaos ships destroyed", "Chaos Undivided ships destroyed by your fleet."), null);
-            }
-            if (foughtKhorne) {
-                addFactor(new ChaosGodOneTimeFactor(-2, KHORNE_I ,"Khorne ships destroyed", "Khornite ships destroyed by your fleet."), null);
-                addFactor(new ChaosGodOneTimeFactor(2, SLAANESH_I ,"Khorne ships destroyed", "Khornite ships destroyed by your fleet."), null);
-            }
-            if (foughtNurgle) {
-                addFactor(new ChaosGodOneTimeFactor(-2, NURGLE_I ,"Nurgle ships destroyed", "Nurglite ships destroyed by your fleet."), null);
-                addFactor(new ChaosGodOneTimeFactor(2, TZEENTCH_I ,"Nurgle ships destroyed", "Nurglite ships destroyed by your fleet."), null);
-            }
-            if (foughtTzeentch) {
-                addFactor(new ChaosGodOneTimeFactor(-2, TZEENTCH_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
-                addFactor(new ChaosGodOneTimeFactor(2, NURGLE_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
-            }
-            if (foughtSlaanesh) {
-                addFactor(new ChaosGodOneTimeFactor(-2, SLAANESH_I ,"Slaanesh ships destroyed", "Slaaneshi ships destroyed by your fleet."), null);
-                addFactor(new ChaosGodOneTimeFactor(2, KHORNE_I ,"Slaanesh ships destroyed", "Slaaneshi ships destroyed by your fleet."), null);
-            }
-            if (superiorFoe) {
-                addFactor(new ChaosGodOneTimeFactor(1, KHORNE_I, "Superior foe defeated", "Superior fleet defeated by your fleet."), null);
-            }
-        }
     }
 
     @Override
