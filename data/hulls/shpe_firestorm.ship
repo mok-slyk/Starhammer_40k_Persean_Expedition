@@ -60,12 +60,25 @@
     {
       "angle": 180,
       "contrailSize": 19,
-      "length": 57.5,
+      "length": 50,
+      "location": [
+        -78.5,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
+      "width": 19
+    },
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 26.5,
       "location": [
         -78,
         -0
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
       "width": 19
     }
   ],

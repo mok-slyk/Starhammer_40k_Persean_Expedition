@@ -92,58 +92,51 @@
   "engineSlots": [
     {
       "angle": 180,
-      "contrailSize": 17,
-      "length": 44.5,
+      "contrailSize": 18,
+      "length": 26,
       "location": [
         -158.5,
         9
       ],
-      "style": "LOW_TECH",
-      "width": 17
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 18
     },
     {
       "angle": -180,
-      "contrailSize": 17,
-      "length": 44.5,
+      "contrailSize": 18,
+      "length": 26,
       "location": [
         -158.5,
         -9
       ],
-      "style": "LOW_TECH",
-      "width": 17
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_CORE",
+      "width": 18
     },
     {
       "angle": 180,
-      "contrailSize": 10,
-      "length": 23.5,
+      "contrailSize": 18,
+      "length": 58,
       "location": [
-        -145,
-        11
+        -159,
+        9
       ],
-      "style": "LOW_TECH",
-      "width": 10
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
+      "width": 18
     },
     {
       "angle": -180,
-      "contrailSize": 10,
-      "length": 23.5,
+      "contrailSize": 18,
+      "length": 58,
       "location": [
-        -145,
-        -11
+        -159,
+        -9
       ],
-      "style": "LOW_TECH",
-      "width": 10
-    },
-    {
-      "angle": -180,
-      "contrailSize": 10,
-      "length": 23.5,
-      "location": [
-        -147,
-        -0
-      ],
-      "style": "LOW_TECH",
-      "width": 10
+      "style": "CUSTOM",
+      "styleId": "SHPE_IMPERIUM_BASE",
+      "width": 18
     }
   ],
   "height": 317,
