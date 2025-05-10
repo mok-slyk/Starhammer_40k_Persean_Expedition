@@ -23,4 +23,31 @@
 		"contrailCampaignColor":[120,100,150,10],
 		"type":"GLOW" # GLOW or SMOKE
 	},
+	
+	"SHPE_MECHANICUS_BASE":{
+		"engineColor":[255,95,65,220],
+		#"glowAlternateColor":[130,55,255,110],
+		"glowAlternateColor":[255,95,115,220],
+		"contrailParticleSizeMult":4,
+		"contrailParticleDuration":3,
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":0.5,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[100,100,100,6],
+		"contrailCampaignColor":[160,100,110,75],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	
+	"SHPE_MECHANICUS_CORE":{
+		"engineColor":[25,55,255,110],
+		"glowAlternateColor":[0,0,0,0],
+		"contrailParticleSizeMult":4,
+		"contrailParticleDuration":0.1,
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":0.5,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[100,100,100,0],
+		"contrailCampaignColor":[120,100,150,10],
+		"type":"GLOW" # GLOW or SMOKE
+	},
 }

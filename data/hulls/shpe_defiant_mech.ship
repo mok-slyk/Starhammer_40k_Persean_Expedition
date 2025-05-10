@@ -112,7 +112,8 @@
         -134,
         15
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_MECHANICUS_BASE",
       "width": 10
     },
     {
@@ -123,7 +124,8 @@
         -134,
         -15
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_MECHANICUS_BASE",
       "width": 10
     },
     {
@@ -134,7 +136,8 @@
         -144,
         6
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_MECHANICUS_BASE",
       "width": 15
     },
     {
@@ -145,7 +148,8 @@
         -144,
         -6
       ],
-      "style": "LOW_TECH",
+      "style": "CUSTOM",
+      "styleId": "SHPE_MECHANICUS_BASE",
       "width": 15
     }
   ],
