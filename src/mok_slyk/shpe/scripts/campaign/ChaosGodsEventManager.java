@@ -1,16 +1,24 @@
 package mok_slyk.shpe.scripts.campaign;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.BattleAPI;
-import com.fs.starfarer.api.campaign.CampaignEventListener;
-import com.fs.starfarer.api.campaign.CampaignFleetAPI;
+import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
+import com.fs.starfarer.api.characters.AbilityPlugin;
+import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.combat.EngagementResultAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Commodities;
+import com.fs.starfarer.api.impl.campaign.intel.events.EventFactor;
+import mok_slyk.shpe.scripts.utils.Witchcraft;
+import org.apache.log4j.Logger;
 
+import java.util.List;
 import java.util.Objects;
 
 import static mok_slyk.shpe.scripts.campaign.ChaosGodsEventIntel.*;
 
-public class ChaosGodsEventManager implements FleetEventListener {
+public class ChaosGodsEventManager implements FleetEventListener, CampaignEventListener {
+    private static Logger log = Global.getLogger(ChaosGodsEventManager.class);
     public static final int SMALL_TO_LARGE_FLEET_THRESHOLD = 100;
 
     @Override
@@ -93,7 +101,7 @@ public class ChaosGodsEventManager implements FleetEventListener {
             }
             if (foughtTzeentch) {
                 intel.addFactor(new ChaosGodOneTimeFactor(-2, TZEENTCH_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
-                intel.addFactor(new ChaosGodOneTimeFactor(2, NURGLE_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
+                intel.addFactor(new ChaosGodOneTimeFactor(3, NURGLE_I ,"Tzeentch ships destroyed", "Tzeentchian ships destroyed by your fleet."), null);
             }
             if (foughtSlaanesh) {
                 intel.addFactor(new ChaosGodOneTimeFactor(-2, SLAANESH_I ,"Slaanesh ships destroyed", "Slaaneshi ships destroyed by your fleet."), null);
@@ -103,5 +111,145 @@ public class ChaosGodsEventManager implements FleetEventListener {
                 intel.addFactor(new ChaosGodOneTimeFactor(1, KHORNE_I, "Powerful foe defeated", "Superior fleet defeated by your fleet."), null);
             }
         }
+    }
+
+    @Override
+    public void reportPlayerOpenedMarket(MarketAPI market) {
+
+    }
+
+    @Override
+    public void reportPlayerClosedMarket(MarketAPI market) {
+
+    }
+
+    @Override
+    public void reportPlayerOpenedMarketAndCargoUpdated(MarketAPI market) {
+
+    }
+
+    @Override
+    public void reportEncounterLootGenerated(FleetEncounterContextPlugin plugin, CargoAPI loot) {
+
+    }
+
+    @Override
+    public void reportPlayerMarketTransaction(PlayerMarketTransaction transaction) {
+        ChaosGodsEventIntel intel = ChaosGodsEventIntel.get();
+        if (intel == null || intel.isEnded() || intel.isEnding()) return;
+        float drugs = transaction.getQuantityBought(Commodities.DRUGS);
+        int drugPoints = (int) (drugs / 100);
+        if (drugPoints > 0) {
+            intel.addFactor(new ChaosGodOneTimeFactor(drugPoints, SLAANESH_I, "Drugs purchased", "Recreational Drugs purchased by your fleet."), null);
+        }
+    }
+
+    @Override
+    public void reportBattleOccurred(CampaignFleetAPI primaryWinner, BattleAPI battle) {
+
+    }
+
+    @Override
+    public void reportBattleFinished(CampaignFleetAPI primaryWinner, BattleAPI battle) {
+
+    }
+
+    @Override
+    public void reportPlayerEngagement(EngagementResultAPI result) {
+
+    }
+
+    @Override
+    public void reportFleetDespawned(CampaignFleetAPI fleet, FleetDespawnReason reason, Object param) {
+
+    }
+
+    @Override
+    public void reportFleetSpawned(CampaignFleetAPI fleet) {
+
+    }
+
+    @Override
+    public void reportFleetReachedEntity(CampaignFleetAPI fleet, SectorEntityToken entity) {
+
+    }
+
+    @Override
+    public void reportFleetJumped(CampaignFleetAPI fleet, SectorEntityToken from, JumpPointAPI.JumpDestination to) {
+
+    }
+
+    @Override
+    public void reportShownInteractionDialog(InteractionDialogAPI dialog) {
+
+    }
+
+    @Override
+    public void reportPlayerReputationChange(String faction, float delta) {
+
+    }
+
+    @Override
+    public void reportPlayerReputationChange(PersonAPI person, float delta) {
+
+    }
+
+    @Override
+    public void reportPlayerActivatedAbility(AbilityPlugin ability, Object param) {
+
+    }
+
+    @Override
+    public void reportPlayerDeactivatedAbility(AbilityPlugin ability, Object param) {
+
+    }
+
+    @Override
+    public void reportPlayerDumpedCargo(CargoAPI cargo) {
+
+    }
+
+    @Override
+    public void reportPlayerDidNotTakeCargo(CargoAPI cargo) {
+
+    }
+
+    @Override
+    public void reportEconomyTick(int iterIndex) {
+
+    }
+
+    @Override
+    public void reportEconomyMonthEnd() {
+        int sizeSum = 0;
+        for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()) {
+            if (market.isHidden()) continue;
+            if (!market.getFactionId().equals(Global.getSector().getPlayerFaction().getId())) continue;
+            sizeSum += market.getSize();
+        }
+        if (sizeSum >= 9) {
+            addOrUpdateColonySizeFactor(1);
+            log.info("added cs facto");
+        }
+    }
+
+    protected void addOrUpdateColonySizeFactor(int points) {
+        ChaosGodsEventIntel intel = ChaosGodsEventIntel.get();
+        if (intel == null || intel.isEnded() || intel.isEnding()) return;
+
+        ColonySizeFactor sizeFactor = null;
+        for (EventFactor factor : intel.getFactors()) {
+            if (factor instanceof ColonySizeFactor) {
+                sizeFactor = (ColonySizeFactor) factor;
+                break;
+            }
+        }
+
+        if (sizeFactor == null) {
+            intel.addFactor(new ColonySizeFactor(points), null);
+            return;
+        }
+
+        sizeFactor.points = points;
     }
 }
