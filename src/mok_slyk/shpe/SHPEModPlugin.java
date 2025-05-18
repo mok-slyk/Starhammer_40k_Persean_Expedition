@@ -2,17 +2,21 @@ package mok_slyk.shpe;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.campaign.CampaignEventListener;
 import com.fs.starfarer.api.campaign.TextPanelAPI;
 import exerelin.campaign.SectorManager;
 import mok_slyk.shpe.scripts.campaign.*;
+import mok_slyk.shpe.scripts.utils.Witchcraft;
 import mok_slyk.shpe.scripts.world.SHPERelations;
 import mok_slyk.shpe.scripts.world.SHPESectorGen;
+import org.apache.log4j.Logger;
 import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.TextureData;
 import org.magiclib.achievements.MagicAchievementIntel;
 
 public class SHPEModPlugin extends BaseModPlugin {
 
+    private static Logger log = Global.getLogger(SHPEModPlugin.class);
     public static boolean hasGraphicsLib = false;
     @Override
     public void onApplicationLoad() throws Exception {
@@ -47,9 +51,21 @@ public class SHPEModPlugin extends BaseModPlugin {
         //if (!Global.getSector().hasTransientScript(ChaosSkillScript.class)) {
         //    Global.getSector().addTransientScript(new ChaosSkillScript());
         //}
+        boolean hasCampaignEventListener = false;
+        for (CampaignEventListener listener: Global.getSector().getAllListeners()) {
+            if (listener.getClass() == ChaosGodsEventManager.class) {
+                hasCampaignEventListener = true;
+                break;
+            }
+        }
+        if (!hasCampaignEventListener) {
+            Global.getSector().addTransientListener(new ChaosGodsEventManager());
+            log.info("added manager");
+        }
         if (!Global.getSector().getListenerManager().hasListenerOfClass(ChaosGodsEventManager.class)){
             Global.getSector().getListenerManager().addListener(new ChaosGodsEventManager(), true);
         }
+
     }
 
     @Override
