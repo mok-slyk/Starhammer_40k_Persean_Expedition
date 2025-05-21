@@ -3,7 +3,7 @@
 	"name":"Starhammer 40K: Persean Expedition", # Displayed to the player
 	"author":"Mok'slyk",
     "utility":"false",
-	"version":"0.1.1",
+	"version":"0.1.2",
 	"description":"A 40k-inspired faction mod",
     "gameVersion": "0.98a-RC7",
   	"jars":["jars/SHPE.jar"],

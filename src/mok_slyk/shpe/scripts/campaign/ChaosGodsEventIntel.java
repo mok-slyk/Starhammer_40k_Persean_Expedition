@@ -95,8 +95,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
         return this;
     }
 
-    EventProgressBarAPI[] bars = new EventProgressBarAPI[4];
-
     protected void setup() {
         factors.clear();
         stages.clear();
@@ -120,6 +118,8 @@ public class ChaosGodsEventIntel extends BaseEventIntel implements FleetEventLis
 
     @Override
     public void createLargeDescription(CustomPanelAPI panel, float width, float height) {
+        EventProgressBarAPI[] bars = new EventProgressBarAPI[4];
+
         intelWidth = width;
         intelHeight = height;
 
