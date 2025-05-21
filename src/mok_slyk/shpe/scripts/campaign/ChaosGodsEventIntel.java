@@ -50,8 +50,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
     protected float intelWidth;
     protected float intelHeight;
 
-    //protected TooltipMakerAPI intelMain;
-
     public GodEventIntel[] gods = new GodEventIntel[4];
     public ChaosGodsEventIntel(TextPanelAPI text, boolean withIntelNotification) {
         super();
@@ -103,8 +101,6 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
         return this;
     }
 
-    EventProgressBarAPI[] bars = new EventProgressBarAPI[4];
-
     protected void setup() {
         factors.clear();
         stages.clear();
@@ -128,6 +124,9 @@ public class ChaosGodsEventIntel extends BaseEventIntel {
 
     @Override
     public void createLargeDescription(CustomPanelAPI panel, float width, float height) {
+
+        EventProgressBarAPI[] bars = new EventProgressBarAPI[4];
+
         intelWidth = width;
         intelHeight = height;
 
