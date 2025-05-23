@@ -33,7 +33,7 @@ public class StarbreakerOnFireEffect implements OnFireEffectPlugin {
         LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 coreSprite, new Color(255, 214, 106), new Color(255, 196, 53), new Color(255, 151, 0), 4, 2, 0.7f, 100, 0, 1, 1f, 0, 0.3f, 0.2f,
                 fringeSprite, new Color(255, 145, 0), new Color(255, 60, 0), new Color(215, 43, 95), 8, 5, 1.3f, 100, -200, 1, 0.8f, 0, 0.3f, 0.3f,
-                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true, null);
+                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true, true, null);
 
         float flashSize = 30f;
         engine.addHitParticle(
