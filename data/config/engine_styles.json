@@ -9,6 +9,7 @@
 		"contrailAngularVelocityMult":0,
 		"contrailColor":[100,100,100,6],
 		"contrailCampaignColor":[120,100,150,75],
+		"engineCampaignColor":[205,75,0,110],
 		"type":"GLOW" # GLOW or SMOKE
 	},
 	
@@ -20,7 +21,8 @@
 		"contrailMaxSpeedMult":0.5,
 		"contrailAngularVelocityMult":0,
 		"contrailColor":[100,100,100,0],
-		"contrailCampaignColor":[120,100,150,10],
+		"contrailCampaignColor":[120,100,150,75],
+		"engineCampaignColor":[205,75,0,110],
 		"type":"GLOW" # GLOW or SMOKE
 	},
 	
