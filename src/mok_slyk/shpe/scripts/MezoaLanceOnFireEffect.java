@@ -33,7 +33,7 @@ public class MezoaLanceOnFireEffect implements OnFireEffectPlugin {
         LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 coreSprite, new Color(230, 230, 255), new Color(255, 255, 200), new Color(255, 200, 200), 7, 1, 1.2f, 128, 0, 1, 0.8f, 0, 0.2f, 0.2f,
                 fringeSprite, new Color(255, 219, 183), new Color(255, 145, 0), new Color(226, 50, 255), 17, 5, 2, 128, 0, 1, 0.8f, 0.05f, 0.3f, 0.3f,
-                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true, null);
+                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true,  true, null);
 
         float flashSize = 30f;
         engine.addHitParticle(
