@@ -15,20 +15,20 @@
   "hardpointSprite": "graphics/weapons/shpe_lasburner_hardpoint_base.png",
   "id": "shpe_lasburner",
   "muzzleFlashSpec": {
-    "length": 80,
+    "length": 70,
     "particleColor": [
       255,
-      220,
-      120,
+      180,
+      100,
       40
     ],
     "particleCount": 25,
-    "particleDuration": 0.6,
-    "particleSizeMin": 15,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
     "particleSizeRange": 15,
-    "spread": 10
+    "spread": 7
   },
-  "projectileSpecId": "shpe_starbreaker_shot",
+  "projectileSpecId": "shpe_lasburner_shot",
   "size": "SMALL",
   "specClass": "projectile",
   "textureType": ROUGH,
