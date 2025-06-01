@@ -20,6 +20,17 @@ public class SHPERelations {
         FactionAPI slaanesh = sector.getFaction("shpe_slaanesh");
         FactionAPI player = sector.getFaction(Factions.PLAYER);
 
+        for (FactionAPI other : Global.getSector().getAllFactions()) {
+            String id = other.getId();
+            if (!(id.contains("shpe_chaos") || id.contains("shpe_khorne") || id.contains("shpe_nurgle") || id.contains("shpe_slaanesh") || id.contains("shpe_tzeentch"))) {
+                chaos.setRelationship(id, RepLevel.INHOSPITABLE);
+                khorne.setRelationship(id, RepLevel.INHOSPITABLE);
+                nurgle.setRelationship(id, RepLevel.INHOSPITABLE);
+                tzeentch.setRelationship(id, RepLevel.INHOSPITABLE);
+                slaanesh.setRelationship(id, RepLevel.INHOSPITABLE);
+            }
+        }
+
         player.setRelationship("shpe_chaos", -0.65f);
         player.setRelationship("shpe_khorne", -0.65f);
         player.setRelationship("shpe_nurgle", -0.65f);

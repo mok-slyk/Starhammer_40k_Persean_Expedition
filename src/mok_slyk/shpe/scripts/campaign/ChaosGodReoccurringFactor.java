@@ -9,34 +9,26 @@ import com.fs.starfarer.api.util.Misc;
 
 import java.awt.*;
 
-public class ChaosGodOneTimeFactor extends BaseChaosGodFactor{
-    public static float SHOW_DURATION_DAYS = 30f;
-    protected int points;
+public class ChaosGodReoccurringFactor extends BaseChaosGodFactor{
+
+    public static float DURATION_DAYS = 30f;
+    public int points;
     protected long timestamp;
 
     protected String bulletPointText = "";
     protected String mainRowToolTip = "";
 
-    public ChaosGodOneTimeFactor(int points, int godIndex) {
+    public ChaosGodReoccurringFactor(int points, int godIndex, String bulletPointText, String mainRowToolTip) {
         super(godIndex);
-        this.points = points;
-        timestamp = Global.getSector().getClock().getTimestamp();
-    }
-
-    public ChaosGodOneTimeFactor(int points, String bulletPointText, String mainRowToolTip) {
-        super();
         this.points = points;
         timestamp = Global.getSector().getClock().getTimestamp();
         this.bulletPointText = bulletPointText;
         this.mainRowToolTip = mainRowToolTip;
     }
 
-    public ChaosGodOneTimeFactor(int points, int godIndex, String bulletPointText, String mainRowToolTip) {
-        super(godIndex);
-        this.points = points;
-        timestamp = Global.getSector().getClock().getTimestamp();
-        this.bulletPointText = bulletPointText;
-        this.mainRowToolTip = mainRowToolTip;
+    @Override
+    public boolean isOneTime() {
+        return false;
     }
 
     @Override
@@ -44,11 +36,40 @@ public class ChaosGodOneTimeFactor extends BaseChaosGodFactor{
         return points;
     }
 
-    @Override
-    public boolean isOneTime() {
-        return true;
+    public boolean hasOtherFactorsOfClass(BaseEventIntel intel, Class c) {
+        for (EventFactor factor : intel.getFactors()) {
+            if (factor != this && c.isInstance(factor)) {
+                return true;
+            }
+        }
+        return false;
     }
 
+    @Override
+    public String getProgressStr(BaseEventIntel intel) {
+        if (getProgress(intel) == 0) {
+            return "";
+        }
+        return super.getProgressStr(intel);
+    }
+
+    @Override
+    public Color getDescColor(BaseEventIntel intel) {
+        if (getProgress(intel) == 0) {
+            return Misc.getGrayColor();
+        }
+        return super.getDescColor(intel);
+    }
+
+    @Override
+    public boolean isExpired() {
+        return timestamp != 0 && DURATION_DAYS != 0f && Global.getSector().getClock().getElapsedDaysSince(timestamp) > DURATION_DAYS;
+    }
+
+    @Override
+    public boolean shouldShow(BaseEventIntel intel) {
+        return super.shouldShow(intel);
+    }
 
     protected String getBulletPointText(BaseEventIntel intel) {
         return bulletPointText;
@@ -78,35 +99,5 @@ public class ChaosGodOneTimeFactor extends BaseChaosGodFactor{
             }
 
         };
-    }
-
-    @Override
-    public boolean isExpired() {
-        return timestamp != 0 && Global.getSector().getClock().getElapsedDaysSince(timestamp) > SHOW_DURATION_DAYS;
-    }
-
-    public boolean hasOtherFactorsOfClass(BaseEventIntel intel, Class c) {
-        for (EventFactor factor : intel.getFactors()) {
-            if (factor != this && c.isInstance(factor)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    @Override
-    public String getProgressStr(BaseEventIntel intel) {
-        if (getProgress(intel) == 0) {
-            return "";
-        }
-        return super.getProgressStr(intel);
-    }
-
-    @Override
-    public Color getDescColor(BaseEventIntel intel) {
-        if (getProgress(intel) == 0) {
-            return Misc.getGrayColor();
-        }
-        return super.getDescColor(intel);
     }
 }

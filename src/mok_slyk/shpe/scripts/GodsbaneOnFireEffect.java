@@ -29,7 +29,7 @@ public class GodsbaneOnFireEffect implements OnFireEffectPlugin {
         LanceBeam.spawnLanceBeam(engine, projectile.getSpawnLocation(), weapon.getCurrAngle(), weapon.getRange(), scaleVector(weapon.getShip().getVelocity(), 0.8f),
                 coreSprite, new Color(230, 230, 255), new Color(255, 255, 200), new Color(255, 200, 200), 5, 6, 0.3f, 100, 0, 1, 0.9f, 0, 0.4f, 0.2f,
                 fringeSprite, new Color(255, 34, 93), new Color(255, 0, 0), new Color(148, 36, 12), 9, 12, 2, 100, 0, 1, 0.8f, 0.1f, 0.4f, 0.3f,
-                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true, null);
+                5, 80, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), 100, 0, weapon.getShip(), false, true,  true, null);
 
         float flashSize = 30f;
         engine.addHitParticle(

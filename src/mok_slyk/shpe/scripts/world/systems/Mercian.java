@@ -114,6 +114,15 @@ public class Mercian {
         // Thaum
         PlanetAPI thaum = system.addPlanet("thaum", extimus, "Thaum", "frozen", 360 * (float) Math.random(), 50f, 700f, 100f);
 
+        // Stable Locations:
+        SectorEntityToken sensorArray = system.addCustomEntity("shpe_mercian_sensor", "Mercian Sensor Array", "sensor_array", "shpe_imperium");
+        SectorEntityToken navArray = system.addCustomEntity("shpe_mercian_nav", "Mercian Navigation Array", "nav_buoy", "shpe_imperium");
+        SectorEntityToken relay = system.addCustomEntity("shpe_mecrian_relay", "Mercian Relay", "comm_relay", "shpe_imperium");
+
+        sensorArray.setCircularOrbitPointingDown(mercianStar, 240, 14000, 200);
+        navArray.setCircularOrbitPointingDown(mercianStar, 240, 6100, 200);
+        relay.setCircularOrbitPointingDown(mercianStar, 185, 5700, 200);
+
         //Finalize System:
 
         system.autogenerateHyperspaceJumpPoints(false, true);
