@@ -16,12 +16,6 @@ import static mok_slyk.shpe.scripts.utils.SHPEUtils.scaleVector;
 public class BanefireOnFireEffect implements OnFireEffectPlugin {
     @Override
     public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
-        /*
-        MagicFakeBeam.spawnAdvancedFakeBeam(engine, projectile.getSpawnLocation(), weapon.getRange(), weapon.getCurrAngle(), 10, 8, 0, "trail_clean", "trail_fog",
-                10, 3, 10, 30, 0.2f, 0.2f, 50, new Color(255, 255, 255, 250), new Color(255, 255, 160, 190), projectile.getDamageAmount(),
-                projectile.getDamageType(), projectile.getEmpAmount(), weapon.getShip());
-         */
-        ///*
 
         SpriteAPI coreSprite = Global.getSettings().getSprite("fx", "trail_fog");
         SpriteAPI fringeSprite = Global.getSettings().getSprite("fx", "trail_fog");
@@ -52,8 +46,6 @@ public class BanefireOnFireEffect implements OnFireEffectPlugin {
         flash.setColor(new Color(255, 22, 22));
         flash.fadeOut(1);
         LightShader.addLight(flash);
-
-         //*/
 
         engine.removeEntity(projectile);
     }
