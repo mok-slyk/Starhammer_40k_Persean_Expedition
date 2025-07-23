@@ -72,6 +72,10 @@ Reinforced Prow,shpe_reinforced_prow,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_sly
 ,,,,,,,,,,,,,,,,,,,
 Widowmaker Detection Suite,shpe_widowmaker_sensors,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.WidowmakerSensors,Increases the ship's in-combat vision range by %s.,,,graphics/hullmods/shpe_widowmaker_sensors.png
 ,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Deflector,shpe_deflector,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Deflector,,,,graphics/hullmods/shpe_deflector.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
 Spore Clouds,shpe_spore_clouds,,,Tyranid,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
