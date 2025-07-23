@@ -1,0 +1,317 @@
+{
+  "bounds": [
+    -77,
+    23,
+    -61,
+    23,
+    -60,
+    29,
+    -66,
+    30,
+    -66,
+    41.5,
+    -56,
+    44,
+    -43,
+    89,
+    -27,
+    88.5,
+    31,
+    23.5,
+    48.5,
+    13,
+    54,
+    24,
+    50,
+    39.5,
+    69,
+    38.5,
+    63.5,
+    25.5,
+    76,
+    6,
+    76,
+    -6,
+    63.5,
+    -25.5,
+    69,
+    -38.5,
+    50,
+    -39.5,
+    54,
+    -24,
+    48.5,
+    -13,
+    31,
+    -23.5,
+    -27,
+    -88.5,
+    -43,
+    -89,
+    -56,
+    -44,
+    -66,
+    -41.5,
+    -66,
+    -30,
+    -60,
+    -29,
+    -61,
+    -23,
+    -77,
+    -23
+  ],
+  "builtInWeapons": {
+    "WS0011": "shpe_gravitic_launcher_emissary_l",
+    "WS0012": "shpe_gravitic_launcher_emissary_r",
+    "WS0013": "shpe_deco_emissary_wing_l",
+    "WS0014": "shpe_deco_emissary_wing_r"
+  },
+  "builtInWings": [],
+  "center": [
+    90,
+    80
+  ],
+  "collisionRadius": 122,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 41,
+      "location": [
+        -68.5,
+        35.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 41,
+      "location": [
+        -68.5,
+        -35.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 64.5,
+      "location": [
+        -79.5,
+        -12
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 64.5,
+      "location": [
+        -79.5,
+        12
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    }
+  ],
+  "height": 160,
+  "hullId": "shpe_emissary_sacea",
+  "hullName": "Emissary (SC)\r",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 112.5,
+  "spriteName": "graphics/ships/shpe_emissary_sacea.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 51.5,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        8,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -51.5,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        8,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 49.5,
+      "arc": 165,
+      "id": "WS0003",
+      "locations": [
+        -5,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -49.5,
+      "arc": 165,
+      "id": "WS0004",
+      "locations": [
+        -5,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -139.5,
+      "arc": 145,
+      "id": "WS0005",
+      "locations": [
+        -50,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 139.5,
+      "arc": 145,
+      "id": "WS0006",
+      "locations": [
+        -50,
+        36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 39.5,
+      "arc": 119,
+      "id": "WS0007",
+      "locations": [
+        -18,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -39.5,
+      "arc": 119,
+      "id": "WS0008",
+      "locations": [
+        -18,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0009",
+      "locations": [
+        -21,
+        75.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0010",
+      "locations": [
+        -21,
+        -75.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        20,
+        35.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        20,
+        -35.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        -23,
+        63
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0014",
+      "locations": [
+        -23,
+        -63
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "PROW",
+      "locations": [
+        73.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    }
+  ],
+  "width": 180
+}

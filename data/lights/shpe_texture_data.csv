@@ -51,9 +51,9 @@ shpe_screamer,ship,,1,normal,graphics/maps/shpe_screamer_normal.png
 ,,,,,
 shpe_styx,ship,,1,normal,graphics/maps/shpe_styx_unaligned_normal.png
 ,,,,,
-,,,,,
-,,,,,
-,,,,,
+shpe_emissary,ship,,1,normal,graphics/maps/shpe_emissary_normal.png
+shpe_emissary,ship,,1,surface,graphics/maps/shpe_emissary_surface.png
+shpe_emissary,ship,,1,material,graphics/maps/shpe_emissary_material.png
 ,,,,,
 ,,,,,
 ,,,,,

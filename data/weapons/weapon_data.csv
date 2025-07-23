@@ -137,10 +137,21 @@ Burst Cannon,shpe_light_burst,2,,400,300,,20,,1,50,0,,,,FRAGMENTATION,0,,0,0.7,7
 Pulse Carbine,shpe_pulse_carbine,2,,400,300,,50,,1,50,0,,,,ENERGY,3,,0,1,3,0.05,0,5,1,15,,800,,,10,,,SYSTEM,"kinetic4, SR",,TAU,,Point Defense,,,,,,,,,,0.7
 Ion Cannon,shpe_light_ion,3,0.5,2500,1000,100,,400,0,15,12,,,,ENERGY,0,0,0.5,0.5,0.3,2,,,,,2400,,,,,,,"FIRE_WHEN_INEFFICIENT, SYSTEM","beam14, LR",,TAU,,Suppression,,,,,,,,,,22.85
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gravitic Launcher,shpe_gravitic_launcher_emissary_l,6,0,200,1400,,200,,30,30,0,30,,,HIGH_EXPLOSIVE,0,,0,5,1,0.1,0,0,0,0,,600,1200,6,60,,,"STRIKE, GUIDED_POOR, SYSTEM, MISSILE_SPREAD","strike8, rocket3, no_drop_salvage, no_drop",shpe_gravitic,Tau,,Torpedo,Fast,Excellent,,,,,,,TRUE,9
+Gravitic Launcher,shpe_gravitic_launcher_emissary_r,6,0,200,1400,,200,,30,30,0,30,,,HIGH_EXPLOSIVE,0,,0,5,1,0.1,0,0,0,0,,600,1200,6,60,,,"STRIKE, GUIDED_POOR, SYSTEM, MISSILE_SPREAD","strike8, rocket3, no_drop_salvage, no_drop",shpe_gravitic,Tau,,Torpedo,Fast,Excellent,,,,,,,TRUE,9
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Mars-Pattern Nova Cannon,shpe_marsnova,5,0,50000,1500,,4000,,300,5,0,,,,KINETIC,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR",,Imperium,,Anti Armor (Area),,,,,,,,,,
 Ryza-Pattern Nova Cannon,shpe_ryzanova,5,0,50000,1500,,3000,,300,5,0,,,,ENERGY,5000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"energy,LR",,Imperium,,General (Area),,,,,,,,,,
 Lathe-Pattern Nova Cannon,shpe_lathenova,5,0,50000,1500,,3000,,300,5,0,,,,KINETIC,3000,,0.1,10,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR",,Imperium,,Anti Armor (Area),,,,,,,,,,
 Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENERGY,3000,,0.1,15,1,,10,20,10,2,,1000,,,400,,,SYSTEM,"he,LR",,Imperium,,Anti Armor (Area),,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hidden,shpe_deco_emissary_wing_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
+Hidden,shpe_deco_emissary_wing_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hidden,shpe_deco_battleship_bridge_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 Hidden,shpe_deco_battleship_bridge_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
