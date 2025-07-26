@@ -29,10 +29,16 @@ Hellus Macrocannon,shpe_hellus,1,,1000,800,,260,,30,15,11,9,0.5,3,KINETIC,170,,0
 Hecutor Plasma Cannon,shpe_hecutor,3,0.5,5000,1000,,1000,,20,15,22,,,,ENERGY,950,,1,5,1,,0,10,2,10,,700,,,5,,,,"energy10, shpe_imperium, shpe_chaos, rare_bp",,Imperium,,General,,,,,,,,,,0.75
 Stygies Macrocannon,shpe_stygies,2,,2500,900,,1200,,150,15,18,,,,KINETIC,1200,,0,3,1,,0,15,3,10,,400,,,20,,,,"kinetic8, shpe_imperium, shpe_imperium_bp",,Imperium,,Anti Shield,,,,,,,,,,0.75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Light Railgun Artillery,shpe_railgun,2,0.5,600,700,,100,,10,30,7,,,,KINETIC,90,,0,1,2,1,,,,,,1200,,,50,,,,"kinetic8, LR, restricted",,Tau,,Anti Shield,,,,,,,,,,3.75
-Heavy Railgun Artillery,shpe_heavy_railgun,3,0.3,2250,1000,,500,,40,10,13,,,,KINETIC,350,,0,2,2,2,,,,,,1500,,,300,,,,"kinetic15, LR, restricted",,Tau,,Anti Shield,,,,,,,,,,5.5
-Cyclic Ion Cannon,shpe_cyclic_ion,3,0.5,2500,1000,100,,400,0,15,12,,,,ENERGY,,150,1,1,0.5,0,,,,,2400,,,,,,,FIRE_WHEN_INEFFICIENT,"beam14, LR, restricted",,Tau,,Suppression,,,,,,,,,,22.85
-Burst Cannon,shpe_burst,2,,400,300,,30,,1,50,5,,,,FRAGMENTATION,3,,0,0.3,10,0.05,0,5,1,15,,800,,,10,,,PD,"pd7, kinetic4, SR, restricted",,Tau,,Point Defense,,,,,,,,,,0.7
+Light Railgun Artillery,shpe_railgun,2,0.5,600,700,,100,,10,30,7,,,,KINETIC,90,,0,1,2,1,,,,,,1200,,,50,,,,"kinetic8, LR",,Tau,,Anti Shield,,,,,,,,,,3.75
+Heavy Railgun Artillery,shpe_heavy_railgun,3,0.3,2250,1000,,500,,40,10,13,,,,KINETIC,350,,0,2,2,2,,,,,,1500,,,300,,,,"kinetic15, LR",,Tau,,Anti Shield,,,,,,,,,,5.5
+# Cyclic Ion Cannon,shpe_cyclic_ion,3,0.5,2500,1000,100,,400,0,15,12,,,,ENERGY,,150,1,1,0.5,0,,,,,2400,,,,,,,FIRE_WHEN_INEFFICIENT,"beam14, LR",,Tau,,Suppression,,,,,,,,,,22.85
+Burst Cannon,shpe_burst,2,,400,300,,30,,1,50,5,,,,FRAGMENTATION,3,,0,0.3,10,0.05,0,5,1,15,,800,,,10,,,PD,"pd7, kinetic4, SR",,Tau,,Point Defense,,,,,,,,,,0.7
+Light Ion Cannon,shpe_ion_cannon,1,,600,500,,120,100,0,40,7,,,,ENERGY,180,,0.5,3,1,,0,0,0,0,,5000,,,,,,,energy6,,Tau,,Suppression,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,456
+Heavy Ion Cannon,shpe_heavy_ion,2,,2000,1000,,525,1200,0,20,11,,,,ENERGY,500,,0.5,3,1,,0,0,0,0,,5000,,,,,,,energy9,,Tau,,Suppression,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
+Cyclic Ion Blaster,shpe_ion_blaster,2,0.6,2250,500,,90,600,0,20,11,20,2,3,ENERGY,50,,0.05,0.05,3,0.1,1,5,1,4,,1000,,,,,,,energy13,,Tau,,Suppression,,,,,,,,,,22.75
+Smart Missile Launcher,shpe_smart_missiles,1,,500,1000,,100,,15,50,3,80,,,FRAGMENTATION,0,,0,5,4,0.2,0,0,0,0,,300,100,5,50,,,"ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility8, missile0, missile_bp",,Tau,,Anti Small Craft,Fast,Excellent,,,,,,,,10
+Cyclic Ion Cannon,shpe_cyclic_ion,2,,2000,1000,,525,1200,0,20,11,,,,ENERGY,200,,0.6,0.2,1,1,0,0,0,0,,5000,,,,,,,energy9,,Tau,,Suppression,,,,,"%s, hits instantly and deals %s",Lance Weapon | Soft Flux,,,,432
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Doomweaver,shpe_doomweaver,2,,400,500,,18,,1,90,5,,,,KINETIC,3,,0,0.2,12,0.03,0,15,1,15,,200,,,10,,,PD,"pd7, kinetic4, SR, restricted",,Eldar,,Point Defense,,,,,,,,,,0.7
 Bright Lance,shpe_bright_lance,3,,800,900,1000,,,0,40,7,,,,ENERGY,,1500,0.2,0.4,0.5,4,,,,,10000,,,,,,,,restricted,,Eldar,,General,,,,,,,,,,22.5
@@ -152,6 +158,8 @@ Jovian-Pattern Nova Cannon,shpe_joviannova,5,0,50000,1500,,4000,,300,5,0,,,,ENER
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hidden,shpe_deco_emissary_wing_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 Hidden,shpe_deco_emissary_wing_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
+Hidden,shpe_deco_warden_cover_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
+Hidden,shpe_deco_warden_cover_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hidden,shpe_deco_battleship_bridge_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 Hidden,shpe_deco_battleship_bridge_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43

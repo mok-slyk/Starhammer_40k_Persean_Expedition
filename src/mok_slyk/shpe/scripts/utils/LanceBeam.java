@@ -88,7 +88,7 @@ public class LanceBeam {
 
         //Beam Light
         StandardLight light = new StandardLight(start, beamEnd, drift, drift, null, 0.5f, 30);
-        light.setColor(fringeColorFade);
+        light.setColor(fringeColorFade == null ? SHPEUtils.averageColor(fringeColorStart, fringeColorEnd): fringeColorFade);
         light.fadeOut(fringeFull+fringeFade);
         LightShader.addLight(light);
 
