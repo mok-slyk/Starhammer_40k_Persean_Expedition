@@ -11,6 +11,7 @@ import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicFakeBeam;
 import org.magiclib.util.MagicMisc;
 
+import java.awt.*;
 import java.util.List;
 import java.util.Random;
 
@@ -78,5 +79,17 @@ public class SHPEUtils {
             }
         }
         return closestPoint;
+    }
+
+    public static Color averageColor(Color... colors) {
+        int r = 0, g = 0, b = 0, a = 0;
+        for (Color color : colors) {
+            r += color.getRed();
+            g += color.getGreen();
+            b += color.getBlue();
+            a += color.getAlpha();
+        }
+        int n = colors.length;
+        return new Color(r / n, g / n, b / n, a / n);
     }
 }

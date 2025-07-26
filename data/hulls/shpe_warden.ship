@@ -1,0 +1,183 @@
+{
+  "bounds": [
+    -31,
+    3,
+    -35,
+    6,
+    -35,
+    17.5,
+    -21.5,
+    19,
+    -13,
+    31,
+    -11.5,
+    47,
+    2.5,
+    46.5,
+    27,
+    19.5,
+    23.5,
+    17,
+    24,
+    12,
+    31.5,
+    11,
+    36,
+    -0,
+    31.5,
+    -11,
+    24,
+    -12,
+    23.5,
+    -17,
+    27,
+    -19.5,
+    2.5,
+    -46.5,
+    -11.5,
+    -47,
+    -13,
+    -31,
+    -21.5,
+    -19,
+    -35,
+    -17.5,
+    -35,
+    -6,
+    -31,
+    -3
+  ],
+  "builtInWeapons": {
+    "WS0001": "shpe_deco_warden_cover_l",
+    "WS0007": "shpe_deco_warden_cover_r"
+  },
+  "builtInWings": [],
+  "center": [
+    48,
+    37
+  ],
+  "collisionRadius": 99.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 42.5,
+      "location": [
+        -36.5,
+        11
+      ],
+      "style": "HIGH_TECH",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 42.5,
+      "location": [
+        -36.5,
+        -11
+      ],
+      "style": "HIGH_TECH",
+      "width": 16
+    }
+  ],
+  "height": 74,
+  "hullId": "shpe_warden",
+  "hullName": "Warden",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 77,
+  "spriteName": "graphics/ships/shpe_warden.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        11,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -43,
+      "arc": 147,
+      "id": "WS0003",
+      "locations": [
+        -9.5,
+        -24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 43,
+      "arc": 147,
+      "id": "WS0004",
+      "locations": [
+        -9.5,
+        24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        16.5,
+        14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        16.5,
+        -14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        17,
+        14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        17,
+        -14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 96
+}

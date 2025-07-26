@@ -81,6 +81,8 @@ Infidel,shpe_infidel,Raider,Chaos,shpe_allaheadfull,8,4000,650,3000,,200,55,,90,
 Iconoclast,shpe_iconoclast,Destroyer,Chaos,shpe_allaheadfull,6,1700,550,2100,,180,50,,120,110,90,60,90,160,OMNI,,180,0.2,1.3,,,15,50,40,25,1,25,10,9000,8,20,300,0.25,5,5,,,,,,,,shpe_chaos_bp,,0.4,2,2,,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Warden,shpe_warden,Gunship,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,150,0.4,0.8,,,15,30,10,25,1,25,10,9000,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,,204
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Emissary,shpe_emissary,Envoy Ship,T'au,targetingfeed,12,3500,250,4000,2833,250,102,1,60,35,15,25,20,400,OMNI,,150,0.4,0.8,,,25,120,250,70,2,35,9,36000,4,8,360,0.25,10,10,,,,,,,,,,,,,,
 Emissary (SC),shpe_emissary_sacea,Envoy Ship,T'au Prototype,targetingfeed,12,3500,250,4000,2833,250,102,,60,35,15,25,20,400,OMNI,,150,0.4,0.8,,,25,120,250,70,2,35,9,36000,4,8,360,0.25,10,10,,,,,,,SHIP_WITH_MODULES,,,,,,,
 Deflector,shpe_emissary_deflector,Deflector,T'au,,1,200,100,1000,2500,300,0,,0,0,0,10,10,50,FRONT,,90,0,0.8,,,0,0,0,0,1,0,,5000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_unselectable, module_refit_bright",,1,2,3,,20516

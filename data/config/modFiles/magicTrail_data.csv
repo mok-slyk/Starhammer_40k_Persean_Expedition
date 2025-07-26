@@ -1,10 +1,10 @@
 trail,projectile,sprite,minLength,fadeIn,duration,fadeOut,sizeIn,sizeOut,colorIn,colorOut,opacity,textLength,textScroll,randomTextureOffset,distance,dispersion,drift,fadeOnFadeOut,angleAdjustment,additive,velocityIn,velocityOut,randomVelocity,angle,rotationIn,rotationOut,randomRotation,renderBelowExplosions
 shpe_railgun_trail_1,shpe_rail_shot,trail_arc,10,0.1,0,0.8,7,3,"[120,120,255]","[180,190,255]",0.4,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
 shpe_railgun_trail_2,shpe_rail_shot,trail_arc,10,0.1,0,0.8,7,3,"[120,160,255]","[180,190,255]",0.4,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,15,80,0.4,0,0,200,true,false
-shpe_railgun_trail_glow,shpe_rail_shot,trail_fog,10,0,0.05,0.15,40,20,"[120,120,255]","[100,100,25]",0.5,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+shpe_railgun_trail_glow,shpe_rail_shot,trail_fog,10,0,0.05,0.15,25,10,"[120,120,255]","[100,100,25]",0.5,-1,0,TRUE,30,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_heavy_railgun_trail_1,shpe_heavy_rail_shot,trail_arc,10,0.1,0,1.8,7,3,"[120,160,255]","[180,200,255]",0.4,-1,0,TRUE,60,0,1,TRUE,FALSE,TRUE,15,80,0.6,0,0,200,true,false
 shpe_heavy_railgun_trail_2,shpe_heavy_rail_shot,trail_arc,10,0.1,0,1.8,7,3,"[120,190,255]","[180,200,255]",0.4,-1,0,TRUE,60,0,1,TRUE,FALSE,TRUE,15,80,0.4,0,0,200,true,false
-shpe_heavy_railgun_trail_glow,shpe_heavy_rail_shot,trail_fog,10,0,0.05,0.35,50,25,"[120,120,255]","[120,100,25]",0.6,-1,0,TRUE,60,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+shpe_heavy_railgun_trail_glow,shpe_heavy_rail_shot,trail_fog,10,0,0.05,0.35,30,15,"[120,120,255]","[120,100,25]",0.6,-1,0,TRUE,60,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 shpe_shuriken_trail,shpe_shuriken_shot,base_trail_contrail,10,0.05,0.03,0.5,5,15,"[160,160,160]","[20,20,20]",0.3,-1,0,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 #titanforge,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_titanforge_trail_core,shpe_titanforge_shot,trail_clean,1,0,0.2,0.5,4,1,"[255,255,255]","[255,255,180]",0.9,5000,0,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
@@ -41,6 +41,6 @@ shpe_aetherfire_trail,shpe_aetherfire_shot,base_trail_heavySmoke,1,0,0.1,0.1,10,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_disruptor_trail,shpe_disruptor_shot,trail_arc,1,0,0.1,0.1,12,7,"[200,210,255]","[50,150,150]",0.8,128,-500,TRUE,0,1,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+shpe_burst_trail,shpe_ion_blaster_shot,trail_flow,1,0.02,0.1,0.2,10,6,"[190,220,255]","[100,235,255]",0.6,64,-200,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+#shpe_burst_trail_2,shpe_ion_blaster_shot,trail_wavy,1,0.05,0.05,0.1,10,6,"[170,200,255]","[170,200,255]",0.6,64,-200,TRUE,0,0,1,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
