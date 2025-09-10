@@ -83,10 +83,12 @@ Iconoclast,shpe_iconoclast,Destroyer,Chaos,shpe_allaheadfull,6,1700,550,2100,,18
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Warden,shpe_warden,Gunship,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,150,0.4,0.8,,,15,30,10,25,1,25,10,9000,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Emissary,shpe_emissary,Envoy Ship,T'au,targetingfeed,12,3500,250,4000,2833,250,102,1,60,35,15,25,20,400,OMNI,,150,0.4,0.8,,,25,120,250,70,2,35,9,36000,4,8,360,0.25,10,10,,,,,,,,,,,,,,
+Emissary,shpe_emissary,Envoy Ship,T'au,targetingfeed,12,3500,250,4000,2833,250,102,1,60,35,15,25,20,400,OMNI,,150,0.4,0.8,,,25,120,250,70,2,35,9,36000,4,8,360,0.25,10,10,,,,,,,"CARRIER, COMBAT",,,,,,,
 Emissary (SC),shpe_emissary_sacea,Envoy Ship,T'au Prototype,targetingfeed,12,3500,250,4000,2833,250,102,,60,35,15,25,20,400,OMNI,,150,0.4,0.8,,,25,120,250,70,2,35,9,36000,4,8,360,0.25,10,10,,,,,,,SHIP_WITH_MODULES,,,,,,,
 Deflector,shpe_emissary_deflector,Deflector,T'au,,1,200,100,1000,2500,300,0,,0,0,0,10,10,50,FRONT,,90,0,0.8,,,0,0,0,0,1,0,,5000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_unselectable, module_refit_bright",,1,2,3,,20516
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Protector,shpe_protector,Cruiser,T'au,shpe_allaheadfull,17,8000,800,8000,16000,500,165,2,50,25,20,10,10,1800,OMNI,,180,0.5,0.6,,,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT, SHIP_WITH_MODULES",,,0.6,2,3,,405
+Deflector,shpe_protector_deflector,Deflector,T'au,,1,200,100,1000,2500,300,0,,0,0,0,10,10,50,FRONT,,90,0,0.8,,,0,0,0,0,1,0,,5000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_unselectable, module_refit_bright",,1,2,3,,20516
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Cairn,shpe_cairn,Tomb Ship,Necrons,shpe_inertialess,30,30000,3000,25000,31250,1250,400,,30,15,10,5,5,3500,NONE,,,,,,,400,1000,300,300,10,30,7,500000,4,20,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,,0.6,2,4,shpe_travel_inertialess,504
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

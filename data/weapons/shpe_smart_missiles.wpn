@@ -1,0 +1,42 @@
+{
+  "animationType":"SMOKE",
+  "smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":16.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":0.9,
+				 "cloudRadius":8.0,
+				 "blowbackParticleCount":4,
+				 "blowbackDuration":1.1,
+				 "blowbackLength":20.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[170,160,150,130]},
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    8.5,
+    3,
+    8.5,
+    -3
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_smart_missiles_hardpoint_base.png",
+  "id": "shpe_smart_missiles",
+  "projectileSpecId": "shpe_smart_missile",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    8,
+    3,
+    8,
+    -3
+  ],
+  "turretSprite": "graphics/weapons/shpe_smart_missiles_turret_base.png",
+  "type": "MISSILE"
+}

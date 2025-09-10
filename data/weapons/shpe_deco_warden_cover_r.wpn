@@ -1,0 +1,48 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 0,
+  "id": "shpe_deco_warden_cover_r",
+  "pixelsPerTexel": 1,
+  "showDamageWhenDecorative": true,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_deco_warden_cover_r.png",
+  "type": "DECORATIVE",
+  "width": 10
+}
