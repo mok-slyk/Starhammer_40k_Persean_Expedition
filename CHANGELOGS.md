@@ -1,5 +1,8 @@
-## 0.1.3
+## 0.1.3b
 Compatible with older version
+- Fix some game files accidentally being packaged in the jar
+
+## 0.1.3
 - Make the Touch of Chaos event only show up once the player has had contact with the forces of chaos
 - Change the visuals of Imperial and Mechanicus thrusters
 - Add more ways to gain chaos favor (If anyone has a good Idea for nurgle please tell me)
