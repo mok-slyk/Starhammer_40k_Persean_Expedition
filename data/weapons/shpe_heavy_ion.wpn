@@ -1,0 +1,50 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundTwo":"pulse_laser_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_ion_cannon_hardpoint_glow.png",
+  "glowColor": [
+    100,
+    255,
+    255,
+    255
+  ],
+  "hardpointOffsets": [
+    27.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_ion_cannon_hardpoint_base.png",
+  "id": "shpe_heavy_ion",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "particleColor": [
+      255,
+      220,
+      120,
+      40
+    ],
+    "particleCount": 25,
+    "particleDuration": 0.6,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "spread": 10
+  },
+  "projectileSpecId": "shpe_heavy_ion_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_ion_cannon_turret_glow.png",
+  "turretOffsets": [
+    27,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_ion_cannon_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY",
+}

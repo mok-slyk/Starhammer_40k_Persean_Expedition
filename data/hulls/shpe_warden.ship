@@ -104,7 +104,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "BALLISTIC"
+      "type": "BALLISTIC",
+	  "renderOrderMod": 103
     },
     {
       "angle": -43,
@@ -116,7 +117,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 102
     },
     {
       "angle": 43,
@@ -128,7 +130,8 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "ENERGY",
+	  "renderOrderMod": 101
     },
     {
       "angle": 0,

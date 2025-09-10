@@ -1,0 +1,25 @@
+{
+  "displayName": "Base",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "shpe_emissary_sacea",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_emissary_sacea_Hull",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "shpe_gravitic_launcher_emissary_l",
+        "WS0012": "shpe_gravitic_launcher_emissary_r"
+      }
+    }
+  ],
+  "modules": [
+		{"PROW": "shpe_emissary_deflector_Variant"}
+	],
+  "wings": []
+}

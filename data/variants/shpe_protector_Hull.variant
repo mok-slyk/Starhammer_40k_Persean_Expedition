@@ -1,0 +1,16 @@
+{
+  "displayName": "Base",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "shpe_protector",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_protector_Hull",
+  "weaponGroups": [],
+  "wings": [],
+  "modules": [
+		{"PROW": "shpe_protector_deflector_Variant"}
+	],
+}

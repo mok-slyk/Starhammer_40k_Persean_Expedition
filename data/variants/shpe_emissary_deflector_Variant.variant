@@ -1,0 +1,15 @@
+{
+    "displayName": "Deflector",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "shpe_emissary_deflector",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "shpe_emissary_deflector_Variant",
+    "weaponGroups": [],
+    "wings": [],
+    "modules": [],
+}

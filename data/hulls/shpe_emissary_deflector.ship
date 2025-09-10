@@ -1,0 +1,39 @@
+{
+  "bounds": [
+    1.5,
+    11.5,
+    7,
+    -0,
+    1.5,
+    -11.5,
+    -3,
+    -0
+  ],
+  "builtInMods": [
+    "always_detaches",
+    "shield_always_on",
+    "fluxshunt",
+	"shpe_deflector"
+  ],
+  "builtInWings": [],
+  "center": [
+    8,
+    3.5
+  ],
+  "collisionRadius": 191,
+  "engineSlots": [],
+  "height": 8,
+  "hullId": "shpe_emissary_deflector",
+  "hullName": "Deflector",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    -80,
+    -0
+  ],
+  "shieldRadius": 105,
+  "spriteName": "graphics/ships/shpe_emissary_deflector.png",
+  "style": "SHPE_TAU_DEFLECTOR",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 16
+}

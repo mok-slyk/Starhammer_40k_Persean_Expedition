@@ -42,15 +42,15 @@
     -12.5
   ],
   "builtInWeapons": {
-    "WS0001": "shpe_flakk",
+    "WS0001": "shpe_smart_missiles",
     "WS0002": "shpe_light_burst",
     "WS0003": "shpe_light_burst",
     "WS0004": "shpe_light_burst",
     "WS0005": "shpe_light_burst",
-    "WS0006": "shpe_light_ion",
-    "WS0007": "shpe_light_ion",
-    "WS0008": "shpe_light_ion",
-    "WS0009": "shpe_light_ion",
+    "WS0006": "shpe_heavy_ion",
+    "WS0007": "shpe_heavy_ion",
+    "WS0008": "shpe_heavy_ion",
+    "WS0009": "shpe_heavy_ion",
     "WS0010": "shpe_railgun",
     "WS0011": "shpe_railgun",
     "WS0012": "shpe_light_burst",
@@ -192,7 +192,7 @@
         -17
       ],
       "mount": "HIDDEN",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -204,7 +204,7 @@
         17
       ],
       "mount": "HIDDEN",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -216,7 +216,7 @@
         -20
       ],
       "mount": "HIDDEN",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -228,7 +228,7 @@
         20
       ],
       "mount": "HIDDEN",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {

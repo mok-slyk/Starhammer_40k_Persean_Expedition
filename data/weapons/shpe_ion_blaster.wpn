@@ -1,0 +1,49 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "glowColor": [
+    100,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_ion_blaster_hardpoint_glow.png",
+  "hardpointOffsets": [
+    17,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_ion_blaster_hardpoint_base.png",
+  "id": "shpe_ion_blaster",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      100,
+      255,
+      255,
+      125
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.5,
+    "particleSizeMin": 5,
+    "particleSizeRange": 10,
+    "spread": 8
+  },
+  "projectileSpecId": "shpe_ion_blaster_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_ion_blaster_turret_glow.png",
+  "turretOffsets": [
+    16,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_ion_blaster_turret_base.png",
+  "type": "ENERGY",
+  "fireSoundTwo":"voltaic_cannon_fire",
+}
