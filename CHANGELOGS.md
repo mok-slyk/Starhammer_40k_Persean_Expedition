@@ -1,5 +1,8 @@
-## 0.1.3b
+## 0.1.4
 Compatible with older version
+- Fix a crash when using chaos summoning before encountering the forces of chaos
+
+## 0.1.3b
 - Fix some game files accidentally being packaged in the jar
 
 ## 0.1.3
