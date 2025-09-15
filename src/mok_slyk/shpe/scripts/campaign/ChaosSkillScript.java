@@ -25,7 +25,7 @@ public class ChaosSkillScript implements EveryFrameScript {
 
     @Override
     public void advance(float amount) {
-        if (ChaosGodsEventIntel.get().gods[ChaosGodsEventIntel.TZEENTCH_I].isStageActive(GodEventIntel.Stage.DEVOTION)) {
+        if (ChaosGodsEventIntel.get() != null && ChaosGodsEventIntel.get().gods[ChaosGodsEventIntel.TZEENTCH_I].isStageActive(GodEventIntel.Stage.DEVOTION)) {
             try {
                 Global.getSettings().loadCSV("data/characters/skills/skill_data.csv", "shpe");
             } catch (JSONException e) {
