@@ -342,7 +342,7 @@ public class ChaosSummonDialogPluginImpl implements InteractionDialogPlugin {
     }
 
     protected boolean isChaosGodStage(int godID, Stage stage) {
-        return ChaosGodsEventIntel.get().gods[godID].isStageActive(stage);
+        return ChaosGodsEventIntel.getOrCreate(true).gods[godID].isStageActive(stage);
     }
 
     protected boolean canChooseFighters() {
