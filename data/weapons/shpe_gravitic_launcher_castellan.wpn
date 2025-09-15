@@ -1,0 +1,68 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "LINKED",
+  "everyFrameEffect": "mok_slyk.shpe.scripts.GraviticLaunchEffect",
+  "hardpointAngleOffsets": [
+    0,
+    7,
+    -7,
+    14,
+    -14
+  ],
+  "hardpointOffsets": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    2,
+    0,
+    -2
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "id": "shpe_gravitic_launcher_castellan",
+  "projectileSpecId": "shpe_tau_torpedo",
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      20
+    ],
+    "particleSizeMin": 2,
+    "particleSizeRange": 25
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1,
+    0,
+    -2,
+    0,
+    2
+  ],
+  "turretSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "MISSILE"
+}

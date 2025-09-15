@@ -1,0 +1,144 @@
+{
+  "bounds": [
+    -26,
+    6.5,
+    -31,
+    7,
+    -31,
+    22,
+    -21,
+    29.5,
+    -18.5,
+    55,
+    -4.5,
+    54.5,
+    14,
+    47.5,
+    29,
+    21.5,
+    29,
+    -21.5,
+    14,
+    -47.5,
+    -4.5,
+    -54.5,
+    -18.5,
+    -55,
+    -21,
+    -29.5,
+    -31,
+    -22,
+    -31,
+    -7,
+    -26,
+    -6.5
+  ],
+  "builtInWeapons": {
+    "WS0005": "shpe_gravitic_launcher_castellan"
+  },
+  "builtInWings": [],
+  "center": [
+    56,
+    32
+  ],
+  "collisionRadius": 135,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 42.5,
+      "location": [
+        -32,
+        -15.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 42.5,
+      "location": [
+        -32,
+        15.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 19
+    }
+  ],
+  "height": 64,
+  "hullId": "shpe_castellan",
+  "hullName": "Castellan",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 86,
+  "spriteName": "graphics/ships/shpe_castellan.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        17,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 106,
+      "id": "WS0002",
+      "locations": [
+        -17,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -41.5,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        6,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 41.5,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        6,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        27,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 112
+}
