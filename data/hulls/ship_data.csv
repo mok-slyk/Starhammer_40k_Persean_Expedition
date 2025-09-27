@@ -27,7 +27,7 @@ Retribution,shpe_retribution,Battleship,Imperium,shpe_allaheadfull,28,15000,1650
 Emperor,shpe_emperor,Carrier Battleship,Imperium,shpe_allaheadfull,28,15000,1650,22000,,1400,265,4,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,55,55,,,,,,,"CARRIER, COMBAT",shpe_imperium_bp,,0.4,2,4,,500
 Apocalypse,shpe_apocalypse,Battleship,Imperium,shpe_lockon,30,15000,1650,25000,,1400,365,,30,10,10,5,5,3500,OMNI,,180,0.3,1.2,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,SHIP_WITH_MODULES,shpe_imperium_bp,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,60,80000,2000,29000,15000,1500,480,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,,0.4,2,4,,500
+Gloriana,shpe_truths_razor,Battleship,Imperium,shpe_allaheadfull,90,80000,2000,29000,15000,1500,580,,25,10,10,5,5,3500,OMNI,,180,0.4,0.6,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,90,90,,,,,,,HIDE_IN_CODEX,,,0.4,2,4,,500
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Holotest,shpe_holotest,Frigate,Midline,plasmajets,6,20000,500,2100,1750,140,500,,120,110,90,60,90,200,PHASE,shpe_holofield,90,,,0.03,0.04,25,50,40,25,1,25,10,9000,8,10,240,0.25,6,6,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
 Eclipse,shpe_eclipse,Cruiser,Corsairs,maneuveringjets,17,8000,800,11000,16000,800,165,2,80,50,25,25,25,1800,PHASE,shpe_holofield,90,0.5,0.6,0.03,0.1,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT, HIDE_IN_CODEX",,,1,2,3,,405
@@ -51,7 +51,10 @@ Starhawk (M),shpe_starhawk_mech,,Mechanicus,,,1200,70,400,,50,0,,200,400,200,20,
 Fury (M),shpe_fury_mech,,Mechanicus,,,750,100,240,,40,0,,200,400,350,90,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Tiger Shark,shpe_tigershark,,Tau,shpe_gun_drone,,1500,100,80,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Tiger Shark AX-1-0,shpe_tigershark_ax10,,Tau Prototype,,,1500,100,200,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Tiger Shark AX-2-2,shpe_tigershark_ax22,,Tau Prototype,shpe_remora_drone,,1500,100,50,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Gun Drone,shpe_gun_drone,,Tau,,,5,5,80,,10,0,,7,20,150,100,200,5,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Remora Stealth Drone,shpe_remora_drone,,Tau Prototype,,,250,20,160,,40,0,,50,100,150,100,200,15,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Manta,shpe_manta,,Tau,,,1500,150,2250,,150,0,,150,130,100,60,120,150,FRONT,,150,0.4,0.7,,,8,8,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Nightshade,shpe_nightshade,,Eldar,,,1000,200,3200,,10,0,,350,400,400,150,250,30,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
@@ -90,6 +93,9 @@ Deflector,shpe_emissary_deflector,Deflector,T'au,,1,200,100,1000,2500,300,0,,0,0
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Protector,shpe_protector,Cruiser,T'au,shpe_allaheadfull,17,8000,800,8000,16000,500,165,2,50,25,20,10,10,1800,OMNI,,180,0.5,0.6,,,75,200,150,90,3,30,8,200000,4,20,420,0.25,30,30,,,,,,,"CARRIER, COMBAT, SHIP_WITH_MODULES",,,0.6,2,3,,405
 Deflector,shpe_protector_deflector,Deflector,T'au,,1,200,100,1000,2500,300,0,,0,0,0,10,10,50,FRONT,,90,0,0.8,,,0,0,0,0,1,0,,5000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_unselectable, module_refit_bright",,1,2,3,,20516
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Custodian,shpe_custodian,Battleship,High Tech,targetingfeed,30,18000,1500,25000,31250,1250,370,4,30,15,10,5,5,3500,OMNI,,180,0.6,0.6,,,400,1000,300,300,10,30,7,500000,4,20,720,0.25,60,60,,,,,,,"CARRIER, COMBAT",,,0.6,2,4,,504
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Cairn,shpe_cairn,Tomb Ship,Necrons,shpe_inertialess,30,30000,3000,25000,31250,1250,400,,30,15,10,5,5,3500,NONE,,,,,,,400,1000,300,300,10,30,7,500000,4,20,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,,0.6,2,4,shpe_travel_inertialess,504
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

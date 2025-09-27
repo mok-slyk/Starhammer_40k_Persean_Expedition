@@ -1,0 +1,49 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "voltaic_cannon_fire",
+  "glowColor": [
+    100,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_emp_discharge_hardpoint_glow.png",
+  "hardpointOffsets": [
+    20.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_emp_discharge_hardpoint_base.png",
+  "id": "shpe_emp_discharge",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      100,
+      255,
+      255,
+      125
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.5,
+    "particleSizeMin": 5,
+    "particleSizeRange": 10,
+    "spread": 8
+  },
+  "projectileSpecId": "shpe_emp_discharge_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_emp_discharge_turret_glow.png",
+  "turretOffsets": [
+    18,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_emp_discharge_turret_base.png",
+  "type": "ENERGY"
+}

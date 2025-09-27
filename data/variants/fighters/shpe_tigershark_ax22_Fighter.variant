@@ -1,0 +1,22 @@
+{
+  "displayName": "Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_tigershark_ax22",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_tigershark_ax22_Fighter",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "shpe_ion_blaster",
+        "WS0005": "shpe_ion_blaster"
+      }
+    }
+  ],
+  "wings": []
+}

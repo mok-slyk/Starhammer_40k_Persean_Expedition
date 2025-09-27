@@ -26,6 +26,14 @@ public class Witchcraft {
         }
     }
 
+    public static void setFieldInObject(Object object, String fieldName, Object value) {
+        try {
+            new FieldWrapper(findField(object, fieldName), object).set(value);
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static Field findField(Object instance, String fieldName) {
         return findField(instance, fieldName, true);
     }

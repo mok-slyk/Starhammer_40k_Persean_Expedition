@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "pulse_laser_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    19.5,
+    2,
+    19.5,
+    -2
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_phased_ion_cannon_hardpoint_base.png",
+  "id": "shpe_phased_ion_cannon",
+  "muzzleFlashSpec": {
+    "length": 70,
+    "particleColor": [
+      100,
+      255,
+      255,
+      40
+    ],
+    "particleCount": 25,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "spread": 7
+  },
+  "projectileSpecId": "shpe_phased_ion_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    17,
+    2,
+    17,
+    -2
+  ],
+  "turretSprite": "graphics/weapons/shpe_phased_ion_cannon_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,50 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "gauss_cannon_fire",
+  "glowColor": [
+    205,
+    205,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_high_cap_railgun_hardpoint_glow.png",
+  "hardpointOffsets": [
+    34.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_high_cap_railgun_hardpoint_base.png",
+  "id": "shpe_high_cap_railgun",
+  "muzzleFlashSpec": {
+    "length": 95,
+    "particleColor": [
+      100,
+      160,
+      255,
+      255
+    ],
+    "particleCount": 30,
+    "particleDuration": 0.35,
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "spread": 3
+  },
+  "projectileSpecId": "shpe_high_cap_rail_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_high_cap_railgun_turret_glow.png",
+  "turretOffsets": [
+    33.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_high_cap_railgun_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 0
+}

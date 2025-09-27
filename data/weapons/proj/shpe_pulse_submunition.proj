@@ -1,15 +1,13 @@
 {
-	"id":"shpe_burst_shot",
-	"onFireEffect":"mok_slyk.shpe.scripts.BurstOnFireEffect",
+	"id":"shpe_pulse_submunition",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
-	"collisionRadius":15,
 	"length":25.0,
-	"width":7.0,
+	"width":4.0,
 	"fadeTime":0.25,
-	"fringeColor":[60,150,200,255],
+	"fringeColor":[90,170,200,255],
 	"coreColor":[200,225,255,200],
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
