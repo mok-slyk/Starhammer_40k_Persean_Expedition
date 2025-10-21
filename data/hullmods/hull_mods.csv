@@ -30,6 +30,9 @@ Massively increases shell damagebut decreases shell speed and adds inaccuracy.
 ",,,graphics/hullmods/shpe_atomic_shell.png
 Reactive Hull,shpe_reactive_hull,,,Necron,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.ReactiveHull,The ship slowly repairs lost hull.,,,graphics/hullmods/shpe_reactive_hull.png
 Light Integrated Broadside Batteries,shpe_light_batteries,,,,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.LightBroadsideBatteries,"This ship has built-in batteries of macrocannons, while they can't be removed or directly replaced, they can potentially be equipped with different types of ammunitions.",,,graphics/hullmods/shpe_dual_broadside_integration.png
+Weapons Array Targeting,shpe_weapons_array,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.WeaponsArrayTargeting,Increases the range of small weapons by 250.,,,graphics/hullmods/shpe_weapons_array.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 Novacannon,shpe_novacannon,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Novacannon,"This ship has a built-in imperial novacannon under its prow, a devastating artillery cannon, firing explosive shells at relativistic speeds.
 
