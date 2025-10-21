@@ -18,10 +18,10 @@
         "technocratic":0,
         "hierarchical":1,
         "militarist":1,
-        "diplomatic":-0.5,
-        "ideological":0.5,
+        "diplomatic":-1,
+        "ideological":0.5, # deprecated but having it here doesnt seem to be a probelm
     },
-    "diplomacyTraits":["paranoid", "stalwart", "hates_ai", "law_and_order", "envious"],
+    "diplomacyTraits":["paranoid", "hates_ai", "law_and_order", "envious", "foreverwar", "selfrighteous"],
     
     # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
     "colonyExpeditionChance":1,	# baseline expansion behaviour
