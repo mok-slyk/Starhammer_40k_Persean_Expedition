@@ -1,0 +1,57 @@
+{
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    220,
+    220,
+    220,
+    155
+  ],
+  "fireSoundOne": "targeting_laser_burst",
+  "fringeColor": [
+    0,
+    55,
+    155,
+    220
+  ],
+  "glowColor": [
+    100,
+    155,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/fx/empty.png",
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/fx/empty.png",
+  "hitGlowRadius": 15,
+  "id": "shpe_markerlight",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 128,
+  "textureType": SMOOTH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_markerlight_turret_glow.png",
+  "turretOffsets": [
+    3.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_markerlight_turret_base.png",
+  "type": "ENERGY",
+  "width": 3
+}

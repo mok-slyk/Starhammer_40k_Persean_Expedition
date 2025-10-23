@@ -81,6 +81,10 @@
     -126,
     -19
   ],
+  "builtInWeapons": {
+    "WS0029": "shpe_markerlight",
+    "WS0030": "shpe_markerlight"
+  },
   "builtInWings": [],
   "center": [
     199,
@@ -486,6 +490,30 @@
       "mount": "HIDDEN",
       "size": "LARGE",
       "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 6.5,
+      "arc": 76,
+      "id": "WS0029",
+      "locations": [
+        -24,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -6.5,
+      "arc": 76,
+      "id": "WS0030",
+      "locations": [
+        -24,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
     }
   ],
   "width": 398
