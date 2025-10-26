@@ -47,6 +47,9 @@
     -31,
     -3
   ],
+  "builtInMods": [
+    "shpe_warden_interlock"
+  ],
   "builtInWeapons": {
     "WS0001": "shpe_deco_warden_cover_l",
     "WS0007": "shpe_deco_warden_cover_r"
@@ -104,8 +107,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "BALLISTIC",
-	  "renderOrderMod": 103
+      "type": "BALLISTIC"
     },
     {
       "angle": -43,
@@ -117,8 +119,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY",
-	  "renderOrderMod": 102
+      "type": "ENERGY"
     },
     {
       "angle": 43,
@@ -130,8 +131,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY",
-	  "renderOrderMod": 101
+      "type": "ENERGY"
     },
     {
       "angle": 0,

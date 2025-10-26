@@ -61,6 +61,9 @@
     -77,
     -23
   ],
+  "builtInMods": [
+    "shpe_warden_hook"
+  ],
   "builtInWeapons": {
     "WS0011": "shpe_deco_emissary_wing_l",
     "WS0012": "shpe_deco_emissary_wing_r"

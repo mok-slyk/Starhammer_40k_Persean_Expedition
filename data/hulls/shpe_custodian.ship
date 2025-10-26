@@ -81,6 +81,9 @@
     -126,
     -19
   ],
+  "builtInMods": [
+    "shpe_enclosed_hook"
+  ],
   "builtInWeapons": {
     "WS0029": "shpe_markerlight",
     "WS0030": "shpe_markerlight"
