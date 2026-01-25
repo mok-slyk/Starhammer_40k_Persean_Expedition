@@ -1,0 +1,16 @@
+{
+  "displayName": "T'au Station",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "shpe_station_tau_base",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_station_tau_base_Standard",
+  "weaponGroups": [],
+  "modules": [
+		{"WS0001": "shpe_station_tau_outer_Standard"},
+		{"WS0002": "shpe_station_tau_mid_Standard"},
+	],
+  "wings": []
+}

@@ -49,19 +49,21 @@ public class ProjectileEffectTracker implements EveryFrameCombatPlugin {
         for (DamagingProjectileAPI projectile : pulseSubmunitionProjectiles) {
             projectile.setCustomData("shpe_lifetime", (float) projectile.getCustomData().get("shpe_lifetime") + amount);
             if ((float) projectile.getCustomData().get("shpe_lifetime") > 0.3f) {
-                log.info("submunitions burst");
-                Vector2f direction = VectorUtils.rotate(new Vector2f(1, 0), projectile.getFacing());
-                Vector2f point = new Vector2f(projectile.getLocation());
-                engine.addHitParticle(point, new Vector2f(), 25f, 3, 0.1f, new Color(150, 170, 255));
-                for (int i = 0; i < 12; i++) {
-                    engine.spawnProjectile(
-                            projectile.getSource(),
-                            projectile.getWeapon(),
-                            "shpe_submunitions_cannon_ref",
-                            Vector2f.add(point, (Vector2f) new Vector2f(direction).scale((float) (Math.random()*25f)-7f), null),
-                            (float) (VectorUtils.getFacing(direction)-12+24*Math.random()),
-                            new Vector2f()
-                    );
+                if (!projectile.wasRemoved() && !projectile.didDamage() && !projectile.isFading()) {
+                    log.info("submunitions burst");
+                    Vector2f direction = VectorUtils.rotate(new Vector2f(1, 0), projectile.getFacing());
+                    Vector2f point = new Vector2f(projectile.getLocation());
+                    engine.addHitParticle(point, new Vector2f(), 25f, 3, 0.1f, new Color(150, 170, 255));
+                    for (int i = 0; i < 12; i++) {
+                        engine.spawnProjectile(
+                                projectile.getSource(),
+                                projectile.getWeapon(),
+                                "shpe_submunitions_cannon_ref",
+                                Vector2f.add(point, (Vector2f) new Vector2f(direction).scale((float) (Math.random() * 25f) - 7f), null),
+                                (float) (VectorUtils.getFacing(direction) - 12 + 24 * Math.random()),
+                                new Vector2f()
+                        );
+                    }
                 }
                 pulseSubmunitionsRemove.add(projectile);
                 engine.removeEntity(projectile);

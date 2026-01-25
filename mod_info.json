@@ -19,11 +19,11 @@
             "name": "MagicLib",
             "version": "1.5.4"
         },
-        {
-            "id": "shaderLib",
-            "name": "GraphicsLib",
-            "version": "1.10.2"
-        },
+        #{
+        #    "id": "shaderLib",
+        #    "name": "GraphicsLib",
+        #    "version": "1.10.2"
+        #},
 		{
 			"id": "lunalib",
 			"name": "LunaLib"
