@@ -9,6 +9,7 @@ import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.campaign.fleet.FleetMember;
+import mok_slyk.shpe.scripts.GraviticHookCombatPlugin;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class GraviticHook extends BaseHullMod {
+    private boolean initialized = false;
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
         //if (index == 0) return "" + (int)RANGE_PENALTY_PERCENT + "%";
         return null;
@@ -93,5 +95,13 @@ public class GraviticHook extends BaseHullMod {
                 yield 1;
         };
         return hooks;
+    }
+
+    @Override
+    public void advanceInCombat(ShipAPI ship, float amount) {
+        if (!initialized) {
+            GraviticHookCombatPlugin.ensureExists();
+            initialized = true;
+        }
     }
 }

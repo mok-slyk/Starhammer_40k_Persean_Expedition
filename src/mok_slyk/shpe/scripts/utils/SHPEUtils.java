@@ -5,6 +5,7 @@ import com.fs.starfarer.api.combat.CombatEntityAPI;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
+import org.lwjgl.util.vector.Vector;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicFakeBeam;
 
@@ -123,6 +124,12 @@ public class SHPEUtils {
      */
     public static Vector2f scaleVector(Vector2f vec, float fac) {
         return new Vector2f(vec.x*fac, vec.y*fac);
+    }
+
+    public static Vector2f collinearVectorOfScale(Vector2f vec, float scale) {
+        Vector2f vec2 = new Vector2f(vec);
+        if (vec2.length() == 0) return new Vector2f(0, 0);
+        return (Vector2f) vec2.normalise().scale(scale);
     }
 
     public static Vector2f getLineEntityCollisionPoint(CombatEntityAPI entity, Vector2f start, Vector2f end) {
