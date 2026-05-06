@@ -177,4 +177,16 @@ public class SHPEUtils {
         int n = colors.length;
         return new Color(r / n, g / n, b / n, a / n);
     }
+
+    public static Color lerpColor(Color color1, Color color2, float fac) {
+        MathUtils.clamp(fac, 0, 1);
+        float r = 0, g = 0, b = 0, a = 0;
+        float fac1 = 1 - fac;
+        r = fac1 * color1.getRed() + fac * color2.getRed();
+        g = fac1 * color1.getGreen() + fac * color2.getGreen();
+        b = fac1 * color1.getBlue() + fac * color2.getBlue();
+        a = fac1 * color1.getAlpha() + fac * color2.getAlpha();
+
+        return new Color(r, g, b, a);
+    }
 }
