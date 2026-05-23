@@ -1,7 +1,11 @@
 package mok_slyk.shpe.scripts.utils;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.BoundsAPI;
 import com.fs.starfarer.api.combat.CombatEntityAPI;
+import com.fs.starfarer.api.combat.DamagingProjectileAPI;
+import com.fs.starfarer.api.combat.WeaponAPI;
+import org.apache.log4j.Logger;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
@@ -16,6 +20,7 @@ import java.util.List;
 import java.util.Random;
 
 public class SHPEUtils {
+    private static Logger log = Global.getLogger(SHPEUtils.class);
     protected static Random rand = new Random();
     private static final float EPS = 1e-6f;
 
@@ -182,11 +187,30 @@ public class SHPEUtils {
         MathUtils.clamp(fac, 0, 1);
         float r = 0, g = 0, b = 0, a = 0;
         float fac1 = 1 - fac;
-        r = fac1 * color1.getRed() + fac * color2.getRed();
-        g = fac1 * color1.getGreen() + fac * color2.getGreen();
-        b = fac1 * color1.getBlue() + fac * color2.getBlue();
-        a = fac1 * color1.getAlpha() + fac * color2.getAlpha();
+        r = MathUtils.clamp((fac1 * color1.getRed() + fac * color2.getRed()) / 255, 0, 1);
+        g = MathUtils.clamp((fac1 * color1.getGreen() + fac * color2.getGreen()) / 255, 0, 1);
+        b = MathUtils.clamp((fac1 * color1.getBlue() + fac * color2.getBlue()) / 255, 0, 1);
+        a = MathUtils.clamp((fac1 * color1.getAlpha() + fac * color2.getAlpha()) / 255, 0, 1);
+
+        log.info(r +" "+ g +" "+  b +" "+  a);
 
         return new Color(r, g, b, a);
+    }
+
+    public static int findClosestBarrel(WeaponAPI weapon, Vector2f loc) {
+        float closestDistSquared = Float.MAX_VALUE;
+        int closest = 0;
+        for (int i = 0; i < 100; i++) {
+            try {
+                float distSquared = MathUtils.getDistanceSquared(weapon.getFirePoint(i), loc);
+                if (distSquared < closestDistSquared) {
+                    closestDistSquared = distSquared;
+                    closest = i;
+                }
+            } catch (IndexOutOfBoundsException e) {
+                break;
+            }
+        }
+        return closest;
     }
 }

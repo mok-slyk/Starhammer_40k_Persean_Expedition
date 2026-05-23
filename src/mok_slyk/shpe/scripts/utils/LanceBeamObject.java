@@ -28,16 +28,16 @@ public class LanceBeamObject {
     List<LanceBeamLayer> layers = new ArrayList<>();
 
     float range;
-    float extensionTime;
-    float breakOffTime;
+    float extensionTime = 0.1f;
+    float breakOffTime = 999f;
 
     //damage mechanical traits
-    boolean didHit;
+    boolean didHit = false;
     float nonEmpDamage;
     DamageType damageType;
     float empDamage;
-    boolean ignoreShields;
-    boolean isSoftFlux;
+    boolean ignoreShields = false;
+    boolean isSoftFlux = true;
     float fadeInTime;
     float damageWindowTime;
     float fadeOutTime;
@@ -46,7 +46,7 @@ public class LanceBeamObject {
     // maybe add fade damage here later??
     float hitStrengthMult = 1;
     OnHitEffectPlugin onHit;
-    boolean applyOnHitToPierced;
+    boolean applyOnHitToPierced = false;
     boolean doPierce = false;
     float pierceStrength = 0;
     float impact = 0;
@@ -73,9 +73,9 @@ public class LanceBeamObject {
         }
 
         //extend beam
-        if (extension < range) {
-            extension = Math.min(range, age/extensionTime * range);
-        }
+        if (extensionTime > 0) extension = Math.min(range, age/extensionTime * range);
+        else extension = range;
+
 
         ShipAPI source = null;
         //handle collision and damage:
@@ -83,24 +83,29 @@ public class LanceBeamObject {
         List<LanceBeam.PierceHitData> pierced = new ArrayList<>();
         Vector2f beamEnd = MathUtils.getPointOnCircumference(pos, extension, angle);
         List<CombatEntityAPI> entities = CombatUtils.getEntitiesWithinRange(pos, extension*1.3f);
+
+        if (weapon != null) source = weapon.getShip();
+        int owner = 69;
+        if (source != null) owner = source.getOwner();
+
         if (!entities.isEmpty()) {
             for (CombatEntityAPI entity : entities) {
+                log.info("checking entity");
                 if (entity.getCollisionClass() == CollisionClass.NONE) continue;
                 Vector2f collisionPoint = null;
                 boolean isHitableFighter = false;
-                if (weapon != null) source = weapon.getShip();
                 if (entity instanceof ShipAPI ship) {
                     if (
                             entity != source
-                                    && source != null && !(source.isShipWithModules() && source.getChildModulesCopy().contains(entity))
+                                    && (source == null || !(source.isShipWithModules() && source.getChildModulesCopy().contains(entity)))
                                     && !(entity.getCollisionClass() == CollisionClass.FIGHTER)
                                     && CollisionUtils.getCollides(pos, beamEnd, entity.getLocation(), entity.getCollisionRadius())
                     ){
                         collisionPoint = getLanceShipCollisionPoint(ship, pos, beamEnd, ignoreShields);
                     } else {
-                        isHitableFighter = entity.getCollisionClass() == CollisionClass.FIGHTER && !(entity.getOwner() == source.getOwner() && !ship.getEngineController().isFlamedOut());
+                        isHitableFighter = entity.getCollisionClass() == CollisionClass.FIGHTER && !(entity.getOwner() == owner && !ship.getEngineController().isFlamedOut());
                     }
-                } if ((entity instanceof CombatAsteroidAPI || (entity instanceof MissileAPI && entity.getOwner() != source.getOwner()) || isHitableFighter) && CollisionUtils.getCollides(pos, beamEnd, entity.getLocation(), entity.getCollisionRadius())) {
+                } if ((entity instanceof CombatAsteroidAPI || (entity instanceof MissileAPI && entity.getOwner() != owner) || isHitableFighter) && CollisionUtils.getCollides(pos, beamEnd, entity.getLocation(), entity.getCollisionRadius())) {
                     Vector2f piercePoint = MagicFakeBeam.getCollisionPointOnCircumference(pos, beamEnd, entity.getLocation(), entity.getCollisionRadius());
                     log.info(entity.getMass());
                     if (doPierce && (Math.random() * 2 * pierceStrength) > entity.getMass()) {
@@ -111,6 +116,7 @@ public class LanceBeamObject {
                 }
                 if (collisionPoint != null && MathUtils.getDistanceSquared(pos, collisionPoint) < MathUtils.getDistanceSquared(pos, beamEnd)){
                     beamEnd = collisionPoint;
+                    extension = MathUtils.getDistance(pos, beamEnd);
                     target = entity;
                 }
             }
@@ -148,6 +154,8 @@ public class LanceBeamObject {
         for (LanceBeamLayer layer: layers) {
             layer.advance(amount);
         }
+
+        log.info("beam state: extension: " + extension + ", age: " + age);
     }
 
     /**
@@ -169,8 +177,8 @@ public class LanceBeamObject {
             glBegin(GL_QUADS);
 
             for (int j = 0; j < layer.stages.size() - 1; j++) { //we descend the list, assumes the stages are sorted
-                LanceBeamStage currentStage = layer.stages.get(i);
-                LanceBeamStage nextStage = layer.stages.get(i+1);
+                LanceBeamStage currentStage = layer.stages.get(j);
+                LanceBeamStage nextStage = layer.stages.get(j+1);
 
                 glColor4ub(
                         (byte) currentStage.currentColor.getRed(),
@@ -190,7 +198,6 @@ public class LanceBeamObject {
                 float segmentLength = nextStage.currentPos - currentStage.currentPos;
 
                 if (!engine.getViewport().isNearViewport(currentStage.getWorldPosition(), segmentLength * 2f)) {
-                    // TODO: do what needed
                     continue;
                 }
 
@@ -206,6 +213,9 @@ public class LanceBeamObject {
 
                 texturePos = nextStage.currentPos / extension;
 
+                log.info("id = "+j + "/" + layer.stages.size());
+                log.info("tpos2: "+texturePos);
+
                 glColor4ub(
                         (byte) nextStage.currentColor.getRed(),
                         (byte) nextStage.currentColor.getGreen(),
@@ -219,6 +229,8 @@ public class LanceBeamObject {
 
                 // calculate q offset
                 float qTop = topWidth/bottomWidth;
+
+                log.info("qTop: "+qTop);
 
                 // create second right corner
                 glTexCoord4f(1f*qTop, texturePos*qTop, 0f, qTop);

@@ -5,29 +5,31 @@ import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 
+import static mok_slyk.shpe.scripts.utils.SHPEDebug.publicLogger;
+
 public class LanceBeamStage {
     // everything is recalculated from progress and parameters each frame
     LanceBeamObject beamObject;
 
     //movement
     float startPosRel;
-    float startPosOffsetAbs;
+    float startPosOffsetAbs = 0;
 
     // drift is over total time
-    float posDriftRel;
-    float posDriftAbs;
+    float posDriftRel = 0;
+    float posDriftAbs = 0;
     float maxPosRel;
-    float maxPosOffsetAbs;
+    float maxPosOffsetAbs = 0;
     float minPosRel;
-    float minPosOffsetAbs;
+    float minPosOffsetAbs = 0;
 
-    float currentPos; // is completely recalculated every frame
+    float currentPos = 0; // is completely recalculated every frame
 
     Color startColor;
     Color mainColor;
     Color endColor;
 
-    Color currentColor;
+    Color currentColor = null;
 
     float colorFadeIn;
     float colorFadeMain;
@@ -39,7 +41,7 @@ public class LanceBeamStage {
     float opacityFull;
     float opacityFadeOut;
 
-    float currentOpacity;
+    float currentOpacity = 0;
 
     float widthStart;
     float widthMain;
@@ -69,12 +71,12 @@ public class LanceBeamStage {
             currentOpacity = 0;
 
         //calculate color
-        if (beamAge < beamObject.fadeInTime)
-            currentColor = SHPEUtils.lerpColor(startColor, mainColor, beamAge / beamObject.fadeInTime);
-        else if (beamAge >= beamObject.fadeInTime && beamAge < beamObject.fadeInTime + beamObject.damageWindowTime)
+        if (beamAge < colorFadeIn)
+            currentColor = SHPEUtils.lerpColor(startColor, mainColor, beamAge / colorFadeIn);
+        else if (beamAge >= colorFadeIn && beamAge < colorFadeIn + colorFadeMain)
             currentColor = mainColor;
-        else if (beamAge >= beamObject.fadeInTime + beamObject.damageWindowTime && beamAge < beamObject.fadeInTime + beamObject.damageWindowTime + beamObject.fadeOutTime)
-            currentColor = SHPEUtils.lerpColor(mainColor, endColor, 1 - (beamAge - beamObject.fadeInTime - beamObject.damageWindowTime / beamObject.fadeOutTime - beamObject.fadeInTime - beamObject.damageWindowTime));
+        else if (beamAge >= colorFadeIn + colorFadeMain && beamAge < colorFadeIn + colorFadeMain + colorFadeOut)
+            currentColor = SHPEUtils.lerpColor(mainColor, endColor, 1 - (beamAge - colorFadeIn - colorFadeMain / colorFadeOut - colorFadeIn - colorFadeMain));
         else
             currentColor = endColor;
 
@@ -90,9 +92,48 @@ public class LanceBeamStage {
         }
         else
             currentWidth = widthEnd;
+
     }
 
     public Vector2f getWorldPosition() {
         return MathUtils.getPointOnCircumference(beamObject.pos, currentPos, beamObject.angle);
+    }
+
+    public LanceBeamStage() {
+    }
+
+    public LanceBeamStage(LanceBeamStage other) {
+        // object reference (shallow copy)
+        this.beamObject = other.beamObject;
+
+        // movement
+        this.startPosRel = other.startPosRel;
+        this.startPosOffsetAbs = other.startPosOffsetAbs;
+
+        this.posDriftRel = other.posDriftRel;
+        this.posDriftAbs = other.posDriftAbs;
+        this.maxPosRel = other.maxPosRel;
+        this.maxPosOffsetAbs = other.maxPosOffsetAbs;
+        this.minPosRel = other.minPosRel;
+        this.minPosOffsetAbs = other.minPosOffsetAbs;
+
+        // colors (defensive copy)
+        this.startColor = other.startColor != null ? new Color(other.startColor.getRGB(), true) : null;
+        this.mainColor  = other.mainColor  != null ? new Color(other.mainColor.getRGB(), true)  : null;
+        this.endColor   = other.endColor   != null ? new Color(other.endColor.getRGB(), true)   : null;
+
+        this.colorFadeIn = other.colorFadeIn;
+        this.colorFadeMain = other.colorFadeMain;
+        this.colorFadeOut = other.colorFadeOut;
+
+        this.opacityMult = other.opacityMult;
+        this.opacityDelay = other.opacityDelay;
+        this.opacityFadeIn = other.opacityFadeIn;
+        this.opacityFull = other.opacityFull;
+        this.opacityFadeOut = other.opacityFadeOut;
+
+        this.widthStart = other.widthStart;
+        this.widthMain = other.widthMain;
+        this.widthEnd = other.widthEnd;
     }
 }

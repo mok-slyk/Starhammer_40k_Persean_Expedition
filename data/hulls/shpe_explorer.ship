@@ -189,6 +189,11 @@
     -248.5,
     -9.5
   ],
+  "builtInWeapons": {
+    "WS0032": "shpe_deco_explorer_front",
+    "WS0033": "shpe_deco_explorer_side_r",
+    "WS0034": "shpe_deco_explorer_side_l"
+  },
   "builtInWings": [],
   "center": [
     100,
@@ -237,7 +242,7 @@
       "arc": 270,
       "id": "WS0001",
       "locations": [
-        183,
+        180,
         -0
       ],
       "mount": "TURRET",
@@ -369,8 +374,8 @@
       "arc": 160,
       "id": "WS0012",
       "locations": [
-        -80,
-        -15
+        -79,
+        -30
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -381,8 +386,8 @@
       "arc": 160,
       "id": "WS0013",
       "locations": [
-        -80,
-        15
+        -79,
+        30
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -393,8 +398,8 @@
       "arc": 160,
       "id": "WS0014",
       "locations": [
-        -128,
-        -15
+        -129,
+        -30
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -405,8 +410,8 @@
       "arc": 160,
       "id": "WS0015",
       "locations": [
-        -128,
-        15
+        -129,
+        30
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -505,7 +510,7 @@
         -0
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC"
     },
     {
@@ -513,11 +518,11 @@
       "arc": 90,
       "id": "WS0024",
       "locations": [
-        201.5,
-        29.5
+        208,
+        29
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC"
     },
     {
@@ -525,11 +530,11 @@
       "arc": 90,
       "id": "WS0025",
       "locations": [
-        201.5,
-        -29.5
+        208,
+        -29
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC"
     },
     {
@@ -538,7 +543,7 @@
       "id": "WS0026",
       "locations": [
         188.5,
-        84
+        84.5
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -550,7 +555,7 @@
       "id": "WS0027",
       "locations": [
         188.5,
-        -84
+        -84.5
       ],
       "mount": "TURRET",
       "size": "SMALL",
@@ -659,6 +664,42 @@
       "mount": "HIDDEN",
       "size": "LARGE",
       "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0032",
+      "locations": [
+        209,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0033",
+      "locations": [
+        176,
+        -77
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0034",
+      "locations": [
+        176,
+        77
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
     }
   ],
   "width": 200
