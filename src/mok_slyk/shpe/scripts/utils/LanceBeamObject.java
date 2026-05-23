@@ -169,9 +169,13 @@ public class LanceBeamObject {
             int textureID = layer.sprite.getTextureId(); // TODO: handle animations
 
             glPushMatrix();
+
             glEnable(GL_TEXTURE_2D);
             glBindTexture(GL_TEXTURE_2D, textureID);
+
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
             glEnable(GL_BLEND);
             glBlendFunc(layer.blendModeSRC, layer.blendModeDEST);
             glBegin(GL_QUADS);
@@ -190,10 +194,16 @@ public class LanceBeamObject {
                 float stage1Radius = currentStage.currentWidth * 0.5f;
                 float stage2Radius = nextStage.currentWidth * 0.5f;
 
-                Vector2f point1Left = MathUtils.getPointOnCircumference(currentStage.getWorldPosition(), stage1Radius, angle - 90f);
-                Vector2f point1Right = MathUtils.getPointOnCircumference(currentStage.getWorldPosition(), stage1Radius, angle + 90f);
-                Vector2f point2Left = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle - 90f);
-                Vector2f point2Right = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle + 90f);
+                Vector2f point1Left = MathUtils.getPointOnCircumference(currentStage.getWorldPosition(), stage1Radius, angle + 90f);
+                Vector2f point1Right = MathUtils.getPointOnCircumference(currentStage.getWorldPosition(), stage1Radius, angle - 90f);
+                Vector2f point2Left = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle + 90f);
+                Vector2f point2Right = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle - 90f);
+
+                float ax = point2Right.getX() - point1Left.getX(), ay = point2Right.getY() - point1Left.getY(); // dir of diagonal BL->TR
+                float bx = point2Left.getX() - point1Right.getX(), by = point2Left.getY() - point1Left.getY(); // dir of diagonal BR->TL
+                float cx = point1Right.getX() - point1Left.getX(), cy = point1Right.getY() - point1Left.getY(); // vec from p0 to p1
+
+                float denom = ax * by - ay * bx;
 
                 float segmentLength = nextStage.currentPos - currentStage.currentPos;
 
@@ -201,20 +211,50 @@ public class LanceBeamObject {
                     continue;
                 }
 
+                // q weights per vertex — default 1.0 (works for rectangles)
+                float q0 = 1f, q1 = 1f, q2 = 1f, q3 = 1f;
+
+                if (Math.abs(denom) > 1e-6f) {
+                    float t = (cx * by - cy * bx) / denom;
+                    float s = (cx * ay - cy * ax) / denom;
+
+                    log.info("id = "+j + "/" + layer.stages.size());
+                    log.info("t = " + t);
+                    log.info("s = " + s);
+
+                    // t = how far along BL->TR the intersection is
+                    // s = how far along BR->TL the intersection is
+
+                    // q at each corner is proportional to the "reach" from that corner
+                    // to the diagonal intersection point.
+
+                    float iBL = 1f - t;
+                    float iTR = t;
+                    float iBR = 1f - s;
+                    float iTL = s;
+
+                    // q = 1 / (fraction of diagonal from this corner to intersection)
+                    // Normalized so the smallest is 1.0
+                    q0 = 1f / iBL;   // BL
+                    q1 = 1f / iBR;   // BR
+                    q2 = 1f / iTR;   // TR
+                    q3 = 1f / iTL;   // TL
+
+                    float minQ = Math.min(Math.min(q0, q1), Math.min(q2, q3));
+                    q0 /= minQ; q1 /= minQ; q2 /= minQ; q3 /= minQ;
+                }
+
                 float texturePos = currentStage.currentPos / extension;
 
                 // create first left corner
-                glTexCoord4f(0f, texturePos, 0f, 1f);
+                glTexCoord4f(0f * q0, 0f * q0, 0f, q0);
                 glVertex2f(point1Left.getX(), point1Left.getY());
 
                 // create first right corner
-                glTexCoord4f(1f, texturePos, 0f, 1f);
+                glTexCoord4f(1f * q1, 0f * q1, 0f, q1);
                 glVertex2f(point1Right.getX(), point1Right.getY());
 
                 texturePos = nextStage.currentPos / extension;
-
-                log.info("id = "+j + "/" + layer.stages.size());
-                log.info("tpos2: "+texturePos);
 
                 glColor4ub(
                         (byte) nextStage.currentColor.getRed(),
@@ -223,21 +263,12 @@ public class LanceBeamObject {
                         (byte) (nextStage.currentOpacity * 255)
                 );
 
-                // calculate widths
-                float bottomWidth = point1Right.getX() - point1Left.getX();
-                float topWidth = point2Right.getX() - point2Left.getX();
-
-                // calculate q offset
-                float qTop = topWidth/bottomWidth;
-
-                log.info("qTop: "+qTop);
-
                 // create second right corner
-                glTexCoord4f(1f*qTop, texturePos*qTop, 0f, qTop);
+                glTexCoord4f(1f * q2, 1f * q2, 0f, q2);
                 glVertex2f(point2Right.getX(), point2Right.getY());
 
                 // create second left corner
-                glTexCoord4f(0f, texturePos*qTop, 0f, qTop);
+                glTexCoord4f(0f * q3, 1f * q3, 0f, q3);
                 glVertex2f(point2Left.getX(), point2Left.getY());
 
             }

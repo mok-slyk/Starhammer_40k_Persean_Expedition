@@ -24,7 +24,7 @@ public class LanceBeamTesterOnFireEffect implements OnFireEffectPlugin {
         SpriteAPI coreSprite = Global.getSettings().getSprite("fx", "trail_tester");
         SpriteAPI fringeSprite = Global.getSettings().getSprite("fx", "base_trail_smoke");
 
-        LanceBeamObject beam = LanceBeamSpawner.spawnSimpleLanceBeam(engine, projectile.getSpawnLocation(), projectile.getFacing(), weapon.getRange(), 0.3f,0.3f, 0.1f, coreSprite, new Color(255, 145, 0), new Color(255, 60, 0), new Color(1, 43, 190), 5, 15, 5, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), weapon, SHPEUtils.findClosestBarrel(weapon, projectile.getLocation()), 0.5f );
+        LanceBeamObject beam = LanceBeamSpawner.spawnSimpleLanceBeam(engine, projectile.getSpawnLocation(), projectile.getFacing(), weapon.getRange(), 2f,2f, 2f, coreSprite, new Color(255, 145, 0), new Color(255, 60, 0), new Color(1, 43, 190), 5, 15, 5, projectile.getDamageAmount(), projectile.getDamageType(), projectile.getEmpAmount(), weapon, SHPEUtils.findClosestBarrel(weapon, projectile.getLocation()), 0.5f );
 
         float flashSize = 30f;
         engine.addHitParticle(

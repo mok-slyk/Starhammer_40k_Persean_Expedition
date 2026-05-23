@@ -1,33 +1,13 @@
 {
-  "id": "shpe_lance_tester",
-  "specClass": "projectile",
-  "projectileSpecId": "shpe_lance_tester_shot",
-  "type": "ENERGY",
-  "size": "MEDIUM",
-  "turretSprite": "graphics/weapons/shpe_starbreaker_lance_turret_base.png",
-  "turretGlowSprite": "graphics/weapons/shpe_starbreaker_lance_turret_glow.png",
-  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
-  "hardpointSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_base.png",
-  "hardpointGlowSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_glow.png",
-  "glowColor": [
-    255,
-    190,
-    120,
-    180
-  ],
-  "turretOffsets": [
-    19,
-    5,
-    19,
-    0,
-    19,
-    -5
-  ],
-  "turretAngleOffsets": [
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "heavy_blaster_fire",
+  "hardpointAngleOffsets": [
     0,
     0,
     0
   ],
+  "hardpointGlowSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_glow.png",
   "hardpointOffsets": [
     22,
     5,
@@ -36,26 +16,35 @@
     22,
     -5
   ],
-  "hardpointAngleOffsets": [
-    0,
-    0,
-    0
-  ],
-  "barrelMode": "LINKED",
-  "animationType": "MUZZLE_FLASH",
+  "hardpointSprite": "graphics/weapons/shpe_starbreaker_lance_hardpoint_base.png",
+  "id": "shpe_lance_tester",
   "muzzleFlashSpec": {
     "length": 80,
-    "spread": 10,
-    "particleSizeMin": 15,
-    "particleSizeRange": 15,
-    "particleDuration": 0.6,
-    "particleCount": 25,
     "particleColor": [
       255,
       220,
       120,
       40
-    ]
+    ],
+    "particleCount": 25,
+    "particleDuration": 0.6,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "spread": 10
   },
-  "fireSoundTwo": "heavy_blaster_fire"
+  "projectileSpecId": "shpe_lance_tester_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/shpe_starbreaker_lance_turret_glow.png",
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretSprite": "graphics/weapons/shpe_starbreaker_lance_turret_base.png",
+  "turretUnderSprite": "graphics/weapons/shpe_empty_weapon.png",
+  "type": "ENERGY"
 }
