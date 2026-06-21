@@ -192,7 +192,7 @@ public class SHPEUtils {
         b = MathUtils.clamp((fac1 * color1.getBlue() + fac * color2.getBlue()) / 255, 0, 1);
         a = MathUtils.clamp((fac1 * color1.getAlpha() + fac * color2.getAlpha()) / 255, 0, 1);
 
-        log.info(r +" "+ g +" "+  b +" "+  a);
+        //log.info(r +" "+ g +" "+  b +" "+  a);
 
         return new Color(r, g, b, a);
     }
@@ -213,4 +213,25 @@ public class SHPEUtils {
         }
         return closest;
     }
+
+    /**
+     * bilinearly interpolate positions across a quad,
+     *
+     * s goes left->right (BL->BR), t goes bottom->top (BL->TL)
+     *
+     */
+    public static float[] bilerpQuad(
+            Vector2f bl,   // BL
+            Vector2f br,   // BR
+            Vector2f tr,   // TR
+            Vector2f tl,   // TL
+            float s, float t
+    ) {
+        float bx = bl.getX() + s * (br.getX() - bl.getX());
+        float by = bl.getY() + s * (br.getY() - bl.getY());
+        float tx = tl.getX() + s * (tr.getX() - tl.getX());
+        float ty = tl.getY() + s * (tr.getY() - tl.getY());
+        return new float[]{bx + t * (tx - bx), by + t * (ty - by)};
+    }
+
 }

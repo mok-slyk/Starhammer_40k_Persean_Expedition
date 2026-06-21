@@ -11,6 +11,7 @@ import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicFakeBeam;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -184,13 +185,6 @@ public class LanceBeamObject {
                 LanceBeamStage currentStage = layer.stages.get(j);
                 LanceBeamStage nextStage = layer.stages.get(j+1);
 
-                glColor4ub(
-                        (byte) currentStage.currentColor.getRed(),
-                        (byte) currentStage.currentColor.getGreen(),
-                        (byte) currentStage.currentColor.getBlue(),
-                        (byte) (currentStage.currentOpacity * 255)
-                );
-
                 float stage1Radius = currentStage.currentWidth * 0.5f;
                 float stage2Radius = nextStage.currentWidth * 0.5f;
 
@@ -199,77 +193,55 @@ public class LanceBeamObject {
                 Vector2f point2Left = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle + 90f);
                 Vector2f point2Right = MathUtils.getPointOnCircumference(nextStage.getWorldPosition(), stage2Radius, angle - 90f);
 
-                float ax = point2Right.getX() - point1Left.getX(), ay = point2Right.getY() - point1Left.getY(); // dir of diagonal BL->TR
-                float bx = point2Left.getX() - point1Right.getX(), by = point2Left.getY() - point1Left.getY(); // dir of diagonal BR->TL
-                float cx = point1Right.getX() - point1Left.getX(), cy = point1Right.getY() - point1Left.getY(); // vec from p0 to p1
-
-                float denom = ax * by - ay * bx;
-
                 float segmentLength = nextStage.currentPos - currentStage.currentPos;
 
                 if (!engine.getViewport().isNearViewport(currentStage.getWorldPosition(), segmentLength * 2f)) {
                     continue;
                 }
 
-                // q weights per vertex — default 1.0 (works for rectangles)
-                float q0 = 1f, q1 = 1f, q2 = 1f, q3 = 1f;
-
-                if (Math.abs(denom) > 1e-6f) {
-                    float t = (cx * by - cy * bx) / denom;
-                    float s = (cx * ay - cy * ax) / denom;
-
-                    log.info("id = "+j + "/" + layer.stages.size());
-                    log.info("t = " + t);
-                    log.info("s = " + s);
-
-                    // t = how far along BL->TR the intersection is
-                    // s = how far along BR->TL the intersection is
-
-                    // q at each corner is proportional to the "reach" from that corner
-                    // to the diagonal intersection point.
-
-                    float iBL = 1f - t;
-                    float iTR = t;
-                    float iBR = 1f - s;
-                    float iTL = s;
-
-                    // q = 1 / (fraction of diagonal from this corner to intersection)
-                    // Normalized so the smallest is 1.0
-                    q0 = 1f / iBL;   // BL
-                    q1 = 1f / iBR;   // BR
-                    q2 = 1f / iTR;   // TR
-                    q3 = 1f / iTL;   // TL
-
-                    float minQ = Math.min(Math.min(q0, q1), Math.min(q2, q3));
-                    q0 /= minQ; q1 /= minQ; q2 /= minQ; q3 /= minQ;
-                }
-
                 float texturePos = currentStage.currentPos / extension;
 
-                // create first left corner
-                glTexCoord4f(0f * q0, 0f * q0, 0f, q0);
-                glVertex2f(point1Left.getX(), point1Left.getY());
+                int subdivisions = 8;
 
-                // create first right corner
-                glTexCoord4f(1f * q1, 0f * q1, 0f, q1);
-                glVertex2f(point1Right.getX(), point1Right.getY());
+                for (int k = 0; k < subdivisions; k++) {
+                    float t0 = texturePos + (((float) k / subdivisions) * segmentLength) / extension;
+                    float t1 = texturePos + (((float) (k+1) / subdivisions) * segmentLength) / extension;
+                    log.info("t0 = " + t0);
+                    log.info("t1 = " + t1);
 
-                texturePos = nextStage.currentPos / extension;
+                    for (int l = 0; l < subdivisions; l++) {
+                        float s0 = (float) l / subdivisions;
+                        float s1 = (float) (l + 1) / subdivisions;
 
-                glColor4ub(
-                        (byte) nextStage.currentColor.getRed(),
-                        (byte) nextStage.currentColor.getGreen(),
-                        (byte) nextStage.currentColor.getBlue(),
-                        (byte) (nextStage.currentOpacity * 255)
-                );
+                        float[] v00 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, t0);
+                        float[] v10 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, t0);
+                        float[] v11 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, t1);
+                        float[] v01 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, t1);
 
-                // create second right corner
-                glTexCoord4f(1f * q2, 1f * q2, 0f, q2);
-                glVertex2f(point2Right.getX(), point2Right.getY());
+                        Color color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, t0);
+                        int r = color.getRed(); int g = color.getGreen(); int b = color.getBlue(); int a = color.getAlpha();
 
-                // create second left corner
-                glTexCoord4f(0f * q3, 1f * q3, 0f, q3);
-                glVertex2f(point2Left.getX(), point2Left.getY());
+                        glColor4ub((byte) r, (byte) g, (byte) b, (byte) a);
+
+                        glTexCoord2f(s0, t0);
+                        glVertex2f(v00[0], v00[1]);
+
+                        glTexCoord2f(s1, t0);
+                        glVertex2f(v10[0], v10[1]);
+
+
+                        color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, t0);
+                        r = color.getRed(); g = color.getGreen(); b = color.getBlue(); a = color.getAlpha();
+
+                        glColor4ub((byte) r, (byte) g, (byte) b, (byte) a);
+
+                        glTexCoord2f(s1, t1);
+                        glVertex2f(v11[0], v11[1]);
+
+                        glTexCoord2f(s0, t1);
+                        glVertex2f(v01[0], v01[1]);
+                    }
+                }
 
             }
 

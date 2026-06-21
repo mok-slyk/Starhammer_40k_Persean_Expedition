@@ -1,0 +1,94 @@
+{
+  "bounds": [
+    -13,
+    19,
+    17,
+    -0,
+    -13,
+    -19
+  ],
+  "builtInWings": [],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "center": [
+    21,
+    20
+  ],
+  "collisionRadius": 40.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -18,
+        8
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -18,
+        -8
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    }
+  ],
+  "height": 40,
+  "hullId": "shpe_barracuda",
+  "hullName": "Barracuda",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 34,
+  "spriteName": "graphics/ships/shpe_barracuda.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -99.5,
+      "arc": 246,
+      "id": "WS0001",
+      "locations": [
+        -10,
+        -18
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 99.5,
+      "arc": 246,
+      "id": "WS0002",
+      "locations": [
+        -10,
+        18
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0003",
+      "locations": [
+        19,
+        -2
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 42
+}

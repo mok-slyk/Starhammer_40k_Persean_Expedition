@@ -1,0 +1,178 @@
+{
+  "bounds": [
+    -52,
+    6,
+    -47,
+    6,
+    -47,
+    12,
+    -56.5,
+    12.5,
+    -55.5,
+    24.5,
+    -49,
+    27,
+    -47,
+    36,
+    -21,
+    35.5,
+    -19,
+    20.5,
+    -11.5,
+    10.5,
+    2,
+    9,
+    6,
+    6,
+    27,
+    5,
+    41,
+    10,
+    46,
+    26,
+    49.5,
+    26,
+    57,
+    -0,
+    49.5,
+    -26,
+    46,
+    -26,
+    41,
+    -10,
+    27,
+    -5,
+    6,
+    -6,
+    2,
+    -9,
+    -11.5,
+    -10.5,
+    -19,
+    -20.5,
+    -21,
+    -35.5,
+    -47,
+    -36,
+    -49,
+    -27,
+    -55.5,
+    -24.5,
+    -56.5,
+    -12.5,
+    -47,
+    -12,
+    -47,
+    -6,
+    -52,
+    -6
+  ],
+  "builtInWeapons": {
+    "WS0005": "shpe_gravitic_launcher_emissary_r"
+  },
+  "builtInWings": [],
+  "center": [
+    37,
+    58
+  ],
+  "collisionRadius": 98,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 28,
+      "length": 71,
+      "location": [
+        -58,
+        -19
+      ],
+      "style": "HIGH_TECH",
+      "width": 28
+    },
+    {
+      "angle": -180,
+      "contrailSize": 28,
+      "length": 71,
+      "location": [
+        -58,
+        19
+      ],
+      "style": "HIGH_TECH",
+      "width": 28
+    }
+  ],
+  "height": 116,
+  "hullId": "shpe_defender",
+  "hullName": "Defender",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 85,
+  "spriteName": "graphics/ships/shpe_defender.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        -2,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 250,
+      "id": "WS0002",
+      "locations": [
+        -33,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 63.5,
+      "arc": 223,
+      "id": "WS0003",
+      "locations": [
+        49,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -63.5,
+      "arc": 223,
+      "id": "WS0004",
+      "locations": [
+        49,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 223,
+      "id": "WS0005",
+      "locations": [
+        57,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 74
+}

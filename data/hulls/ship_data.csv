@@ -50,6 +50,8 @@ Defiant (M),shpe_defiant_mech,Light Carrier Cruiser,Mechanicus,shpe_allaheadfull
 Starhawk (M),shpe_starhawk_mech,,Mechanicus,,,1200,70,400,,50,0,,200,400,200,20,90,60,NONE,,120,0,1,,,4,4,,,,,,,,,,,,,,,,,,,,,,0,,,,118
 Fury (M),shpe_fury_mech,,Mechanicus,,,750,100,240,,40,0,,200,400,350,90,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Barracuda,shpe_barracuda,,Tau,,,450,50,200,,40,0,,180,400,350,120,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Barracuda AX-5-2,shpe_barracuda_ax52,,Tau Prototype,flarelauncher_fighter,,600,75,200,,40,0,,180,400,350,120,180,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Tiger Shark,shpe_tigershark,,Tau,shpe_gun_drone,,1500,100,80,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Tiger Shark AX-1-0,shpe_tigershark_ax10,,Tau Prototype,,,1500,100,200,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Tiger Shark AX-2-2,shpe_tigershark_ax22,,Tau Prototype,shpe_remora_drone,,1500,100,50,,10,0,,100,200,150,50,100,70,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
@@ -83,6 +85,9 @@ Idolator,shpe_idolator,Raider,Chaos,shpe_allaheadfull,10,5000,650,4500,,350,70,,
 Infidel,shpe_infidel,Raider,Chaos,shpe_allaheadfull,8,4000,650,3000,,200,55,,90,90,70,90,70,360,OMNI,,180,0.2,1.3,,,50,70,80,50,2,25,9,30000,5,20,300,0.25,7,7,,,,,,,,shpe_chaos_bp,,0.4,2,2,,207
 Iconoclast,shpe_iconoclast,Destroyer,Chaos,shpe_allaheadfull,6,1700,550,2100,,180,50,,120,110,90,60,90,160,OMNI,,180,0.2,1.3,,,15,50,40,25,1,25,10,9000,8,20,300,0.25,5,5,,,,,,,,shpe_chaos_bp,,0.4,2,2,,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Defender,shpe_defender,Frigate,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,180,0.4,0.8,,,15,30,20,50,1,50,10,7500,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,shpe_travel_tau,204
+Messenger,shpe_messenger,Frigate,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,180,0.4,0.8,,,15,30,20,50,1,50,10,7500,8,10,360,0.25,2,2,,,,,,,,,,0.4,2,2,shpe_travel_tau,204
+Orca,shpe_orca,Frigate,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,180,0.4,0.8,,,15,30,20,50,1,50,10,7500,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,shpe_travel_tau,204
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Warden,shpe_warden,Gunship,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,150,0.4,0.8,,,15,30,10,25,1,25,10,9000,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,shpe_travel_tau,204
 Castellan,shpe_castellan,Escort,T'au,shpe_allaheadfull,6,1500,200,3000,,250,60,,120,110,90,60,90,200,OMNI,,150,0.4,0.8,,,15,30,10,25,1,25,10,9000,8,10,360,0.25,4,4,,,,,,,,,,0.4,2,2,,204

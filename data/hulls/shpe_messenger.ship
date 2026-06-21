@@ -1,0 +1,167 @@
+{
+  "bounds": [
+    -41,
+    4,
+    -39,
+    9,
+    -51,
+    9,
+    -51,
+    20,
+    -39,
+    20,
+    -39,
+    26,
+    -22,
+    25,
+    -18,
+    17,
+    -7,
+    12,
+    -7,
+    6.5,
+    21,
+    6.5,
+    21,
+    10,
+    31.5,
+    15,
+    34,
+    32,
+    38.5,
+    32,
+    46,
+    10.5,
+    52,
+    -0,
+    46,
+    -10.5,
+    38.5,
+    -32,
+    34,
+    -32,
+    31.5,
+    -15,
+    21,
+    -10,
+    21,
+    -6.5,
+    -7,
+    -6.5,
+    -7,
+    -12,
+    -18,
+    -17,
+    -22,
+    -25,
+    -39,
+    -26,
+    -39,
+    -20,
+    -51,
+    -20,
+    -51,
+    -9,
+    -39,
+    -9,
+    -41,
+    -4
+  ],
+  "builtInWeapons": {
+    "WS0002": "shpe_markerlight",
+    "WS0004": "shpe_deco_messenger_front"
+  },
+  "builtInWings": [],
+  "center": [
+    33,
+    53
+  ],
+  "collisionRadius": 77.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 48.5,
+      "location": [
+        -53,
+        -14.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 20
+    },
+    {
+      "angle": -180,
+      "contrailSize": 20,
+      "length": 48.5,
+      "location": [
+        -53,
+        14.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 20
+    }
+  ],
+  "height": 106,
+  "hullId": "shpe_messenger",
+  "hullName": "Messenger",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 66.5,
+  "spriteName": "graphics/ships/shpe_messenger.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 203,
+      "id": "WS0001",
+      "locations": [
+        -13,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 300,
+      "id": "WS0002",
+      "locations": [
+        28,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0003",
+      "locations": [
+        37,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        35,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 66
+}

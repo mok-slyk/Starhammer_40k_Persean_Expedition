@@ -8,6 +8,8 @@ shpe_eagle_wing,shpe_eagle_Bomber,"bomber5, bomber, restricted",3,,8,24,V,4000,3
 shpe_starhawk_mech_wing,shpe_starhawk_mech_Bomber,"bomber5, bomber, shpe_mechanicus, shpe_mechanicus_bp",2,,6,15,V,4000,1000,600,1,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
 shpe_fury_mech_Interceptor_wing,shpe_fury_mech_Interceptor,"fighter, fighter4, shpe_mechanicus, shpe_mechanicus_bp",2,,6,13,V,4000,500,,3,FIGHTER,Interceptor,10,2000,,,,,,,,,,,,,v
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+shpe_barracuda_Fighter_wing,shpe_barracuda_Fighter,"fighter, fighter5",2,,6,13,V,4000,500,,2,FIGHTER,Fighter,10,2000,,,,,,,,,,,,,v
+shpe_barracuda_ax52_Fighter_wing,shpe_barracuda_ax52_Fighter,"fighter, fighter6",4,,6,13,V,4000,500,,2,FIGHTER,Fighter,15,2000,,,,,,,,,,,,,v
 shpe_tigershark_Fighter_wing,shpe_tigershark_Fighter,"fighter, fighter5",2,,10,14,V,4000,800,700,1,FIGHTER,Fighter,20,2000,,,,,,,,,,,,,
 shpe_tigershark_ax10_Fighter_wing,shpe_tigershark_ax10_Fighter,"fighter, fighter5",4,,9,12,V,4000,800,700,1,FIGHTER,Heavy Fighter,20,2000,,,,,,,,,,,,,
 shpe_tigershark_ax22_Fighter_wing,shpe_tigershark_ax22_Fighter,"fighter, fighter5",4,,12,18,V,4000,800,700,1,FIGHTER,Fighter,20,2000,,,,,,,,,,,,,

@@ -1,0 +1,173 @@
+{
+  "bounds": [
+    -48,
+    4,
+    -45,
+    4,
+    -45,
+    6,
+    -41,
+    7.5,
+    -39,
+    21,
+    -27,
+    20,
+    -30,
+    14,
+    -24.5,
+    8.5,
+    10,
+    5,
+    29,
+    11,
+    35,
+    30,
+    48,
+    -0,
+    35,
+    -30,
+    29,
+    -11,
+    10,
+    -5,
+    -24.5,
+    -8.5,
+    -30,
+    -14,
+    -27,
+    -20,
+    -39,
+    -21,
+    -41,
+    -7.5,
+    -45,
+    -6,
+    -45,
+    -4,
+    -48,
+    -4
+  ],
+  "builtInWeapons": {
+    "WS0005": "shpe_deco_orca_front"
+  },
+  "builtInWings": [],
+  "center": [
+    31,
+    50
+  ],
+  "collisionRadius": 99.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 45.5,
+      "location": [
+        -46,
+        5.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 45.5,
+      "location": [
+        -46,
+        -5.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    }
+  ],
+  "height": 100,
+  "hullId": "shpe_orca",
+  "hullName": "Orca",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 79,
+  "spriteName": "graphics/ships/shpe_orca.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 16,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        36,
+        14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+	  "renderOrderMod": 201
+    },
+    {
+      "angle": -16,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        36,
+        -14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+	  "renderOrderMod": 201
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0003",
+      "locations": [
+        39,
+        8
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0004",
+      "locations": [
+        39,
+        -8
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        34,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+	  "renderOrderMod": 101
+    },
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS0006",
+      "locations": [
+        -20,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 62
+}
