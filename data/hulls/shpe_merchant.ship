@@ -1,0 +1,311 @@
+{
+  "bounds": [
+    -97.5,
+    5.5,
+    -93.5,
+    7,
+    -93.5,
+    11,
+    -104.5,
+    11,
+    -104.5,
+    17.5,
+    -108.5,
+    18,
+    -103.5,
+    30,
+    -88.5,
+    32,
+    -87.5,
+    35,
+    -56.5,
+    42,
+    -54,
+    27,
+    -43.5,
+    20,
+    -33.5,
+    34,
+    -27.5,
+    29,
+    -27.5,
+    46,
+    -32.5,
+    48.5,
+    -21.5,
+    62.5,
+    -10.5,
+    48.5,
+    -15.5,
+    45.5,
+    -15.5,
+    29,
+    -9.5,
+    34,
+    -2.5,
+    21.5,
+    8.5,
+    34,
+    16.5,
+    24.5,
+    16.5,
+    32,
+    59,
+    31.5,
+    59,
+    20,
+    66,
+    26.5,
+    71.5,
+    10,
+    78.5,
+    10,
+    79.5,
+    43,
+    96.5,
+    35.5,
+    105.5,
+    -0,
+    96.5,
+    -35.5,
+    79.5,
+    -43,
+    78.5,
+    -10,
+    71.5,
+    -10,
+    66,
+    -26.5,
+    59,
+    -20,
+    59,
+    -31.5,
+    16.5,
+    -32,
+    16.5,
+    -24.5,
+    8.5,
+    -34,
+    -2.5,
+    -21.5,
+    -9.5,
+    -34,
+    -15.5,
+    -29,
+    -15.5,
+    -45.5,
+    -10.5,
+    -48.5,
+    -21.5,
+    -62.5,
+    -32.5,
+    -48.5,
+    -27.5,
+    -46,
+    -27.5,
+    -29,
+    -33.5,
+    -34,
+    -43.5,
+    -20,
+    -54,
+    -27,
+    -56.5,
+    -42,
+    -87.5,
+    -35,
+    -88.5,
+    -32,
+    -103.5,
+    -30,
+    -108.5,
+    -18,
+    -104.5,
+    -17.5,
+    -104.5,
+    -11,
+    -93.5,
+    -11,
+    -93.5,
+    -7,
+    -97.5,
+    -5.5
+  ],
+  "builtInWings": [],
+  "center": [
+    63,
+    109.5
+  ],
+  "collisionRadius": 167.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 28,
+      "length": 68,
+      "location": [
+        -109,
+        24
+      ],
+      "style": "HIGH_TECH",
+      "width": 28
+    },
+    {
+      "angle": -180,
+      "contrailSize": 28,
+      "length": 68,
+      "location": [
+        -109,
+        -24
+      ],
+      "style": "HIGH_TECH",
+      "width": 28
+    }
+  ],
+  "height": 216,
+  "hullId": "shpe_merchant",
+  "hullName": "Merchant",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 138.5,
+  "spriteName": "graphics/ships/shpe_merchant.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 359,
+      "id": "WS0001",
+      "locations": [
+        65.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 359,
+      "id": "WS0002",
+      "locations": [
+        8.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -40,
+      "arc": 156,
+      "id": "WS0003",
+      "locations": [
+        47.5,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 40,
+      "arc": 156,
+      "id": "WS0005",
+      "locations": [
+        47.5,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -40,
+      "arc": 156,
+      "id": "WS0006",
+      "locations": [
+        27.5,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 40,
+      "arc": 156,
+      "id": "WS0007",
+      "locations": [
+        27.5,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 15,
+      "id": "WS0008",
+      "locations": [
+        96.5,
+        -21.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 15,
+      "id": "WS0009",
+      "locations": [
+        96.5,
+        21.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -73.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -90,
+      "arc": 150,
+      "id": "WS0010",
+      "locations": [
+        -21.5,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 90,
+      "arc": 150,
+      "id": "WS0011",
+      "locations": [
+        -21.5,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    }
+  ],
+  "width": 126
+}

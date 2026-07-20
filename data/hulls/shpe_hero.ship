@@ -1,0 +1,338 @@
+{
+  "bounds": [
+    -159,
+    8,
+    -174,
+    9,
+    -178,
+    18,
+    -172,
+    28.5,
+    -158,
+    28,
+    -159,
+    38,
+    -118.5,
+    38,
+    -118,
+    31.5,
+    -102,
+    37,
+    -102,
+    48,
+    -87,
+    48,
+    -83.5,
+    33.5,
+    -73,
+    23.5,
+    -69.5,
+    49,
+    -16.5,
+    49,
+    -13.5,
+    25,
+    7,
+    25,
+    7,
+    40,
+    65,
+    40,
+    65.5,
+    23.5,
+    74.5,
+    29,
+    82,
+    13,
+    100.5,
+    19,
+    102.5,
+    66,
+    122,
+    53.5,
+    122,
+    43.5,
+    133.5,
+    35.5,
+    147,
+    6.5,
+    179,
+    7.5,
+    179,
+    -7.5,
+    147,
+    -6.5,
+    133.5,
+    -35.5,
+    122,
+    -43.5,
+    122,
+    -53.5,
+    102.5,
+    -66,
+    100.5,
+    -19,
+    82,
+    -13,
+    74.5,
+    -29,
+    65.5,
+    -23.5,
+    65,
+    -40,
+    7,
+    -40,
+    7,
+    -25,
+    -13.5,
+    -25,
+    -16.5,
+    -49,
+    -69.5,
+    -49,
+    -73,
+    -23.5,
+    -83.5,
+    -33.5,
+    -87,
+    -48,
+    -102,
+    -48,
+    -102,
+    -37,
+    -118,
+    -31.5,
+    -118.5,
+    -38,
+    -159,
+    -38,
+    -158,
+    -28,
+    -172,
+    -28.5,
+    -178,
+    -18,
+    -174,
+    -9,
+    -159,
+    -8,
+    -162.5,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0014": "shpe_gravitic_launcher_castellan"
+  },
+  "builtInWings": [],
+  "center": [
+    66,
+    180
+  ],
+  "collisionRadius": 298.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 36,
+      "length": 89,
+      "location": [
+        -179,
+        18
+      ],
+      "style": "HIGH_TECH",
+      "width": 36
+    },
+    {
+      "angle": -180,
+      "contrailSize": 36,
+      "length": 89,
+      "location": [
+        -179,
+        -18
+      ],
+      "style": "HIGH_TECH",
+      "width": 36
+    }
+  ],
+  "height": 360,
+  "hullId": "shpe_hero",
+  "hullName": "Hero",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 249.5,
+  "spriteName": "graphics/ships/shpe_hero.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 43.5,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        131,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -43.5,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        131,
+        -21
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 70,
+      "arc": 160,
+      "id": "WS0003",
+      "locations": [
+        51,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -70,
+      "arc": 160,
+      "id": "WS0004",
+      "locations": [
+        51,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 70,
+      "arc": 160,
+      "id": "WS0005",
+      "locations": [
+        21,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -70,
+      "arc": 160,
+      "id": "WS0006",
+      "locations": [
+        21,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 233,
+      "id": "WS0008",
+      "locations": [
+        -43,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 233,
+      "id": "WS0009",
+      "locations": [
+        -43,
+        -22
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 233,
+      "id": "WS0007",
+      "locations": [
+        -154,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 128,
+      "arc": 130,
+      "id": "WS0010",
+      "locations": [
+        94,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -128,
+      "arc": 130,
+      "id": "WS0011",
+      "locations": [
+        94,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 15,
+      "arc": 110,
+      "id": "WS0012",
+      "locations": [
+        127,
+        35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -15,
+      "arc": 110,
+      "id": "WS0013",
+      "locations": [
+        127,
+        -35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0014",
+      "locations": [
+        179,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 132
+}
