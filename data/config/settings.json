@@ -228,11 +228,13 @@
 	},
 	
 	"designTypeColors":{
-		"Imperium":[220,190,120,255],
-		"Corsairs":[50,180,220,255],
-		"Eldar":[50,100,220,255],
+		"Imperium of Man":[220,190,120,255],
+		"Eldar Corsairs":[50,180,220,255],
+		"Asuryani":[50,100,220,255],
 		"Necrons":[50,225,50,255],
-		"Mechanicus":[250,180,120,255],
+		"Adeptus Mechanicus":[250,180,120,255],
 		"Chaos":[250,60,160,255],
+		"T'au":[40,70,255,255],
+		"T'au Prototype":[80,180,255,255],
 	}
 }
