@@ -43,6 +43,8 @@ public class TzeentchMark extends BaseHullMod {
 
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
+        if (ship == null) return "error";
+
         if (index == 0) {
             return ((int) getDamageIncreasePercent(ship)) + "%";
         }

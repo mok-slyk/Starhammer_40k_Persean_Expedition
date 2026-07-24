@@ -18,6 +18,8 @@ public class NurgleMark extends BaseHullMod {
 
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
+        if (ship == null) return "error";
+
         if (index == 0) {
             return ((int) (ship.getVariant().hasHullMod("shpe_hellforged") ? HULL_BUFF * Hellforged.MARK_EFFECT_MULT : HULL_BUFF)) + "%";
         }

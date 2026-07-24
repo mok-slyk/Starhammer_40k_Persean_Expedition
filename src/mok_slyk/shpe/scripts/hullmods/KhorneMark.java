@@ -44,6 +44,8 @@ public class KhorneMark extends BaseHullMod {
 
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
+        if (ship == null) return "error";
+
         if (index == 2 && ChaosGodsEventIntel.get() != null && ChaosGodsEventIntel.get().gods[0].isStageActive(GodEventIntel.Stage.GIFT_1)) {
             return "Weapon damage is increased by an additional "+(ship.getVariant().hasHullMod("shpe_hellforged") ? EXTRA_DAMAGE_PERCENT * Hellforged.MARK_EFFECT_MULT : EXTRA_DAMAGE_PERCENT)+"% if the ship's hull is below 60%.";
         } else if (index == 0) {

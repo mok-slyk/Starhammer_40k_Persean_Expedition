@@ -19,6 +19,8 @@ public class SlaaneshMark extends BaseHullMod {
 
     @Override
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize, ShipAPI ship) {
+        if (ship == null) return "error";
+
         if (index == 0) {
             return ((int) (ship.getVariant().hasHullMod("shpe_hellforged") ? SPEED_BUFF * Hellforged.MARK_EFFECT_MULT : SPEED_BUFF)) + "%";
         }
