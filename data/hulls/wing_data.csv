@@ -14,6 +14,8 @@ shpe_tigershark_Fighter_wing,shpe_tigershark_Fighter,"fighter, fighter5",2,,10,1
 shpe_tigershark_ax10_Fighter_wing,shpe_tigershark_ax10_Fighter,"fighter, fighter5",4,,9,12,V,4000,800,700,1,FIGHTER,Heavy Fighter,20,2000,,,,,,,,,,,,,
 shpe_tigershark_ax22_Fighter_wing,shpe_tigershark_ax22_Fighter,"fighter, fighter5",4,,12,18,V,4000,800,700,1,FIGHTER,Fighter,20,2000,,,,,,,,,,,,,
 shpe_manta_Fighter_wing,shpe_manta_Fighter,"fighter, fighter5",4,,12,30,V,6000,1000,,1,FIGHTER,Fighter,40,2000,,,,,,,,,,,,,
+shpe_sunshark_Bomber_wing,shpe_sunshark_Bomber,"bomber5, bomber",2,,6,15,CLAW,3000,1000,600,1,BOMBER,Bomber,15,10000,,,,,,,,,,,,,10
+shpe_razorshark_Fighter_wing,shpe_razorshark_Fighter,"fighter, fighter5",2,,6,13,CLAW,3000,500,,2,FIGHTER,Fighter,10,2000,,,,,,,,,,,,,v
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 shpe_hemlock_Wraithfighter_wing,shpe_hemlock_Wraithfighter,"fighter, fighter9, restricted",5,,11,30,V,4000,500,,1,FIGHTER,Wraithfighter,30,50000,,,,,,,,,,,,,
 shpe_nightshade_Interceptor_wing,shpe_nightshade_Interceptor,"interceptor3, interceptor, restricted",4,,9,22,V,4000,200,600,1,INTERCEPTOR,Interceptor,20,10000,,,,,,,,,,,,,

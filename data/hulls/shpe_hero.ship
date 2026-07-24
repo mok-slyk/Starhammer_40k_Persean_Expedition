@@ -120,7 +120,9 @@
     -0
   ],
   "builtInWeapons": {
-    "WS0014": "shpe_gravitic_launcher_castellan"
+    "WS0014": "shpe_gravitic_launcher_castellan",
+    "WS0016": "shpe_deco_hero_front_l",
+    "WS0017": "shpe_deco_hero_front_r"
   },
   "builtInWings": [],
   "center": [
@@ -332,6 +334,42 @@
       "mount": "HARDPOINT",
       "size": "SMALL",
       "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0016",
+      "locations": [
+        124,
+        36
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0017",
+      "locations": [
+        124,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "PROW",
+      "locations": [
+        142,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
     }
   ],
   "width": 132

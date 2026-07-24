@@ -1,0 +1,46 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/shpe_deco_interceptor_drone00.png",
+  "hitGlowRadius": 0,
+  "id": "shpe_deco_interceptor_drone",
+  "pixelsPerTexel": 1,
+  "showDamageWhenDecorative": true,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [],
+  "turretOffsets": [],
+  "turretSprite": "graphics/weapons/shpe_deco_interceptor_drone00.png",
+  "numFrames": 2,
+  "frameRate": 0,
+  "type": "DECORATIVE",
+  "everyFrameEffect": "mok_slyk.shpe.scripts.InterceptorDroneWeaponEffect",
+  "width": 10
+}

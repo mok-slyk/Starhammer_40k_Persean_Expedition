@@ -76,13 +76,21 @@ Reinforced Prow,shpe_reinforced_prow,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_sly
 Widowmaker Detection Suite,shpe_widowmaker_sensors,,,Imperial,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.WidowmakerSensors,Increases the ship's in-combat vision range by %s.,,,graphics/hullmods/shpe_widowmaker_sensors.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
-Deflector,shpe_deflector,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Deflector,,,,graphics/hullmods/shpe_deflector.png
+Deflector,shpe_deflector,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.Deflector,,,,graphics/hullmods/shpe_deflector.png
 ,,,,,,,,,,,,,,,,,,,
-Gravitic Interlock,shpe_gravitic_interlock,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticInterlock,,,,graphics/hullmods/shpe_gravitic_interlock.png
-Gravitic Interlock,shpe_warden_interlock,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticInterlock,,,,graphics/hullmods/shpe_gravitic_interlock.png
-Gravitic Hook,shpe_gravitic_hook,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_gravitic_hook.png
-Gravitic Hook,shpe_warden_hook,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_gravitic_hook.png
-Enclosed Gravitic Hook,shpe_enclosed_hook,,,Tau,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_enclosed_hook.png
+Gravitic Interlock,shpe_gravitic_interlock,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticInterlock,,,,graphics/hullmods/shpe_gravitic_interlock.png
+Gravitic Interlock,shpe_warden_interlock,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticInterlock,,,,graphics/hullmods/shpe_gravitic_interlock.png
+Gravitic Hook,shpe_gravitic_hook,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_gravitic_hook.png
+Gravitic Hook,shpe_warden_hook,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_gravitic_hook.png
+Enclosed Gravitic Hook,shpe_enclosed_hook,,,T'au,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_enclosed_hook.png
+,,,,,,,,,,,,,,,,,,,
+Repair Drones,shpe_repair_drones,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_repair_drones.png
+Experimental Thruster Manifold,shpe_thruster_manifold,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_experimental_thruster_manifold.png
+Emission Dissipator,shpe_emission_dissipator,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_emissions_dissipator.png
+Strobe Field,shpe_strobe_field,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_strobe_field.png
+Attuned Lens Coatings,shpe_attuned_lens,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_attuned_lens.png
+Seeker Turrets,shpe_seeker_turrets,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_seeker_turrets.png
+Multi-Spectrum Sensors,shpe_multi_spectrum_sensors,,,T'au Prototype,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.GraviticHook,,,,graphics/hullmods/shpe_multiphase_sensors.png
 ,,,,,,,,,,,,,,,,,,,
 Spore Clouds,shpe_spore_clouds,,,Tyranid,no_drop,,,,TRUE,,0,0,0,0,mok_slyk.shpe.scripts.hullmods.SporeClouds,The ship is surrounded by swarms of semiintelligent acidic spores that shield it from harm and attack enemy ships and ordnance in close proximity.,,,graphics/hullmods/shpe_spore_cloud.png
 ,,,,,,,,,,,,,,,,,,,

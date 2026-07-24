@@ -1,0 +1,13 @@
+{
+  "displayName": "Deflector",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "shpe_protector_deflector",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "shpe_protector_deflector_Variant",
+  "weaponGroups": [],
+  "wings": []
+}

@@ -1,0 +1,39 @@
+{
+  "bounds": [
+    -4.5,
+    -9.5,
+    5,
+    -8,
+    5,
+    8,
+    -4.5,
+    9.5
+  ],
+  "builtInMods": [
+    "always_detaches",
+    "shield_always_on",
+    "fluxshunt",
+    "shpe_deflector"
+  ],
+  "builtInWings": [],
+  "center": [
+    11,
+    8
+  ],
+  "collisionRadius": 354.5,
+  "engineSlots": [],
+  "height": 14,
+  "hullId": "shpe_hero_deflector",
+  "hullName": "Deflector",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    -146,
+    -0
+  ],
+  "shieldRadius": 200,
+  "spriteName": "graphics/ships/shpe_hero_deflector.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 22
+}
