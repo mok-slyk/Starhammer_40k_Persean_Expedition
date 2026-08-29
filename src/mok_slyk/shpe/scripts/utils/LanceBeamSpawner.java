@@ -91,6 +91,9 @@ public class LanceBeamSpawner {
         layer1.stages.add(stage2);
 
         LanceBeamStage stage3 = new LanceBeamStage(stage2);
+        stage3.widthStart = coreWidthStart;
+        stage3.widthMain = coreWidthMain;
+        stage3.widthEnd = coreWidthEnd;
         stage3.minPosRel = 0.6f;
         stage3.maxPosRel = 0.8f;
         stage3.startPosRel = 1;

@@ -200,45 +200,51 @@ public class LanceBeamObject {
                 }
 
                 float texturePos = currentStage.currentPos / extension;
+                log.info("index = "+j);
+                log.info(texturePos+" = "+currentStage.currentPos+" / "+extension);
 
                 int subdivisions = 8;
 
                 for (int k = 0; k < subdivisions; k++) {
-                    float t0 = texturePos + (((float) k / subdivisions) * segmentLength) / extension;
-                    float t1 = texturePos + (((float) (k+1) / subdivisions) * segmentLength) / extension;
-                    log.info("t0 = " + t0);
-                    log.info("t1 = " + t1);
+                    float texT0 = texturePos + (((float) k / subdivisions) * segmentLength) / extension;
+                    float texT1 = texturePos + (((float) (k+1) / subdivisions) * segmentLength) / extension;
+
+                    float segmentT0 = (float) k / subdivisions; //0 to 1 in segment space
+                    float segmentT1 = (float) (k + 1) / subdivisions;
+
+                    log.info("texT0 = " + texT0);
+                    log.info("texT1 = " + texT1);
 
                     for (int l = 0; l < subdivisions; l++) {
                         float s0 = (float) l / subdivisions;
                         float s1 = (float) (l + 1) / subdivisions;
 
-                        float[] v00 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, t0);
-                        float[] v10 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, t0);
-                        float[] v11 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, t1);
-                        float[] v01 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, t1);
+                        float[] v00 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, segmentT0);
+                        float[] v10 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, segmentT0);
+                        float[] v11 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s1, segmentT1);
+                        float[] v01 = SHPEUtils.bilerpQuad(point1Left, point1Right, point2Right, point2Left, s0, segmentT1);
 
-                        Color color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, t0);
+                        Color color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, segmentT0);
                         int r = color.getRed(); int g = color.getGreen(); int b = color.getBlue(); int a = color.getAlpha();
 
                         glColor4ub((byte) r, (byte) g, (byte) b, (byte) a);
 
-                        glTexCoord2f(s0, t0);
+                        glTexCoord2f(s0, texT0);
                         glVertex2f(v00[0], v00[1]);
 
-                        glTexCoord2f(s1, t0);
+                        glTexCoord2f(s1, texT0);
                         glVertex2f(v10[0], v10[1]);
 
 
-                        color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, t0);
+                        color = SHPEUtils.lerpColor(currentStage.currentColor, nextStage.currentColor, segmentT1);
                         r = color.getRed(); g = color.getGreen(); b = color.getBlue(); a = color.getAlpha();
 
                         glColor4ub((byte) r, (byte) g, (byte) b, (byte) a);
 
-                        glTexCoord2f(s1, t1);
+                        glTexCoord2f(s1, texT1);
                         glVertex2f(v11[0], v11[1]);
 
-                        glTexCoord2f(s0, t1);
+                        glTexCoord2f(s0, texT1);
                         glVertex2f(v01[0], v01[1]);
                     }
                 }
