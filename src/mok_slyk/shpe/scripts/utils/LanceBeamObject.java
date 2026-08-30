@@ -199,10 +199,11 @@ public class LanceBeamObject {
                     continue;
                 }
 
-                float texturePos = layer.calculateRelativeTexturePos(currentStage.currentPos, extension);
-
-                log.info("index = "+j);
-                log.info(texturePos+" = "+currentStage.currentPos+" / "+extension);
+                float totalScroll = age * layer.scrollSpeed * (-1) + layer.scrollOffset;
+                float scroll = (float) (totalScroll - Math.floor(totalScroll));
+                log.info(age + " * " + layer.scrollSpeed + " * -1 + " + layer.scrollOffset + " = " + totalScroll);
+                log.info("scroll: " + scroll);
+                float texturePos = scroll + layer.calculateRelativeTexturePos(currentStage.currentPos, extension);
 
                 int subdivisions = 8;
 
@@ -212,9 +213,6 @@ public class LanceBeamObject {
 
                     float segmentT0 = (float) k / subdivisions; //0 to 1 in segment space
                     float segmentT1 = (float) (k + 1) / subdivisions;
-
-                    log.info("texT0 = " + texT0);
-                    log.info("texT1 = " + texT1);
 
                     for (int l = 0; l < subdivisions; l++) {
                         float s0 = (float) l / subdivisions;

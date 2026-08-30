@@ -35,10 +35,10 @@ public class LanceBeamLayer {
             }
         }
 
-        scrollOffset = (scrollOffset + scrollSpeed * amount) % sprite.getHeight();
+        //scrollOffset = (scrollOffset + scrollSpeed * amount) % sprite.getHeight();
     }
 
     public float calculateRelativeTexturePos(float absolutePos, float extension) {
-        return (tilingMultiplier * absolutePos / ((stretchMultiplier > 0.001 ? extension * stretchMultiplier : 1) + flatTextureScale));
+        return (tilingMultiplier * absolutePos / ((stretchMultiplier > 0.0001 ? extension * stretchMultiplier : 1) + flatTextureScale));
     }
 }

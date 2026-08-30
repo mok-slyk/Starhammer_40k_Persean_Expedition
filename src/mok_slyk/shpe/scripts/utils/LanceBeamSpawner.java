@@ -44,7 +44,7 @@ public class LanceBeamSpawner {
         layer1.sprite = coreSprite;
         layer1.blendModeSRC = GL_SRC_ALPHA;
         layer1.blendModeDEST = GL_ONE;
-        layer1.scrollSpeed = 1;
+        layer1.scrollSpeed = 0.5f;
         layer1.flatTextureScale = 500;
         layer1.stretchMultiplier = 0.3f;
 
