@@ -199,15 +199,16 @@ public class LanceBeamObject {
                     continue;
                 }
 
-                float texturePos = currentStage.currentPos / extension;
+                float texturePos = layer.calculateRelativeTexturePos(currentStage.currentPos, extension);
+
                 log.info("index = "+j);
                 log.info(texturePos+" = "+currentStage.currentPos+" / "+extension);
 
                 int subdivisions = 8;
 
                 for (int k = 0; k < subdivisions; k++) {
-                    float texT0 = texturePos + (((float) k / subdivisions) * segmentLength) / extension;
-                    float texT1 = texturePos + (((float) (k+1) / subdivisions) * segmentLength) / extension;
+                    float texT0 = texturePos + layer.calculateRelativeTexturePos((((float) k / subdivisions) * segmentLength), extension);
+                    float texT1 = texturePos + layer.calculateRelativeTexturePos((((float) (k + 1) / subdivisions) * segmentLength), extension);
 
                     float segmentT0 = (float) k / subdivisions; //0 to 1 in segment space
                     float segmentT1 = (float) (k + 1) / subdivisions;

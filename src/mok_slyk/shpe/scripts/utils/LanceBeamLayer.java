@@ -15,6 +15,10 @@ public class LanceBeamLayer {
 
     float scrollSpeed = 0; // per second
     float scrollOffset = 0;
+    float tilingMultiplier = 1; // multiplies
+    float flatTextureScale = 0; // flat modifier to the effective size of the texture
+
+    float stretchMultiplier = 1;
 
     List<LanceBeamStage> stages = new ArrayList<>();
 
@@ -32,5 +36,9 @@ public class LanceBeamLayer {
         }
 
         scrollOffset = (scrollOffset + scrollSpeed * amount) % sprite.getHeight();
+    }
+
+    public float calculateRelativeTexturePos(float absolutePos, float extension) {
+        return (tilingMultiplier * absolutePos / ((stretchMultiplier > 0.001 ? extension * stretchMultiplier : 1) + flatTextureScale));
     }
 }
